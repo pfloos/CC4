@@ -1,0 +1,224 @@
+bash: no job control in this shell
+
+
+    ,-----.     .-------.    .-'''-. .---.  .---.
+  .'  .-,  '.   \  _(`)_ \  / _     \|   |  |_ _|
+ / ,-.|  \ _ \  | (_ o._)| (`' )/`--'|   |  ( ' )
+;  \  '_ /  | : |  (_,_) /(_ o _).   |   '-(_{;}_)
+|  _`,/ \ _/  | |   '-.-'  (_,_). '. |      (_,_)
+: (  '\_/ \   ; |   |     .---.  \  :| _ _--.   |
+ \ `"/  \  )  \ |   |     \    `-'  ||( ' ) |   |
+  '. \_/``"/)  )/   )      \       / (_{;}_)|   |
+    '-----' `-' `---'       `-...-'  '(_,_) '---'
+
+
+
+   -- Quantum  Package  Shell --
+
+ 0.08 %  in                     0 seconds 
+                                                                            0.08 %  in                     1 seconds 
+                                                                            0.08 %  in                     0 seconds 
+                                                                            0.38 %  in                     0 seconds 
+                                                                            0.13 %  in                     0 seconds 
+                                                                            0.12 %  in                     0 seconds 
+                                                                            0.06 %  in                     0 seconds 
+                                                                            0.06 %  in                     0 seconds 
+                                                                            0.12 %  in                     0 seconds 
+                                                                            0.04 %  in                     0 seconds 
+                                                                            0.02 %  in                     0 seconds 
+                                                                            0.02 %  in                     0 seconds 
+                                                                            0.04 %  in                     0 seconds 
+                                                                            0.02 %  in                     0 seconds 
+                                                                            0.01 %  in                     0 seconds 
+                                                                            0.01 %  in                     0 seconds 
+                                                                            0.01 %  in                     1 seconds 
+                                                                            0.00 %  in                     1 seconds 
+                                                                            0.00 %  in                     0 seconds 
+                                                                            0.00 %  in                     1 seconds 
+                                                                            0.00 %  in                     1 seconds 
+                                                                            8.33 %  in                     4 seconds 
+16.67 %  in                    14 seconds 
+33.33 %  in                    25 seconds 
+58.33 %  in                    38 seconds 
+83.33 %  in                    48 seconds 
+                                                                            8.33 %  in                     4 seconds 
+16.67 %  in                    14 seconds 
+33.33 %  in                    24 seconds 
+50.00 %  in                    34 seconds 
+75.00 %  in                    47 seconds 
+                                                                            8.33 %  in                     4 seconds 
+16.67 %  in                    14 seconds 
+33.33 %  in                    25 seconds 
+50.00 %  in                    35 seconds 
+75.00 %  in                    48 seconds 
+                                                                            8.33 %  in                     5 seconds 
+16.67 %  in                    15 seconds 
+33.33 %  in                    26 seconds 
+58.33 %  in                    40 seconds 
+83.33 %  in                    51 seconds 
+                                                                            8.33 %  in                     5 seconds 
+16.67 %  in                    15 seconds 
+33.33 %  in                    25 seconds 
+50.00 %  in                    35 seconds 
+66.67 %  in                    45 seconds 
+                                                                            8.33 %  in                     5 seconds 
+16.67 %  in                    15 seconds 
+33.33 %  in                    26 seconds 
+58.33 %  in                    40 seconds 
+83.33 %  in                    50 seconds 
+                                                                            8.33 %  in                     4 seconds 
+16.67 %  in                    15 seconds 
+33.33 %  in                    25 seconds 
+50.00 %  in                    35 seconds 
+75.00 %  in                    49 seconds 
+                                                                            8.33 %  in                     4 seconds 
+16.67 %  in                    14 seconds 
+33.33 %  in                    25 seconds 
+50.00 %  in                    35 seconds 
+75.00 %  in                    48 seconds 
+                                                                            8.33 %  in                     4 seconds 
+16.67 %  in                    15 seconds 
+33.33 %  in                    25 seconds 
+50.00 %  in                    35 seconds 
+75.00 %  in                    49 seconds 
+                                                                            8.33 %  in                     5 seconds 
+16.67 %  in                    15 seconds 
+33.33 %  in                    26 seconds 
+58.33 %  in                    40 seconds 
+83.33 %  in                    50 seconds 
+                                                                            0.00 %  in                     1 seconds 
+ 3.14 %  in                    11 seconds 
+                                                                            0.00 %  in                     0 seconds 
+ 2.36 %  in                    10 seconds 
+ 5.26 %  in                    20 seconds 
+ 8.12 %  in                    30 seconds 
+                                                                            0.00 %  in                     1 seconds 
+ 2.37 %  in                    11 seconds 
+ 5.34 %  in                    21 seconds 
+ 8.17 %  in                    31 seconds 
+                                                                            0.00 %  in                     0 seconds 
+ 2.94 %  in                    10 seconds 
+ 6.65 %  in                    20 seconds 
+                                                                            3.33 %  in                     9 seconds 
+ 6.67 %  in                    29 seconds 
+10.00 %  in                    39 seconds 
+13.33 %  in                    49 seconds 
+16.67 %  in                    59 seconds 
+23.33 %  in                    75 seconds 
+30.00 %  in                    90 seconds 
+36.67 %  in                   105 seconds 
+43.33 %  in                   118 seconds 
+50.00 %  in                   132 seconds 
+56.67 %  in                   146 seconds 
+63.33 %  in                   160 seconds 
+70.00 %  in                   171 seconds 
+76.67 %  in                   185 seconds 
+83.33 %  in                   197 seconds 
+90.00 %  in                   211 seconds 
+                                                                            3.33 %  in                     9 seconds 
+ 6.67 %  in                    29 seconds 
+10.00 %  in                    39 seconds 
+13.33 %  in                    49 seconds 
+16.67 %  in                    59 seconds 
+23.33 %  in                    75 seconds 
+30.00 %  in                    89 seconds 
+36.67 %  in                   105 seconds 
+43.33 %  in                   118 seconds 
+50.00 %  in                   131 seconds 
+56.67 %  in                   146 seconds 
+63.33 %  in                   159 seconds 
+70.00 %  in                   170 seconds 
+76.67 %  in                   184 seconds 
+83.33 %  in                   197 seconds 
+90.00 %  in                   211 seconds 
+                                                                            3.33 %  in                     9 seconds 
+ 6.67 %  in                    29 seconds 
+10.00 %  in                    40 seconds 
+16.67 %  in                    60 seconds 
+23.33 %  in                    77 seconds 
+30.00 %  in                    91 seconds 
+36.67 %  in                   108 seconds 
+43.33 %  in                   121 seconds 
+50.00 %  in                   134 seconds 
+56.67 %  in                   150 seconds 
+63.33 %  in                   163 seconds 
+70.00 %  in                   175 seconds 
+76.67 %  in                   189 seconds 
+83.33 %  in                   202 seconds 
+90.00 %  in                   216 seconds 
+                                                                            3.33 %  in                    10 seconds 
+ 6.67 %  in                    29 seconds 
+10.00 %  in                    40 seconds 
+16.67 %  in                    60 seconds 
+23.33 %  in                    76 seconds 
+30.00 %  in                    91 seconds 
+36.67 %  in                   108 seconds 
+43.33 %  in                   121 seconds 
+50.00 %  in                   135 seconds 
+56.67 %  in                   150 seconds 
+63.33 %  in                   163 seconds 
+70.00 %  in                   175 seconds 
+76.67 %  in                   189 seconds 
+83.33 %  in                   202 seconds 
+90.00 %  in                   216 seconds 
+                                                                            3.33 %  in                     9 seconds 
+ 6.67 %  in                    29 seconds 
+10.00 %  in                    39 seconds 
+13.33 %  in                    49 seconds 
+16.67 %  in                    60 seconds 
+23.33 %  in                    76 seconds 
+30.00 %  in                    91 seconds 
+36.67 %  in                   107 seconds 
+43.33 %  in                   121 seconds 
+50.00 %  in                   134 seconds 
+56.67 %  in                   149 seconds 
+63.33 %  in                   163 seconds 
+70.00 %  in                   175 seconds 
+76.67 %  in                   189 seconds 
+83.33 %  in                   202 seconds 
+90.00 %  in                   216 seconds 
+                                                                            3.33 %  in                    10 seconds 
+ 6.67 %  in                    29 seconds 
+10.00 %  in                    40 seconds 
+16.67 %  in                    60 seconds 
+23.33 %  in                    76 seconds 
+30.00 %  in                    91 seconds 
+36.67 %  in                   108 seconds 
+43.33 %  in                   121 seconds 
+50.00 %  in                   134 seconds 
+56.67 %  in                   149 seconds 
+63.33 %  in                   163 seconds 
+70.00 %  in                   175 seconds 
+76.67 %  in                   189 seconds 
+83.33 %  in                   201 seconds 
+90.00 %  in                   216 seconds 
+                                                                            3.33 %  in                     9 seconds 
+ 6.67 %  in                    29 seconds 
+10.00 %  in                    39 seconds 
+13.33 %  in                    49 seconds 
+16.67 %  in                    60 seconds 
+23.33 %  in                    76 seconds 
+30.00 %  in                    91 seconds 
+36.67 %  in                   107 seconds 
+43.33 %  in                   120 seconds 
+50.00 %  in                   134 seconds 
+56.67 %  in                   149 seconds 
+63.33 %  in                   163 seconds 
+70.00 %  in                   174 seconds 
+76.67 %  in                   189 seconds 
+83.33 %  in                   201 seconds 
+90.00 %  in                   216 seconds 
+                                                                            3.33 %  in                     9 seconds 
+ 6.67 %  in                    29 seconds 
+10.00 %  in                    39 seconds 
+13.33 %  in                    49 seconds 
+16.67 %  in                    60 seconds 
+23.33 %  in                    76 seconds 
+30.00 %  in                    91 seconds 
+36.67 %  in                   107 seconds 
+43.33 %  in                   121 seconds 
+50.00 %  in                   134 seconds 
+56.67 %  in                   149 seconds 
+63.33 %  in                   163 seconds 
+70.00 %  in                   175 seconds 
+76.67 %  in                   189 seconds 
