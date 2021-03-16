@@ -1,0 +1,172 @@
+\documentclass[aps,prb,reprint,noshowkeys,superscriptaddress]{revtex4-1}
+\usepackage{graphicx,dcolumn,bm,xcolor,microtype,multirow,amscd,amsmath,amssymb,amsfonts,physics,wrapfig,txfonts}
+\usepackage[version=4]{mhchem}
+
+\newcommand{\ie}{\textit{i.e.}}
+\newcommand{\eg}{\textit{e.g.}}
+\newcommand{\alert}[1]{\textcolor{black}{#1}}
+\usepackage[normalem]{ulem}
+\newcommand{\titou}[1]{\textcolor{red}{#1}}
+\newcommand{\trashPFL}[1]{\textcolor{red}{\sout{#1}}}
+\newcommand{\PFL}[1]{\titou{(\underline{\bf PFL}: #1)}}
+\newcommand{\toto}[1]{\textcolor{green}{#1}}
+\newcommand{\trashAS}[1]{\textcolor{green}{\sout{#1}}}
+\newcommand{\AS}[1]{\toto{(\underline{\bf AS}: #1)}}
+
+\newcommand{\Ec}{E_\text{c}}
+\newcommand{\mEh}{$mE_h$}
+\newcommand{\Eh}{$E_h$}
+\newcommand{\mc}{\multicolumn}
+\newcommand{\fnm}{\footnotemark}
+\newcommand{\fnt}{\footnotetext}
+\newcommand{\tabc}[1]{\multicolumn{1}{c}{#1}}
+\newcommand{\QP}{\textsc{quantum package}}
+
+\usepackage[
+	colorlinks=true,
+    citecolor=blue,
+    breaklinks=true
+	]{hyperref}
+\urlstyle{same}
+
+\begin{document}
+
+\newcommand{\LCPQ}{Laboratoire de Chimie et Physique Quantiques (UMR 5626), Universit\'e de Toulouse, CNRS, UPS, France}
+\newcommand{\CEISAM}{Universit\'e de Nantes, CNRS,  CEISAM UMR 6230, F-44000 Nantes, France}
+
+\title{Reference correlation energies in finite Hilbert spaces: five- and six-membered rings}
+
+\author{Micka\"el V\'eril}
+\affiliation{\LCPQ}
+\author{Yann Damour}
+\affiliation{\LCPQ}
+\author{Anthony Scemama}
+\affiliation{\LCPQ}
+\author{Denis Jacquemin}
+\affiliation{\CEISAM}
+\author{Pierre-Fran\c{c}ois Loos}
+\email{loos@irsamc.ups-tlse.fr}
+\affiliation{\LCPQ}
+
+% Abstract
+\begin{abstract}
+We report (frozen-core) full configuration interaction (FCI) energies in finite Hilbert spaces for various five- and six-membered rings.
+In the continuity of our recent work on the benzene molecule [\href{https://doi.org/10.1063/5.0027617}{J. Chem. Phys. \textbf{153}, 176101 (2020)}], itself motivated by the blind challenge of Eriksen \textit{et al.} [\href{https://doi.org/10.1021/acs.jpclett.0c02621}{J. Phys. Chem. Lett. \textbf{11}, 8922 (2020)}] on the same system, we report reference frozen-core correlation energies for twelve cyclic molecules (cyclopentadiene, furan, imidazole, pyrrole, thiophene, benzene, pyrazine, pyridazine, pyridine, pyrimidine, tetrazine, and triazine) in the standard correlation-consistent double-$\zeta$ Dunning basis set (cc-pVDZ).
+This corresponds to Hilbert spaces with sizes ranging from $10^{20}$ (for thiophene) to $10^{36}$ (for benzene).
+Our estimates are based on localized-orbital-based selected configuration interaction (SCI) calculations performed with the \textit{Configuration Interaction using a Perturbative Selection made Iteratively} (CIPSI) algorithm.
+The performance and convergence properties of several series of methods are investigated. 
+In particular, we study the convergence properties of ii) the M{\o}ller-Plesset perturbation series up to fifth-order (MP2, MP3, MP4, and MP5), ii) the iterative approximate single-reference coupled-cluster series CC2, CC3, and CC4, and ii) the single-reference coupled-cluster series CCSD, CCSDT, and CCSDTQ.
+The performance of the ground-state gold standard CCSD(T) is also investigated.
+\end{abstract}
+
+% Title
+\maketitle
+
+\section{Introduction}
+
+\begin{figure*}
+	\includegraphics[width=\linewidth]{mol}
+	\caption{
+	Five-membered rings (top) and six-membered rings (bottom) considered in this study.
+	\label{fig:mol}}
+\end{figure*}
+
+\section{Computational details}
+The geometries of the twelve systems considered in the present study have been all obtained at the CC3/aug-cc-pVTZ level of geometry and have been extracted from a previous study. \cite{Loos_2020a}
+The MP2, MP3, MP4, CC2, CC3, CC4, CCSD, CCSDT, and CCSDTQ calculations have been performed with Cfour, \cite{cfour} while the CCSD(T) and MP5 calculations have been performed in Gaussian 09. \cite{g09}
+For all these calculations, we consider Dunning's correlation-consistent double-$\zeta$ basis (cc-pVDZ) which consists of Hilbert space sizes ranging from $10^{20}$ (for thiophene) to $10^{36}$ (for benzene).
+We follow our usual procedure \cite{Scemama_2018,Scemama_2018b,Scemama_2019,Loos_2018a,Loos_2019,Loos_2020a,Loos_2020b,Loos_2020c} by performing a preliminary SCI calculation using Hartree-Fock orbitals in order to generate a SCI wave function with at least $10^7$ determinants.
+Natural orbitals are then computed based on this wave function, and a second run is performed with localized orbitals.
+This has the advantage to produce a smoother and faster convergence of the SCI energy toward the FCI limit by taking benefit of the local character of electron correlation.\cite{Angeli_2003,Angeli_2009,BenAmor_2011,Suaud_2017,Chien_2018,Eriksen_2020}
+The Boys-Foster localization procedure \cite{Boys_1960} that we apply to the natural orbitals is performed in several orbital windows: i) core, ii) valence $\sigma$, iii) valence $\pi$, iv) valence $\pi^*$, v) valence $\sigma^*$, vi) the higher-lying $\sigma$ orbitals, and vii) the higher-lying $\pi$ orbitals. 
+Like Pipek-Mezey, \cite{Pipek_1989} this choice of orbital windows allows to preserve a strict $\sigma$-$\pi$ separation in planar systems like benzene.
+
+The total SCI energy is defined as the sum of the variational energy $E_\text{var.}$ (computed via diagonalization of the CI matrix in the reference space) and a second-order perturbative correction $E_\text{(r)PT2}$ which takes into account the external determinants, \ie, the determinants which do not belong to the variational space but are linked to the reference space via a nonzero matrix element. 
+The magnitude of $E_\text{(r)PT2}$ provides a qualitative idea of the ``distance'' to the FCI limit.
+We then linearly extrapolate the total SCI energy to $E_\text{(r)PT2} = 0$ (which effectively corresponds to the FCI limit). 
+Note that, unlike excited-state calculations where it is important to enforce that the wave functions are eigenfunctions of the $\Hat{S}^2$ spin operator, \cite{Applencourt_2018} the present wave functions do not fulfil this property as we aim for the lowest possible energy of a singlet state. 
+We have found that $\expval*{\Hat{S}^2}$ is, nonetheless, very close to zero for each system.
+
+
+\section{Results and discussion}
+
+\begin{table*}
+	\caption{Total energy $E$ (in \Eh) and correlation energy $\Ec$ (in \mEh) for the frozen-core ground state of five-membered rings in the cc-pVDZ basis set.
+	\label{tab:Tab5-VDZ}}
+	\begin{ruledtabular}
+	\begin{tabular}{lcccccccccc}
+				&	\mc{2}{c}{Cyclopentadiene}	&	\mc{2}{c}{Furan}	&	\mc{2}{c}{Imidazole}	&	\mc{2}{c}{Pyrrole}	&	\mc{2}{c}{Thiophene}	\\
+					\cline{2-3}	\cline{4-5}	\cline{6-7} \cline{8-9} \cline{10-11}
+		Method	&	$E$&	$\Ec$	&	$E$	&	$\Ec$	&	$E$	&	$\Ec$	&	$E$	&	$\Ec$	&	$E$	&	$\Ec$ 	\\
+		\hline
+		HF		&	$-192.8083$	&				&	$-228.6433$	&				&	$-224.8354$	&				&	$-208.8286$	&		&	-551.3210	&	\\
+		\hline
+		MP2		&	$-193.4717$	&	$-663.4$	&	$-229.3508$	&	$-707.5$	&	$-225.5558$ &	$-720.4$	&	$-209.5243$	&	$-695.7$	&	$-551.9825$	 &	$-661.5$	\\
+		MP3		&	$-193.5094$	&	$-701.0$	&	$-229.3711$	&	$-727.8$	&	$-225.5732$	&	$-737.8$	&	$-209.5492$	&	$-720.6$	&	$-552.0104$	&	$-689.4$	\\
+		MP4		&	$-193.5428$	&	$-734.5$	&	$-229.4099$	&	$-766.6$	&	$-225.6126$	&	$-777.2$	&	$-209.5851$	&	$-756.5$	&	$-552.0476$	&	$-726.6$	\\
+		MP5		&	$-193.5418$	&	$-733.4$	&	$-229.4032$	&	$-759.9$	&	$-225.6061$	&	$-770.8$	&	$-209.5809$	&	$-752.3$	&	$-552.0426$	&	$-721.6$\\	
+		\hline
+		CC2		&	$-193.4782$	&	$-669.9$	&	$-229.3605$	&	$-717.2$	&	$-225.5644$	&	$-729.0$	&	$-209.5311$	&	$-702.5$	&	$-551.9905$	&	$-669.5$	\\
+		CC3		&	$-193.5449$	&	$-736.6$	&	$-229.4090$	&	$-765.7$	&	$-225.6115$	&	$-776.1$	&	$-209.5849$	&	$-756.3$	&	$-552.0473$	&	$-726.3$	\\
+		CC4		&	$-193.5467$	&	$-738.4$	&	$-229.4102$	&	$-766.9$	&	$-225.6126$	&	$-777.2$	&	$-209.5862$	&	$-757.6$	&	$-552.0487$	&	$-727.7$	\\
+		\hline
+		CCSD	&	$-193.5156$	&	$-707.2$	&	$-229.3783$	&	$-735.0$	&	$-225.5796$	&	$-744.2$	&	$-209.5543$	&	$-725.7$	&	$-552.0155$	&	$-694.5$	\\
+		CCSDT	&	$-193.5446$	&	$-736.2$	&	$-229.4076$	&	$-764.3$	&	$-225.6099$	&	$-774.6$	&	$-209.5838$	&	$-755.2$	&	$-552.0461$	&	$-725.1$	\\
+		CCSDTQ	&	$-193.5465$	&	$-738.2$	&	$-229.4100$	&	$-766.7$	&	$-225.6123$	&	$-776.9$	&	$-209.5860$	&	$-757.4$	&	$-552.0485$	&	$-727.5$	\\	
+		\hline
+		CCSD(T)	&	$-193.5439$	&	$-735.6$	&	$-229.4073$	&	$-764.0$	&	$-225.6099$	&	$-774.5$	&	$-209.5836$	&	$-754.9$	&	$-552.0458$	&	$-724.8$
+\\
+		\hline
+		CIPSI	&					&				&					&				&					&				&					&				&			&	\\	
+	\end{tabular}
+	\end{ruledtabular}
+\end{table*}
+
+\begin{squeezetable}
+\begin{table*}
+	\caption{Total energy $E$ (in \Eh) and correlation energy $\Ec$ (in \mEh) for the frozen-core ground state of six-membered rings in the cc-pVDZ basis set.
+	\label{tab:Tab6-VDZ}}
+	\begin{ruledtabular}
+	\begin{tabular}{lcccccccccccccc}
+				&	\mc{2}{c}{Benzene}	&	\mc{2}{c}{Pyrazine}	&	\mc{2}{c}{Pyridazine}	&	\mc{2}{c}{Pyridine}	&	\mc{2}{c}{Pyrimidine}	&	\mc{2}{c}{Tetrazine}	&	\mc{2}{c}{Triazine}	\\
+					\cline{2-3}	\cline{4-5}	\cline{6-7} \cline{8-9} \cline{10-11} \cline{12-13} \cline{14-15}
+	Method		&	$E$	&	$\Ec$	&	$E$	&	$\Ec$	&	$E$	&	$\Ec$	&	$E$	&	$\Ec$	
+				&	$E$	&	$\Ec$	&	$E$	&	$\Ec$	&	$E$	&	$\Ec$	\\
+	\hline
+		HF		&	$-230.7222$	&			&	$-262.7030$	&			&	$-262.6699$	&			&	$-246.7152$	&			&	$-262.7137$	&			&	$-294.6157$		&		&	$-278.7173$	\\
+		\hline
+		MP2		&	$-231.5046$  	&	$-782.3$	&	$-263.5376$ 	&	$-834.6$ 	&	$-263.5086$ &	$-838.7$	&	$-247.5227$	&	$-807.5$	&	$-263.5437$   &	$-830.1$	&	$-295.5117$    &   $-895.9$	&			$-279.5678$   &   $-850.5$\\
+		MP3		&	$-231.5386$	&	$-816.4$	&	$-263.5567$	&	$-853.7$	&	$-263.5271$	&	$-857.3$	&	$-247.5492$	&	$-834.0$	&	$-263.5633$	&	$-849.6$	&	$-295.5152$   &	$-899.5$	&	$-279.5809$   &	$-863.6$	\\
+		MP4		&	$-231.5808$	&	$-858.5$	&	$-263.6059$	&	$-902.9$	&	$-263.5778$	&	$-907.9$	&	$-247.5951$	&	$-879.9$	&	$-263.6129$	&	$-899.3$	&	$-295.5743$	&  $-958.6$	&	$-279.6340$    &	$-916.7$	\\
+		MP5		&	$-231.5760$   &          $-853.8$	&	$-263.5968$	&	$-893.8$	&	$-263.5681$	&	$-898.3$	&	$-247.5881$	&	$-872.9$	&	$-263.6036$ &            $-890.0$	&	$-295.5600$	&	$-944.3$	&	$-279.6228$	&	$-905.4$	\\
+		\hline
+		CC2		&	$-231.5117$  	&	$-789.4$	&	$-263.5475$	&	$-844.5$	&	$-263.5188$	&	$-848.9$	&	$-247.5315$   &	$-816.3$	&	$-263.5550$ 	&	$-841.3$	&	$-295.5247$    &   $-909.0$		&	$-279.5817$       &	$-864.4$	\\
+		CC3		&	$-231.5814$	&	$-859.1$	&	$-263.6045$	&	$-901.5$	&	$-263.5761$	&	$-906.2$	&	$-247.5948$	&	$-879.6$	&	$-263.6120$	&	$-898.4$	&	$-295.5706$  &	$-954.9$	&	$-279.6329$    &	$-915.6$	\\
+		CC4		&	$-231.5828$	&	$-860.6$	&	$-263.6056$	&	$-902.6$	&	$-263.5773$	&	$-907.5$	&	$-247.5960$		&	$-880.8$		&	$-263.6129$	&	$-899.3$		&	$-295.5716$	&	$-955.9$	&	$-279.6334$	&	$-916.1$			\\
+		\hline
+		CCSD	&	$-231.5440$	&	$-821.8$	&	$-263.5640$	&	$-861.0$	&	$-263.5347$	&	$-864.9$	&	$-247.5559$	&	$-840.7$	&	$-263.5716$	&	$-858.0$	&	$-295.5248$   &	$-909.1$	&	$-279.5911$   &	 $-873.8$	\\
+		CCSDT	&	$-231.5802$	&	$-857.9$	&	$-263.6024$	&	$-899.4$	&	$-263.5739$	&	$-904.0$	&	$-247.5931$	&	$-877.9$	&	$-263.6097$	&	$-896.1$	&	$-295.5673$  &  $-951.6$	&	$-279.6300$    &	$-912.7$	\\
+		CCSDTQ	&	$-231.5826$	&	$-860.4$		&	$-263.6053$	&	$-902.3$		&	$-263.5770$	&	$-907.1$	&	$-247.5960$	&	$-880.8$	&	$-263.6126$  & $-899.0$		&			$-295.5712$		&	$-955.4$		&	$-279.6331$		&	$-915.8$		\\
+		\hline
+		CCSD(T)	&	$-231.5798$	&	$-857.5$	&	$-263.6024$		&	$-899.4$	&	$-263.5740$	&	$-904.1$	&	$-247.5929$	&	$-877.7$	&	$-263.6099$	&	$-896.2$	&	$-295.5680$		&	$-952.2$	&	$-279.6305$		&	$-913.1$	\\
+		\hline
+		CIPSI	&				&			&				&			&				&			&				&			&				&			\\
+	\end{tabular}
+	\end{ruledtabular}
+\end{table*}
+\end{squeezetable}    
+
+
+\section{Conclusion}
+
+\begin{acknowledgements}
+This work was performed using HPC resources from GENCI-TGCC (2020-gen1738) and from CALMIP (Toulouse) under allocation 2020-18005.
+PFL and AS have received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (Grant agreement No.~863481).
+\end{acknowledgements}
+
+\section*{Data availability statement}
+The data that support the findings of this study are openly available in Zenodo at \href{http://doi.org/XX.XXXX/zenodo.XXXXXXX}{http://doi.org/XX.XXXX/zenodo.XXXXXXX}.
+
+\bibliography{Ec}
+
+\end{document}
