@@ -1,0 +1,1764 @@
+ --invoking executable--
+/home/CEISAM/blondel-a/soft/cfour2.1/cfour2.1-serial-mkl/bin/xjoda
+
+
+   *************************************************************************
+         <<<     CCCCCC     CCCCCC   |||     CCCCCC     CCCCCC   >>>
+       <<<      CCC        CCC       |||    CCC        CCC         >>>
+      <<<      CCC        CCC        |||   CCC        CCC            >>>
+    <<<        CCC        CCC        |||   CCC        CCC              >>>
+      <<<      CCC        CCC        |||   CCC        CCC            >>>
+       <<<      CCC        CCC       |||    CCC        CCC         >>>
+         <<<     CCCCCC     CCCCCC   |||     CCCCCC     CCCCCC   >>>
+   *************************************************************************
+
+     ****************************************************************
+     * CFOUR Coupled-Cluster techniques for Computational Chemistry *
+     ****************************************************************
+ 
+
+   Department of Chemistry                Institut fuer Physikalische Chemie
+   University of Florida                  Universitaet Mainz
+   Gainesville, FL 32611, USA             D-55099 Mainz, Germany
+
+   Department of Chemistry                Fakultaet fuer Chemie und Biowiss.
+   Johns Hopkins University               Karlsruher Institut fuer Technologie
+   Baltimore, MD 21218, USA               D-76131 Karlsruhe, Germany
+
+   Department of Chemistry                Department of Physical Chemistry
+   Southern Methodist University          Eotvos Lorand University
+   Dallas, TX 75275, USA                  H-1053 Budapest, Hungary
+
+ 
+                       Version 2.1
+ 
+                     cribbar038                                        
+                     Tue Mar 16 17:20:28 CET 2021                      
+                     integer*8 version is running
+ 
+********************************************************************************
+*                          Input from ZMAT file                                *
+********************************************************************************
+Ketene -GS                                                                      
+C     0.0000000000            0.0000000000           -1.2494205467              
+O     0.0000000000            0.0000000000            0.8926669184              
+                                                                                
+*CFOUR(COORD=CARTESIAN,UNITS=BOHR                                               
+       MEMORY=250,MEM_UNIT=GB,CC_PROG=NCC                                       
+       FROZEN_CORE=1                                                            
+       CALC=CC3,BASIS=AUG-PVDZ                                                  
+       SCF_CONV=8,CC_CONV=7,ESTATE_CONV=5,ESTATE_MAXCYC=120                     
+       EXCITE=EOMEE,ESTATE_SYM=4/4/4/4)                                         
+                                                                                
+********************************************************************************
+    -------------------------------------------------------------------
+                    CFOUR Control Parameters 
+    -------------------------------------------------------------------
+        External           Internal           Value            Units
+          Name               Name
+    -------------------------------------------------------------------
+       ABCDTYPE             IABCDT         STANDARD    [  0]    ***   
+       ANHARMONIC           IANHAR         OFF         [  0]    ***   
+       ANH_ALGORIT          IANALG         STANDARD    [  0]    ***   
+       ANH_DERIVAT          IANDER         SECOND      [  1]    ***   
+       ANH_MODE             ANHMOD         VIBRATION   [  0]    ***   
+       ANH_STEPSIZ          ICUBST             50000          x 10-6  
+       ANH_SYMMETR          IANHSM         ABELIAN     [  0]    ***   
+       AO_LADDERS           IAOLAD         SINGLEPASS  [  1]    ***   
+       AV_SCF               IAVSCF         OFF         [  0]    ***   
+       BASIS                IBASIS         AUG-PVDZ    [ 33]    ***   
+       BOTHVECTORS          BOTHVC         OFF         [  0]    ***   
+       BOX_POTENT           IPIAB          OFF         [  0]    ***   
+       BREIT                IBREIT         OFF         [  0]    ***   
+       BRUCK_CONV           IBRTOL          10D-  4             ***   
+       BRUECKNER            IBRKNR         OFF         [  0]    ***   
+       BUFFERSIZE           IBUFFS              4096            ***   
+       CACHE_RECS           ICHREC             10               ***   
+       CALCLEVEL            ICLLVL         CC3         [ 32]    ***   
+       CCORBOPT             ICCORB         OFF         [  0]  x 0.01  
+       CC_CONV              ICCCNV          10D-  7             ***   
+       CC_EXPORDER          ICCEOR              5               ***   
+       CC_EXTRAPOL          ICCEXT         DIIS        [  1]    ***   
+       CC_GUESS             ICCGES         MP2         [  0]    ***   
+       CC_MAXCYC            ICCCYC            100              cycles 
+       CC_PROGRAM           ICCPRO         NCC         [  5]    ***   
+       CHARGE               ICHRGE              0               ***   
+       CHOLESKY             ICHOLE         OFF         [  0]    ***   
+       CIS_CONV             ICISTL              5               ***   
+       COMM_SIZE            IPSIZE            ***               ***   
+       CONSTANT             ICONST         OLD         [  1]    ***   
+       CONTINUUM            ICONTU         NONE        [  0]    ***   
+       CONTRACTION          ICNTYP         GENERAL     [  1]    ***   
+       COORDINATES          ICOORD         CARTESIAN   [  1]    ***   
+       CPHF_CONVER          ICPHFT          10D- 16             ***   
+       CPHF_MAXCYC          ICPHFC             64              cycles 
+       CUBIC                ICUBIC         OFF         [  0]    ***   
+       CURVILINEAR          ICURVY         OFF         [  0]    ***   
+       DBOC                 IDBOC          OFF         [  0]    ***   
+       DCT                  IDCT           OFF         [  0]    ***   
+       DERIV_LEV            IDRLVL         ZERO        [  0]    ***   
+       DEVMEM_SIZE          IDVMEM         *********           MByte  
+       DIAG_MRCC            IEOMST          10D-  0             ***   
+       DIFF_TYPE            IDIFTY         RELAXED     [  0]    ***   
+       DIRECT               IDIRCT         OFF         [  0]    ***   
+       DROPMO               IDRPMO      NONE         
+       ECP                  IECP           OFF         [  0]    ***   
+       EIGENVECTOR          IVEC                1               ***   
+       EL_ANHARM            IELANH         OFF         [  0]    ***   
+       EOMFOLLOW            IEOMSR         ENERGY      [  0]    ***   
+       EOMIP                IEOMIP         OFF         [  0]    ***   
+       EOMLEVEL             HBARFM         SAME        [  0]    ***   
+       EOM_MRCC             IMRCCE         NEW         [  1]    ***   
+       EOM_NONIT            EOMNON         OFF         [  0]    ***   
+       EOM_NSING            IEOMSI          10D-  0             ***   
+       EOM_NSTATES          IMRCCD         DAVIDSON    [  0]    ***   
+       EOM_NTRIP            IEOMTR          10D-  0             ***   
+       EOM_ORDER            IEXORD         ENERGY      [  0]    ***   
+       EOM_PROPSTA          IEOMST              0               ***   
+       ESTATE_CONV          IEXTOL          10D-  5             ***   
+       ESTATE_DIAG          IEXDIG         ITERATIVE   [  0]    ***   
+       ESTATE_LOCK          IESLOC         ON          [  1]    ***   
+       ESTATE_MAXC          IEXMXC            120               ***   
+       ESTATE_PROP          IEXPRP         OFF         [  0]    ***   
+       ESTATE_SYM           IEXSYM   4,  4,  4,  4,
+       EVAL_HESS            IRECAL              0            # of cyc.
+       EXCITATION           IEXCIT              0               ***   
+       EXCITE               IEXCIT         EOMEE       [  3]    ***   
+       EXTERN_POT           IEXPOT         OFF         [  0]    ***   
+       FCGRADNEW            IFCGNW         OFF         [  0]    ***   
+       FC_FIELD             IFINFC              0             x 10-6  
+       FD_CALTYPE           IFDCAL         GRADONLY    [  0]    ***   
+       FD_PROJECT           IFDPRJ         OFF         [  1]    ***   
+       FD_STEPSIZE          IDISFD              0            10-4 bohr
+       FD_USEGROUP          IFDGRP         FULL        [  0]    ***   
+       FILE_RECSIZ          IFLREC              4096           words  
+       FINITE_PERT          IFIPER              0             x 10-6  
+       FIXGEOM              IFIXGM         OFF         [  0]    ***   
+       FOCK                 IFOCK          AO          [  1]    ***   
+       FREQ_ALGORI          IVIALG         STANDARD    [  0]    ***   
+       FROZEN_CORE          IFROCO         ON          [  1]    ***   
+       GAMMA_ABCD           IGABCD         STORE       [  0]    ***   
+       GAMMA_ABCI           IGABCI         STORE       [  0]    ***   
+       GENBAS_1             IGNBS1              0               ***   
+       GENBAS_2             IGNBS2              0               ***   
+       GENBAS_3             IGNBS3              0               ***   
+       GENBAS_4             IGNBS4              0               ***   
+       GEO_CONV             ICONTL              5              H/bohr 
+       GEO_MAXCYC           IOPTCY             50               ***   
+       GEO_MAXSTEP          IMXSTP            300            millibohr
+       GEO_METHOD           INR            SINGLE_POINT[  5]    ***   
+       GIAO                 IGIAO          OFF         [  1]    ***   
+       GIMIC                IGIMIC         OFF         [  0]    ***   
+       GRID                 IGRID          OFF         [  0]    ***   
+       GRID_ALGO            IGALGO         SERIAL      [  0]    ***   
+       GUESS                IGUESS         MOREAD      [  0]    ***   
+       HBAR                 IHBAR          ON          [  1]    ***   
+       HESS_TYPE            IHESTP         SCF         [  0]    ***   
+       HF2_FILE             IHF2Fl         USE         [  1]    ***   
+       HFSTABILITY          ISTABL         OFF         [  0]    ***   
+       INCORE               INCORE         OFF         [  0]    ***   
+       INPUT_MRCC           IMRCC          ON          [  1]    ***   
+       INTEGRALS            INTTYP         VMOL        [  1]    ***   
+       JODA_PRINT           IJPRNT              0               ***   
+       KEYWORD_OUT          IDMPKW         NO          [  0]    ***   
+       LINDEP_TOL           ILINDP              8               ***   
+       LINEQ_CONV           IZTACN          10D-  7           cycles  
+       LINEQ_EXPOR          ILMAXD              5               ***   
+       LINEQ_MAXCY          ILMAXC            100               ***   
+       LINEQ_TYPE           ILTYPE         DIIS        [  1]    ***   
+       LOCK_ORBOCC          ILOCOC         OFF         [  0]    ***   
+       MEMORY_SIZE          IMEMSZ         *********           words  
+       MEM_UNIT             IMEMU          GB          [  3]    ***   
+       MRCC                 IMRCCC         OFF         [  0]    ***   
+       MULTIPLICTY          IMULTP              1               ***   
+       NACOUPLING           IVCOUP         OFF         [  0]    ***   
+       NEGEVAL              IDIE           ABORT       [  0]    ***   
+       NEWNORM              INEWNO         OFF         [  0]    ***   
+       NON-HF               INONHF         OFF         [  0]    ***   
+       NTOP_TAMP            ITOPT2             15               ***   
+       NUC_MODEL            INUCMO         POINT       [  0]    ***   
+       OCCUPATION           IOCCU   ESTIMATED BY SCF 
+       OPEN-SHELL           IOPEN          SPIN-ORBITAL[  0]    ***   
+       OPTVIB               IOPTVB         OFF         [  0]    ***   
+       ORBITALS             IORBTP         STANDARD    [  0]    ***   
+       PARALLEL             IPARAL         ON          [  1]    ***   
+       PARA_INT             IPINTS         ON          [  1]    ***   
+       PARA_PRINT           IPPRIN              0               ***   
+       PERT_ORB             IPTORB         STANDARD    [  0]    ***   
+       POINTS               IGRDFD              0               ***   
+       PRINT                IPRNT               0               ***   
+       PROPS                IPROPS         OFF         [  0]    ***   
+       PROP_INTEGR          IINTYP         INTERNAL    [  0]    ***   
+       PSI                  IPSI           OFF         [  0]    ***   
+       QC_ALG               IQCALG         FLM         [  0]    ***   
+       QC_LINALG            IQCLIN         TRIDIAG     [  2]    ***   
+       QC_MAXCYC            IQCMAX          10D-100           cycles  
+       QC_MAXSCFCY          IQCMSC          10D- 15           cycles  
+       QC_RTRUST            IQCRTR          10D-  0           x 10-3  
+       QC_SKIPSCF           IQCSKI         OFF         [  0]    ***   
+       QC_START             IQCSTA          10D-  1             ***   
+       QRHFGUESS            IQGUES         OFF         [  0]    ***   
+       QUARTIC              IQUART         OFF         [  0]    ***   
+       RAMAN_INT            IRAMIN         OFF         [  0]    ***   
+       RAMAN_ORB            IRAMRE         UNRELAXED   [  0]    ***   
+       RDO                  IRDOFM         OFF         [  0]    ***   
+       REDUCE_REPR          REDREP         Ir          [  0]    ***   
+       REFERENCE            IREFNC         RHF         [  0]    ***   
+       RELATIVIST           IRELAT         OFF         [  0]    ***   
+       RELAX_DENS           IRDENS         OFF         [  0]    ***   
+       RESET_FLAGS          IRESET         OFF         [  0]    ***   
+       RESTART_CC           ICCRES         OFF         [  0]    ***   
+       ROT_EVEC             ROTVEC              0               ***   
+       SAVE_INTS            ISVINT         OFF         [  0]    ***   
+       SCALE_ON             ISTCRT              0               ***   
+       SCF_CONV             ISCFCV          10D-  8             ***   
+       SCF_DAMPING          IDAMP               0             x 10-3  
+       SCF_EXPORDE          IRPPOR              6               ***   
+       SCF_EXPSTAR          IRPPLS              8               ***   
+       SCF_EXTRAPO          IRPP           ON          [  1]    ***   
+       SCF_MAXCYC           ISCFCY            150              cycles 
+       SCF_NOSTOP           ISCFST         OFF         [  0]    ***   
+       SCF_PRINT            ISCFPR              0               ***   
+       SCF_PROG             ISCFPR         SCF         [  0]    ***   
+       SD_FIELD             IFINSD              0             x 10-6  
+       SOPERT               IPERSO         OFF         [  0]    ***   
+       SPHERICAL            IDFGHI         ON          [  1]    ***   
+       SPINORBIT            ISOCAL         OFF         [  0]    ***   
+       SPINROTATIO          ISRCON         OFF         [  0]    ***   
+       SPIN_FLIP            ISPFLP         OFF         [  0]    ***   
+       SPIN_ORBIT           ISPORB         OFF         [  0]    ***   
+       SPIN_SCAL            ISCSMP         OFF         [  0]    ***   
+       STEEPSCALE           ISTPSC              1000          x 10-3  
+       SUBGROUP             ISUBGP         DEFAULT     [  0]    ***   
+       SUBGRPAXIS           ISBXYZ         X           [  0]    ***   
+       SYMMETRY             ISYM           ON          [  0]    ***   
+       SYM_CHECK            ISYMCK         OVERRIDE    [  1]    ***   
+       T3_EXTRAPOL          IT3EXT         ON          [  1]    ***   
+       T4_EXTRAPOL          IT4EXP         OFF         [  0]    ***   
+       TAMP_SUM             IEVERY              5               ***   
+       TESTSUITE            ITESTS         OFF         [  0]    ***   
+       THERMOCH             ITHERM         OFF         [  0]    ***   
+       TOL_CHOLESK          ITOLCH          10D-  4             ***   
+       TRANGRAD             IRESRM         OFF         [  0]    ***   
+       TRANS_INV            ITRAIN         USE         [  0]    ***   
+       TREAT_PERT           ITREAT         SIMULTANEOUS[  0]    ***   
+       TRIP_ALGORI          ITRALG         NORMAL      [  0]    ***   
+       UIJ_THRESHO          IUIJTH              1               ***   
+       UNITS                IUNITS         BOHR        [  1]    ***   
+       UNOS                 IUNOS          OFF         [  0]    ***   
+       UPDATE_HESS          IHUPDT         ON          [  1]    ***   
+       VIBPHASE             ISETPH         STANDARD    [  0]    ***   
+       VIBRATION            IVIB           NO          [  0]    ***   
+       VIB_ALGORIT          IGEALG         STANDARD    [  0]    ***   
+       VNATORB              IVNORB         OFF         [  0]    ***   
+       VTRAN                IVTRAN         FULL/PARTIAL[  0]    ***   
+       XFIELD               IXEFLD              0             x 10-6  
+       XFORM_TOL            IXFTOL          10D- 11             ***   
+       YFIELD               IYEFLD              0             x 10-6  
+       ZFIELD               IZEFLD              0             x 10-6  
+       ZSCALE_EXP           IZEXPS         OFF         [  0]    ***   
+    -------------------------------------------------------------------
+  @GETXYZ-I,     2 atoms read from ZMAT.
+   Rotational constants (in cm-1): 
+          1.9135333977             1.9135333977
+   Rotational constants (in MHz): 
+      57366.2961120363         57366.2961120363
+********************************************************************************
+   The full molecular point group is CXv .
+   The largest Abelian subgroup of the full molecular point group is C2v .
+   The computational point group is C2v .
+********************************************************************************
+
+
+ ----------------------------------------------------------------
+         Coordinates used in calculation (QCOMP) 
+ ----------------------------------------------------------------
+ Z-matrix   Atomic            Coordinates (in bohr)
+  Symbol    Number           X              Y              Z
+ ----------------------------------------------------------------
+     C         6        -0.00000000     0.00000000     1.22388322
+     O         8         0.00000000     0.00000000    -0.91820425
+ ----------------------------------------------------------------
+ 
+   Interatomic distance matrix (Angstroms) 
+ 
+                 C             O    
+                [ 1]        [ 2]
+  C    [ 1]     0.00000
+  O    [ 2]     1.13354     0.00000
+ rotcon2
+   Rotational constants (in cm-1): 
+          1.9135333977             0.0000000000
+   Rotational constants (in MHz): 
+      57366.2961120363             0.0000000000
+  There are   2 frozen-core orbitals.
+  There are   46 basis functions.
+ @GEOPT-W, Archive file not created for single-point calculation.
+ @CHECKOUT-I, Total execution time (CPU/WALL):        0.17/       1.51 seconds.
+--executable xjoda finished with status     0 in        2.11 seconds (walltime).
+ --invoking executable--
+/home/CEISAM/blondel-a/soft/cfour2.1/cfour2.1-serial-mkl/bin/xvmol
+ SERIAL VERSION OF MOLECULE STARTED
+********************************************************************************
+                    INPUT FROM MOL FILE
+********************************************************************************
+INTGRL        1    0    1    0    0    0    0    0    0                         
+         *** CFOUR Program System (Release V0.1) ***                            
+Ketene -GS                                                                      
+    2    2 X  Y       0.10E-08              0    0                              
+   9999.00      3.00                                                            
+          6.00000000    1    3    1    1    1                                   
+C #1  -0.000000000000000   0.000000000000000   1.223883215473396                
+   10    4                                                                      
+   6665.00000000000       6.920000000000000E-004 -1.460000000000000E-004        
+  0.000000000000000E+000  0.000000000000000E+000                                
+   1000.00000000000       5.329000000000000E-003 -1.154000000000000E-003        
+  0.000000000000000E+000  0.000000000000000E+000                                
+   228.000000000000       2.707700000000000E-002 -5.725000000000000E-003        
+  0.000000000000000E+000  0.000000000000000E+000                                
+   64.7100000000000       0.101718000000000      -2.331200000000000E-002        
+  0.000000000000000E+000  0.000000000000000E+000                                
+   21.0600000000000       0.274740000000000      -6.395500000000000E-002        
+  0.000000000000000E+000  0.000000000000000E+000                                
+   7.49500000000000       0.448564000000000      -0.149981000000000             
+  0.000000000000000E+000  0.000000000000000E+000                                
+   2.79700000000000       0.285074000000000      -0.127262000000000             
+  0.000000000000000E+000  0.000000000000000E+000                                
+  0.521500000000000       1.520400000000000E-002  0.544529000000000             
+  0.000000000000000E+000  0.000000000000000E+000                                
+  0.159600000000000      -3.191000000000000E-003  0.580496000000000             
+   1.00000000000000       0.000000000000000E+000                                
+  4.690000000000000E-002  0.000000000000000E+000  0.000000000000000E+000        
+  0.000000000000000E+000   1.00000000000000                                     
+    5    3                                                                      
+   9.43900000000000       3.810900000000000E-002  0.000000000000000E+000        
+  0.000000000000000E+000                                                        
+   2.00200000000000       0.209480000000000       0.000000000000000E+000        
+  0.000000000000000E+000                                                        
+  0.545600000000000       0.508557000000000       0.000000000000000E+000        
+  0.000000000000000E+000                                                        
+  0.151700000000000       0.468842000000000        1.00000000000000             
+  0.000000000000000E+000                                                        
+  4.041000000000000E-002  0.000000000000000E+000  0.000000000000000E+000        
+   1.00000000000000                                                             
+    2    2                                                                      
+  0.550000000000000        1.00000000000000       0.000000000000000E+000        
+  0.151000000000000       0.000000000000000E+000   1.00000000000000             
+          8.00000000    1    3    1    1    1                                   
+O #2   0.000000000000000   0.000000000000000  -0.918204249626604                
+   10    4                                                                      
+   11720.0000000000       7.100000000000000E-004 -1.600000000000000E-004        
+  0.000000000000000E+000  0.000000000000000E+000                                
+   1759.00000000000       5.470000000000000E-003 -1.263000000000000E-003        
+  0.000000000000000E+000  0.000000000000000E+000                                
+   400.800000000000       2.783700000000000E-002 -6.267000000000000E-003        
+  0.000000000000000E+000  0.000000000000000E+000                                
+   113.700000000000       0.104800000000000      -2.571600000000000E-002        
+  0.000000000000000E+000  0.000000000000000E+000                                
+   37.0300000000000       0.283062000000000      -7.092400000000000E-002        
+  0.000000000000000E+000  0.000000000000000E+000                                
+   13.2700000000000       0.448719000000000      -0.165411000000000             
+  0.000000000000000E+000  0.000000000000000E+000                                
+   5.02500000000000       0.270952000000000      -0.116955000000000             
+  0.000000000000000E+000  0.000000000000000E+000                                
+   1.01300000000000       1.545800000000000E-002  0.557368000000000             
+  0.000000000000000E+000  0.000000000000000E+000                                
+  0.302300000000000      -2.585000000000000E-003  0.572759000000000             
+   1.00000000000000       0.000000000000000E+000                                
+  7.896000000000000E-002  0.000000000000000E+000  0.000000000000000E+000        
+  0.000000000000000E+000   1.00000000000000                                     
+    5    3                                                                      
+   17.7000000000000       4.301800000000000E-002  0.000000000000000E+000        
+  0.000000000000000E+000                                                        
+   3.85400000000000       0.228913000000000       0.000000000000000E+000        
+  0.000000000000000E+000                                                        
+   1.04600000000000       0.508728000000000       0.000000000000000E+000        
+  0.000000000000000E+000                                                        
+  0.275300000000000       0.460531000000000        1.00000000000000             
+  0.000000000000000E+000                                                        
+  6.856000000000000E-002  0.000000000000000E+000  0.000000000000000E+000        
+   1.00000000000000                                                             
+    2    2                                                                      
+   1.18500000000000        1.00000000000000       0.000000000000000E+000        
+  0.332000000000000       0.000000000000000E+000   1.00000000000000             
+FINISH                                                                          
+ 
+********************************************************************************
+ ONE- AND TWO-ELECTRON INTEGRALS OVER SYMMETRY-ADAPTED AOS ARE CALCULATED.
+
+  SPHERICAL HARMONICS ARE USED.
+  
+  INTEGRALS LESS THAN  0.10E-13 ARE NEGLECTED.
+
+  NUCLEAR REPULSION ENERGY :   22.4080485891 A.U.
+  @MOLECU-I, ONE ELECTRON INTEGRALS (CPU/WALL):        0.03/       0.05 SECONDS.
+  @TWOEL-I,      20634 INTEGRALS OF SYMMETRY TYPE  I I I I
+  @TWOEL-I,      54522 INTEGRALS OF SYMMETRY TYPE  I J I J
+  @TWOEL-I,      31497 INTEGRALS OF SYMMETRY TYPE  I I J J
+  @TWOEL-I,      23276 INTEGRALS OF SYMMETRY TYPE  I J K L
+  @TWOEL-I, TOTAL NUMBER OF 2-E INTEGRALS     129929.
+  @MOLECU-I, TWO ELECTRON INTEGRALS (CPU/WALL):        0.53/       0.15 SECONDS.
+ @CHECKOUT-I, Total execution time (CPU/WALL):        0.57/       0.22 seconds.
+
+Running with 20 threads/proc
+
+--executable xvmol finished with status     0 in        0.78 seconds (walltime).
+ --invoking executable--
+/home/CEISAM/blondel-a/soft/cfour2.1/cfour2.1-serial-mkl/bin/xvmol2ja
+ @GETMEM-I,  Allocated  238418 MB of main memory.
+ @CHECKOUT-I, Total execution time (CPU/WALL):        0.03/       0.10 seconds.
+--executable xvmol2ja finished with status     0 in        0.64 seconds (walltime).
+ --invoking executable--
+/home/CEISAM/blondel-a/soft/cfour2.1/cfour2.1-serial-mkl/bin/xvscf
+  There are   46 functions in the AO basis.
+
+  There are 4 irreducible representations.
+
+       Irrep        # of functions
+         1                 22
+         2                 10
+         3                 10
+         4                  4
+
+
+  Parameters for SCF calculation: 
+        SCF reference function:  RHF  
+  Maximum number of iterations:  150
+     Full symmetry point group: CXv 
+     Computational point group: C2v 
+        Initial density matrix: MOREAD                 
+     SCF convergence tolerance: 10**(- 8)
+  DIIS convergence acceleration:  ON
+          Latest start for DIIS:   8
+                     DIIS order:   6
+
+  Memory information:     124718 words required.
+  Fock matrices are constructed from AO integral file.
+ @GETMEM-I,  Allocated       0 MB of main memory.
+  Initialization and symmetry analysis required      0.003 seconds.
+
+  @INITGES-I, Occupancies from core Hamiltonian:
+
+          Alpha population by irrep:   5    1    1    0
+           Beta population by irrep:   5    1    1    0
+
+
+ total no. of electrons in initial guess :  0.000000000000000E+000
+  --------------------------------------------------------------------
+  Iteration         Total Energy            Largest Density Difference
+  --------------------------------------------------------------------
+       0            22.408048589070660              0.0000000000D+00
+   current occupation vector 
+     5  1  1  0
+     5  1  1  0
+       1          -101.770413872132067              0.1172489943D+02
+   current occupation vector 
+     5  1  1  0
+     5  1  1  0
+       2           -99.556892574791718              0.1159131805D+02
+   current occupation vector 
+     5  1  1  0
+     5  1  1  0
+       3          -105.369528038964575              0.8816136348D+01
+   current occupation vector 
+     5  1  1  0
+     5  1  1  0
+       4          -101.277741407632362              0.8811206339D+01
+   current occupation vector 
+     5  1  1  0
+     5  1  1  0
+       5          -104.205473143904996              0.8778673672D+01
+   current occupation vector 
+     5  1  1  0
+     5  1  1  0
+       6          -100.851874086183884              0.8718002090D+01
+   current occupation vector 
+     5  1  1  0
+     5  1  1  0
+       7          -104.141123097515887              0.7480747250D+01
+   current occupation vector 
+     5  1  1  0
+     5  1  1  0
+       8          -100.790048666015451              0.7467250466D+01
+   current occupation vector 
+     5  1  1  0
+     5  1  1  0
+       9          -112.206171404067817              0.3931276014D+01
+   current occupation vector 
+     5  1  1  0
+     5  1  1  0
+      10          -112.610847449410983              0.4991632208D+00
+   current occupation vector 
+     5  1  1  0
+     5  1  1  0
+      11          -112.748787531133701              0.2734785535D+00
+   current occupation vector 
+     5  1  1  0
+     5  1  1  0
+      12          -112.753991182523407              0.6677754256D-01
+   current occupation vector 
+     5  1  1  0
+     5  1  1  0
+      13          -112.754132493540936              0.2621699120D-01
+   current occupation vector 
+     5  1  1  0
+     5  1  1  0
+      14          -112.754164899356738              0.9295512821D-02
+   current occupation vector 
+     5  1  1  0
+     5  1  1  0
+      15          -112.754165434523145              0.2119112090D-02
+   current occupation vector 
+     5  1  1  0
+     5  1  1  0
+      16          -112.754165448065606              0.2209579250D-03
+   current occupation vector 
+     5  1  1  0
+     5  1  1  0
+      17          -112.754165448183983              0.1935862245D-04
+   current occupation vector 
+     5  1  1  0
+     5  1  1  0
+      18          -112.754165448190037              0.4744245929D-05
+   current occupation vector 
+     5  1  1  0
+     5  1  1  0
+      19          -112.754165448190065              0.6517129028D-06
+   current occupation vector 
+     5  1  1  0
+     5  1  1  0
+      20          -112.754165448190463              0.2630119624D-06
+   current occupation vector 
+     5  1  1  0
+     5  1  1  0
+
+  SCF has converged.
+
+ Density matrix saved to file den.dat
+ total electron number:   14.0000000000000     
+     E(SCF)=      -112.754165448190378              0.8578849187D-08
+
+  Eigenvector printing suppressed.
+
+ @PUTMOS-I, Writing converged MOs to NEWMOS. 
+ @PUTMOS-I, Symmetry   1 Full Blocks  5 Partial Blocksize   2
+ @PUTMOS-I, Symmetry   2 Full Blocks  2 Partial Blocksize   2
+ @PUTMOS-I, Symmetry   3 Full Blocks  2 Partial Blocksize   2
+ @PUTMOS-I, Symmetry   4 Full Blocks  1 Partial Blocksize   0
+ @PUTFOCK-I, Writing converged Fock matrix to NEWFOCK. 
+ @PUTFOCK-I, Symmetry   1 Full Blocks  5 Partial Blocksize   2
+ @PUTFOCK-I, Symmetry   2 Full Blocks  2 Partial Blocksize   2
+ @PUTFOCK-I, Symmetry   3 Full Blocks  2 Partial Blocksize   2
+ @PUTFOCK-I, Symmetry   4 Full Blocks  1 Partial Blocksize   0
+
+
+ 
+  ORBITAL EIGENVALUES (ALPHA)  (1H = 27.2113834 eV)
+
+       MO #        E(hartree)               E(eV)           FULLSYM    COMPSYM
+       ----   --------------------   --------------------   -------   ---------
+    1     1         -20.6786426341        -562.6944729077     SG+        A1 (1)
+    2     2         -11.3760025849        -309.5567678981     SG+        A1 (1)
+    3     3          -1.5262528800         -41.5314522819     SG+        A1 (1)
+    4     4          -0.8078514557         -21.9827556923     SG+        A1 (1)
+    5    23          -0.6387300373         -17.3807279336      PI        B1 (2)
+    6    33          -0.6387300373         -17.3807279336      PI        B2 (3)
+    7     5          -0.5552995948         -15.1104701756     SG+        A1 (1)
+  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    8    24           0.0785902742           2.1385500839      PI        B1 (2)
+    9    34           0.0785902742           2.1385500839      PI        B2 (3)
+   10     6           0.0814344478           2.2159439821     SG+        A1 (1)
+   11     7           0.1055195039           2.8713316758     SG+        A1 (1)
+   12    35           0.1694667774           4.6114254545      PI        B2 (3)
+   13    25           0.1694667774           4.6114254545      PI        B1 (2)
+   14     8           0.2251901959           6.1277367582     SG+        A1 (1)
+   15    26           0.2478783858           6.7451137915      PI        B1 (2)
+   16    36           0.2478783858           6.7451137915      PI        B2 (3)
+   17     9           0.3350066878           9.1159954230     SG+        A1 (1)
+   18    43           0.4337503161          11.8029461502      DE        A2 (4)
+   19    10           0.4337503161          11.8029461502      DE        A1 (1)
+   20    11           0.5218862937          14.2012480300     SG+        A1 (1)
+   21    27           0.6020431848          16.3824279244      PI        B1 (2)
+   22    37           0.6020431848          16.3824279244      PI        B2 (3)
+   23    12           0.6973668078          18.9763155777     SG+        A1 (1)
+   24    28           0.7467300122          20.3195566571      PI        B1 (2)
+   25    38           0.7467300122          20.3195566571      PI        B2 (3)
+   26    13           0.9372377491          25.5035357283     SG+        A1 (1)
+   27    44           1.0541785010          28.6856553637      DE        A2 (4)
+   28    14           1.0541785010          28.6856553637      DE        A1 (1)
+   29    15           1.0562226039          28.7412782301     SG+        A1 (1)
+   30    39           1.2062288794          32.8231565053      PI        B2 (3)
+   31    29           1.2062288794          32.8231565053      PI        B1 (2)
+   32    16           1.4270267763          38.8313727312     SG+        A1 (1)
+   33    45           1.6521204063          44.9564817992      DE        A2 (4)
+   34    17           1.6521204063          44.9564817992      DE        A1 (1)
+   35    40           1.6691368080          45.4195216294      PI        B2 (3)
+   36    30           1.6691368080          45.4195216294      PI        B1 (2)
+   37    31           1.9652423796          53.4769638665      PI        B1 (2)
+   38    41           1.9652423796          53.4769638665      PI        B2 (3)
+   39    18           2.1345639001          58.0844366780     SG+        A1 (1)
+   40    19           2.2260613737          60.5742095116     SG+        A1 (1)
+   41    20           2.9840348454          81.1997162579     SG+        A1 (1)
+   42    21           3.5502389237          96.6069125133      DE        A1 (1)
+   43    46           3.5502389237          96.6069125133      DE        A2 (4)
+   44    32           3.6706196126          99.8826375947      PI        B1 (2)
+   45    42           3.6706196126          99.8826375947      PI        B2 (3)
+   46    22           4.0313995857         109.6999597643     SG+        A1 (1)
+
+
+  VSCF finished.
+
+ @CHECKOUT-I, Total execution time (CPU/WALL):        0.11/       0.39 seconds.
+--executable xvscf finished with status     0 in        0.94 seconds (walltime).
+ --invoking executable--
+/home/CEISAM/blondel-a/soft/cfour2.1/cfour2.1-serial-mkl/bin/xvtran
+ @GETMEM-I,  Allocated  238418 MB of main memory.
+  Full RHF integral transformation
+  The following   2 MOs will be dropped:
+    1  2
+  There are  44 active molecular orbitals.
+  Transformation of IIII integrals :
+  1 pass through the AO integral file was required.
+       20634 AO integrals were read.
+       21950 MO integrals were written to HF2.
+  Transformation of IIJJ integrals :
+  1 pass through the AO integral file was required.
+       31497 AO integrals were read.
+       29146 MO integrals were written to HF2.
+  Transformation of IJIJ integrals :
+  1 pass through the AO integral file was required.
+       54522 AO integrals were read.
+       49487 MO integrals were written to HF2.
+  Transformation of IJKL integrals :
+  1 pass through the AO integral file was required.
+       23276 AO integrals were read.
+       22808 MO integrals were written to HF2.
+  Summary of active molecular orbitals: 
+------------------------------------------------------------------------
+ 
+  Index      Eigenvalue    Symmetry    Index      Eigenvalue    Symmetry
+------------------------------------------------------------------------
+     1        -1.5262529        1        23         0.0785903        2
+     2        -0.8078515        1        24         0.1694668        2
+     3        -0.5552996        1        25         0.2478784        2
+     4        -0.6387300        2        26         0.6020432        2
+     5        -0.6387300        3        27         0.7467300        2
+     6         0.0814344        1        28         1.2062289        2
+     7         0.1055195        1        29         1.6691368        2
+     8         0.2251902        1        30         1.9652424        2
+     9         0.3350067        1        31         3.6706196        2
+    10         0.4337503        1        32         0.0785903        3
+    11         0.5218863        1        33         0.1694668        3
+    12         0.6973668        1        34         0.2478784        3
+    13         0.9372377        1        35         0.6020432        3
+    14         1.0541785        1        36         0.7467300        3
+    15         1.0562226        1        37         1.2062289        3
+    16         1.4270268        1        38         1.6691368        3
+    17         1.6521204        1        39         1.9652424        3
+    18         2.1345639        1        40         3.6706196        3
+    19         2.2260614        1        41         0.4337503        4
+    20         2.9840348        1        42         1.0541785        4
+    21         3.5502389        1        43         1.6521204        4
+    22         4.0313996        1        44         3.5502389        4
+------------------------------------------------------------------------
+  -1.52625287995882      -0.807851455736062      -0.555299594786239     
+ -0.638730037281784      -0.638730037281783       8.143444783857537E-002
+  0.105519503864132       0.225190195887270       0.335006687790657     
+  0.433750316061234       0.521886293734787       0.697366807808261     
+  0.937237749120589        1.05417850103549        1.05622260388817     
+   1.42702677627305        1.65212040631471        2.13456390012086     
+   2.22606137369628        2.98403484542891        3.55023892365960     
+   4.03139958567253       7.859027424068604E-002  0.169466777441378     
+  0.247878385761194       0.602043184781579       0.746730012156472     
+   1.20622887939124        1.66913680799644        1.96524237964702     
+   3.67061961262466       7.859027424068701E-002  0.169466777441374     
+  0.247878385761206       0.602043184781580       0.746730012156540     
+   1.20622887939124        1.66913680799643        1.96524237964703     
+   3.67061961262467       0.433750316061234        1.05417850103549     
+   1.65212040631471        3.55023892365961     
+ @CHECKOUT-I, Total execution time (CPU/WALL):        0.07/       0.14 seconds.
+--executable xvtran finished with status     0 in        0.69 seconds (walltime).
+ --invoking executable--
+/home/CEISAM/blondel-a/soft/cfour2.1/cfour2.1-serial-mkl/bin/xintprc
+ @GETMEM-I,  Allocated  238418 MB of main memory.
+  @GMOIAA-I, Processing MO integrals for spin case AA.
+  @GMOIAA-I, Generation of integral list completed.
+                      TYPE                NUMBER
+                      ----               --------
+                      PPPP                 75717
+                      PPPH                 38439
+                      PPHH                  5077
+                      PHPH                  3248
+                      PHHH                   861
+                      HHHH                    49
+
+                     TOTAL                123391
+
+  @FORMT2-I, Second-order MP correlation energies:
+            ------------------------------------------------
+            E(SCF)                  =   -112.754165448190 a.u.
+            E2(AA)                  =     -0.039651395505 a.u.
+            E2(AB)                  =     -0.220928162489 a.u.
+            E2(TOT)                 =     -0.300230953499 a.u.
+            Total MP2 energy        =   -113.054396401690 a.u.
+            ------------------------------------------------
+   Largest T2 amplitudes for spin case AB:
+       _       _                 _       _                 _       _
+   i   j   a   b             i   j   a   b             i   j   a   b
+-----------------------------------------------------------------------------
+[  5   5  33  33]-0.03960 [  4   4  24  24]-0.03960 [  5   4  33  24]-0.03165
+[  4   5  24  33]-0.03165 [  3   3  33  33]-0.02962 [  3   3  24  24]-0.02962
+[  3   3  15  15]-0.02568 [  5   5  33  32]-0.02435 [  5   5  32  33]-0.02435
+[  4   4  24  23]-0.02435 [  4   4  23  24]-0.02435 [  5   4  33  23]-0.01965
+[  4   5  23  33]-0.01965 [  5   4  32  24]-0.01965 [  4   5  24  32]-0.01965
+-----------------------------------------------------------------------------
+   Norm of T2AB vector (    10269 symmetry allowed elements):  0.2699068942.
+-----------------------------------------------------------------------------
+ @CHECKOUT-I, Total execution time (CPU/WALL):        0.20/       0.14 seconds.
+--executable xintprc finished with status     0 in        0.68 seconds (walltime).
+  calling xncc 
+ --invoking executable--
+/home/CEISAM/blondel-a/soft/cfour2.1/cfour2.1-serial-mkl/bin/xncc
+ @GETMEM-I,  Allocated       7 MB of main memory.
+
+Running with 20 threads/proc
+
+Following the lowest-energy eigenvector.
+Using a partitioned Davidson procedure.
+Using discrete restarting.
+Using an orthogonal subspace.
+Orthogonalizing against previous roots.
+Using Modified Gram-Schmidt orthogonalization.
+
+Using DIIS to accelerate the convergence of T1 and T2
+Using immediate high-order contributions
+Performing 3 CCSD sub-iterations
+Damping factor for T3: 0.000000
+Damping factor for T4: 0.000000
+
+Transposes are coarse-threaded
+
+Memory limit:                232.831 GiB
+Minimum memory requirement:    9.043 MiB
+Compromise memory amount:     10.248 MiB
+Optimal memory requirement:   23.873 MiB
+
+List              Location   Size        Cached Hunks Est. Disk I/O
+----------------- ---------- ----------- ------ ----- -------------
+
+           HR_DAV      470:1    2.682 MiB    Yes     -    18.021 GiB
+                R        471    1.166 MiB    Yes     -   104.974 MiB
+            R_DAV      470:0    2.682 MiB    Yes     -    33.153 GiB
+           T_DIIS       70:0  403.828 KiB    Yes     -     7.099 MiB
+           Z_DIIS       70:1  403.828 KiB    Yes     -    11.831 MiB
+          <AI|bj>         18   80.227 KiB    Yes     -    13.148 MiB
+          <Ab|Cd>        233    4.522 MiB    Yes     -     1.426 GiB
+          <Ab|Ci>         30  605.086 KiB    Yes     -     2.652 GiB
+          <Ab|Ij>         16   80.227 KiB    Yes     -   339.788 MiB
+          <Ai|Bj>         25   80.227 KiB    Yes     -    10.968 MiB
+          <Aj|bI>         21   80.227 KiB     No     -         0   B
+          <Ij|Ka>         10   10.898 KiB    Yes     -    48.979 MiB
+          <Ij|Kl>         13    1.539 KiB    Yes     -   121.586 KiB
+           DD(AI)      448:8      552   B    Yes     -    92.930 KiB
+        DD(Ab,Ij)        450   80.227 KiB    Yes     -    17.697 MiB
+            F(EA)       92:0    3.648 KiB    Yes     -     5.572 MiB
+            F(EM)       93:0      552   B    Yes     -   706.172 KiB
+            F(MI)       91:0       88   B    Yes     -   139.562 KiB
+           HR(AI)      490:2      552   B    Yes     -     6.784 MiB
+        HR(Ab,Ij)        463   80.227 KiB    Yes     -     1.972 GiB
+            Q(AI)      190:2      552   B    Yes     -    88.945 KiB
+         Q(Ab,Ij)         50   80.227 KiB    Yes     -    43.482 MiB
+            R(AI)      490:0      552   B    Yes     -    14.760 MiB
+         R(Ab,Ij)        446   80.227 KiB    Yes     -     3.064 GiB
+            T(AI)       90:0      552   B    Yes     -     1.850 MiB
+         T(Ab,Ij)         46   80.227 KiB    Yes     -   564.798 MiB
+         W(Mn,Ij)         53    1.539 KiB    Yes     -   557.141 KiB
+        W~(Ab,Ej)        130  605.086 KiB    Yes     -   350.556 MiB
+        W~(EM,bj)         56   80.227 KiB    Yes     -    47.713 MiB
+        W~(Em,Bj)         58   80.227 KiB    Yes     -    43.012 MiB
+        W~(Ij,Mb)        110   10.898 KiB    Yes     -     6.216 MiB
+       W~~(Ab,Ef)         33    4.522 MiB    Yes     -     1.069 GiB
+       W~~(Ab,Ej)        169  605.086 KiB    Yes     -     4.915 GiB
+       W~~(EM,bj)         76   80.227 KiB    Yes     -    43.561 MiB
+       W~~(Em,Bj)         78   80.227 KiB    Yes     -    43.561 MiB
+       W~~(Ij,Mb)        165   10.898 KiB    Yes     -    30.865 MiB
+       W~~(Mn,Ij)        153    1.539 KiB    Yes     -   370.914 KiB
+         X(Ab,Ej)        430  605.086 KiB    Yes     -     2.599 GiB
+         X(Ab,Ij)        416   80.227 KiB     No     -         0   B
+            X(EA)      492:0    3.648 KiB    Yes     -     4.178 MiB
+            X(EM)      493:0      552   B    Yes     -   457.031 KiB
+         X(EM,bj)        418   80.227 KiB     No     -         0   B
+         X(Ef,Am)        469  605.086 KiB     No     -         0   B
+         X(Em,Bj)        425   80.227 KiB     No     -         0   B
+         X(Ij,Mb)        410   10.898 KiB    Yes     -    24.548 MiB
+            X(MI)      491:0       88   B    Yes     -    70.312 KiB
+         X(Mn,Ie)        465   10.898 KiB     No     -         0   B
+         X(Mn,Ij)        413    1.539 KiB    Yes     -   585.938 KiB
+            Z(AI)       90:2      552   B    Yes     -   250.664 KiB
+         Z(Ab,Ij)         63   80.227 KiB    Yes     -    36.431 MiB
+      HR(abc,ijk)          -    3.478 MiB     No     1         0   B
+       T(abc,ijk)          -    3.478 MiB     No     1         0   B
+       Z(abc,ijk)          -    3.478 MiB     No     1         0   B
+
+Simulation and memory analysis took 0.194 seconds
+
+MP2 correlation energy:  -0.300230953499370
+
+Non-iterative calculation of MP2 took 0.462 cpu seconds and 0.027 walltime seconds at 0.018 Gflops/sec
+
+Total MP2 energy: -113.054396401689743
+
+Beginning iterative solution of CC3 equations:
+
+It.  Correlation Energy T1 Residual T2 Residual CPU Time (s) Walltime (s)
+-------------------------------------------------------------------------
+  1  -0.320918648870280 8.19472e-03 7.29356e-03        4.502        0.235
+  2  -0.321086083609058 1.86966e-03 1.32386e-03        2.669        0.134
+  3  -0.321026078735900 3.61656e-04 2.46157e-04        2.939        0.148
+  4  -0.320997171502909 6.30691e-05 4.46082e-05        2.836        0.142
+  5  -0.320991310120045 1.03065e-05 8.10078e-06        2.361        0.118
+
+   A    I                     A    I                     A    I                  
+-------------------------- -------------------------- -------------------------- 
+  12    6  0.0251630051610   10    7  0.0125225528248   26    7 -0.0069381551728 
+  13    5  0.0251630051610   36    5  0.0116072030937   20    4  0.0067547740856 
+   9    6  0.0138875820230   35    6  0.0116072030937   29    7  0.0066722768366 
+   8    5  0.0138875820230   24    5  0.0102579981574   15    5  0.0058268764467 
+  17    7 -0.0127798058403   25    6  0.0102579981574   16    6  0.0058268764467 
+
+   A    B    I    J                     A    B    I    J                  
+------------------------------------ ------------------------------------ 
+  12   12    6    6 -0.0513706898181   13    8    5    5 -0.0318241603420 
+  13   13    5    5 -0.0513706898181    8   13    5    5 -0.0318241603420 
+  12   12    7    7 -0.0493090890021   29   29    7    7 -0.0302817535016 
+  13   13    7    7 -0.0493090890021   12    9    7    7 -0.0282063034801 
+  12   13    6    5 -0.0370193602590    9   12    7    7 -0.0282063034801 
+  13   12    5    6 -0.0370193602590   13    8    7    7 -0.0282063034801 
+  12    9    6    6 -0.0318241603420    8   13    7    7 -0.0282063034801 
+   9   12    6    6 -0.0318241603420 
+
+It.  Correlation Energy T1 Residual T2 Residual CPU Time (s) Walltime (s)
+-------------------------------------------------------------------------
+  6  -0.320990451303904 1.81413e-06 1.48046e-06        2.248        0.113
+  7  -0.320990303749589 3.36512e-07 2.70283e-07        2.470        0.124
+  8  -0.320990275859681 6.09742e-08 4.92240e-08        2.374        0.119
+
+CC3 iterations converged in 8 cycles and 1.133 seconds (0.142 s/it.) at 1.604 Gflops/sec
+
+Total CC3 energy: -113.075155724050063
+
+             _
+Formation of H took 0.089 seconds at 2.338 Gflops/sec
+
+Searching for 4 roots in irrep 1
+
+EOMEE-CCSD guess vector:
+
+   A    I                  
+-------------------------- 
+  10    7  1.0000000000000 
+
+Beginning iterative solution of EOMEE-CC3 equations:
+
+It.  Correlation Energy R1 Residual R2 Residual CPU Time (s) Walltime (s)
+-------------------------------------------------------------------------
+  1   0.518472700199218 2.25912e-02 6.40819e-02        3.368        0.172
+  2   0.447525761551544 5.20030e-02 4.11863e-02        2.796        0.142
+  3   0.409147895378096 1.51633e-02 8.75785e-03        2.234        0.112
+  4   0.404374633515009 9.76875e-03 2.33197e-03        2.275        0.114
+  5   0.402086130438734 5.11533e-03 1.25782e-03        2.382        0.119
+  6   0.401455332719672 2.75033e-03 9.32638e-04        2.494        0.125
+  7   0.401519457786252 2.46588e-03 4.05232e-04        2.640        0.132
+  8   0.401380253540036 2.61283e-03 5.32878e-04        2.824        0.142
+  9   0.401223308473363 1.93564e-03 4.33206e-04        3.005        0.151
+ 10   0.401300225375380 1.41002e-03 2.15049e-04        3.190        0.160
+ 11   0.401206837466144 3.36534e-04 3.38192e-04        3.445        0.173
+Locking on root: 0.401192059115453
+ 12   0.401192059115453 2.34435e-04 6.38844e-05        3.680        0.184
+ 13   0.401220952951061 9.45631e-05 2.99114e-05        4.053        0.203
+ 14   0.401200523793783 4.32479e-05 1.79781e-05        4.311        0.216
+ 15   0.401200554605246 2.61867e-05 1.13856e-05        4.607        0.231
+ 16   0.401202837442863 6.20379e-06 3.01263e-06        4.879        0.245
+
+EOMEE-CC3 iterations converged in 16 cycles and 2.621 seconds (0.164 s/it.) at 2.547 Gflops/sec
+
+EOMEE-CC3 excitation energy:   0.401202837442867 ( 10.917284230825720 eV)
+Total EOMEE-CC3 energy:      -112.673952886607196
+
+Converged root:
+
+   A    I                     A    I                     A    I                  
+-------------------------- -------------------------- -------------------------- 
+  10    7 -0.6326681791432   12    6 -0.0633773286309   35    6 -0.0091973999665 
+  17    7  0.1355402287282    8    5 -0.0414634511864   36    5 -0.0091973999665 
+  11    7  0.1064972007248    9    6 -0.0414634511864   29    7 -0.0069437301174 
+  14    7  0.0708044496818   24    5 -0.0195309186842   23    7  0.0065408822820 
+  13    5 -0.0633773286309   25    6 -0.0195309186842   32    7 -0.0062930237844 
+
+   A    B    I    J                     A    B    I    J                  
+------------------------------------ ------------------------------------ 
+  10   10    7    7  0.0775773441239   10   29    7    7  0.0452027830345 
+  13   10    5    7 -0.0714506206578   11   10    7    7 -0.0437275568475 
+  10   13    7    5 -0.0714506206578   10   11    7    7 -0.0437275568475 
+  12   10    6    7 -0.0714506206578   10   12    6    7 -0.0411769347184 
+  10   12    7    6 -0.0714506206578   12   10    7    6 -0.0411769347184 
+  17   10    7    7 -0.0467013762815   10   13    5    7 -0.0411769347184 
+  10   17    7    7 -0.0467013762815   13   10    7    5 -0.0411769347184 
+  29   10    7    7  0.0452027830345 
+
+EOMEE-CCSD guess vector:
+
+   A    I                  
+-------------------------- 
+  11    7  1.0000000000000 
+
+Beginning iterative solution of EOMEE-CC3 equations:
+
+It.  Correlation Energy R1 Residual R2 Residual CPU Time (s) Walltime (s)
+-------------------------------------------------------------------------
+  1   0.523962093354641 5.13190e-02 8.61986e-02        2.115        0.106
+  2   0.431216771135594 3.21564e-02 9.87379e-03        2.181        0.109
+  3   0.424787738575281 9.10053e-03 5.19713e-03        2.271        0.114
+  4   0.423441415915360 2.95882e-03 3.15337e-03        2.375        0.119
+  5   0.421751579966189 2.23658e-03 7.01292e-04        2.488        0.125
+  6   0.422142879901664 1.39096e-03 5.42437e-04        2.644        0.133
+  7   0.422084657679732 6.47792e-04 4.22119e-04        2.802        0.140
+  8   0.421908142900845 4.12725e-04 1.69124e-04        3.007        0.151
+  9   0.422004366022423 1.55459e-04 5.27929e-05        3.198        0.160
+Locking on root: 0.421973266206895
+ 10   0.421973266206895 1.09857e-04 4.77477e-05        3.649        0.183
+ 11   0.421968948666987 3.35666e-05 1.26239e-05        3.906        0.196
+ 12   0.421978856201762 2.03131e-05 6.55884e-06        3.964        0.199
+ 13   0.421976370334910 8.27690e-06 2.85685e-06        4.257        0.213
+
+EOMEE-CC3 iterations converged in 13 cycles and 1.948 seconds (0.150 s/it.) at 2.592 Gflops/sec
+
+EOMEE-CC3 excitation energy:   0.421976370334903 ( 11.482560798923434 eV)
+Total EOMEE-CC3 energy:      -112.653179353715160
+
+Converged root:
+
+   A    I                     A    I                     A    I                  
+-------------------------- -------------------------- -------------------------- 
+  11    7  0.6523492799909   12    6 -0.0498856259835   25    6 -0.0193667684828 
+  10    7  0.1094278648173   13    5 -0.0498856259835   11    4 -0.0188943599639 
+  17    7 -0.0682441243309   23    7 -0.0294438711445   16    6  0.0160601731901 
+  14    7  0.0554510112857   10    4  0.0225294150535   15    5  0.0160601731901 
+  20    7 -0.0514559361822   24    5 -0.0193667684828   14    4  0.0140411089954 
+
+   A    B    I    J                     A    B    I    J                  
+------------------------------------ ------------------------------------ 
+  11   11    7    7  0.0974433210382   12   11    7    6  0.0378696609819 
+  13   11    5    7  0.0542524113764   11   13    5    7  0.0378696609819 
+  11   13    7    5  0.0542524113764   13   11    7    5  0.0378696609819 
+  12   11    6    7  0.0542524113764   24   11    5    7  0.0357394680277 
+  11   12    7    6  0.0542524113764   11   24    7    5  0.0357394680277 
+  29   11    7    7 -0.0504506393955   11   25    7    6  0.0357394680277 
+  11   29    7    7 -0.0504506393955   25   11    6    7  0.0357394680277 
+  11   12    6    7  0.0378696609819 
+
+EOMEE-CCSD guess vector:
+
+   A    I                  
+-------------------------- 
+   9    6  1.0000000000000 
+
+Beginning iterative solution of EOMEE-CC3 equations:
+
+It.  Correlation Energy R1 Residual R2 Residual CPU Time (s) Walltime (s)
+-------------------------------------------------------------------------
+  1   0.631263610202315 1.08860e-01 9.03397e-02        2.182        0.109
+  2   0.483655272678896 7.59003e-02 1.64636e-02        2.270        0.114
+  3   0.436977312008953 6.19536e-02 1.70326e-02        2.382        0.119
+  4   0.388050560789959 1.32085e-02 9.49680e-03        2.644        0.133
+  5   0.377619683964369 1.04311e-02 2.95892e-03        2.747        0.138
+  6   0.376243980119443 3.58511e-03 1.66927e-03        2.857        0.143
+  7   0.375902006918067 1.32835e-03 8.46631e-04        3.008        0.151
+  8   0.375788318125505 8.64612e-04 2.51276e-04        3.230        0.162
+Locking on root: 0.375788660141396
+  9   0.375788660141396 4.59359e-04 1.45936e-04        3.437        0.172
+ 10   0.375776388005406 1.63475e-04 5.59626e-05        3.684        0.185
+ 11   0.375775222011736 7.01950e-05 2.05035e-05        3.940        0.197
+ 12   0.375777469999890 3.27137e-05 8.53231e-06        4.224        0.212
+ 13   0.375776674738125 1.56332e-05 4.22514e-06        4.528        0.227
+ 14   0.375776658933676 2.41543e-06 1.28702e-06        4.990        0.250
+
+EOMEE-CC3 iterations converged in 14 cycles and 2.312 seconds (0.165 s/it.) at 2.669 Gflops/sec
+
+EOMEE-CC3 excitation energy:   0.375776658933674 ( 10.225402739015237 eV)
+Total EOMEE-CC3 energy:      -112.699379065116389
+
+Converged root:
+
+   A    I                     A    I                     A    I                  
+-------------------------- -------------------------- -------------------------- 
+  13    5  0.3540609224577   15    5  0.1044906314704   31    5  0.0173556620637 
+  12    6 -0.3540586145400   24    5  0.0470287213185   30    6 -0.0173553775986 
+   9    6 -0.2891942534550   25    6 -0.0470265477182   19    7 -0.0143177194298 
+   8    5  0.2891828728360   22    6 -0.0439811841493   36    5 -0.0085654827259 
+  16    6 -0.1044953605497   21    5  0.0439795694599   35    6  0.0085650819677 
+
+   A    B    I    J                     A    B    I    J                  
+------------------------------------ ------------------------------------ 
+  12   12    6    6  0.0913293498606    9    9    6    6  0.0491591524786 
+  13   13    5    5 -0.0913285179877    8    8    5    5 -0.0491550227441 
+  12    9    6    6  0.0619936030884   13    8    7    7  0.0375776718408 
+   9   12    6    6  0.0619936030884    8   13    7    7  0.0375776718408 
+  13    8    5    5 -0.0619917129689   12    9    7    7 -0.0375762526998 
+   8   13    5    5 -0.0619917129689    9   12    7    7 -0.0375762526998 
+  13   13    7    7  0.0507759196942   16   12    6    6  0.0338806342145 
+  12   12    7    7 -0.0507752069747 
+
+EOMEE-CCSD guess vector:
+
+   A    I                  
+-------------------------- 
+   8    5  1.0000000000000 
+
+Beginning iterative solution of EOMEE-CC3 equations:
+
+It.  Correlation Energy R1 Residual R2 Residual CPU Time (s) Walltime (s)
+-------------------------------------------------------------------------
+  1   0.684417636892493 4.02696e+00 1.00666e-01        2.361        0.118
+  2   0.669083247768049 8.38751e-01 8.98491e-02        2.401        0.120
+  3   0.540760203141551 4.65387e-02 1.55695e-02        2.508        0.126
+  4   0.527083543472538 2.24010e-02 4.60342e-03        2.662        0.133
+  5   0.520968403841095 1.44573e-02 5.31758e-03        2.815        0.141
+  6   0.513176977097187 1.65198e-02 5.75556e-03        3.024        0.152
+  7   0.507764957850603 1.16301e-02 2.75890e-03        3.209        0.161
+  8   0.505259602852019 5.79766e-03 2.36562e-03        3.425        0.172
+  9   0.504051558071447 3.69671e-03 1.29151e-03        3.673        0.184
+ 10   0.503936233628416 2.44087e-03 6.61331e-04        3.938        0.197
+ 11   0.503855315032598 1.73935e-03 2.98698e-04        4.232        0.212
+ 12   0.503726629195680 8.57419e-04 4.24066e-04        4.593        0.230
+Locking on root: 0.503694155492815
+ 13   0.503694155492815 5.74690e-04 1.91481e-04        4.937        0.248
+ 14   0.503696527833436 1.92073e-04 1.32016e-04        5.215        0.261
+ 15   0.503678956016259 3.69136e-04 7.18487e-05        5.611        0.281
+ 16   0.503691380310897 1.23507e-04 7.81426e-05        5.994        0.300
+ 17   0.503682942166578 1.76833e-04 2.72083e-05        6.383        0.320
+ 18   0.503680845701356 5.30101e-05 2.86605e-05        6.957        0.349
+ 19   0.503681729627648 3.09670e-05 1.39818e-05        7.377        0.370
+Compacting subspace
+ 20   0.503681124716695 1.46807e-03 4.29528e-05       11.441        0.573
+ 21   0.503681197424074 1.58062e-05 1.09017e-05        4.263        0.214
+ 22   0.503681499325604 1.25167e-05 7.75405e-06        4.542        0.228
+ 23   0.503682011264699 5.28574e-06 3.31544e-06        4.875        0.244
+
+EOMEE-CC3 iterations converged in 23 cycles and 5.336 seconds (0.232 s/it.) at 2.890 Gflops/sec
+
+EOMEE-CC3 excitation energy:   0.503682011264701 ( 13.705884320206890 eV)
+Total EOMEE-CC3 energy:      -112.571473712785362
+
+Converged root:
+
+   A    I                     A    I                     A    I                  
+-------------------------- -------------------------- -------------------------- 
+  14    7  0.3477355912220   10    7  0.1228954784018   17    4 -0.0564549068146 
+   9    6 -0.3138708787386   10    4  0.1067098401627   29    7 -0.0490937062714 
+   8    5 -0.3138525114616   17    7  0.0888940810319   20    4  0.0383642046173 
+  13    5 -0.1840213791757   11    7 -0.0813124731381   26    4  0.0320252491835 
+  12    6 -0.1840043153647   20    7  0.0803583801701   32    4  0.0255353309000 
+
+   A    B    I    J                     A    B    I    J                  
+------------------------------------ ------------------------------------ 
+   9    9    6    6  0.0600162879088   14   12    7    6  0.0412065519385 
+   8    8    5    5  0.0600146152349   12   14    6    7  0.0412065519385 
+  13   13    5    5  0.0523899039069   14   13    7    5  0.0412047014425 
+  12   12    6    6  0.0523838152680   13   14    5    7  0.0412047014425 
+  13    8    5    5  0.0500489832547    9    8    6    5  0.0403388406407 
+   8   13    5    5  0.0500489832547    8    9    5    6  0.0403388406407 
+  12    9    6    6  0.0500488063242   12   13    6    5  0.0292717306460 
+   9   12    6    6  0.0500488063242 
+
+Searching for 4 roots in irrep 2
+
+EOMEE-CCSD guess vector:
+
+   A    I                  
+-------------------------- 
+   8    7  1.0000000000000 
+
+Beginning iterative solution of EOMEE-CC3 equations:
+
+It.  Correlation Energy R1 Residual R2 Residual CPU Time (s) Walltime (s)
+-------------------------------------------------------------------------
+  1   0.482994350405979 3.29818e-02 6.64786e-02        2.077        0.104
+  2   0.424267496755457 1.09923e-01 2.38607e-02        2.106        0.106
+  3   0.346933940534066 3.37864e-02 1.34006e-02        2.163        0.108
+  4   0.331446983706010 3.29667e-02 8.01538e-03        2.250        0.113
+  5   0.316409867773707 7.57387e-03 3.69473e-03        2.333        0.117
+  6   0.315007170899571 3.31088e-03 1.53364e-03        2.458        0.123
+  7   0.315385234381947 1.12249e-03 5.82796e-04        2.602        0.130
+  8   0.314919607382425 5.48210e-04 2.83029e-04        2.769        0.139
+  9   0.315038359832995 2.69948e-04 1.75863e-04        2.939        0.147
+Locking on root: 0.315027001859833
+ 10   0.315027001859833 1.05402e-04 6.31548e-05        3.150        0.158
+ 11   0.315022001591020 7.92704e-05 2.06177e-05        3.438        0.172
+ 12   0.315030818841681 2.49806e-05 1.21182e-05        3.704        0.186
+ 13   0.315029979999666 1.10961e-05 2.66296e-06        3.895        0.195
+ 14   0.315028576718476 1.55588e-06 1.22752e-06        4.113        0.206
+
+EOMEE-CC3 iterations converged in 14 cycles and 2.005 seconds (0.143 s/it.) at 2.408 Gflops/sec
+
+EOMEE-CC3 excitation energy:   0.315028576718476 (  8.572363383042751 eV)
+Total EOMEE-CC3 energy:      -112.760127147331588
+
+Converged root:
+
+   A    I                     A    I                     A    I                  
+-------------------------- -------------------------- -------------------------- 
+   8    7 -0.4714754599391   24    7 -0.0461257917387   24    4 -0.0211206896549 
+  13    7 -0.4460692631946    8    4 -0.0454247951257   31    7 -0.0205177691678 
+  15    7 -0.1438534300039   15    4 -0.0223487236976   21    4 -0.0204864852393 
+  13    4 -0.0858439407047   18    6  0.0215414670663   11    5  0.0188843445663 
+  21    7 -0.0512518649482   19    5  0.0215414670663   20    5 -0.0176055051966 
+
+   A    B    I    J                     A    B    I    J                  
+------------------------------------ ------------------------------------ 
+  13    8    5    7 -0.0425410123885    8   13    4    5  0.0331062561329 
+   8   13    7    5 -0.0425410123885   13    8    5    4  0.0331062561329 
+  13   13    4    5  0.0389694200772    8   13    5    4  0.0305976811455 
+  13   13    5    4  0.0389694200772   13    8    4    5  0.0305976811455 
+   8   13    5    7 -0.0340045121785    8   29    7    7  0.0299911625805 
+  13    8    7    5 -0.0340045121785   29    8    7    7  0.0299911625805 
+  12    8    6    7 -0.0339686078852    8    8    5    7 -0.0275058902296 
+   8   12    7    6 -0.0339686078852 
+
+EOMEE-CCSD guess vector:
+
+   A    I                  
+-------------------------- 
+  13    7  1.0000000000000 
+
+Beginning iterative solution of EOMEE-CC3 equations:
+
+It.  Correlation Energy R1 Residual R2 Residual CPU Time (s) Walltime (s)
+-------------------------------------------------------------------------
+  1   0.619975463460490 9.80815e-01 3.48269e-02        2.104        0.105
+  2   0.486276555964347 6.79722e-02 2.68823e-02        2.162        0.108
+  3   0.436700451819101 1.30871e-02 5.85231e-03        2.247        0.113
+  4   0.433561989165579 1.23971e-02 2.44684e-03        2.340        0.117
+  5   0.432307304614975 5.09510e-03 1.27409e-03        2.452        0.123
+  6   0.431612737095286 3.84037e-03 1.56682e-03        2.594        0.130
+Locking on root: 0.431647364855999
+  7   0.431647364855999 1.73531e-03 9.29277e-04        2.771        0.139
+  8   0.431340674443667 6.77789e-04 4.69221e-04        2.970        0.149
+  9   0.431322323803584 4.74226e-04 2.07586e-04        3.143        0.158
+ 10   0.431357363664725 2.59220e-04 9.08614e-05        3.455        0.173
+ 11   0.431324547718630 1.29091e-04 5.23834e-05        3.804        0.191
+ 12   0.431339877588876 4.86341e-05 2.10786e-05        3.875        0.194
+ 13   0.431340467381342 5.14640e-05 7.07703e-06        4.125        0.207
+ 14   0.431336261926257 1.84374e-05 5.41505e-06        4.333        0.217
+ 15   0.431338104765084 1.37517e-05 3.50313e-06        4.659        0.234
+ 16   0.431337423656224 3.93232e-06 1.68439e-06        5.051        0.253
+
+EOMEE-CC3 iterations converged in 16 cycles and 2.611 seconds (0.163 s/it.) at 2.474 Gflops/sec
+
+EOMEE-CC3 excitation energy:   0.431337423656217 ( 11.737288009877545 eV)
+Total EOMEE-CC3 energy:      -112.643818300393846
+
+Converged root:
+
+   A    I                     A    I                     A    I                  
+-------------------------- -------------------------- -------------------------- 
+  13    7 -0.4783995156872   21    7 -0.0412272864791    8    3  0.0112688949545 
+   8    7  0.4540946451444   15    7  0.0356294639071   31    7 -0.0110682814571 
+  24    7 -0.0811099263782   10    5  0.0283360542164   17    5 -0.0094160840795 
+  13    4 -0.0753144384410   15    4 -0.0117078108751   21    4 -0.0078074021668 
+   8    4 -0.0609635418719   24    4 -0.0112983817516   37    7 -0.0056679850413 
+
+   A    B    I    J                     A    B    I    J                  
+------------------------------------ ------------------------------------ 
+  12    8    6    7  0.0576785285836   13   13    5    4  0.0415132116902 
+   8   12    7    6  0.0576785285836   13   13    4    5  0.0415132116902 
+  13    8    5    7  0.0511694846283    8   10    7    7 -0.0400095945826 
+   8   13    7    5  0.0511694846283   10    8    7    7 -0.0400095945826 
+   8   11    7    7  0.0487023543281    8   12    6    7  0.0362593180089 
+  11    8    7    7  0.0487023543281   12    8    7    6  0.0362593180089 
+   8   29    7    7 -0.0419570135426   24    8    5    7  0.0350687078151 
+  29    8    7    7 -0.0419570135426 
+
+EOMEE-CCSD guess vector:
+
+   A    I                  
+-------------------------- 
+  10    5  1.0000000000000 
+
+Beginning iterative solution of EOMEE-CC3 equations:
+
+It.  Correlation Energy R1 Residual R2 Residual CPU Time (s) Walltime (s)
+-------------------------------------------------------------------------
+  1   0.622088577385916 8.35402e-02 4.58852e-02        2.155        0.108
+  2   0.507217787259270 1.48230e-02 7.90230e-03        2.240        0.112
+  3   0.502703492986578 2.11767e-02 3.36363e-03        2.337        0.117
+  4   0.499492446119454 4.11701e-03 1.11581e-03        2.456        0.123
+  5   0.498846707696433 3.60082e-03 7.50408e-04        2.573        0.129
+  6   0.498899317089699 2.04469e-03 3.20543e-04        2.734        0.137
+  7   0.498714293224446 1.22224e-03 3.41735e-04        2.910        0.146
+Locking on root: 0.498667358897457
+  8   0.498667358897457 9.00416e-04 2.23051e-04        3.126        0.157
+  9   0.498760223071183 5.95866e-04 2.05220e-04        3.326        0.167
+ 10   0.498665384422880 5.99980e-04 1.44625e-04        3.597        0.180
+ 11   0.498654922796839 9.11278e-04 1.32893e-04        3.859        0.193
+ 12   0.498716447041064 6.31481e-04 2.31821e-04        4.164        0.209
+ 13   0.498551534473358 1.19733e-03 2.66131e-04        4.412        0.221
+ 14   0.498641932593763 2.77909e-04 1.60722e-04        4.836        0.242
+ 15   0.498607920142097 2.98412e-04 1.11728e-04        5.246        0.263
+ 16   0.498591808872331 2.50786e-04 7.07597e-05        5.474        0.274
+ 17   0.498608075178162 1.41223e-04 3.16758e-05        5.919        0.297
+ 18   0.498600376731217 8.96292e-05 1.94761e-05        6.222        0.312
+ 19   0.498601279674473 4.85253e-05 1.49703e-05        6.653        0.333
+Compacting subspace
+ 20   0.498603195552976 1.02725e-03 1.88070e-05       10.250        0.514
+ 21   0.498603203255573 3.11132e-05 6.69693e-06        3.814        0.191
+ 22   0.498600854545780 1.76903e-05 5.05784e-06        4.114        0.206
+ 23   0.498601040869357 1.01281e-05 5.35162e-06        4.424        0.222
+ 24   0.498602060724783 3.24446e-06 3.10140e-06        4.788        0.240
+
+EOMEE-CC3 iterations converged in 24 cycles and 5.095 seconds (0.212 s/it.) at 2.583 Gflops/sec
+
+EOMEE-CC3 excitation energy:   0.498602060724778 ( 13.567651838412019 eV)
+Total EOMEE-CC3 energy:      -112.576553663325285
+
+Converged root:
+
+   A    I                     A    I                     A    I                  
+-------------------------- -------------------------- -------------------------- 
+  10    5 -0.6338328199265   14    5  0.0556573921749   32    5 -0.0116202692341 
+  17    5  0.1786121814863   15    4 -0.0332692902227    8    7  0.0113308240256 
+   8    4 -0.0784781471502   15    7 -0.0255649795449   21    4 -0.0096817016883 
+  13    4 -0.0762990372722   29    5 -0.0188997684261   24    4 -0.0089064067323 
+  11    5  0.0583324602297   20    5 -0.0122894100761   19    5 -0.0076099701956 
+
+   A    B    I    J                     A    B    I    J                  
+------------------------------------ ------------------------------------ 
+  15   10    5    5  0.0557714820525   16   10    6    5  0.0403346213146 
+  10   15    5    5  0.0557714820525   10   16    5    6  0.0403346213146 
+   8   10    5    5  0.0552707964840    9   10    6    5  0.0378424802151 
+  10    8    5    5  0.0552707964840   10    9    5    6  0.0378424802151 
+  13   10    7    7 -0.0455512918639   10   20    5    7  0.0337620161597 
+  10   13    7    7 -0.0455512918639   20   10    7    5  0.0337620161597 
+  13   10    5    5  0.0411833858746   10   11    5    7 -0.0294009383642 
+  10   13    5    5  0.0411833858746 
+
+EOMEE-CCSD guess vector:
+
+   A    I                  
+-------------------------- 
+  11    5  1.0000000000000 
+
+Beginning iterative solution of EOMEE-CC3 equations:
+
+It.  Correlation Energy R1 Residual R2 Residual CPU Time (s) Walltime (s)
+-------------------------------------------------------------------------
+  1   0.680028016091087 6.97593e-02 5.18878e-02        2.235        0.112
+  2   0.558197048384272 3.38497e-02 1.04927e-02        2.334        0.117
+  3   0.552733640084985 1.83343e-02 6.59022e-03        2.455        0.123
+  4   0.550457647529150 9.33519e-03 2.31793e-03        2.589        0.130
+  5   0.548470771915482 6.46772e-03 1.71536e-03        2.756        0.138
+  6   0.547983252807455 6.06273e-03 1.82021e-03        2.923        0.147
+  7   0.546889120226835 1.26287e-02 3.03701e-03        3.143        0.158
+  8   0.528061802721128 3.71412e-02 6.71504e-03        3.354        0.168
+  9   0.511236574104975 1.51955e-02 4.65406e-03        3.612        0.181
+ 10   0.505985193354450 5.49450e-03 1.70311e-03        3.881        0.195
+ 11   0.504809505003344 4.84626e-03 1.06004e-03        4.076        0.204
+ 12   0.504548065665414 3.01074e-03 6.29190e-04        4.419        0.221
+ 13   0.504315730085910 2.88364e-03 4.34700e-04        4.713        0.236
+ 14   0.504200346254911 1.12838e-03 4.05389e-04        5.028        0.252
+Locking on root: 0.504167585059860
+ 15   0.504167585059860 6.65349e-04 2.20914e-04        5.382        0.270
+ 16   0.504138872225860 2.52283e-04 1.32847e-04        5.815        0.291
+ 17   0.504145097428747 1.79343e-04 7.70918e-05        6.249        0.313
+ 18   0.504142474891296 7.96088e-05 5.13975e-05        6.649        0.333
+ 19   0.504143047557365 3.50685e-05 2.88864e-05        6.942        0.348
+Compacting subspace
+ 20   0.504143522546033 5.68722e-03 9.35478e-05       10.950        0.549
+ 21   0.504143522500066 2.64932e-05 1.42091e-05        4.137        0.207
+ 22   0.504143098797876 9.67678e-06 4.26328e-06        4.415        0.221
+
+EOMEE-CC3 iterations converged in 22 cycles and 4.916 seconds (0.223 s/it.) at 2.611 Gflops/sec
+
+EOMEE-CC3 excitation energy:   0.504143098797883 ( 13.718431149853267 eV)
+Total EOMEE-CC3 energy:      -112.571012625252180
+
+Converged root:
+
+   A    I                     A    I                     A    I                  
+-------------------------- -------------------------- -------------------------- 
+  13    4 -0.4210661021309   11    5 -0.0610664367864   15    7 -0.0433735517118 
+   8    4 -0.3877267738764   18    6 -0.0511101639499   31    4 -0.0283604031491 
+  15    4 -0.1392523073751   19    5 -0.0511101639499   20    5  0.0282823386162 
+  13    7  0.1199727101891   21    4 -0.0502474018782    8    7 -0.0243339380351 
+  10    5  0.0898399356658   24    4 -0.0443207261266   28    5  0.0214145391990 
+
+   A    B    I    J                     A    B    I    J                  
+------------------------------------ ------------------------------------ 
+  13   13    5    7  0.1268819359391   12   13    6    7  0.0673863139178 
+  13   13    7    5  0.1268819359391   13   12    7    6  0.0673863139178 
+  13    8    5    7  0.0919068143447    8    8    5    7  0.0668876432635 
+   8   13    7    5  0.0919068143447    8    8    7    5  0.0668876432635 
+   8   13    5    7  0.0918969805464    8   12    6    7  0.0532452544079 
+  13    8    7    5  0.0918969805464   12    8    7    6  0.0532452544079 
+  13   12    6    7  0.0687388083914   13    9    6    7  0.0496448324189 
+  12   13    7    6  0.0687388083914 
+
+Searching for 4 roots in irrep 3
+
+EOMEE-CCSD guess vector:
+
+   A    I                  
+-------------------------- 
+   9    7  1.0000000000000 
+
+Beginning iterative solution of EOMEE-CC3 equations:
+
+It.  Correlation Energy R1 Residual R2 Residual CPU Time (s) Walltime (s)
+-------------------------------------------------------------------------
+  1   0.482994349560502 3.29818e-02 6.64786e-02        2.045        0.103
+  2   0.424267495331778 1.09923e-01 2.38607e-02        2.094        0.105
+  3   0.346933941363335 3.37864e-02 1.34006e-02        2.149        0.108
+  4   0.331446982998645 3.29667e-02 8.01538e-03        2.230        0.112
+  5   0.316409867831078 7.57387e-03 3.69473e-03        2.318        0.116
+  6   0.315007170932419 3.31088e-03 1.53364e-03        2.455        0.123
+  7   0.315385234355999 1.12249e-03 5.82796e-04        2.591        0.130
+  8   0.314919607391918 5.48210e-04 2.83029e-04        2.752        0.138
+  9   0.315038359829553 2.69948e-04 1.75863e-04        2.926        0.147
+Locking on root: 0.315027001861405
+ 10   0.315027001861405 1.05402e-04 6.31548e-05        3.154        0.158
+ 11   0.315022001590940 7.92704e-05 2.06177e-05        3.344        0.168
+ 12   0.315030818841527 2.49806e-05 1.21182e-05        3.562        0.179
+ 13   0.315029979999659 1.10961e-05 2.66296e-06        3.810        0.191
+ 14   0.315028576718490 1.55588e-06 1.22752e-06        4.073        0.204
+
+EOMEE-CC3 iterations converged in 14 cycles and 1.981 seconds (0.141 s/it.) at 2.438 Gflops/sec
+
+EOMEE-CC3 excitation energy:   0.315028576718490 (  8.572363383043138 eV)
+Total EOMEE-CC3 energy:      -112.760127147331573
+
+Converged root:
+
+   A    I                     A    I                     A    I                  
+-------------------------- -------------------------- -------------------------- 
+   9    7 -0.4714754599390   25    7 -0.0461257917387   25    4 -0.0211206896548 
+  12    7 -0.4460692631946    9    4 -0.0454247951257   30    7 -0.0205177691677 
+  16    7 -0.1438534300039   16    4 -0.0223487236977   22    4 -0.0204864852393 
+  12    4 -0.0858439407048   19    6 -0.0215414670663   11    6  0.0188843445664 
+  22    7 -0.0512518649482   18    5  0.0215414670663   20    6 -0.0176055051966 
+
+   A    B    I    J                     A    B    I    J                  
+------------------------------------ ------------------------------------ 
+  12    9    6    7 -0.0425410123885   12    9    6    4  0.0331062561329 
+   9   12    7    6 -0.0425410123885    9   12    4    6  0.0331062561329 
+  12   12    6    4  0.0389694200772    9   12    6    4  0.0305976811455 
+  12   12    4    6  0.0389694200772   12    9    4    6  0.0305976811455 
+   9   12    6    7 -0.0340045121785    9   29    7    7  0.0299911625804 
+  12    9    7    6 -0.0340045121785   29    9    7    7  0.0299911625804 
+  13    9    5    7 -0.0339686078852    9    9    6    7 -0.0275058902296 
+   9   13    7    5 -0.0339686078852 
+
+EOMEE-CCSD guess vector:
+
+   A    I                  
+-------------------------- 
+  12    7  1.0000000000000 
+
+Beginning iterative solution of EOMEE-CC3 equations:
+
+It.  Correlation Energy R1 Residual R2 Residual CPU Time (s) Walltime (s)
+-------------------------------------------------------------------------
+  1   0.619975463460437 9.80815e-01 3.48269e-02        2.088        0.105
+  2   0.486276555964318 6.79722e-02 2.68823e-02        2.150        0.108
+  3   0.436700451819102 1.30871e-02 5.85231e-03        2.370        0.119
+  4   0.433561989165577 1.23971e-02 2.44684e-03        2.441        0.122
+  5   0.432307304614972 5.09510e-03 1.27409e-03        2.449        0.123
+  6   0.431612737095285 3.84037e-03 1.56682e-03        2.597        0.130
+Locking on root: 0.431647364855995
+  7   0.431647364855995 1.73531e-03 9.29277e-04        2.755        0.138
+  8   0.431340674443668 6.77789e-04 4.69221e-04        2.950        0.148
+  9   0.431322323803581 4.74226e-04 2.07586e-04        3.132        0.157
+ 10   0.431357363664722 2.59220e-04 9.08614e-05        3.382        0.170
+ 11   0.431324547718625 1.29091e-04 5.23834e-05        3.584        0.180
+ 12   0.431339877588869 4.86341e-05 2.10786e-05        3.854        0.193
+ 13   0.431340467381340 5.14640e-05 7.07703e-06        4.179        0.209
+ 14   0.431336261926194 1.84374e-05 5.41505e-06        4.349        0.218
+ 15   0.431338104765155 1.37517e-05 3.50313e-06        4.691        0.235
+ 16   0.431337423656332 3.93232e-06 1.68439e-06        5.020        0.252
+
+EOMEE-CC3 iterations converged in 16 cycles and 2.607 seconds (0.163 s/it.) at 2.477 Gflops/sec
+
+EOMEE-CC3 excitation energy:   0.431337423656331 ( 11.737288009880640 eV)
+Total EOMEE-CC3 energy:      -112.643818300393733
+
+Converged root:
+
+   A    I                     A    I                     A    I                  
+-------------------------- -------------------------- -------------------------- 
+  12    7 -0.4783995156875   22    7 -0.0412272864784    9    3  0.0112688949546 
+   9    7  0.4540946451435   16    7  0.0356294639078   30    7 -0.0110682814569 
+  25    7 -0.0811099263776   10    6  0.0283360542269   17    6 -0.0094160840822 
+  12    4 -0.0753144384411   16    4 -0.0117078108741   22    4 -0.0078074021661 
+   9    4 -0.0609635418707   25    4 -0.0112983817521   38    7 -0.0056679850412 
+
+   A    B    I    J                     A    B    I    J                  
+------------------------------------ ------------------------------------ 
+  13    9    5    7  0.0576785285840   12   12    6    4  0.0415132116901 
+   9   13    7    5  0.0576785285840   12   12    4    6  0.0415132116901 
+  12    9    6    7  0.0511694846286    9   10    7    7 -0.0400095945820 
+   9   12    7    6  0.0511694846286   10    9    7    7 -0.0400095945820 
+   9   11    7    7  0.0487023543284    9   13    5    7  0.0362593180097 
+  11    9    7    7  0.0487023543284   13    9    7    5  0.0362593180097 
+   9   29    7    7 -0.0419570135417   25    9    6    7  0.0350687078154 
+  29    9    7    7 -0.0419570135417 
+
+EOMEE-CCSD guess vector:
+
+   A    I                  
+-------------------------- 
+  10    6  1.0000000000000 
+
+Beginning iterative solution of EOMEE-CC3 equations:
+
+It.  Correlation Energy R1 Residual R2 Residual CPU Time (s) Walltime (s)
+-------------------------------------------------------------------------
+  1   0.622088577386072 8.35402e-02 4.58852e-02        2.149        0.108
+  2   0.507217787259395 1.48230e-02 7.90230e-03        2.237        0.112
+  3   0.502703492986586 2.11767e-02 3.36363e-03        2.327        0.117
+  4   0.499492446119561 4.11701e-03 1.11581e-03        2.461        0.123
+  5   0.498846707696429 3.60082e-03 7.50408e-04        2.603        0.131
+  6   0.498899317089690 2.04469e-03 3.20543e-04        2.763        0.139
+  7   0.498714293224488 1.22224e-03 3.41735e-04        2.931        0.147
+Locking on root: 0.498667358897444
+  8   0.498667358897444 9.00416e-04 2.23051e-04        3.154        0.158
+  9   0.498760223071183 5.95866e-04 2.05220e-04        3.365        0.169
+ 10   0.498665384422898 5.99980e-04 1.44625e-04        3.586        0.180
+ 11   0.498654922796832 9.11278e-04 1.32893e-04        3.793        0.190
+ 12   0.498716447041064 6.31481e-04 2.31821e-04        4.119        0.206
+ 13   0.498551534473362 1.19733e-03 2.66131e-04        4.374        0.219
+ 14   0.498641932593757 2.77909e-04 1.60722e-04        4.715        0.236
+ 15   0.498607920142099 2.98412e-04 1.11728e-04        5.043        0.253
+ 16   0.498591808872330 2.50786e-04 7.07597e-05        5.508        0.276
+ 17   0.498608075178151 1.41223e-04 3.16758e-05        5.853        0.293
+ 18   0.498600376731212 8.96292e-05 1.94761e-05        6.174        0.309
+ 19   0.498601279674470 4.85253e-05 1.49703e-05        6.537        0.328
+Compacting subspace
+ 20   0.498603195552973 1.02725e-03 1.88070e-05       10.241        0.513
+ 21   0.498603203255571 3.11132e-05 6.69693e-06        3.806        0.191
+ 22   0.498600854545722 1.76903e-05 5.05784e-06        4.071        0.204
+ 23   0.498601040869355 1.01281e-05 5.35162e-06        4.477        0.224
+ 24   0.498602060724747 3.24446e-06 3.10140e-06        4.753        0.238
+
+EOMEE-CC3 iterations converged in 24 cycles and 5.065 seconds (0.211 s/it.) at 2.598 Gflops/sec
+
+EOMEE-CC3 excitation energy:   0.498602060724750 ( 13.567651838411244 eV)
+Total EOMEE-CC3 energy:      -112.576553663325313
+
+Converged root:
+
+   A    I                     A    I                     A    I                  
+-------------------------- -------------------------- -------------------------- 
+  10    6 -0.6338328199267   14    6  0.0556573921745   32    6 -0.0116202692341 
+  17    6  0.1786121814865   16    4 -0.0332692902227    9    7  0.0113308240261 
+   9    4 -0.0784781471495   16    7 -0.0255649795467   22    4 -0.0096817016881 
+  12    4 -0.0762990372715   29    6 -0.0188997684262   25    4 -0.0089064067322 
+  11    6  0.0583324602291   20    6 -0.0122894100761   18    5 -0.0076099701953 
+
+   A    B    I    J                     A    B    I    J                  
+------------------------------------ ------------------------------------ 
+  16   10    6    6  0.0557714820524   10   15    6    5  0.0403346213146 
+  10   16    6    6  0.0557714820524   15   10    5    6  0.0403346213146 
+   9   10    6    6  0.0552707964839   10    8    6    5  0.0378424802150 
+  10    9    6    6  0.0552707964839    8   10    5    6  0.0378424802150 
+  12   10    7    7 -0.0455512918642   10   20    6    7  0.0337620161597 
+  10   12    7    7 -0.0455512918642   20   10    7    6  0.0337620161597 
+  12   10    6    6  0.0411833858746   10   11    6    7 -0.0294009383642 
+  10   12    6    6  0.0411833858746 
+
+EOMEE-CCSD guess vector:
+
+   A    I                  
+-------------------------- 
+  11    6  1.0000000000000 
+
+Beginning iterative solution of EOMEE-CC3 equations:
+
+It.  Correlation Energy R1 Residual R2 Residual CPU Time (s) Walltime (s)
+-------------------------------------------------------------------------
+  1   0.680028016091095 6.97593e-02 5.18878e-02        2.237        0.112
+  2   0.558197048384394 3.38497e-02 1.04927e-02        2.333        0.117
+  3   0.552733640084989 1.83343e-02 6.59022e-03        2.441        0.122
+  4   0.550457647529177 9.33519e-03 2.31793e-03        2.589        0.130
+  5   0.548470771915498 6.46772e-03 1.71536e-03        2.755        0.138
+  6   0.547983252807437 6.06273e-03 1.82021e-03        2.939        0.147
+  7   0.546889120226846 1.26287e-02 3.03701e-03        3.125        0.157
+  8   0.528061802721088 3.71412e-02 6.71504e-03        3.328        0.167
+  9   0.511236574104950 1.51955e-02 4.65406e-03        3.605        0.181
+ 10   0.505985193354436 5.49450e-03 1.70311e-03        3.853        0.193
+ 11   0.504809505003333 4.84626e-03 1.06004e-03        4.127        0.207
+ 12   0.504548065665405 3.01074e-03 6.29190e-04        4.383        0.220
+ 13   0.504315730085904 2.88364e-03 4.34700e-04        4.705        0.236
+ 14   0.504200346254909 1.12838e-03 4.05389e-04        5.099        0.256
+Locking on root: 0.504167585059858
+ 15   0.504167585059858 6.65349e-04 2.20914e-04        5.386        0.270
+ 16   0.504138872225859 2.52283e-04 1.32847e-04        5.780        0.290
+ 17   0.504145097428744 1.79343e-04 7.70918e-05        6.149        0.308
+ 18   0.504142474891296 7.96088e-05 5.13975e-05        6.618        0.332
+ 19   0.504143047557363 3.50685e-05 2.88864e-05        7.097        0.356
+Compacting subspace
+ 20   0.504143522546032 5.68722e-03 9.35478e-05       10.866        0.545
+ 21   0.504143522500065 2.64932e-05 1.42091e-05        4.116        0.206
+ 22   0.504143098797876 9.67678e-06 4.26328e-06        4.437        0.222
+
+EOMEE-CC3 iterations converged in 22 cycles and 4.911 seconds (0.223 s/it.) at 2.610 Gflops/sec
+
+EOMEE-CC3 excitation energy:   0.504143098797869 ( 13.718431149852879 eV)
+Total EOMEE-CC3 energy:      -112.571012625252195
+
+Converged root:
+
+   A    I                     A    I                     A    I                  
+-------------------------- -------------------------- -------------------------- 
+  12    4 -0.4210661021310   11    6 -0.0610664367864   16    7 -0.0433735517118 
+   9    4 -0.3877267738763   18    5 -0.0511101639499   30    4 -0.0283604031491 
+  16    4 -0.1392523073751   19    6  0.0511101639499   20    6  0.0282823386163 
+  12    7  0.1199727101891   22    4 -0.0502474018782    9    7 -0.0243339380351 
+  10    6  0.0898399356658   25    4 -0.0443207261266   28    6 -0.0214145391990 
+
+   A    B    I    J                     A    B    I    J                  
+------------------------------------ ------------------------------------ 
+  12   12    6    7  0.1268819359391   13   12    5    7  0.0673863139178 
+  12   12    7    6  0.1268819359391   12   13    7    5  0.0673863139178 
+  12    9    6    7  0.0919068143447    9    9    6    7  0.0668876432635 
+   9   12    7    6  0.0919068143447    9    9    7    6  0.0668876432635 
+   9   12    6    7  0.0918969805464    9   13    5    7  0.0532452544079 
+  12    9    7    6  0.0918969805464   13    9    7    5  0.0532452544079 
+  12   13    5    7  0.0687388083914   12    8    5    7  0.0496448324189 
+  13   12    7    5  0.0687388083914 
+
+Searching for 4 roots in irrep 4
+
+EOMEE-CCSD guess vector:
+
+   A    I                  
+-------------------------- 
+   8    6  1.0000000000000 
+
+Beginning iterative solution of EOMEE-CC3 equations:
+
+It.  Correlation Energy R1 Residual R2 Residual CPU Time (s) Walltime (s)
+-------------------------------------------------------------------------
+  1   0.601499656010740 5.02247e-02 4.93910e-02        1.984        0.099
+  2   0.525180792335113 1.40246e-01 2.73866e-02        2.027        0.102
+  3   0.430612003131090 4.89024e-02 1.17246e-02        2.084        0.104
+  4   0.390618963612787 3.13041e-02 8.95679e-03        2.164        0.109
+  5   0.375556795850861 1.39962e-02 3.20623e-03        2.278        0.114
+  6   0.373720995975424 2.18849e-03 8.27196e-04        2.407        0.121
+  7   0.373815453646788 1.46148e-03 5.26940e-04        2.540        0.127
+  8   0.373604296380880 1.40187e-03 2.05673e-04        2.714        0.136
+  9   0.373683925980479 1.64138e-03 4.55760e-04        2.898        0.145
+ 10   0.373078571437584 1.97347e-03 1.76621e-03        3.098        0.155
+ 11   0.372187366501191 1.11110e-03 1.57272e-03        3.329        0.167
+Locking on root: 0.372182997867892
+ 12   0.372182997867892 1.06427e-03 1.30265e-03        3.546        0.178
+ 13   0.371987643054793 5.11810e-04 4.85083e-04        3.809        0.191
+ 14   0.371974900951814 1.15405e-04 9.92185e-05        4.134        0.207
+ 15   0.371991039580149 4.89069e-05 3.73116e-05        4.404        0.221
+ 16   0.371979357874589 3.93540e-05 1.36276e-05        4.748        0.238
+ 17   0.371981229329720 1.44151e-05 4.40721e-06        5.101        0.256
+ 18   0.371981313113415 8.19271e-06 1.41236e-06        5.580        0.280
+
+EOMEE-CC3 iterations converged in 18 cycles and 2.950 seconds (0.164 s/it.) at 2.681 Gflops/sec
+
+EOMEE-CC3 excitation energy:   0.371981313113409 ( 10.122126128764416 eV)
+Total EOMEE-CC3 energy:      -112.703174410936654
+
+Converged root:
+
+   A    I                     A    I                     A    I                  
+-------------------------- -------------------------- -------------------------- 
+  12    5 -0.3578985985387   15    6  0.1134429085790   30    5 -0.0201821935073 
+  13    6  0.3578356818345   22    5 -0.0498445353278   31    6  0.0201805051178 
+   9    5 -0.2918631586302   21    6  0.0498369554833   35    5  0.0127150430048 
+   8    6  0.2918499556939   25    5 -0.0482439401875   36    6 -0.0127139839628 
+  16    5 -0.1134512953241   24    6  0.0482345103520   38    5 -0.0067518298871 
+
+   A    B    I    J                     A    B    I    J                  
+------------------------------------ ------------------------------------ 
+  12   13    5    5  0.0402869934054   12    8    5    5  0.0287212405076 
+  13   12    5    5  0.0402869934054    8   12    5    5  0.0287212405076 
+  12   12    6    5  0.0402869037147    9   13    6    6 -0.0287157345356 
+  12   12    5    6  0.0402869037147   13    9    6    6 -0.0287157345356 
+  13   13    6    5 -0.0402789990524    9   12    6    5  0.0278446865149 
+  13   13    5    6 -0.0402789990524   12    9    5    6  0.0278446865149 
+  12   13    6    6 -0.0402789093616   13    8    6    5 -0.0278411749333 
+  13   12    6    6 -0.0402789093616 
+
+EOMEE-CCSD guess vector:
+
+   A    I                  
+-------------------------- 
+   9    5  1.0000000000000 
+
+Beginning iterative solution of EOMEE-CC3 equations:
+
+It.  Correlation Energy R1 Residual R2 Residual CPU Time (s) Walltime (s)
+-------------------------------------------------------------------------
+  1   0.649658149583891 2.16738e-01 4.95404e-02        2.025        0.102
+  2   0.482334993485723 8.90974e-02 1.17893e-02        2.082        0.104
+  3   0.426469133803336 5.94757e-02 1.01842e-02        2.173        0.109
+  4   0.383787152231819 1.56668e-02 6.34449e-03        2.268        0.114
+  5   0.376838088923526 8.22260e-03 2.41260e-03        2.405        0.121
+  6   0.375937815305023 3.41309e-03 6.03397e-04        2.535        0.127
+  7   0.375811967200990 7.05656e-04 4.53459e-04        2.708        0.136
+Locking on root: 0.375781383844586
+  8   0.375781383844586 4.41128e-04 1.96125e-04        2.888        0.145
+  9   0.375778712008767 1.31913e-04 5.93832e-05        3.114        0.156
+ 10   0.375775452444475 4.01197e-05 2.87857e-05        3.319        0.166
+ 11   0.375776811965538 1.07568e-05 1.14944e-05        3.562        0.179
+ 12   0.375776732705110 7.34985e-06 4.77380e-06        3.837        0.192
+
+EOMEE-CC3 iterations converged in 12 cycles and 1.650 seconds (0.138 s/it.) at 2.553 Gflops/sec
+
+EOMEE-CC3 excitation energy:   0.375776732705106 ( 10.225404746437947 eV)
+Total EOMEE-CC3 energy:      -112.699378991344958
+
+Converged root:
+
+   A    I                     A    I                     A    I                  
+-------------------------- -------------------------- -------------------------- 
+  13    6  0.3540883640801   15    6  0.1044813002153   31    6  0.0173566140017 
+  12    5  0.3540481803227   24    6  0.0470348905129   30    5  0.0173543132708 
+   9    5  0.2891893115633   25    5  0.0470272112082   18    7 -0.0143081451289 
+   8    6  0.2891751636207   21    6  0.0439799391708   35    5 -0.0085658822174 
+  16    5  0.1044975440245   22    5  0.0439774553398   36    6 -0.0085638337689 
+
+   A    B    I    J                     A    B    I    J                  
+------------------------------------ ------------------------------------ 
+  12   13    7    7  0.0507488825239   12   12    6    5 -0.0453628519518 
+  13   12    7    7  0.0507488825239   12   12    5    6 -0.0453628519518 
+  12   13    6    6 -0.0459690128269    9   13    7    7  0.0375564571174 
+  13   12    6    6 -0.0459690128269   13    9    7    7  0.0375564571174 
+  12   13    5    5 -0.0459642944487   12    8    7    7  0.0375542538669 
+  13   12    5    5 -0.0459642944487    8   12    7    7  0.0375542538669 
+  13   13    6    5 -0.0453675703300    9   13    6    6 -0.0341409430172 
+  13   13    5    6 -0.0453675703300 
+
+EOMEE-CCSD guess vector:
+
+   A    I                  
+-------------------------- 
+  12    5  1.0000000000000 
+
+Beginning iterative solution of EOMEE-CC3 equations:
+
+It.  Correlation Energy R1 Residual R2 Residual CPU Time (s) Walltime (s)
+-------------------------------------------------------------------------
+  1   0.816513480513056 5.29695e+01 5.70796e-02        2.081        0.104
+  2   0.657460845832082 5.34999e-02 3.65956e-02        2.166        0.109
+  3   0.550142607010561 1.14123e-02 8.51053e-03        2.271        0.114
+  4   0.544566365421826 1.94103e-02 3.12996e-03        2.396        0.120
+  5   0.542703192854289 1.77088e-03 1.19849e-03        2.531        0.127
+  6   0.542061459950421 3.48538e-03 8.72433e-04        2.698        0.135
+  7   0.541942475351222 1.66583e-03 5.21425e-04        2.873        0.144
+  8   0.541827541953339 2.80924e-03 3.13357e-04        3.088        0.155
+Locking on root: 0.541826344644082
+  9   0.541826344644082 1.36709e-03 6.41880e-04        3.337        0.167
+ 10   0.541492559637592 6.14464e-03 1.49273e-03        3.567        0.179
+ 11   0.540695471444816 2.48918e-03 1.43306e-03        3.882        0.195
+ 12   0.540521524087315 1.73049e-03 1.03908e-03        4.327        0.217
+ 13   0.540432156259034 6.14971e-04 6.04282e-04        4.468        0.224
+ 14   0.540414378123551 4.31831e-04 4.33570e-04        4.809        0.241
+ 15   0.540405000177100 2.89184e-04 2.40655e-04        5.162        0.259
+ 16   0.540391856366190 1.54483e-04 1.30559e-04        5.453        0.273
+ 17   0.540387263714527 6.77764e-05 6.77754e-05        5.816        0.292
+ 18   0.540386345146439 4.77790e-05 2.49673e-05        6.288        0.315
+ 19   0.540385714190772 2.45804e-05 1.06931e-05        6.678        0.335
+Compacting subspace
+ 20   0.540386951350968 3.38570e-04 1.58701e-05       10.452        0.524
+ 21   0.540387022789374 1.47822e-05 4.48520e-06        3.849        0.193
+ 22   0.540386657464916 5.35971e-06 1.93523e-06        4.133        0.207
+
+EOMEE-CC3 iterations converged in 22 cycles and 4.628 seconds (0.210 s/it.) at 2.830 Gflops/sec
+
+EOMEE-CC3 excitation energy:   0.540386657464921 ( 14.704668520522448 eV)
+Total EOMEE-CC3 energy:      -112.534769066585142
+
+Converged root:
+
+   A    I                     A    I                     A    I                  
+-------------------------- -------------------------- -------------------------- 
+   8    6 -0.3518118413136   15    6 -0.0951845738408   22    5  0.0092361694810 
+   9    5 -0.3517887971186   24    6  0.0575730998362   35    5  0.0052681353963 
+  13    6  0.2987781771193   25    5  0.0575721428052   36    6  0.0052678576340 
+  12    5  0.2987626240497   18    7 -0.0301598856726   18    3 -0.0050770928022 
+  16    5 -0.0951955442597   21    6  0.0092398475180   37    6  0.0035520151702 
+
+   A    B    I    J                     A    B    I    J                  
+------------------------------------ ------------------------------------ 
+  12   13    7    7  0.0466369140357   12   13    5    5 -0.0340615317928 
+  13   12    7    7  0.0466369140357   13   12    5    5 -0.0340615317928 
+   9    8    6    6  0.0342697061494   16    8    6    6  0.0310620458627 
+   8    9    6    6  0.0342697061494    8   16    6    6  0.0310620458627 
+   9    8    5    5  0.0342662837874    9   15    5    5  0.0310611184927 
+   8    9    5    5  0.0342662837874   15    9    5    5  0.0310611184927 
+  12   13    6    6 -0.0340635252287   13   13    6    5 -0.0308051335631 
+  13   12    6    6 -0.0340635252287 
+
+EOMEE-CCSD guess vector:
+
+   A    I                  
+-------------------------- 
+  13    6  1.0000000000000 
+
+Beginning iterative solution of EOMEE-CC3 equations:
+
+It.  Correlation Energy R1 Residual R2 Residual CPU Time (s) Walltime (s)
+-------------------------------------------------------------------------
+  1   0.981526259421304 2.86670e+01 6.44879e-02        2.169        0.109
+  2   0.745511969755256 1.77355e-01 3.04034e-02        2.273        0.114
+  3   0.631736662056707 5.49227e-02 1.24480e-02        2.384        0.120
+  4   0.586288242183318 1.12459e-01 8.10078e-03        2.549        0.128
+  5   0.549947117739887 1.23874e-02 6.51307e-03        2.704        0.136
+  6   0.544616717992388 4.70510e-03 2.13623e-03        2.898        0.145
+  7   0.544000632973613 2.11465e-03 1.22830e-03        3.148        0.158
+  8   0.543864058197134 6.37346e-04 5.66758e-04        3.793        0.190
+  9   0.543803555760491 4.69357e-04 2.45822e-04        3.919        0.196
+Locking on root: 0.543793784986028
+ 10   0.543793784986028 2.98799e-04 1.83757e-04        3.835        0.192
+ 11   0.543795474575284 2.89281e-04 1.53298e-04        4.149        0.208
+ 12   0.543796008351822 1.86878e-04 8.39593e-05        4.485        0.225
+ 13   0.543794844177675 6.03955e-05 3.82716e-05        4.805        0.241
+ 14   0.543792464453258 3.58416e-05 1.56010e-05        5.185        0.260
+ 15   0.543792975396218 1.52119e-05 7.08232e-06        5.524        0.277
+ 16   0.543793202034419 9.70912e-06 3.70529e-06        5.977        0.300
+
+EOMEE-CC3 iterations converged in 16 cycles and 2.998 seconds (0.187 s/it.) at 2.682 Gflops/sec
+
+EOMEE-CC3 excitation energy:   0.543793202034422 ( 14.797365310872317 eV)
+Total EOMEE-CC3 energy:      -112.531362522015641
+
+Converged root:
+
+   A    I                     A    I                     A    I                  
+-------------------------- -------------------------- -------------------------- 
+   8    6 -0.3516085387259   15    6 -0.0878801933099   35    5 -0.0051273997849 
+   9    5  0.3515834460762   25    5 -0.0566849139985   36    6  0.0051235941396 
+  13    6  0.3015836703038   24    6  0.0566808723509   37    6  0.0036690848550 
+  12    5 -0.3015787196962   21    6  0.0115185538619   38    5 -0.0036683856335 
+  16    5  0.0879379143245   22    5 -0.0115163953991   30    5  0.0008408502504 
+
+   A    B    I    J                     A    B    I    J                  
+------------------------------------ ------------------------------------ 
+  12    8    7    7 -0.0421014371967   16    8    6    6  0.0294539673260 
+   8   12    7    7 -0.0421014371967    8   16    6    6  0.0294539673260 
+   9   13    7    7  0.0420858519356    9   15    5    5 -0.0294499890382 
+  13    9    7    7  0.0420858519356   15    9    5    5 -0.0294499890382 
+  12    8    5    5  0.0336411631059    8    8    6    5  0.0285552334292 
+   8   12    5    5  0.0336411631059    8    8    5    6  0.0285552334292 
+   9   13    6    6 -0.0336386569398    9    8    6    6  0.0285545640402 
+  13    9    6    6 -0.0336386569398 
+
+ @CHECKOUT-I, Total execution time (CPU/WALL):     1099.58/      55.40 seconds.
+--executable xncc finished with status     0 in       56.98 seconds (walltime).
+  The final electronic energy is      -112.531362522015641 a.u. 
+  This computation required                           63.56 seconds (walltime).
