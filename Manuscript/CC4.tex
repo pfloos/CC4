@@ -1,26 +1,29 @@
-\documentclass[aps,prb,reprint,noshowkeys,superscriptaddress]{revtex4-1}
-\usepackage{graphicx,dcolumn,bm,xcolor,microtype,multirow,amscd,amsmath,amssymb,amsfonts,physics,wrapfig,txfonts}
+\documentclass[aip,jcp,reprint,noshowkeys,superscriptaddress]{revtex4-1}
+\usepackage{graphicx,dcolumn,bm,xcolor,microtype,multirow,amscd,amsmath,amssymb,amsfonts,physics,wrapfig,txfonts,siunitx}
 \usepackage[version=4]{mhchem}
 
-\newcommand{\ie}{\textit{i.e.}}
-\newcommand{\eg}{\textit{e.g.}}
 \newcommand{\alert}[1]{\textcolor{black}{#1}}
 \usepackage[normalem]{ulem}
 \newcommand{\titou}[1]{\textcolor{red}{#1}}
 \newcommand{\trashPFL}[1]{\textcolor{red}{\sout{#1}}}
 \newcommand{\PFL}[1]{\titou{(\underline{\bf PFL}: #1)}}
-\newcommand{\toto}[1]{\textcolor{green}{#1}}
-\newcommand{\trashAS}[1]{\textcolor{green}{\sout{#1}}}
-\newcommand{\AS}[1]{\toto{(\underline{\bf AS}: #1)}}
 
-\newcommand{\Ec}{E_\text{c}}
-\newcommand{\mEh}{$mE_h$}
-\newcommand{\Eh}{$E_h$}
+\newcommand{\ie}{\textit{i.e.}}
+\newcommand{\eg}{\textit{e.g.}}
 \newcommand{\mc}{\multicolumn}
 \newcommand{\fnm}{\footnotemark}
 \newcommand{\fnt}{\footnotetext}
 \newcommand{\tabc}[1]{\multicolumn{1}{c}{#1}}
+
+% Softwares
 \newcommand{\QP}{\textsc{quantum package}}
+\newcommand{\MRCC}{\textsc{mrcc}}
+\newcommand{\CFOUR}{\textsc{cfour}}
+
+% variables
+\newcommand{\hH}{\Hat{H}}
+\newcommand{\hT}{\Hat{T}}
+\newcommand{\bH}{\Bar{H}}
 
 \usepackage[
 	colorlinks=true,
@@ -32,19 +35,26 @@
 \begin{document}
 
 \newcommand{\LCPQ}{Laboratoire de Chimie et Physique Quantiques (UMR 5626), Universit\'e de Toulouse, CNRS, UPS, France}
+\newcommand{\SMU}{Department of Chemistry, Southern Methodist University, Dallas, Texas 75275, USA}
+\newcommand{\UOP}{Dipartimento di Chimica e Chimica Industriale, University of Pisa, Via Moruzzi 3, 56124 Pisa, Italy}
 \newcommand{\CEISAM}{Universit\'e de Nantes, CNRS,  CEISAM UMR 6230, F-44000 Nantes, France}
 
 \title{How accurate is CC4 for vertical excitation energies?}
 
 \author{Pierre-Fran\c{c}ois Loos}
-\email{loos@irsamc.ups-tlse.fr}
-\affiliation{\LCPQ}
+	\email{loos@irsamc.ups-tlse.fr}
+	\affiliation{\LCPQ}
+\author{Devin A.~Matthews}
+	\affiliation{\SMU}
+\author{Filippo Lipparini}
+	\affiliation{\UOP}
 \author{Denis Jacquemin}
-\email{Denis.Jacquemin@univ-nantes.fr}
-\affiliation{\CEISAM}
+	\email{Denis.Jacquemin@univ-nantes.fr}
+	\affiliation{\CEISAM}
 
 % Abstract
 \begin{abstract}
+\titou{Here comes the abstract.}
 \end{abstract}
 
 % Title
@@ -52,12 +62,49 @@
 
 \section{Introduction}
 
+The hierarchy of coupled cluster (CC) methods provide a route to systematically improvable energies and properties via the systematic increase of the maximum excitation degree of the cluster operator $\hT = \hT_1 + \hT_2 + \ldots + \hT_N$ (where $N$ is the number of electrons).
+Without any truncation, full CC (FCC) is equivalent to full configuration interaction (FCI) and provides the exact energy of the system. 
+However, it is not computationally viable and one usually resorts to truncated CC methods.
+Popular choices are CC with singles and doubles (CCSD), CC with singles, doubles, and triples (CCSDT), CC with singles, doubles, triples, and quadruples (CCSDTQ), and 
+CC with singles, doubles, triples, quadruples, and pentuples (CCSDTQP) with corresponding computational scalings of $\order*{M^{6}}$, $\order*{M^{8}}$,  $\order*{M^{10}}$, and  $\order*{M^{12}}$, respectively (where $M$ denotes the number of orbitals).
+An alternative systematically-improvable family of methods is provided by the CC2, CC3, and CC4 models which have been introduced by the Aarhus group in the context of CC response theory.
+These methods scale as $\order*{M^{5}}$, $\order*{M^{7}}$, and $\order*{M^{9}}$, respectively, and can be seen as a cheap approximation of CCSD, CCSDT, and CCSDTQ, by skipping the most expensive terms and avoiding the storage of the higher-excitation amplitudes.
+A similar strategy has been applied to produce the CCSDT-3 and CCSDTQ-3 models based on arguments stemming from perturbation theory.
+Of course, many more approximate CC methods have been developed and we refer the interested reader to specialized reviews for more details.
+
+Coupled-cluster methods have been particularly successful for small- and medium-sized molecules in the field of thermodynamics and spectroscopy, thanks to the computations of accurate geometries, potential energy surfaces, couplings between electronic states, a vast panel of properties such as oscillator strengths as well as ground- and excited-state dipoles.
+Although originally developed from ground-state energies and properties, CC has been successfully extended to excited states thanks to the equation-of-motion (EOM) and linear-response (LR) formalisms which are known to produce identical excitation energies but different properties.
+In EOM-CC, one obtains vertical excitation energies via the diagonalization of the similarity-transformed Hamiltonian $\bH = e^{-\hT} \hH e^{\hT}$.
+A more general procedure to compute excitation energies that can be straightforwardly applied to any truncated CC family as the ones mentioned above consists in diagonalizing the so-called CC Jacobian obtained via the differentiation of the CC amplitude equations.
+
+The purpose of the present study is to assess the accuracy of the approximate CC4 model against the most expensive CCSDTQ and CCSDTQP methods.
+near-FCI results.
+
 \section{Computational details}
 
+Each method used in the present study is reported in Table \ref{tab:scaling} alongside its formal computational scaling and the electronic structure software used to compute the excitation energies.
 
 \section{Results and discussion}
 
-
+\begin{table}
+	\caption{Methods considered, their formal computational scaling and the name of the electronic structure software where it has been implemented.
+	Here, $M$ is the number of orbitals.
+	\label{tab:scaling}}
+	\begin{ruledtabular}
+	\begin{tabular}{lccc}
+		Method	&	Scaling					&	Code		&	Ref.					\\
+		\hline
+		CC3			&	$\order*{M^{7}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
+		CCSDT-3		&	$\order*{M^{7}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
+		CCSDT		&	$\order*{M^{8}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
+		CC4			&	$\order*{M^{9}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
+		CCSDTQ-3	&	$\order*{M^{9}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
+		CCSDTQ		&	$\order*{M^{10}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
+		CCSDTQP		&	$\order*{M^{12}}$	&	\MRCC		&	\onlinecite{mrcc}		\\	
+		CIPSI		&	$\order*{e^{M}}$	&	\QP			&	\onlinecite{qp2}		\\
+	\end{tabular}
+	\end{ruledtabular}
+\end{table}
 
 \begin{squeezetable}
 \begin{table*}
@@ -83,8 +130,8 @@
 				&	$^1\Sigma^+$ 	&11.483	&11.543	&11.518	&11.510	&11.510	&11.506	&			&11.489	&11.540	&11.521	&11.523	&	\\
 				&	$^1\Pi$ 		&11.737	&11.802	&11.767	&11.757	&11.758	&11.753	&			&11.690	&11.737	&11.719	&11.720	&	\\
 	\ce{N2}		&	$^1\Pi_g$  		&9.442	&9.450	&9.417	&9.409	&9.411	&9.409	&9.411(3)	&9.344	&9.326	&9.317	&9.319	&	\\
-				&	$^1\Sigma_u^-$	&10.059	&10.063	&10.060	&10.063	&10.055	&10.054	&10.054(0)	&9.885	&9.890	&9.883	&9.878	&	\\
-				&	$^1\Delta_u$ 	&10.433	&10.449	&10.436	&10.439	&10.430	&10.428	&10.429(0)	&10.293	&10.302	&10.294	&10.287	&	\\
+				&	$^1\Sigma_u^-$	&10.059	&10.063	&10.060	&10.063	&10.055	&10.054	&10.054(0)	&9.885	&9.890	&9.883	&9.878	&	9.879(4)\\
+				&	$^1\Delta_u$ 	&10.433	&10.449	&10.436	&10.439	&10.430	&10.428	&10.429(0)	&10.293	&10.302	&10.294	&10.287	&	10.289(12)\\
 				&	$^1\Sigma_g^+$	&13.229	&13.270	&13.202	&13.171	&13.182	&13.181	&13.180(1)	&13.013	&12.999	&12.962	&12.974	&	\\
 				&	$^1\Pi_u$  		&13.279	&13.323	&13.174	&13.128	&13.131	&13.127	&			&13.223	&13.140	&13.091	&13,095	&	\\
 				&	$^1\Sigma_u^+$	&13.146	&13.186	&13.130	&13.099	&13.109	&13.107	&			&13.120	&13.118	&13.078	&13.090	&	\\
@@ -94,7 +141,7 @@
 				&	$^1A_2$  		&6.293	&6.299	&6.286	&6.286	&6.286	&6.286	&6.286(0)	&6.192	&6.185	&6.181	&6.181	&6.181(6) \\
 	\ce{H2O}	&	$^1B_1$  		&7.511	&7.510	&7.497	&7.531	&7.528	&7.532	&7.533(0)	&7.605	&7.591	&7.623	&7.620	&7.626(3)\\
 				&	$^1A_2$  		&9.293	&9.291	&9.279	&9.317	&9.313	&9.318	&9.318(0)	&9.382	&9.368	&9.405	&9.400	&9.407(7)\\
-				&	$^1A_1$  		&9.921	&9.919	&9.903	&9.940	&9.937	&9.941	&9.941(0)	&9.966	&9.949	&9.986	&9.981	&9.987(8)\\
+				&	$^1A_1$  		&9.921	&9.919	&9.903	&9.940	&9.937	&9.941	&9.941(0)	&9.966	&9.949	&9.986	&9.981	&9.986(2)\\
 	\hline
 	MAE			&					&	\\
 	\end{tabular}
@@ -104,6 +151,8 @@
 
 \section{Conclusion}
 
+\titou{Here comes the conclusion.}
+
 \begin{acknowledgements}
 This work was performed using HPC resources from CALMIP (Toulouse) under allocation 2021-18005.
 PFL has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (Grant agreement No.~863481).
@@ -111,6 +160,7 @@ PFL has received funding from the European Research Council (ERC) under the Euro
 
 \section*{Data availability statement}
 The data that support the findings of this study are openly available in Zenodo at \href{http://doi.org/XX.XXXX/zenodo.XXXXXXX}{http://doi.org/XX.XXXX/zenodo.XXXXXXX}.
-\bibliography{Ec}
+
+\bibliography{CC4}
 
 \end{document}
