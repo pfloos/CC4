@@ -64,20 +64,20 @@
 \section{Introduction}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Coupled cluster (CC) theory provides a hierarchy of methods that provide systematically improvable energies and properties via the systematic increase of the maximum excitation degree of the cluster operator $\hT = \hT_1 + \hT_2 + \ldots + \hT_N$ (where $N$ is the number of electrons).
-Without any truncation, full CC (FCC) is equivalent to full configuration interaction (FCI) and provides the exact energy of the system. 
-However, it is not computationally viable and one usually resorts to truncated CC methods.
+Coupled cluster (CC) theory provides a hierarchy of methods which delivers increasingly accurate energies and properties via the systematic increase of the maximum excitation degree of the cluster operator $\hT = \hT_1 + \hT_2 + \ldots + \hT_n$ (where $n$ is the number of electrons).
+Without any truncation, the so-called full CC (FCC) method is equivalent to full configuration interaction (FCI), hence providing the exact energy and wave function of the system within a given basis set.
+However, it is not computationally viable due to its exponential scaling with system size, and one has to resort to truncated CC methods for computational convenience.
 Popular choices are CC with singles and doubles (CCSD), CC with singles, doubles, and triples (CCSDT), CC with singles, doubles, triples, and quadruples (CCSDTQ), and 
-CC with singles, doubles, triples, quadruples, and pentuples (CCSDTQP) with corresponding computational scalings of $\order*{M^{6}}$, $\order*{M^{8}}$,  $\order*{M^{10}}$, and  $\order*{M^{12}}$, respectively (where $M$ denotes the number of orbitals).
+CC with singles, doubles, triples, quadruples, and pentuples (CCSDTQP) with corresponding computational scalings of $\order*{N^{6}}$, $\order*{N^{8}}$,  $\order*{N^{10}}$, and  $\order*{N^{12}}$, respectively (where $N$ denotes the number of orbitals).
 An alternative systematically-improvable family of methods is provided by the CC2, CC3, and CC4 models which have been introduced by the Aarhus group in the context of CC response theory.
-These methods scale as $\order*{M^{5}}$, $\order*{M^{7}}$, and $\order*{M^{9}}$, respectively, and can be seen as a cheap approximation of CCSD, CCSDT, and CCSDTQ, by skipping the most expensive terms and avoiding the storage of the higher-excitation amplitudes.
+These methods scale as $\order*{N^{5}}$, $\order*{N^{7}}$, and $\order*{N^{9}}$, respectively, and can be seen as a cheap approximation of CCSD, CCSDT, and CCSDTQ, by skipping the most expensive terms and avoiding the storage of the higher-excitation amplitudes.
 A similar strategy has been applied to produce the CCSDT-3 and CCSDTQ-3 models based on arguments stemming from perturbation theory.
-Of course, many more approximate CC methods have been developed and we refer the interested reader to specialized reviews for more details.
+Of course, many more approximate CC models have been developed and we refer the interested reader to specialized reviews for more details.
 
-Coupled-cluster methods have been particularly successful for small- and medium-sized molecules in the field of thermodynamics, kinetics, and spectroscopy, thanks to the computations of accurate geometries, potential energy surfaces, couplings between electronic states, a vast panel of properties such as dipoles and higher moments, vibrational frequencies, NMR chemical shifts, magnetizabilities, polarizabilities, etc.
+Coupled-cluster methods have been particularly successful for small- and medium-sized molecules in the field of thermodynamics, kinetics, and spectroscopy, thanks to the computations of accurate geometries, potential energy surfaces, couplings between electronic states, and a vast panel of properties such as dipoles (and higher moments), vibrational frequencies, NMR chemical shifts, magnetizabilities, polarizabilities, etc.
 Although originally developed from ground-state energies and properties, CC has been successfully extended to excited states thanks to the equation-of-motion (EOM) and linear-response (LR) formalisms which are known to produce identical excitation energies but different properties.
 In EOM-CC, one obtains vertical excitation energies via the diagonalization of the similarity-transformed Hamiltonian $\bH = e^{-\hT} \hH e^{\hT}$.
-A more general procedure to compute excitation energies that can be straightforwardly applied to any truncated CC family as the ones mentioned above consists in diagonalizing the so-called CC Jacobian obtained via the differentiation of the CC amplitude equations.
+A more general procedure to compute excitation energies that can be straightforwardly applied to any approximate CC model (as the ones mentioned above) consists in diagonalizing the so-called CC Jacobian obtained via the differentiation of the CC amplitude equations.
 
 The purpose of the present study is to assess the accuracy of the approximate CC4 model against the most expensive CCSDTQ and CCSDTQP methods.
 near-FCI results.
@@ -96,20 +96,20 @@ The FCI estimates were obtained with the CIPSI algorithm implemented in {\QP}.
 
 \begin{table}
 	\caption{Methods considered, their formal computational scaling and the name of the electronic structure software where it has been implemented.
-	Here, $M$ is the number of orbitals.
+	Here, $N$ is the number of orbitals.
 	\label{tab:scaling}}
 	\begin{ruledtabular}
 	\begin{tabular}{lccc}
 		Method	&	Scaling					&	Code		&	Ref.					\\
 		\hline
-		CC3			&	$\order*{M^{7}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
-		CCSDT-3		&	$\order*{M^{7}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
-		CCSDT		&	$\order*{M^{8}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
-		CC4			&	$\order*{M^{9}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
-		CCSDTQ-3	&	$\order*{M^{9}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
-		CCSDTQ		&	$\order*{M^{10}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
-		CCSDTQP		&	$\order*{M^{12}}$	&	\MRCC		&	\onlinecite{mrcc}		\\	
-		CIPSI		&	$\order*{e^{M}}$	&	\QP			&	\onlinecite{qp2}		\\
+		CC3			&	$\order*{N^{7}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
+		CCSDT-3		&	$\order*{N^{7}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
+		CCSDT		&	$\order*{N^{8}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
+		CC4			&	$\order*{N^{9}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
+		CCSDTQ-3	&	$\order*{N^{9}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
+		CCSDTQ		&	$\order*{N^{10}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
+		CCSDTQP		&	$\order*{N^{12}}$	&	\MRCC		&	\onlinecite{mrcc}		\\	
+		CIPSI		&	$\order*{e^{N}}$	&	\QP			&	\onlinecite{qp2}		\\
 	\end{tabular}
 	\end{ruledtabular}
 \end{table}
