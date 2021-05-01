@@ -1,0 +1,2852 @@
+bash: no job control in this shell
+
+                     )
+   (              ( /(
+ ( )\  `  )   (   )\())
+ )(( ) /(/(   )\ ((_)\
+((_)_)((_)_\ ((_)| |(_)
+/ _` || '_ \)(_-<| ' \
+\__, || .__/ /__/|_||_|
+   |_||_|
+
+
+   -- Quantum  Package  Shell --
+
+ 0.01 %  in                     0 seconds 
+                                                                            0.64 %  in                    49 seconds 
+ 1.27 %  in                    88 seconds 
+ 1.91 %  in                   228 seconds 
+ 2.55 %  in                   366 seconds 
+ 3.18 %  in                   502 seconds 
+ 3.82 %  in                   613 seconds 
+ 4.46 %  in                   698 seconds 
+ 5.10 %  in                   774 seconds 
+ 5.73 %  in                   850 seconds 
+ 6.37 %  in                   929 seconds 
+ 7.01 %  in                   994 seconds 
+ 7.64 %  in                  1072 seconds 
+ 8.28 %  in                  1151 seconds 
+ 8.92 %  in                  1220 seconds 
+ 9.55 %  in                  1280 seconds 
+10.19 %  in                  1359 seconds 
+10.83 %  in                  1422 seconds 
+11.46 %  in                  1489 seconds 
+12.10 %  in                  1570 seconds 
+12.74 %  in                  1640 seconds 
+13.38 %  in                  1688 seconds 
+14.01 %  in                  1773 seconds 
+14.65 %  in                  1846 seconds 
+15.29 %  in                  1897 seconds 
+15.92 %  in                  1978 seconds 
+16.56 %  in                  2052 seconds 
+17.20 %  in                  2103 seconds 
+17.83 %  in                  2173 seconds 
+18.47 %  in                  2240 seconds 
+19.11 %  in                  2279 seconds 
+19.75 %  in                  2309 seconds 
+20.38 %  in                  2338 seconds 
+21.02 %  in                  2367 seconds 
+21.66 %  in                  2435 seconds 
+22.29 %  in                  2498 seconds 
+22.93 %  in                  2533 seconds 
+23.57 %  in                  2562 seconds 
+24.20 %  in                  2590 seconds 
+24.84 %  in                  2618 seconds 
+25.48 %  in                  2641 seconds 
+26.11 %  in                  2698 seconds 
+26.75 %  in                  2751 seconds 
+27.39 %  in                  2777 seconds 
+28.03 %  in                  2803 seconds 
+28.66 %  in                  2828 seconds 
+29.30 %  in                  2847 seconds 
+29.94 %  in                  2878 seconds 
+30.57 %  in                  2943 seconds 
+31.21 %  in                  2972 seconds 
+31.85 %  in                  3001 seconds 
+32.48 %  in                  3018 seconds 
+33.12 %  in                  3071 seconds 
+33.76 %  in                  3130 seconds 
+34.39 %  in                  3160 seconds 
+35.03 %  in                  3190 seconds 
+35.67 %  in                  3213 seconds 
+36.31 %  in                  3233 seconds 
+36.94 %  in                  3249 seconds 
+37.58 %  in                  3323 seconds 
+38.22 %  in                  3367 seconds 
+38.85 %  in                  3397 seconds 
+39.49 %  in                  3427 seconds 
+40.13 %  in                  3447 seconds 
+40.76 %  in                  3464 seconds 
+41.40 %  in                  3481 seconds 
+42.04 %  in                  3543 seconds 
+42.68 %  in                  3583 seconds 
+43.31 %  in                  3612 seconds 
+43.95 %  in                  3633 seconds 
+44.59 %  in                  3650 seconds 
+45.22 %  in                  3667 seconds 
+45.86 %  in                  3729 seconds 
+46.50 %  in                  3771 seconds 
+47.13 %  in                  3800 seconds 
+47.77 %  in                  3824 seconds 
+48.41 %  in                  3842 seconds 
+49.04 %  in                  3858 seconds 
+49.68 %  in                  3879 seconds 
+50.32 %  in                  3947 seconds 
+50.96 %  in                  3976 seconds 
+51.59 %  in                  4003 seconds 
+52.23 %  in                  4020 seconds 
+52.87 %  in                  4035 seconds 
+53.50 %  in                  4050 seconds 
+54.14 %  in                  4085 seconds 
+54.78 %  in                  4132 seconds 
+55.41 %  in                  4154 seconds 
+56.05 %  in                  4170 seconds 
+56.69 %  in                  4228 seconds 
+57.32 %  in                  4270 seconds 
+57.96 %  in                  4292 seconds 
+58.60 %  in                  4328 seconds 
+59.24 %  in                  4385 seconds 
+59.87 %  in                  4417 seconds 
+60.51 %  in                  4435 seconds 
+61.15 %  in                  4490 seconds 
+61.78 %  in                  4525 seconds 
+62.42 %  in                  4540 seconds 
+63.06 %  in                  4586 seconds 
+63.69 %  in                  4629 seconds 
+64.33 %  in                  4649 seconds 
+64.97 %  in                  4693 seconds 
+65.61 %  in                  4739 seconds 
+66.24 %  in                  4761 seconds 
+66.88 %  in                  4790 seconds 
+67.52 %  in                  4844 seconds 
+68.15 %  in                  4866 seconds 
+68.79 %  in                  4923 seconds 
+69.43 %  in                  4968 seconds 
+70.06 %  in                  4989 seconds 
+70.70 %  in                  5058 seconds 
+71.34 %  in                  5093 seconds 
+71.97 %  in                  5128 seconds 
+72.61 %  in                  5180 seconds 
+73.25 %  in                  5208 seconds 
+73.89 %  in                  5269 seconds 
+74.52 %  in                  5295 seconds 
+75.16 %  in                  5360 seconds 
+75.80 %  in                  5391 seconds 
+76.43 %  in                  5443 seconds 
+77.07 %  in                  5470 seconds 
+77.71 %  in                  5529 seconds 
+78.34 %  in                  5563 seconds 
+78.98 %  in                  5616 seconds 
+79.62 %  in                  5655 seconds 
+80.25 %  in                  5700 seconds 
+80.89 %  in                  5736 seconds 
+81.53 %  in                  5789 seconds 
+82.17 %  in                  5822 seconds 
+82.80 %  in                  5879 seconds 
+83.44 %  in                  5916 seconds 
+84.08 %  in                  5967 seconds 
+84.71 %  in                  6027 seconds 
+85.35 %  in                  6081 seconds 
+85.99 %  in                  6131 seconds 
+86.62 %  in                  6180 seconds 
+87.26 %  in                  6230 seconds 
+87.90 %  in                  6282 seconds 
+88.54 %  in                  6340 seconds 
+89.17 %  in                  6395 seconds 
+89.81 %  in                  6450 seconds 
+90.45 %  in                  6507 seconds 
+91.08 %  in                  6563 seconds 
+91.72 %  in                  6622 seconds 
+92.36 %  in                  6671 seconds 
+92.99 %  in                  6728 seconds 
+93.63 %  in                  6785 seconds 
+94.27 %  in                  6844 seconds 
+94.90 %  in                  6905 seconds 
+95.54 %  in                  6965 seconds 
+96.18 %  in                  7025 seconds 
+96.82 %  in                  7080 seconds 
+97.45 %  in                  7138 seconds 
+98.09 %  in                  7202 seconds 
+98.73 %  in                  7257 seconds 
+                                                                            0.64 %  in                    48 seconds 
+ 1.27 %  in                    88 seconds 
+ 1.91 %  in                   228 seconds 
+ 2.55 %  in                   365 seconds 
+ 3.18 %  in                   500 seconds 
+ 3.82 %  in                   613 seconds 
+ 4.46 %  in                   698 seconds 
+ 5.10 %  in                   773 seconds 
+ 5.73 %  in                   849 seconds 
+ 6.37 %  in                   928 seconds 
+ 7.01 %  in                   993 seconds 
+ 7.64 %  in                  1071 seconds 
+ 8.28 %  in                  1149 seconds 
+ 8.92 %  in                  1218 seconds 
+ 9.55 %  in                  1278 seconds 
+10.19 %  in                  1358 seconds 
+10.83 %  in                  1420 seconds 
+11.46 %  in                  1487 seconds 
+12.10 %  in                  1568 seconds 
+12.74 %  in                  1639 seconds 
+13.38 %  in                  1687 seconds 
+14.01 %  in                  1772 seconds 
+14.65 %  in                  1844 seconds 
+15.29 %  in                  1895 seconds 
+15.92 %  in                  1977 seconds 
+16.56 %  in                  2050 seconds 
+17.20 %  in                  2101 seconds 
+17.83 %  in                  2171 seconds 
+18.47 %  in                  2238 seconds 
+19.11 %  in                  2277 seconds 
+19.75 %  in                  2307 seconds 
+20.38 %  in                  2336 seconds 
+21.02 %  in                  2365 seconds 
+21.66 %  in                  2433 seconds 
+22.29 %  in                  2496 seconds 
+22.93 %  in                  2531 seconds 
+23.57 %  in                  2560 seconds 
+24.20 %  in                  2588 seconds 
+24.84 %  in                  2617 seconds 
+25.48 %  in                  2639 seconds 
+26.11 %  in                  2696 seconds 
+26.75 %  in                  2749 seconds 
+27.39 %  in                  2775 seconds 
+28.03 %  in                  2802 seconds 
+28.66 %  in                  2826 seconds 
+29.30 %  in                  2845 seconds 
+29.94 %  in                  2877 seconds 
+30.57 %  in                  2941 seconds 
+31.21 %  in                  2971 seconds 
+31.85 %  in                  2999 seconds 
+32.48 %  in                  3015 seconds 
+33.12 %  in                  3070 seconds 
+33.76 %  in                  3128 seconds 
+34.39 %  in                  3159 seconds 
+35.03 %  in                  3188 seconds 
+35.67 %  in                  3211 seconds 
+36.31 %  in                  3231 seconds 
+36.94 %  in                  3248 seconds 
+37.58 %  in                  3321 seconds 
+38.22 %  in                  3365 seconds 
+38.85 %  in                  3396 seconds 
+39.49 %  in                  3425 seconds 
+40.13 %  in                  3446 seconds 
+40.76 %  in                  3462 seconds 
+41.40 %  in                  3479 seconds 
+42.04 %  in                  3542 seconds 
+42.68 %  in                  3581 seconds 
+43.31 %  in                  3610 seconds 
+43.95 %  in                  3631 seconds 
+44.59 %  in                  3648 seconds 
+45.22 %  in                  3665 seconds 
+45.86 %  in                  3727 seconds 
+46.50 %  in                  3769 seconds 
+47.13 %  in                  3798 seconds 
+47.77 %  in                  3822 seconds 
+48.41 %  in                  3839 seconds 
+49.04 %  in                  3855 seconds 
+49.68 %  in                  3877 seconds 
+50.32 %  in                  3945 seconds 
+50.96 %  in                  3973 seconds 
+51.59 %  in                  4000 seconds 
+52.23 %  in                  4017 seconds 
+52.87 %  in                  4033 seconds 
+53.50 %  in                  4047 seconds 
+54.14 %  in                  4082 seconds 
+54.78 %  in                  4129 seconds 
+55.41 %  in                  4151 seconds 
+56.05 %  in                  4167 seconds 
+56.69 %  in                  4226 seconds 
+57.32 %  in                  4267 seconds 
+57.96 %  in                  4289 seconds 
+58.60 %  in                  4326 seconds 
+59.24 %  in                  4383 seconds 
+59.87 %  in                  4416 seconds 
+60.51 %  in                  4433 seconds 
+61.15 %  in                  4490 seconds 
+61.78 %  in                  4524 seconds 
+62.42 %  in                  4540 seconds 
+63.06 %  in                  4585 seconds 
+63.69 %  in                  4629 seconds 
+64.33 %  in                  4649 seconds 
+64.97 %  in                  4693 seconds 
+65.61 %  in                  4739 seconds 
+66.24 %  in                  4761 seconds 
+66.88 %  in                  4790 seconds 
+67.52 %  in                  4845 seconds 
+68.15 %  in                  4866 seconds 
+68.79 %  in                  4924 seconds 
+69.43 %  in                  4968 seconds 
+70.06 %  in                  4990 seconds 
+70.70 %  in                  5059 seconds 
+71.34 %  in                  5094 seconds 
+71.97 %  in                  5129 seconds 
+72.61 %  in                  5182 seconds 
+73.25 %  in                  5210 seconds 
+73.89 %  in                  5270 seconds 
+74.52 %  in                  5296 seconds 
+75.16 %  in                  5361 seconds 
+75.80 %  in                  5392 seconds 
+76.43 %  in                  5444 seconds 
+77.07 %  in                  5472 seconds 
+77.71 %  in                  5530 seconds 
+78.34 %  in                  5564 seconds 
+78.98 %  in                  5618 seconds 
+79.62 %  in                  5657 seconds 
+80.25 %  in                  5701 seconds 
+80.89 %  in                  5737 seconds 
+81.53 %  in                  5791 seconds 
+82.17 %  in                  5824 seconds 
+82.80 %  in                  5881 seconds 
+83.44 %  in                  5918 seconds 
+84.08 %  in                  5969 seconds 
+84.71 %  in                  6029 seconds 
+85.35 %  in                  6082 seconds 
+85.99 %  in                  6132 seconds 
+86.62 %  in                  6181 seconds 
+87.26 %  in                  6230 seconds 
+87.90 %  in                  6282 seconds 
+88.54 %  in                  6340 seconds 
+89.17 %  in                  6394 seconds 
+89.81 %  in                  6450 seconds 
+90.45 %  in                  6507 seconds 
+91.08 %  in                  6563 seconds 
+91.72 %  in                  6621 seconds 
+92.36 %  in                  6670 seconds 
+92.99 %  in                  6728 seconds 
+93.63 %  in                  6785 seconds 
+94.27 %  in                  6843 seconds 
+94.90 %  in                  6903 seconds 
+95.54 %  in                  6964 seconds 
+96.18 %  in                  7024 seconds 
+96.82 %  in                  7078 seconds 
+97.45 %  in                  7136 seconds 
+98.09 %  in                  7200 seconds 
+98.73 %  in                  7255 seconds 
+                                                                            0.64 %  in                    48 seconds 
+ 1.27 %  in                    88 seconds 
+ 1.91 %  in                   227 seconds 
+ 2.55 %  in                   365 seconds 
+ 3.18 %  in                   501 seconds 
+ 3.82 %  in                   613 seconds 
+ 4.46 %  in                   698 seconds 
+ 5.10 %  in                   773 seconds 
+ 5.73 %  in                   849 seconds 
+ 6.37 %  in                   928 seconds 
+ 7.01 %  in                   992 seconds 
+ 7.64 %  in                  1071 seconds 
+ 8.28 %  in                  1150 seconds 
+ 8.92 %  in                  1219 seconds 
+ 9.55 %  in                  1279 seconds 
+10.19 %  in                  1357 seconds 
+10.83 %  in                  1420 seconds 
+11.46 %  in                  1487 seconds 
+12.10 %  in                  1568 seconds 
+12.74 %  in                  1638 seconds 
+13.38 %  in                  1686 seconds 
+14.01 %  in                  1771 seconds 
+14.65 %  in                  1844 seconds 
+15.29 %  in                  1895 seconds 
+15.92 %  in                  1976 seconds 
+16.56 %  in                  2050 seconds 
+17.20 %  in                  2101 seconds 
+17.83 %  in                  2171 seconds 
+18.47 %  in                  2237 seconds 
+19.11 %  in                  2276 seconds 
+19.75 %  in                  2307 seconds 
+20.38 %  in                  2336 seconds 
+21.02 %  in                  2364 seconds 
+21.66 %  in                  2433 seconds 
+22.29 %  in                  2495 seconds 
+22.93 %  in                  2531 seconds 
+23.57 %  in                  2559 seconds 
+24.20 %  in                  2587 seconds 
+24.84 %  in                  2616 seconds 
+25.48 %  in                  2638 seconds 
+26.11 %  in                  2696 seconds 
+26.75 %  in                  2749 seconds 
+27.39 %  in                  2775 seconds 
+28.03 %  in                  2801 seconds 
+28.66 %  in                  2825 seconds 
+29.30 %  in                  2844 seconds 
+29.94 %  in                  2876 seconds 
+30.57 %  in                  2941 seconds 
+31.21 %  in                  2971 seconds 
+31.85 %  in                  2999 seconds 
+32.48 %  in                  3015 seconds 
+33.12 %  in                  3069 seconds 
+33.76 %  in                  3128 seconds 
+34.39 %  in                  3158 seconds 
+35.03 %  in                  3188 seconds 
+35.67 %  in                  3211 seconds 
+36.31 %  in                  3231 seconds 
+36.94 %  in                  3247 seconds 
+37.58 %  in                  3321 seconds 
+38.22 %  in                  3365 seconds 
+38.85 %  in                  3396 seconds 
+39.49 %  in                  3425 seconds 
+40.13 %  in                  3446 seconds 
+40.76 %  in                  3462 seconds 
+41.40 %  in                  3479 seconds 
+42.04 %  in                  3542 seconds 
+42.68 %  in                  3582 seconds 
+43.31 %  in                  3611 seconds 
+43.95 %  in                  3632 seconds 
+44.59 %  in                  3649 seconds 
+45.22 %  in                  3666 seconds 
+45.86 %  in                  3728 seconds 
+46.50 %  in                  3770 seconds 
+47.13 %  in                  3799 seconds 
+47.77 %  in                  3823 seconds 
+48.41 %  in                  3840 seconds 
+49.04 %  in                  3856 seconds 
+49.68 %  in                  3878 seconds 
+50.32 %  in                  3946 seconds 
+50.96 %  in                  3974 seconds 
+51.59 %  in                  4001 seconds 
+52.23 %  in                  4018 seconds 
+52.87 %  in                  4034 seconds 
+53.50 %  in                  4048 seconds 
+54.14 %  in                  4084 seconds 
+54.78 %  in                  4130 seconds 
+55.41 %  in                  4153 seconds 
+56.05 %  in                  4169 seconds 
+56.69 %  in                  4228 seconds 
+57.32 %  in                  4269 seconds 
+57.96 %  in                  4291 seconds 
+58.60 %  in                  4327 seconds 
+59.24 %  in                  4384 seconds 
+59.87 %  in                  4417 seconds 
+60.51 %  in                  4434 seconds 
+61.15 %  in                  4491 seconds 
+61.78 %  in                  4525 seconds 
+62.42 %  in                  4541 seconds 
+63.06 %  in                  4586 seconds 
+63.69 %  in                  4630 seconds 
+64.33 %  in                  4650 seconds 
+64.97 %  in                  4694 seconds 
+65.61 %  in                  4741 seconds 
+66.24 %  in                  4763 seconds 
+66.88 %  in                  4792 seconds 
+67.52 %  in                  4846 seconds 
+68.15 %  in                  4868 seconds 
+68.79 %  in                  4925 seconds 
+69.43 %  in                  4970 seconds 
+70.06 %  in                  4991 seconds 
+70.70 %  in                  5060 seconds 
+71.34 %  in                  5095 seconds 
+71.97 %  in                  5131 seconds 
+72.61 %  in                  5184 seconds 
+73.25 %  in                  5212 seconds 
+73.89 %  in                  5272 seconds 
+74.52 %  in                  5298 seconds 
+75.16 %  in                  5364 seconds 
+75.80 %  in                  5394 seconds 
+76.43 %  in                  5447 seconds 
+77.07 %  in                  5474 seconds 
+77.71 %  in                  5533 seconds 
+78.34 %  in                  5567 seconds 
+78.98 %  in                  5621 seconds 
+79.62 %  in                  5659 seconds 
+80.25 %  in                  5704 seconds 
+80.89 %  in                  5741 seconds 
+81.53 %  in                  5794 seconds 
+82.17 %  in                  5827 seconds 
+82.80 %  in                  5885 seconds 
+83.44 %  in                  5922 seconds 
+84.08 %  in                  5973 seconds 
+84.71 %  in                  6033 seconds 
+85.35 %  in                  6087 seconds 
+85.99 %  in                  6138 seconds 
+86.62 %  in                  6186 seconds 
+87.26 %  in                  6236 seconds 
+87.90 %  in                  6289 seconds 
+88.54 %  in                  6347 seconds 
+89.17 %  in                  6402 seconds 
+89.81 %  in                  6458 seconds 
+90.45 %  in                  6515 seconds 
+91.08 %  in                  6571 seconds 
+91.72 %  in                  6630 seconds 
+92.36 %  in                  6679 seconds 
+92.99 %  in                  6737 seconds 
+93.63 %  in                  6794 seconds 
+94.27 %  in                  6853 seconds 
+94.90 %  in                  6914 seconds 
+95.54 %  in                  6975 seconds 
+96.18 %  in                  7035 seconds 
+96.82 %  in                  7090 seconds 
+97.45 %  in                  7149 seconds 
+98.09 %  in                  7213 seconds 
+98.73 %  in                  7267 seconds 
+                                                                            0.64 %  in                    48 seconds 
+ 1.27 %  in                    87 seconds 
+ 1.91 %  in                   228 seconds 
+ 2.55 %  in                   365 seconds 
+ 3.18 %  in                   501 seconds 
+ 3.82 %  in                   613 seconds 
+ 4.46 %  in                   699 seconds 
+ 5.10 %  in                   774 seconds 
+ 5.73 %  in                   849 seconds 
+ 6.37 %  in                   928 seconds 
+ 7.01 %  in                   993 seconds 
+ 7.64 %  in                  1071 seconds 
+ 8.28 %  in                  1150 seconds 
+ 8.92 %  in                  1219 seconds 
+ 9.55 %  in                  1279 seconds 
+10.19 %  in                  1358 seconds 
+10.83 %  in                  1421 seconds 
+11.46 %  in                  1487 seconds 
+12.10 %  in                  1569 seconds 
+12.74 %  in                  1639 seconds 
+13.38 %  in                  1687 seconds 
+14.01 %  in                  1772 seconds 
+14.65 %  in                  1845 seconds 
+15.29 %  in                  1896 seconds 
+15.92 %  in                  1978 seconds 
+16.56 %  in                  2051 seconds 
+17.20 %  in                  2101 seconds 
+17.83 %  in                  2172 seconds 
+18.47 %  in                  2238 seconds 
+19.11 %  in                  2278 seconds 
+19.75 %  in                  2308 seconds 
+20.38 %  in                  2337 seconds 
+21.02 %  in                  2366 seconds 
+21.66 %  in                  2434 seconds 
+22.29 %  in                  2497 seconds 
+22.93 %  in                  2532 seconds 
+23.57 %  in                  2560 seconds 
+24.20 %  in                  2588 seconds 
+24.84 %  in                  2617 seconds 
+25.48 %  in                  2640 seconds 
+26.11 %  in                  2697 seconds 
+26.75 %  in                  2750 seconds 
+27.39 %  in                  2776 seconds 
+28.03 %  in                  2802 seconds 
+28.66 %  in                  2827 seconds 
+29.30 %  in                  2845 seconds 
+29.94 %  in                  2877 seconds 
+30.57 %  in                  2942 seconds 
+31.21 %  in                  2972 seconds 
+31.85 %  in                  3000 seconds 
+32.48 %  in                  3017 seconds 
+33.12 %  in                  3070 seconds 
+33.76 %  in                  3129 seconds 
+34.39 %  in                  3159 seconds 
+35.03 %  in                  3189 seconds 
+35.67 %  in                  3212 seconds 
+36.31 %  in                  3232 seconds 
+36.94 %  in                  3249 seconds 
+37.58 %  in                  3322 seconds 
+38.22 %  in                  3366 seconds 
+38.85 %  in                  3397 seconds 
+39.49 %  in                  3426 seconds 
+40.13 %  in                  3447 seconds 
+40.76 %  in                  3463 seconds 
+41.40 %  in                  3480 seconds 
+42.04 %  in                  3543 seconds 
+42.68 %  in                  3582 seconds 
+43.31 %  in                  3611 seconds 
+43.95 %  in                  3632 seconds 
+44.59 %  in                  3650 seconds 
+45.22 %  in                  3667 seconds 
+45.86 %  in                  3728 seconds 
+46.50 %  in                  3771 seconds 
+47.13 %  in                  3800 seconds 
+47.77 %  in                  3824 seconds 
+48.41 %  in                  3841 seconds 
+49.04 %  in                  3857 seconds 
+49.68 %  in                  3879 seconds 
+50.32 %  in                  3947 seconds 
+50.96 %  in                  3976 seconds 
+51.59 %  in                  4003 seconds 
+52.23 %  in                  4020 seconds 
+52.87 %  in                  4035 seconds 
+53.50 %  in                  4050 seconds 
+54.14 %  in                  4085 seconds 
+54.78 %  in                  4132 seconds 
+55.41 %  in                  4154 seconds 
+56.05 %  in                  4170 seconds 
+56.69 %  in                  4229 seconds 
+57.32 %  in                  4270 seconds 
+57.96 %  in                  4292 seconds 
+58.60 %  in                  4329 seconds 
+59.24 %  in                  4387 seconds 
+59.87 %  in                  4419 seconds 
+60.51 %  in                  4436 seconds 
+61.15 %  in                  4493 seconds 
+61.78 %  in                  4527 seconds 
+62.42 %  in                  4543 seconds 
+63.06 %  in                  4588 seconds 
+63.69 %  in                  4631 seconds 
+64.33 %  in                  4652 seconds 
+64.97 %  in                  4696 seconds 
+65.61 %  in                  4742 seconds 
+66.24 %  in                  4764 seconds 
+66.88 %  in                  4794 seconds 
+67.52 %  in                  4848 seconds 
+68.15 %  in                  4870 seconds 
+68.79 %  in                  4927 seconds 
+69.43 %  in                  4972 seconds 
+70.06 %  in                  4993 seconds 
+70.70 %  in                  5063 seconds 
+71.34 %  in                  5098 seconds 
+71.97 %  in                  5134 seconds 
+72.61 %  in                  5186 seconds 
+73.25 %  in                  5214 seconds 
+73.89 %  in                  5275 seconds 
+74.52 %  in                  5301 seconds 
+75.16 %  in                  5366 seconds 
+75.80 %  in                  5397 seconds 
+76.43 %  in                  5450 seconds 
+77.07 %  in                  5477 seconds 
+77.71 %  in                  5536 seconds 
+78.34 %  in                  5570 seconds 
+78.98 %  in                  5624 seconds 
+79.62 %  in                  5662 seconds 
+80.25 %  in                  5707 seconds 
+80.89 %  in                  5744 seconds 
+81.53 %  in                  5797 seconds 
+82.17 %  in                  5831 seconds 
+82.80 %  in                  5888 seconds 
+83.44 %  in                  5925 seconds 
+84.08 %  in                  5976 seconds 
+84.71 %  in                  6036 seconds 
+85.35 %  in                  6090 seconds 
+85.99 %  in                  6140 seconds 
+86.62 %  in                  6189 seconds 
+87.26 %  in                  6240 seconds 
+87.90 %  in                  6293 seconds 
+88.54 %  in                  6351 seconds 
+89.17 %  in                  6406 seconds 
+89.81 %  in                  6462 seconds 
+90.45 %  in                  6519 seconds 
+91.08 %  in                  6576 seconds 
+91.72 %  in                  6634 seconds 
+92.36 %  in                  6684 seconds 
+92.99 %  in                  6742 seconds 
+93.63 %  in                  6799 seconds 
+94.27 %  in                  6858 seconds 
+94.90 %  in                  6919 seconds 
+95.54 %  in                  6980 seconds 
+96.18 %  in                  7040 seconds 
+96.82 %  in                  7095 seconds 
+97.45 %  in                  7153 seconds 
+98.09 %  in                  7217 seconds 
+98.73 %  in                  7272 seconds 
+                                                                            0.64 %  in                    48 seconds 
+ 1.27 %  in                    87 seconds 
+ 1.91 %  in                   227 seconds 
+ 2.55 %  in                   364 seconds 
+ 3.18 %  in                   500 seconds 
+ 3.82 %  in                   611 seconds 
+ 4.46 %  in                   697 seconds 
+ 5.10 %  in                   772 seconds 
+ 5.73 %  in                   848 seconds 
+ 6.37 %  in                   926 seconds 
+ 7.01 %  in                   990 seconds 
+ 7.64 %  in                  1068 seconds 
+ 8.28 %  in                  1147 seconds 
+ 8.92 %  in                  1216 seconds 
+ 9.55 %  in                  1276 seconds 
+10.19 %  in                  1354 seconds 
+10.83 %  in                  1417 seconds 
+11.46 %  in                  1484 seconds 
+12.10 %  in                  1565 seconds 
+12.74 %  in                  1634 seconds 
+13.38 %  in                  1683 seconds 
+14.01 %  in                  1768 seconds 
+14.65 %  in                  1840 seconds 
+15.29 %  in                  1891 seconds 
+15.92 %  in                  1972 seconds 
+16.56 %  in                  2045 seconds 
+17.20 %  in                  2096 seconds 
+17.83 %  in                  2166 seconds 
+18.47 %  in                  2232 seconds 
+19.11 %  in                  2271 seconds 
+19.75 %  in                  2301 seconds 
+20.38 %  in                  2331 seconds 
+21.02 %  in                  2359 seconds 
+21.66 %  in                  2427 seconds 
+22.29 %  in                  2490 seconds 
+22.93 %  in                  2525 seconds 
+23.57 %  in                  2553 seconds 
+24.20 %  in                  2581 seconds 
+24.84 %  in                  2610 seconds 
+25.48 %  in                  2632 seconds 
+26.11 %  in                  2689 seconds 
+26.75 %  in                  2742 seconds 
+27.39 %  in                  2768 seconds 
+28.03 %  in                  2795 seconds 
+28.66 %  in                  2819 seconds 
+29.30 %  in                  2838 seconds 
+29.94 %  in                  2869 seconds 
+30.57 %  in                  2934 seconds 
+31.21 %  in                  2964 seconds 
+31.85 %  in                  2992 seconds 
+32.48 %  in                  3008 seconds 
+33.12 %  in                  3062 seconds 
+33.76 %  in                  3121 seconds 
+34.39 %  in                  3151 seconds 
+35.03 %  in                  3181 seconds 
+35.67 %  in                  3203 seconds 
+36.31 %  in                  3224 seconds 
+36.94 %  in                  3240 seconds 
+37.58 %  in                  3313 seconds 
+38.22 %  in                  3357 seconds 
+38.85 %  in                  3388 seconds 
+39.49 %  in                  3417 seconds 
+40.13 %  in                  3437 seconds 
+40.76 %  in                  3453 seconds 
+41.40 %  in                  3471 seconds 
+42.04 %  in                  3533 seconds 
+42.68 %  in                  3573 seconds 
+43.31 %  in                  3602 seconds 
+43.95 %  in                  3622 seconds 
+44.59 %  in                  3640 seconds 
+45.22 %  in                  3657 seconds 
+45.86 %  in                  3719 seconds 
+46.50 %  in                  3760 seconds 
+47.13 %  in                  3789 seconds 
+47.77 %  in                  3813 seconds 
+48.41 %  in                  3831 seconds 
+49.04 %  in                  3846 seconds 
+49.68 %  in                  3868 seconds 
+50.32 %  in                  3936 seconds 
+50.96 %  in                  3965 seconds 
+51.59 %  in                  3992 seconds 
+52.23 %  in                  4009 seconds 
+52.87 %  in                  4024 seconds 
+53.50 %  in                  4039 seconds 
+54.14 %  in                  4074 seconds 
+54.78 %  in                  4120 seconds 
+55.41 %  in                  4143 seconds 
+56.05 %  in                  4158 seconds 
+56.69 %  in                  4218 seconds 
+57.32 %  in                  4259 seconds 
+57.96 %  in                  4281 seconds 
+58.60 %  in                  4317 seconds 
+59.24 %  in                  4375 seconds 
+59.87 %  in                  4407 seconds 
+60.51 %  in                  4424 seconds 
+61.15 %  in                  4480 seconds 
+61.78 %  in                  4515 seconds 
+62.42 %  in                  4530 seconds 
+63.06 %  in                  4576 seconds 
+63.69 %  in                  4619 seconds 
+64.33 %  in                  4639 seconds 
+64.97 %  in                  4683 seconds 
+65.61 %  in                  4730 seconds 
+66.24 %  in                  4752 seconds 
+66.88 %  in                  4781 seconds 
+67.52 %  in                  4835 seconds 
+68.15 %  in                  4857 seconds 
+68.79 %  in                  4914 seconds 
+69.43 %  in                  4959 seconds 
+70.06 %  in                  4980 seconds 
+70.70 %  in                  5049 seconds 
+71.34 %  in                  5084 seconds 
+71.97 %  in                  5119 seconds 
+72.61 %  in                  5171 seconds 
+73.25 %  in                  5200 seconds 
+73.89 %  in                  5260 seconds 
+74.52 %  in                  5286 seconds 
+75.16 %  in                  5351 seconds 
+75.80 %  in                  5381 seconds 
+76.43 %  in                  5434 seconds 
+77.07 %  in                  5461 seconds 
+77.71 %  in                  5520 seconds 
+78.34 %  in                  5554 seconds 
+78.98 %  in                  5608 seconds 
+79.62 %  in                  5646 seconds 
+80.25 %  in                  5691 seconds 
+80.89 %  in                  5727 seconds 
+81.53 %  in                  5780 seconds 
+82.17 %  in                  5814 seconds 
+82.80 %  in                  5871 seconds 
+83.44 %  in                  5907 seconds 
+84.08 %  in                  5958 seconds 
+84.71 %  in                  6019 seconds 
+85.35 %  in                  6072 seconds 
+85.99 %  in                  6123 seconds 
+86.62 %  in                  6171 seconds 
+87.26 %  in                  6221 seconds 
+87.90 %  in                  6273 seconds 
+88.54 %  in                  6331 seconds 
+89.17 %  in                  6386 seconds 
+89.81 %  in                  6442 seconds 
+90.45 %  in                  6498 seconds 
+91.08 %  in                  6555 seconds 
+91.72 %  in                  6614 seconds 
+92.36 %  in                  6663 seconds 
+92.99 %  in                  6720 seconds 
+93.63 %  in                  6778 seconds 
+94.27 %  in                  6836 seconds 
+94.90 %  in                  6897 seconds 
+95.54 %  in                  6957 seconds 
+96.18 %  in                  7018 seconds 
+96.82 %  in                  7073 seconds 
+97.45 %  in                  7131 seconds 
+98.09 %  in                  7195 seconds 
+98.73 %  in                  7249 seconds 
+                                                                            0.64 %  in                    48 seconds 
+ 1.27 %  in                    87 seconds 
+ 1.91 %  in                   226 seconds 
+ 2.55 %  in                   363 seconds 
+ 3.18 %  in                   499 seconds 
+ 3.82 %  in                   611 seconds 
+ 4.46 %  in                   696 seconds 
+ 5.10 %  in                   771 seconds 
+ 5.73 %  in                   847 seconds 
+ 6.37 %  in                   925 seconds 
+ 7.01 %  in                   990 seconds 
+ 7.64 %  in                  1068 seconds 
+ 8.28 %  in                  1146 seconds 
+ 8.92 %  in                  1215 seconds 
+ 9.55 %  in                  1275 seconds 
+10.19 %  in                  1354 seconds 
+10.83 %  in                  1416 seconds 
+11.46 %  in                  1483 seconds 
+12.10 %  in                  1564 seconds 
+12.74 %  in                  1634 seconds 
+13.38 %  in                  1681 seconds 
+14.01 %  in                  1766 seconds 
+14.65 %  in                  1839 seconds 
+15.29 %  in                  1890 seconds 
+15.92 %  in                  1971 seconds 
+16.56 %  in                  2044 seconds 
+17.20 %  in                  2095 seconds 
+17.83 %  in                  2165 seconds 
+18.47 %  in                  2231 seconds 
+19.11 %  in                  2270 seconds 
+19.75 %  in                  2300 seconds 
+20.38 %  in                  2329 seconds 
+21.02 %  in                  2358 seconds 
+21.66 %  in                  2426 seconds 
+22.29 %  in                  2488 seconds 
+22.93 %  in                  2523 seconds 
+23.57 %  in                  2552 seconds 
+24.20 %  in                  2580 seconds 
+24.84 %  in                  2608 seconds 
+25.48 %  in                  2630 seconds 
+26.11 %  in                  2688 seconds 
+26.75 %  in                  2741 seconds 
+27.39 %  in                  2766 seconds 
+28.03 %  in                  2793 seconds 
+28.66 %  in                  2817 seconds 
+29.30 %  in                  2836 seconds 
+29.94 %  in                  2868 seconds 
+30.57 %  in                  2932 seconds 
+31.21 %  in                  2962 seconds 
+31.85 %  in                  2990 seconds 
+32.48 %  in                  3006 seconds 
+33.12 %  in                  3060 seconds 
+33.76 %  in                  3118 seconds 
+34.39 %  in                  3149 seconds 
+35.03 %  in                  3178 seconds 
+35.67 %  in                  3201 seconds 
+36.31 %  in                  3221 seconds 
+36.94 %  in                  3238 seconds 
+37.58 %  in                  3311 seconds 
+38.22 %  in                  3355 seconds 
+38.85 %  in                  3386 seconds 
+39.49 %  in                  3415 seconds 
+40.13 %  in                  3435 seconds 
+40.76 %  in                  3451 seconds 
+41.40 %  in                  3469 seconds 
+42.04 %  in                  3531 seconds 
+42.68 %  in                  3571 seconds 
+43.31 %  in                  3599 seconds 
+43.95 %  in                  3620 seconds 
+44.59 %  in                  3637 seconds 
+45.22 %  in                  3654 seconds 
+45.86 %  in                  3716 seconds 
+46.50 %  in                  3758 seconds 
+47.13 %  in                  3787 seconds 
+47.77 %  in                  3811 seconds 
+48.41 %  in                  3828 seconds 
+49.04 %  in                  3844 seconds 
+49.68 %  in                  3866 seconds 
+50.32 %  in                  3933 seconds 
+50.96 %  in                  3962 seconds 
+51.59 %  in                  3989 seconds 
+52.23 %  in                  4006 seconds 
+52.87 %  in                  4021 seconds 
+53.50 %  in                  4036 seconds 
+54.14 %  in                  4071 seconds 
+54.78 %  in                  4117 seconds 
+55.41 %  in                  4140 seconds 
+56.05 %  in                  4156 seconds 
+56.69 %  in                  4214 seconds 
+57.32 %  in                  4255 seconds 
+57.96 %  in                  4277 seconds 
+58.60 %  in                  4314 seconds 
+59.24 %  in                  4371 seconds 
+59.87 %  in                  4403 seconds 
+60.51 %  in                  4420 seconds 
+61.15 %  in                  4477 seconds 
+61.78 %  in                  4511 seconds 
+62.42 %  in                  4526 seconds 
+63.06 %  in                  4572 seconds 
+63.69 %  in                  4615 seconds 
+64.33 %  in                  4635 seconds 
+64.97 %  in                  4679 seconds 
+65.61 %  in                  4725 seconds 
+66.24 %  in                  4747 seconds 
+66.88 %  in                  4776 seconds 
+67.52 %  in                  4830 seconds 
+68.15 %  in                  4852 seconds 
+68.79 %  in                  4909 seconds 
+69.43 %  in                  4954 seconds 
+70.06 %  in                  4975 seconds 
+70.70 %  in                  5043 seconds 
+71.34 %  in                  5078 seconds 
+71.97 %  in                  5113 seconds 
+72.61 %  in                  5166 seconds 
+73.25 %  in                  5193 seconds 
+73.89 %  in                  5253 seconds 
+74.52 %  in                  5280 seconds 
+75.16 %  in                  5344 seconds 
+75.80 %  in                  5375 seconds 
+76.43 %  in                  5427 seconds 
+77.07 %  in                  5454 seconds 
+77.71 %  in                  5512 seconds 
+78.34 %  in                  5545 seconds 
+78.98 %  in                  5599 seconds 
+79.62 %  in                  5636 seconds 
+80.25 %  in                  5681 seconds 
+80.89 %  in                  5717 seconds 
+81.53 %  in                  5769 seconds 
+82.17 %  in                  5802 seconds 
+82.80 %  in                  5859 seconds 
+83.44 %  in                  5896 seconds 
+84.08 %  in                  5946 seconds 
+84.71 %  in                  6006 seconds 
+85.35 %  in                  6059 seconds 
+85.99 %  in                  6110 seconds 
+86.62 %  in                  6158 seconds 
+87.26 %  in                  6208 seconds 
+87.90 %  in                  6260 seconds 
+88.54 %  in                  6318 seconds 
+89.17 %  in                  6372 seconds 
+89.81 %  in                  6429 seconds 
+90.45 %  in                  6485 seconds 
+91.08 %  in                  6541 seconds 
+91.72 %  in                  6600 seconds 
+92.36 %  in                  6649 seconds 
+92.99 %  in                  6707 seconds 
+93.63 %  in                  6764 seconds 
+94.27 %  in                  6822 seconds 
+94.90 %  in                  6884 seconds 
+95.54 %  in                  6944 seconds 
+96.18 %  in                  7004 seconds 
+96.82 %  in                  7058 seconds 
+97.45 %  in                  7117 seconds 
+98.09 %  in                  7181 seconds 
+98.73 %  in                  7235 seconds 
+                                                                            0.00 %  in                     7 seconds 
+ 0.00 %  in                    17 seconds 
+ 0.01 %  in                    27 seconds 
+ 0.01 %  in                    37 seconds 
+ 0.02 %  in                    47 seconds 
+ 0.03 %  in                    57 seconds 
+ 0.03 %  in                    67 seconds 
+ 0.04 %  in                    77 seconds 
+ 0.05 %  in                    87 seconds 
+ 0.06 %  in                    97 seconds 
+ 0.07 %  in                   107 seconds 
+ 0.08 %  in                   117 seconds 
+ 0.09 %  in                   127 seconds 
+ 0.10 %  in                   137 seconds 
+ 0.10 %  in                   147 seconds 
+ 0.11 %  in                   157 seconds 
+ 0.12 %  in                   167 seconds 
+ 0.13 %  in                   177 seconds 
+ 0.14 %  in                   187 seconds 
+ 0.15 %  in                   197 seconds 
+ 0.16 %  in                   207 seconds 
+ 0.17 %  in                   217 seconds 
+ 0.17 %  in                   227 seconds 
+ 0.18 %  in                   237 seconds 
+ 0.19 %  in                   247 seconds 
+ 0.20 %  in                   257 seconds 
+ 0.20 %  in                   267 seconds 
+ 0.21 %  in                   277 seconds 
+ 0.22 %  in                   287 seconds 
+ 0.23 %  in                   297 seconds 
+ 0.24 %  in                   307 seconds 
+ 0.24 %  in                   317 seconds 
+ 0.25 %  in                   327 seconds 
+ 0.26 %  in                   337 seconds 
+ 0.26 %  in                   347 seconds 
+ 0.27 %  in                   357 seconds 
+ 0.27 %  in                   367 seconds 
+ 0.28 %  in                   377 seconds 
+ 0.29 %  in                   387 seconds 
+ 0.30 %  in                   397 seconds 
+ 0.30 %  in                   407 seconds 
+ 0.31 %  in                   417 seconds 
+ 0.31 %  in                   427 seconds 
+ 0.32 %  in                   437 seconds 
+ 0.33 %  in                   447 seconds 
+ 0.33 %  in                   457 seconds 
+ 0.34 %  in                   467 seconds 
+ 0.34 %  in                   477 seconds 
+ 0.35 %  in                   487 seconds 
+ 0.35 %  in                   497 seconds 
+ 0.36 %  in                   507 seconds 
+ 0.36 %  in                   517 seconds 
+ 0.37 %  in                   527 seconds 
+ 0.37 %  in                   537 seconds 
+ 0.38 %  in                   547 seconds 
+ 0.38 %  in                   557 seconds 
+ 0.39 %  in                   567 seconds 
+ 0.39 %  in                   577 seconds 
+ 0.39 %  in                   587 seconds 
+ 0.40 %  in                   597 seconds 
+ 0.40 %  in                   607 seconds 
+ 0.41 %  in                   617 seconds 
+ 0.41 %  in                   627 seconds 
+ 0.41 %  in                   637 seconds 
+ 0.42 %  in                   647 seconds 
+ 0.42 %  in                   657 seconds 
+ 0.43 %  in                   667 seconds 
+ 0.43 %  in                   677 seconds 
+ 0.44 %  in                   687 seconds 
+ 0.44 %  in                   697 seconds 
+ 0.44 %  in                   707 seconds 
+ 0.45 %  in                   717 seconds 
+ 0.45 %  in                   727 seconds 
+ 0.46 %  in                   737 seconds 
+ 0.46 %  in                   747 seconds 
+ 0.47 %  in                   757 seconds 
+ 0.47 %  in                   767 seconds 
+ 0.47 %  in                   777 seconds 
+ 0.48 %  in                   787 seconds 
+ 0.48 %  in                   797 seconds 
+ 0.49 %  in                   807 seconds 
+ 0.49 %  in                   817 seconds 
+ 0.50 %  in                   827 seconds 
+ 0.50 %  in                   837 seconds 
+ 0.50 %  in                   847 seconds 
+ 0.51 %  in                   857 seconds 
+ 0.51 %  in                   867 seconds 
+ 0.52 %  in                   877 seconds 
+ 0.52 %  in                   887 seconds 
+ 0.53 %  in                   897 seconds 
+ 0.53 %  in                   907 seconds 
+ 0.53 %  in                   917 seconds 
+ 0.54 %  in                   927 seconds 
+ 0.54 %  in                   937 seconds 
+ 0.55 %  in                   947 seconds 
+ 0.55 %  in                   957 seconds 
+ 0.56 %  in                   967 seconds 
+ 0.56 %  in                   977 seconds 
+ 0.57 %  in                   987 seconds 
+ 0.57 %  in                   997 seconds 
+ 0.57 %  in                  1007 seconds 
+ 0.58 %  in                  1017 seconds 
+ 0.58 %  in                  1027 seconds 
+ 0.59 %  in                  1037 seconds 
+ 0.59 %  in                  1047 seconds 
+ 0.59 %  in                  1057 seconds 
+ 0.60 %  in                  1067 seconds 
+ 0.60 %  in                  1077 seconds 
+ 0.61 %  in                  1087 seconds 
+ 0.61 %  in                  1097 seconds 
+ 0.62 %  in                  1107 seconds 
+ 0.62 %  in                  1117 seconds 
+ 0.63 %  in                  1127 seconds 
+ 0.63 %  in                  1137 seconds 
+ 0.63 %  in                  1147 seconds 
+ 0.64 %  in                  1157 seconds 
+ 0.64 %  in                  1167 seconds 
+ 0.65 %  in                  1177 seconds 
+ 0.65 %  in                  1187 seconds 
+ 0.65 %  in                  1197 seconds 
+ 0.66 %  in                  1207 seconds 
+ 0.66 %  in                  1217 seconds 
+ 0.67 %  in                  1227 seconds 
+ 0.67 %  in                  1237 seconds 
+ 0.68 %  in                  1247 seconds 
+ 0.68 %  in                  1257 seconds 
+ 0.68 %  in                  1267 seconds 
+ 0.69 %  in                  1277 seconds 
+ 0.69 %  in                  1287 seconds 
+ 0.70 %  in                  1297 seconds 
+ 0.70 %  in                  1307 seconds 
+ 0.70 %  in                  1317 seconds 
+ 0.71 %  in                  1327 seconds 
+ 0.71 %  in                  1337 seconds 
+ 0.72 %  in                  1352 seconds 
+ 0.72 %  in                  1362 seconds 
+ 0.72 %  in                  1372 seconds 
+ 0.73 %  in                  1382 seconds 
+ 0.73 %  in                  1392 seconds 
+ 0.74 %  in                  1402 seconds 
+ 0.74 %  in                  1412 seconds 
+ 0.75 %  in                  1422 seconds 
+ 0.75 %  in                  1432 seconds 
+ 0.75 %  in                  1442 seconds 
+ 0.76 %  in                  1452 seconds 
+ 0.76 %  in                  1462 seconds 
+ 0.76 %  in                  1472 seconds 
+ 0.77 %  in                  1482 seconds 
+ 0.77 %  in                  1495 seconds 
+                                                                            0.00 %  in                     7 seconds 
+ 0.00 %  in                    17 seconds 
+ 0.01 %  in                    27 seconds 
+ 0.01 %  in                    37 seconds 
+ 0.02 %  in                    47 seconds 
+ 0.02 %  in                    57 seconds 
+ 0.03 %  in                    67 seconds 
+ 0.04 %  in                    77 seconds 
+ 0.05 %  in                    87 seconds 
+ 0.06 %  in                    97 seconds 
+ 0.07 %  in                   107 seconds 
+ 0.07 %  in                   117 seconds 
+ 0.08 %  in                   127 seconds 
+ 0.09 %  in                   137 seconds 
+ 0.10 %  in                   147 seconds 
+ 0.11 %  in                   157 seconds 
+ 0.12 %  in                   167 seconds 
+ 0.13 %  in                   177 seconds 
+ 0.14 %  in                   187 seconds 
+ 0.14 %  in                   197 seconds 
+ 0.15 %  in                   207 seconds 
+ 0.16 %  in                   217 seconds 
+ 0.17 %  in                   227 seconds 
+ 0.17 %  in                   237 seconds 
+ 0.18 %  in                   247 seconds 
+ 0.19 %  in                   257 seconds 
+ 0.19 %  in                   267 seconds 
+ 0.20 %  in                   277 seconds 
+ 0.21 %  in                   287 seconds 
+ 0.22 %  in                   297 seconds 
+ 0.22 %  in                   307 seconds 
+ 0.23 %  in                   317 seconds 
+ 0.24 %  in                   327 seconds 
+ 0.25 %  in                   337 seconds 
+ 0.26 %  in                   347 seconds 
+ 0.26 %  in                   357 seconds 
+ 0.27 %  in                   367 seconds 
+ 0.28 %  in                   377 seconds 
+ 0.28 %  in                   387 seconds 
+ 0.29 %  in                   397 seconds 
+ 0.29 %  in                   407 seconds 
+ 0.30 %  in                   417 seconds 
+ 0.30 %  in                   427 seconds 
+ 0.31 %  in                   437 seconds 
+ 0.32 %  in                   447 seconds 
+ 0.32 %  in                   457 seconds 
+ 0.33 %  in                   467 seconds 
+ 0.34 %  in                   477 seconds 
+ 0.34 %  in                   487 seconds 
+ 0.35 %  in                   497 seconds 
+ 0.35 %  in                   507 seconds 
+ 0.36 %  in                   517 seconds 
+ 0.37 %  in                   527 seconds 
+ 0.37 %  in                   537 seconds 
+ 0.38 %  in                   547 seconds 
+ 0.38 %  in                   557 seconds 
+ 0.39 %  in                   567 seconds 
+ 0.39 %  in                   577 seconds 
+ 0.40 %  in                   587 seconds 
+ 0.40 %  in                   597 seconds 
+ 0.41 %  in                   607 seconds 
+ 0.41 %  in                   617 seconds 
+ 0.42 %  in                   627 seconds 
+ 0.42 %  in                   637 seconds 
+ 0.43 %  in                   647 seconds 
+ 0.43 %  in                   657 seconds 
+ 0.44 %  in                   667 seconds 
+ 0.44 %  in                   677 seconds 
+ 0.45 %  in                   687 seconds 
+ 0.45 %  in                   697 seconds 
+ 0.46 %  in                   707 seconds 
+ 0.46 %  in                   717 seconds 
+ 0.46 %  in                   727 seconds 
+ 0.47 %  in                   737 seconds 
+ 0.47 %  in                   747 seconds 
+ 0.48 %  in                   757 seconds 
+ 0.48 %  in                   767 seconds 
+ 0.49 %  in                   777 seconds 
+ 0.49 %  in                   787 seconds 
+ 0.50 %  in                   797 seconds 
+ 0.50 %  in                   807 seconds 
+ 0.51 %  in                   817 seconds 
+ 0.51 %  in                   827 seconds 
+ 0.52 %  in                   837 seconds 
+ 0.52 %  in                   847 seconds 
+ 0.52 %  in                   857 seconds 
+ 0.53 %  in                   867 seconds 
+ 0.53 %  in                   877 seconds 
+ 0.54 %  in                   887 seconds 
+ 0.54 %  in                   897 seconds 
+ 0.55 %  in                   907 seconds 
+ 0.55 %  in                   917 seconds 
+ 0.56 %  in                   927 seconds 
+ 0.56 %  in                   937 seconds 
+ 0.57 %  in                   947 seconds 
+ 0.57 %  in                   957 seconds 
+ 0.58 %  in                   967 seconds 
+ 0.58 %  in                   977 seconds 
+ 0.59 %  in                   987 seconds 
+ 0.59 %  in                   997 seconds 
+ 0.60 %  in                  1007 seconds 
+ 0.60 %  in                  1017 seconds 
+ 0.61 %  in                  1027 seconds 
+ 0.61 %  in                  1037 seconds 
+ 0.62 %  in                  1047 seconds 
+ 0.62 %  in                  1057 seconds 
+ 0.63 %  in                  1067 seconds 
+ 0.63 %  in                  1077 seconds 
+ 0.64 %  in                  1087 seconds 
+ 0.64 %  in                  1097 seconds 
+ 0.64 %  in                  1107 seconds 
+ 0.65 %  in                  1117 seconds 
+ 0.65 %  in                  1127 seconds 
+ 0.66 %  in                  1137 seconds 
+ 0.66 %  in                  1147 seconds 
+ 0.67 %  in                  1157 seconds 
+ 0.67 %  in                  1167 seconds 
+ 0.68 %  in                  1177 seconds 
+ 0.68 %  in                  1187 seconds 
+ 0.69 %  in                  1197 seconds 
+ 0.69 %  in                  1207 seconds 
+ 0.69 %  in                  1217 seconds 
+ 0.70 %  in                  1227 seconds 
+ 0.70 %  in                  1237 seconds 
+ 0.71 %  in                  1247 seconds 
+ 0.71 %  in                  1257 seconds 
+ 0.72 %  in                  1267 seconds 
+ 0.72 %  in                  1277 seconds 
+ 0.73 %  in                  1287 seconds 
+ 0.73 %  in                  1297 seconds 
+ 0.74 %  in                  1307 seconds 
+ 0.74 %  in                  1317 seconds 
+ 0.75 %  in                  1327 seconds 
+ 0.75 %  in                  1337 seconds 
+ 0.76 %  in                  1347 seconds 
+ 0.76 %  in                  1357 seconds 
+ 0.77 %  in                  1367 seconds 
+ 0.77 %  in                  1377 seconds 
+ 0.77 %  in                  1387 seconds 
+ 0.77 %  in                  1397 seconds 
+ 0.78 %  in                  1407 seconds 
+ 0.78 %  in                  1417 seconds 
+ 0.79 %  in                  1427 seconds 
+ 0.79 %  in                  1437 seconds 
+ 0.80 %  in                  1447 seconds 
+ 0.80 %  in                  1457 seconds 
+ 0.81 %  in                  1467 seconds 
+ 0.81 %  in                  1477 seconds 
+ 0.82 %  in                  1487 seconds 
+ 0.82 %  in                  1497 seconds 
+ 0.83 %  in                  1507 seconds 
+ 0.83 %  in                  1517 seconds 
+ 0.84 %  in                  1527 seconds 
+ 0.84 %  in                  1537 seconds 
+ 0.84 %  in                  1547 seconds 
+ 0.85 %  in                  1557 seconds 
+ 0.85 %  in                  1567 seconds 
+ 0.86 %  in                  1577 seconds 
+ 0.86 %  in                  1587 seconds 
+ 0.87 %  in                  1597 seconds 
+ 0.87 %  in                  1607 seconds 
+ 0.88 %  in                  1617 seconds 
+ 0.88 %  in                  1627 seconds 
+ 0.89 %  in                  1637 seconds 
+ 0.89 %  in                  1647 seconds 
+ 0.90 %  in                  1657 seconds 
+ 0.90 %  in                  1667 seconds 
+ 0.90 %  in                  1677 seconds 
+ 0.91 %  in                  1687 seconds 
+ 0.91 %  in                  1697 seconds 
+ 0.92 %  in                  1707 seconds 
+ 0.92 %  in                  1717 seconds 
+ 0.93 %  in                  1727 seconds 
+ 0.93 %  in                  1737 seconds 
+ 0.94 %  in                  1747 seconds 
+ 0.94 %  in                  1757 seconds 
+ 0.94 %  in                  1767 seconds 
+ 0.95 %  in                  1777 seconds 
+ 0.95 %  in                  1787 seconds 
+ 0.96 %  in                  1797 seconds 
+ 0.96 %  in                  1807 seconds 
+ 0.96 %  in                  1817 seconds 
+ 0.97 %  in                  1827 seconds 
+ 0.97 %  in                  1837 seconds 
+ 0.98 %  in                  1847 seconds 
+ 0.98 %  in                  1857 seconds 
+ 0.98 %  in                  1867 seconds 
+ 0.99 %  in                  1877 seconds 
+ 0.99 %  in                  1887 seconds 
+ 1.00 %  in                  1897 seconds 
+ 1.00 %  in                  1907 seconds 
+ 1.01 %  in                  1917 seconds 
+ 1.01 %  in                  1927 seconds 
+ 1.01 %  in                  1937 seconds 
+ 1.02 %  in                  1947 seconds 
+ 1.02 %  in                  1957 seconds 
+ 1.03 %  in                  1967 seconds 
+ 1.03 %  in                  1977 seconds 
+ 1.04 %  in                  1987 seconds 
+ 1.04 %  in                  1997 seconds 
+ 1.04 %  in                  2007 seconds 
+ 1.05 %  in                  2017 seconds 
+ 1.05 %  in                  2027 seconds 
+ 1.06 %  in                  2037 seconds 
+ 1.06 %  in                  2047 seconds 
+ 1.06 %  in                  2057 seconds 
+ 1.07 %  in                  2067 seconds 
+                                                                            0.00 %  in                     7 seconds 
+ 0.00 %  in                    17 seconds 
+ 0.01 %  in                    27 seconds 
+ 0.01 %  in                    37 seconds 
+ 0.02 %  in                    47 seconds 
+ 0.03 %  in                    57 seconds 
+ 0.04 %  in                    67 seconds 
+ 0.05 %  in                    77 seconds 
+ 0.06 %  in                    87 seconds 
+ 0.06 %  in                    97 seconds 
+ 0.07 %  in                   107 seconds 
+ 0.08 %  in                   117 seconds 
+ 0.08 %  in                   127 seconds 
+ 0.09 %  in                   137 seconds 
+ 0.10 %  in                   147 seconds 
+ 0.11 %  in                   157 seconds 
+ 0.11 %  in                   167 seconds 
+ 0.12 %  in                   177 seconds 
+ 0.13 %  in                   187 seconds 
+ 0.14 %  in                   197 seconds 
+ 0.15 %  in                   207 seconds 
+ 0.15 %  in                   217 seconds 
+ 0.16 %  in                   227 seconds 
+ 0.16 %  in                   237 seconds 
+ 0.17 %  in                   247 seconds 
+ 0.18 %  in                   257 seconds 
+ 0.19 %  in                   267 seconds 
+ 0.19 %  in                   277 seconds 
+ 0.20 %  in                   287 seconds 
+ 0.21 %  in                   297 seconds 
+ 0.21 %  in                   307 seconds 
+ 0.22 %  in                   317 seconds 
+ 0.22 %  in                   327 seconds 
+ 0.23 %  in                   337 seconds 
+ 0.24 %  in                   347 seconds 
+ 0.24 %  in                   357 seconds 
+ 0.25 %  in                   367 seconds 
+ 0.25 %  in                   377 seconds 
+ 0.26 %  in                   387 seconds 
+ 0.26 %  in                   397 seconds 
+ 0.27 %  in                   407 seconds 
+ 0.28 %  in                   417 seconds 
+ 0.28 %  in                   427 seconds 
+ 0.29 %  in                   437 seconds 
+ 0.29 %  in                   447 seconds 
+ 0.30 %  in                   457 seconds 
+ 0.30 %  in                   467 seconds 
+ 0.31 %  in                   477 seconds 
+ 0.31 %  in                   487 seconds 
+ 0.32 %  in                   497 seconds 
+ 0.32 %  in                   507 seconds 
+ 0.33 %  in                   517 seconds 
+ 0.33 %  in                   527 seconds 
+ 0.33 %  in                   537 seconds 
+ 0.34 %  in                   547 seconds 
+ 0.34 %  in                   557 seconds 
+ 0.35 %  in                   567 seconds 
+ 0.35 %  in                   577 seconds 
+ 0.36 %  in                   587 seconds 
+ 0.36 %  in                   597 seconds 
+ 0.37 %  in                   607 seconds 
+ 0.37 %  in                   617 seconds 
+ 0.37 %  in                   627 seconds 
+ 0.38 %  in                   637 seconds 
+ 0.38 %  in                   647 seconds 
+ 0.39 %  in                   657 seconds 
+ 0.39 %  in                   667 seconds 
+ 0.40 %  in                   677 seconds 
+ 0.40 %  in                   687 seconds 
+ 0.41 %  in                   697 seconds 
+ 0.41 %  in                   707 seconds 
+ 0.42 %  in                   717 seconds 
+ 0.42 %  in                   727 seconds 
+ 0.43 %  in                   737 seconds 
+ 0.43 %  in                   747 seconds 
+ 0.44 %  in                   757 seconds 
+ 0.44 %  in                   767 seconds 
+ 0.44 %  in                   777 seconds 
+ 0.45 %  in                   787 seconds 
+ 0.45 %  in                   797 seconds 
+ 0.46 %  in                   807 seconds 
+ 0.46 %  in                   817 seconds 
+ 0.47 %  in                   827 seconds 
+ 0.47 %  in                   837 seconds 
+ 0.48 %  in                   847 seconds 
+ 0.48 %  in                   857 seconds 
+ 0.49 %  in                   867 seconds 
+ 0.49 %  in                   877 seconds 
+ 0.50 %  in                   887 seconds 
+ 0.50 %  in                   897 seconds 
+ 0.51 %  in                   907 seconds 
+ 0.51 %  in                   917 seconds 
+ 0.51 %  in                   927 seconds 
+ 0.52 %  in                   937 seconds 
+ 0.52 %  in                   947 seconds 
+ 0.53 %  in                   957 seconds 
+ 0.53 %  in                   967 seconds 
+ 0.54 %  in                   977 seconds 
+ 0.54 %  in                   987 seconds 
+ 0.55 %  in                   997 seconds 
+ 0.55 %  in                  1007 seconds 
+ 0.56 %  in                  1017 seconds 
+ 0.56 %  in                  1027 seconds 
+ 0.57 %  in                  1037 seconds 
+ 0.57 %  in                  1047 seconds 
+ 0.58 %  in                  1057 seconds 
+ 0.58 %  in                  1067 seconds 
+ 0.58 %  in                  1077 seconds 
+ 0.59 %  in                  1087 seconds 
+ 0.59 %  in                  1097 seconds 
+ 0.60 %  in                  1107 seconds 
+ 0.60 %  in                  1117 seconds 
+ 0.61 %  in                  1127 seconds 
+ 0.61 %  in                  1137 seconds 
+ 0.62 %  in                  1147 seconds 
+ 0.62 %  in                  1157 seconds 
+ 0.63 %  in                  1167 seconds 
+ 0.63 %  in                  1177 seconds 
+ 0.64 %  in                  1187 seconds 
+ 0.64 %  in                  1197 seconds 
+ 0.65 %  in                  1207 seconds 
+ 0.65 %  in                  1217 seconds 
+ 0.66 %  in                  1227 seconds 
+ 0.66 %  in                  1237 seconds 
+ 0.66 %  in                  1247 seconds 
+ 0.67 %  in                  1257 seconds 
+ 0.67 %  in                  1267 seconds 
+ 0.68 %  in                  1277 seconds 
+ 0.68 %  in                  1287 seconds 
+ 0.69 %  in                  1297 seconds 
+ 0.69 %  in                  1307 seconds 
+ 0.70 %  in                  1317 seconds 
+ 0.70 %  in                  1327 seconds 
+ 0.71 %  in                  1337 seconds 
+ 0.71 %  in                  1347 seconds 
+ 0.72 %  in                  1357 seconds 
+ 0.72 %  in                  1367 seconds 
+ 0.72 %  in                  1377 seconds 
+ 0.73 %  in                  1387 seconds 
+ 0.73 %  in                  1397 seconds 
+ 0.74 %  in                  1407 seconds 
+ 0.74 %  in                  1417 seconds 
+ 0.75 %  in                  1427 seconds 
+ 0.75 %  in                  1437 seconds 
+ 0.76 %  in                  1447 seconds 
+ 0.76 %  in                  1457 seconds 
+ 0.77 %  in                  1467 seconds 
+ 0.77 %  in                  1477 seconds 
+ 0.78 %  in                  1487 seconds 
+ 0.78 %  in                  1497 seconds 
+ 0.79 %  in                  1507 seconds 
+ 0.79 %  in                  1517 seconds 
+ 0.79 %  in                  1527 seconds 
+ 0.80 %  in                  1537 seconds 
+ 0.80 %  in                  1547 seconds 
+ 0.80 %  in                  1557 seconds 
+ 0.81 %  in                  1567 seconds 
+ 0.81 %  in                  1577 seconds 
+ 0.82 %  in                  1587 seconds 
+ 0.82 %  in                  1597 seconds 
+ 0.82 %  in                  1607 seconds 
+ 0.83 %  in                  1617 seconds 
+ 0.83 %  in                  1627 seconds 
+ 0.83 %  in                  1637 seconds 
+ 0.84 %  in                  1647 seconds 
+ 0.84 %  in                  1657 seconds 
+ 0.84 %  in                  1667 seconds 
+ 0.85 %  in                  1677 seconds 
+ 0.85 %  in                  1687 seconds 
+ 0.86 %  in                  1697 seconds 
+ 0.86 %  in                  1707 seconds 
+ 0.86 %  in                  1717 seconds 
+ 0.87 %  in                  1727 seconds 
+ 0.87 %  in                  1737 seconds 
+ 0.88 %  in                  1747 seconds 
+ 0.88 %  in                  1757 seconds 
+ 0.89 %  in                  1767 seconds 
+ 0.89 %  in                  1777 seconds 
+ 0.89 %  in                  1787 seconds 
+ 0.89 %  in                  1806 seconds 
+                                                                            0.00 %  in                     6 seconds 
+ 0.00 %  in                    16 seconds 
+ 0.01 %  in                    26 seconds 
+ 0.01 %  in                    36 seconds 
+ 0.02 %  in                    46 seconds 
+ 0.03 %  in                    56 seconds 
+ 0.04 %  in                    66 seconds 
+ 0.05 %  in                    76 seconds 
+ 0.06 %  in                    86 seconds 
+ 0.07 %  in                    96 seconds 
+ 0.08 %  in                   106 seconds 
+ 0.09 %  in                   116 seconds 
+ 0.09 %  in                   126 seconds 
+ 0.10 %  in                   136 seconds 
+ 0.11 %  in                   146 seconds 
+ 0.12 %  in                   156 seconds 
+ 0.13 %  in                   166 seconds 
+ 0.14 %  in                   176 seconds 
+ 0.15 %  in                   186 seconds 
+ 0.15 %  in                   196 seconds 
+ 0.16 %  in                   206 seconds 
+ 0.17 %  in                   216 seconds 
+ 0.18 %  in                   226 seconds 
+ 0.18 %  in                   236 seconds 
+ 0.19 %  in                   246 seconds 
+ 0.20 %  in                   256 seconds 
+ 0.21 %  in                   266 seconds 
+ 0.22 %  in                   276 seconds 
+ 0.22 %  in                   286 seconds 
+ 0.23 %  in                   296 seconds 
+ 0.23 %  in                   306 seconds 
+ 0.24 %  in                   316 seconds 
+ 0.24 %  in                   326 seconds 
+ 0.25 %  in                   336 seconds 
+ 0.26 %  in                   346 seconds 
+ 0.26 %  in                   356 seconds 
+ 0.27 %  in                   366 seconds 
+ 0.28 %  in                   376 seconds 
+ 0.28 %  in                   386 seconds 
+ 0.29 %  in                   396 seconds 
+ 0.30 %  in                   406 seconds 
+ 0.30 %  in                   416 seconds 
+ 0.31 %  in                   426 seconds 
+ 0.32 %  in                   436 seconds 
+ 0.32 %  in                   446 seconds 
+ 0.33 %  in                   456 seconds 
+ 0.33 %  in                   466 seconds 
+ 0.33 %  in                   476 seconds 
+ 0.34 %  in                   486 seconds 
+ 0.34 %  in                   496 seconds 
+ 0.35 %  in                   506 seconds 
+ 0.35 %  in                   516 seconds 
+ 0.36 %  in                   526 seconds 
+ 0.36 %  in                   536 seconds 
+ 0.37 %  in                   546 seconds 
+ 0.37 %  in                   556 seconds 
+ 0.38 %  in                   566 seconds 
+ 0.38 %  in                   576 seconds 
+ 0.38 %  in                   586 seconds 
+ 0.39 %  in                   596 seconds 
+ 0.40 %  in                   606 seconds 
+ 0.40 %  in                   616 seconds 
+ 0.40 %  in                   626 seconds 
+ 0.41 %  in                   636 seconds 
+ 0.41 %  in                   646 seconds 
+ 0.42 %  in                   656 seconds 
+ 0.42 %  in                   666 seconds 
+ 0.43 %  in                   676 seconds 
+ 0.43 %  in                   686 seconds 
+ 0.44 %  in                   696 seconds 
+ 0.44 %  in                   706 seconds 
+ 0.45 %  in                   716 seconds 
+ 0.45 %  in                   726 seconds 
+ 0.46 %  in                   736 seconds 
+ 0.46 %  in                   746 seconds 
+ 0.47 %  in                   756 seconds 
+ 0.47 %  in                   766 seconds 
+ 0.48 %  in                   776 seconds 
+ 0.48 %  in                   786 seconds 
+ 0.49 %  in                   796 seconds 
+ 0.49 %  in                   806 seconds 
+ 0.50 %  in                   816 seconds 
+ 0.50 %  in                   826 seconds 
+ 0.51 %  in                   836 seconds 
+ 0.51 %  in                   846 seconds 
+ 0.52 %  in                   856 seconds 
+ 0.52 %  in                   866 seconds 
+ 0.53 %  in                   876 seconds 
+ 0.53 %  in                   886 seconds 
+ 0.54 %  in                   896 seconds 
+ 0.54 %  in                   906 seconds 
+ 0.55 %  in                   916 seconds 
+ 0.55 %  in                   926 seconds 
+ 0.56 %  in                   936 seconds 
+ 0.56 %  in                   946 seconds 
+ 0.57 %  in                   956 seconds 
+ 0.57 %  in                   966 seconds 
+ 0.58 %  in                   976 seconds 
+ 0.58 %  in                   986 seconds 
+ 0.59 %  in                   996 seconds 
+ 0.59 %  in                  1006 seconds 
+ 0.60 %  in                  1016 seconds 
+ 0.60 %  in                  1026 seconds 
+ 0.61 %  in                  1036 seconds 
+ 0.61 %  in                  1046 seconds 
+ 0.62 %  in                  1056 seconds 
+ 0.62 %  in                  1066 seconds 
+ 0.62 %  in                  1076 seconds 
+ 0.63 %  in                  1086 seconds 
+ 0.64 %  in                  1096 seconds 
+ 0.64 %  in                  1106 seconds 
+ 0.65 %  in                  1116 seconds 
+ 0.65 %  in                  1126 seconds 
+ 0.66 %  in                  1136 seconds 
+ 0.66 %  in                  1146 seconds 
+ 0.67 %  in                  1156 seconds 
+ 0.67 %  in                  1166 seconds 
+ 0.67 %  in                  1176 seconds 
+ 0.68 %  in                  1186 seconds 
+ 0.69 %  in                  1196 seconds 
+ 0.69 %  in                  1206 seconds 
+ 0.70 %  in                  1216 seconds 
+ 0.70 %  in                  1226 seconds 
+ 0.70 %  in                  1236 seconds 
+ 0.71 %  in                  1246 seconds 
+ 0.71 %  in                  1256 seconds 
+ 0.72 %  in                  1266 seconds 
+ 0.72 %  in                  1276 seconds 
+ 0.73 %  in                  1286 seconds 
+ 0.73 %  in                  1296 seconds 
+ 0.74 %  in                  1306 seconds 
+ 0.74 %  in                  1316 seconds 
+ 0.75 %  in                  1326 seconds 
+ 0.75 %  in                  1336 seconds 
+ 0.76 %  in                  1346 seconds 
+ 0.76 %  in                  1356 seconds 
+ 0.77 %  in                  1366 seconds 
+ 0.77 %  in                  1376 seconds 
+ 0.78 %  in                  1386 seconds 
+ 0.78 %  in                  1396 seconds 
+ 0.78 %  in                  1406 seconds 
+ 0.79 %  in                  1416 seconds 
+ 0.79 %  in                  1426 seconds 
+ 0.80 %  in                  1436 seconds 
+ 0.80 %  in                  1446 seconds 
+ 0.80 %  in                  1456 seconds 
+ 0.81 %  in                  1466 seconds 
+ 0.81 %  in                  1476 seconds 
+ 0.81 %  in                  1486 seconds 
+ 0.82 %  in                  1496 seconds 
+ 0.82 %  in                  1506 seconds 
+ 0.83 %  in                  1516 seconds 
+ 0.83 %  in                  1526 seconds 
+ 0.83 %  in                  1536 seconds 
+ 0.84 %  in                  1546 seconds 
+ 0.84 %  in                  1556 seconds 
+ 0.85 %  in                  1566 seconds 
+ 0.85 %  in                  1576 seconds 
+ 0.85 %  in                  1586 seconds 
+ 0.86 %  in                  1596 seconds 
+ 0.86 %  in                  1606 seconds 
+ 0.87 %  in                  1616 seconds 
+ 0.87 %  in                  1626 seconds 
+ 0.88 %  in                  1636 seconds 
+ 0.88 %  in                  1646 seconds 
+ 0.88 %  in                  1656 seconds 
+ 0.89 %  in                  1666 seconds 
+                                                                            0.00 %  in                     7 seconds 
+ 0.00 %  in                    17 seconds 
+ 0.01 %  in                    27 seconds 
+ 0.01 %  in                    37 seconds 
+ 0.02 %  in                    47 seconds 
+ 0.02 %  in                    57 seconds 
+ 0.03 %  in                    67 seconds 
+ 0.04 %  in                    77 seconds 
+ 0.04 %  in                    87 seconds 
+ 0.05 %  in                    97 seconds 
+ 0.06 %  in                   107 seconds 
+ 0.07 %  in                   117 seconds 
+ 0.08 %  in                   127 seconds 
+ 0.09 %  in                   137 seconds 
+ 0.10 %  in                   147 seconds 
+ 0.10 %  in                   157 seconds 
+ 0.11 %  in                   167 seconds 
+ 0.12 %  in                   177 seconds 
+ 0.12 %  in                   187 seconds 
+ 0.13 %  in                   197 seconds 
+ 0.15 %  in                   207 seconds 
+ 0.15 %  in                   217 seconds 
+ 0.16 %  in                   227 seconds 
+ 0.17 %  in                   237 seconds 
+ 0.18 %  in                   247 seconds 
+ 0.18 %  in                   257 seconds 
+ 0.19 %  in                   267 seconds 
+ 0.20 %  in                   277 seconds 
+ 0.21 %  in                   287 seconds 
+ 0.22 %  in                   297 seconds 
+ 0.22 %  in                   307 seconds 
+ 0.23 %  in                   317 seconds 
+ 0.23 %  in                   327 seconds 
+ 0.24 %  in                   337 seconds 
+ 0.25 %  in                   347 seconds 
+ 0.26 %  in                   357 seconds 
+ 0.26 %  in                   367 seconds 
+ 0.27 %  in                   377 seconds 
+ 0.27 %  in                   387 seconds 
+ 0.28 %  in                   397 seconds 
+ 0.28 %  in                   407 seconds 
+ 0.29 %  in                   417 seconds 
+ 0.29 %  in                   427 seconds 
+ 0.30 %  in                   437 seconds 
+ 0.30 %  in                   447 seconds 
+ 0.31 %  in                   457 seconds 
+ 0.31 %  in                   467 seconds 
+ 0.32 %  in                   477 seconds 
+ 0.32 %  in                   487 seconds 
+ 0.33 %  in                   497 seconds 
+ 0.33 %  in                   507 seconds 
+ 0.34 %  in                   517 seconds 
+ 0.34 %  in                   527 seconds 
+ 0.35 %  in                   537 seconds 
+ 0.35 %  in                   547 seconds 
+ 0.35 %  in                   557 seconds 
+ 0.36 %  in                   567 seconds 
+ 0.36 %  in                   577 seconds 
+ 0.37 %  in                   587 seconds 
+ 0.37 %  in                   597 seconds 
+ 0.38 %  in                   607 seconds 
+ 0.38 %  in                   617 seconds 
+ 0.39 %  in                   627 seconds 
+ 0.39 %  in                   637 seconds 
+ 0.40 %  in                   647 seconds 
+ 0.40 %  in                   657 seconds 
+ 0.40 %  in                   667 seconds 
+ 0.41 %  in                   677 seconds 
+ 0.41 %  in                   687 seconds 
+ 0.42 %  in                   697 seconds 
+ 0.42 %  in                   707 seconds 
+ 0.43 %  in                   717 seconds 
+ 0.43 %  in                   727 seconds 
+ 0.44 %  in                   737 seconds 
+ 0.44 %  in                   747 seconds 
+ 0.45 %  in                   757 seconds 
+ 0.45 %  in                   767 seconds 
+ 0.46 %  in                   777 seconds 
+ 0.46 %  in                   787 seconds 
+ 0.46 %  in                   797 seconds 
+ 0.47 %  in                   807 seconds 
+ 0.47 %  in                   817 seconds 
+ 0.48 %  in                   827 seconds 
+ 0.48 %  in                   837 seconds 
+ 0.49 %  in                   847 seconds 
+ 0.49 %  in                   857 seconds 
+ 0.50 %  in                   867 seconds 
+ 0.50 %  in                   877 seconds 
+ 0.51 %  in                   887 seconds 
+ 0.51 %  in                   897 seconds 
+ 0.52 %  in                   907 seconds 
+ 0.52 %  in                   917 seconds 
+ 0.53 %  in                   927 seconds 
+ 0.53 %  in                   937 seconds 
+ 0.54 %  in                   947 seconds 
+ 0.54 %  in                   957 seconds 
+ 0.54 %  in                   967 seconds 
+ 0.55 %  in                   977 seconds 
+ 0.55 %  in                   987 seconds 
+ 0.56 %  in                   997 seconds 
+ 0.56 %  in                  1007 seconds 
+ 0.57 %  in                  1017 seconds 
+ 0.57 %  in                  1027 seconds 
+ 0.58 %  in                  1037 seconds 
+ 0.58 %  in                  1047 seconds 
+ 0.58 %  in                  1057 seconds 
+ 0.59 %  in                  1067 seconds 
+ 0.59 %  in                  1077 seconds 
+ 0.60 %  in                  1087 seconds 
+ 0.60 %  in                  1097 seconds 
+ 0.61 %  in                  1107 seconds 
+ 0.61 %  in                  1117 seconds 
+ 0.62 %  in                  1127 seconds 
+ 0.62 %  in                  1137 seconds 
+ 0.62 %  in                  1147 seconds 
+ 0.63 %  in                  1157 seconds 
+ 0.63 %  in                  1167 seconds 
+ 0.64 %  in                  1177 seconds 
+ 0.64 %  in                  1187 seconds 
+ 0.65 %  in                  1197 seconds 
+ 0.65 %  in                  1207 seconds 
+ 0.66 %  in                  1217 seconds 
+ 0.66 %  in                  1227 seconds 
+ 0.67 %  in                  1237 seconds 
+ 0.67 %  in                  1247 seconds 
+ 0.67 %  in                  1257 seconds 
+ 0.68 %  in                  1267 seconds 
+ 0.68 %  in                  1277 seconds 
+ 0.69 %  in                  1287 seconds 
+ 0.69 %  in                  1297 seconds 
+ 0.70 %  in                  1307 seconds 
+ 0.70 %  in                  1317 seconds 
+ 0.70 %  in                  1327 seconds 
+ 0.71 %  in                  1337 seconds 
+ 0.71 %  in                  1347 seconds 
+ 0.72 %  in                  1357 seconds 
+ 0.72 %  in                  1367 seconds 
+ 0.73 %  in                  1377 seconds 
+ 0.73 %  in                  1387 seconds 
+ 0.73 %  in                  1397 seconds 
+ 0.74 %  in                  1407 seconds 
+ 0.74 %  in                  1417 seconds 
+ 0.74 %  in                  1427 seconds 
+ 0.75 %  in                  1437 seconds 
+ 0.75 %  in                  1447 seconds 
+ 0.75 %  in                  1457 seconds 
+ 0.76 %  in                  1467 seconds 
+ 0.76 %  in                  1477 seconds 
+ 0.77 %  in                  1487 seconds 
+ 0.77 %  in                  1497 seconds 
+ 0.77 %  in                  1507 seconds 
+ 0.78 %  in                  1517 seconds 
+ 0.78 %  in                  1527 seconds 
+ 0.79 %  in                  1537 seconds 
+ 0.79 %  in                  1547 seconds 
+ 0.79 %  in                  1557 seconds 
+ 0.80 %  in                  1567 seconds 
+ 0.80 %  in                  1577 seconds 
+ 0.81 %  in                  1587 seconds 
+ 0.81 %  in                  1597 seconds 
+ 0.81 %  in                  1612 seconds 
+                                                                            0.00 %  in                     7 seconds 
+ 0.00 %  in                    17 seconds 
+ 0.01 %  in                    27 seconds 
+ 0.01 %  in                    37 seconds 
+ 0.02 %  in                    47 seconds 
+ 0.03 %  in                    57 seconds 
+ 0.03 %  in                    67 seconds 
+ 0.04 %  in                    77 seconds 
+ 0.05 %  in                    87 seconds 
+ 0.06 %  in                    97 seconds 
+ 0.07 %  in                   107 seconds 
+ 0.08 %  in                   117 seconds 
+ 0.08 %  in                   127 seconds 
+ 0.09 %  in                   137 seconds 
+ 0.10 %  in                   147 seconds 
+ 0.11 %  in                   157 seconds 
+ 0.12 %  in                   167 seconds 
+ 0.13 %  in                   177 seconds 
+ 0.13 %  in                   187 seconds 
+ 0.14 %  in                   197 seconds 
+ 0.15 %  in                   207 seconds 
+ 0.16 %  in                   217 seconds 
+ 0.17 %  in                   227 seconds 
+ 0.17 %  in                   237 seconds 
+ 0.18 %  in                   247 seconds 
+ 0.19 %  in                   257 seconds 
+ 0.19 %  in                   267 seconds 
+ 0.20 %  in                   277 seconds 
+ 0.21 %  in                   287 seconds 
+ 0.22 %  in                   297 seconds 
+ 0.22 %  in                   307 seconds 
+ 0.23 %  in                   317 seconds 
+ 0.24 %  in                   327 seconds 
+ 0.25 %  in                   337 seconds 
+ 0.25 %  in                   347 seconds 
+ 0.26 %  in                   357 seconds 
+ 0.27 %  in                   367 seconds 
+ 0.28 %  in                   377 seconds 
+ 0.28 %  in                   387 seconds 
+ 0.29 %  in                   397 seconds 
+ 0.29 %  in                   407 seconds 
+ 0.30 %  in                   417 seconds 
+ 0.31 %  in                   427 seconds 
+ 0.31 %  in                   437 seconds 
+ 0.32 %  in                   447 seconds 
+ 0.32 %  in                   457 seconds 
+ 0.33 %  in                   467 seconds 
+ 0.33 %  in                   477 seconds 
+ 0.34 %  in                   487 seconds 
+ 0.35 %  in                   497 seconds 
+ 0.35 %  in                   507 seconds 
+ 0.36 %  in                   517 seconds 
+ 0.37 %  in                   527 seconds 
+ 0.37 %  in                   537 seconds 
+ 0.38 %  in                   547 seconds 
+ 0.38 %  in                   557 seconds 
+ 0.39 %  in                   567 seconds 
+ 0.39 %  in                   577 seconds 
+ 0.39 %  in                   587 seconds 
+ 0.40 %  in                   597 seconds 
+ 0.40 %  in                   607 seconds 
+ 0.41 %  in                   617 seconds 
+ 0.41 %  in                   627 seconds 
+ 0.42 %  in                   637 seconds 
+ 0.42 %  in                   647 seconds 
+ 0.43 %  in                   657 seconds 
+ 0.43 %  in                   667 seconds 
+ 0.44 %  in                   677 seconds 
+ 0.44 %  in                   687 seconds 
+ 0.45 %  in                   697 seconds 
+ 0.45 %  in                   707 seconds 
+ 0.46 %  in                   717 seconds 
+ 0.46 %  in                   727 seconds 
+ 0.47 %  in                   737 seconds 
+ 0.47 %  in                   747 seconds 
+ 0.48 %  in                   757 seconds 
+ 0.48 %  in                   767 seconds 
+ 0.49 %  in                   777 seconds 
+ 0.49 %  in                   787 seconds 
+ 0.50 %  in                   797 seconds 
+ 0.50 %  in                   807 seconds 
+ 0.51 %  in                   817 seconds 
+ 0.51 %  in                   827 seconds 
+ 0.52 %  in                   837 seconds 
+ 0.52 %  in                   847 seconds 
+ 0.53 %  in                   857 seconds 
+ 0.53 %  in                   867 seconds 
+ 0.54 %  in                   877 seconds 
+ 0.54 %  in                   887 seconds 
+ 0.55 %  in                   897 seconds 
+ 0.55 %  in                   907 seconds 
+ 0.56 %  in                   917 seconds 
+ 0.56 %  in                   927 seconds 
+ 0.57 %  in                   937 seconds 
+ 0.57 %  in                   947 seconds 
+ 0.58 %  in                   957 seconds 
+ 0.58 %  in                   967 seconds 
+ 0.59 %  in                   977 seconds 
+ 0.59 %  in                   987 seconds 
+ 0.60 %  in                   997 seconds 
+ 0.60 %  in                  1007 seconds 
+ 0.61 %  in                  1017 seconds 
+ 0.61 %  in                  1027 seconds 
+ 0.62 %  in                  1037 seconds 
+ 0.62 %  in                  1047 seconds 
+ 0.63 %  in                  1057 seconds 
+ 0.63 %  in                  1067 seconds 
+ 0.64 %  in                  1077 seconds 
+ 0.64 %  in                  1087 seconds 
+ 0.65 %  in                  1097 seconds 
+ 0.65 %  in                  1107 seconds 
+ 0.66 %  in                  1117 seconds 
+ 0.66 %  in                  1127 seconds 
+ 0.67 %  in                  1137 seconds 
+ 0.67 %  in                  1147 seconds 
+ 0.68 %  in                  1157 seconds 
+ 0.68 %  in                  1167 seconds 
+ 0.69 %  in                  1177 seconds 
+ 0.69 %  in                  1187 seconds 
+ 0.70 %  in                  1197 seconds 
+ 0.70 %  in                  1207 seconds 
+ 0.71 %  in                  1217 seconds 
+ 0.71 %  in                  1227 seconds 
+ 0.72 %  in                  1237 seconds 
+ 0.72 %  in                  1247 seconds 
+ 0.73 %  in                  1257 seconds 
+ 0.73 %  in                  1267 seconds 
+ 0.74 %  in                  1277 seconds 
+ 0.74 %  in                  1287 seconds 
+ 0.75 %  in                  1297 seconds 
+ 0.75 %  in                  1307 seconds 
+ 0.76 %  in                  1317 seconds 
+ 0.76 %  in                  1327 seconds 
+ 0.77 %  in                  1337 seconds 
+ 0.77 %  in                  1347 seconds 
+ 0.78 %  in                  1357 seconds 
+ 0.78 %  in                  1367 seconds 
+ 0.79 %  in                  1377 seconds 
+ 0.79 %  in                  1387 seconds 
+ 0.80 %  in                  1397 seconds 
+ 0.80 %  in                  1407 seconds 
+ 0.81 %  in                  1417 seconds 
+ 0.81 %  in                  1427 seconds 
+ 0.81 %  in                  1437 seconds 
+ 0.82 %  in                  1447 seconds 
+ 0.82 %  in                  1457 seconds 
+ 0.83 %  in                  1467 seconds 
+ 0.83 %  in                  1477 seconds 
+ 0.84 %  in                  1487 seconds 
+ 0.84 %  in                  1497 seconds 
+ 0.85 %  in                  1507 seconds 
+ 0.85 %  in                  1517 seconds 
+ 0.86 %  in                  1527 seconds 
+ 0.86 %  in                  1537 seconds 
+ 0.87 %  in                  1547 seconds 
+ 0.87 %  in                  1557 seconds 
+ 0.88 %  in                  1567 seconds 
+ 0.88 %  in                  1577 seconds 
+ 0.89 %  in                  1587 seconds 
+ 0.89 %  in                  1597 seconds 
+ 0.90 %  in                  1607 seconds 
+ 0.90 %  in                  1617 seconds 
+ 0.91 %  in                  1627 seconds 
+ 0.91 %  in                  1637 seconds 
+ 0.92 %  in                  1647 seconds 
+ 0.92 %  in                  1657 seconds 
+ 0.93 %  in                  1667 seconds 
+ 0.93 %  in                  1677 seconds 
+ 0.94 %  in                  1687 seconds 
+ 0.94 %  in                  1697 seconds 
+ 0.95 %  in                  1707 seconds 
+ 0.95 %  in                  1717 seconds 
+ 0.96 %  in                  1727 seconds 
+ 0.96 %  in                  1737 seconds 
+ 0.96 %  in                  1747 seconds 
+ 0.97 %  in                  1757 seconds 
+ 0.97 %  in                  1767 seconds 
+ 0.98 %  in                  1777 seconds 
+ 0.98 %  in                  1787 seconds 
+ 0.99 %  in                  1797 seconds 
+ 0.99 %  in                  1807 seconds 
+ 1.00 %  in                  1817 seconds 
+ 1.00 %  in                  1827 seconds 
+ 1.00 %  in                  1837 seconds 
+ 1.01 %  in                  1847 seconds 
+ 1.01 %  in                  1857 seconds 
+ 1.02 %  in                  1867 seconds 
+ 1.02 %  in                  1877 seconds 
+ 1.02 %  in                  1887 seconds 
+ 1.03 %  in                  1897 seconds 
+ 1.03 %  in                  1907 seconds 
+ 1.04 %  in                  1917 seconds 
+ 1.04 %  in                  1927 seconds 
+ 1.05 %  in                  1937 seconds 
+ 1.05 %  in                  1947 seconds 
+ 1.05 %  in                  1957 seconds 
+ 1.06 %  in                  1967 seconds 
+ 1.06 %  in                  1977 seconds 
+ 1.07 %  in                  1987 seconds 
+ 1.07 %  in                  1997 seconds 
+ 1.07 %  in                  2007 seconds 
+                                                                            0.00 %  in                     7 seconds 
+ 0.00 %  in                    17 seconds 
+ 0.01 %  in                    27 seconds 
+ 0.01 %  in                    37 seconds 
+ 0.02 %  in                    47 seconds 
+ 0.02 %  in                    57 seconds 
+ 0.03 %  in                    67 seconds 
+ 0.04 %  in                    77 seconds 
+ 0.04 %  in                    87 seconds 
+ 0.05 %  in                    97 seconds 
+ 0.06 %  in                   107 seconds 
+ 0.07 %  in                   117 seconds 
+ 0.08 %  in                   127 seconds 
+ 0.09 %  in                   137 seconds 
+ 0.10 %  in                   147 seconds 
+ 0.10 %  in                   157 seconds 
+ 0.11 %  in                   167 seconds 
+ 0.11 %  in                   177 seconds 
+ 0.12 %  in                   187 seconds 
+ 0.13 %  in                   197 seconds 
+ 0.14 %  in                   207 seconds 
+ 0.14 %  in                   217 seconds 
+ 0.15 %  in                   227 seconds 
+ 0.16 %  in                   237 seconds 
+ 0.17 %  in                   247 seconds 
+ 0.18 %  in                   257 seconds 
+ 0.19 %  in                   267 seconds 
+ 0.19 %  in                   277 seconds 
+ 0.20 %  in                   287 seconds 
+ 0.20 %  in                   297 seconds 
+ 0.21 %  in                   307 seconds 
+ 0.22 %  in                   317 seconds 
+ 0.23 %  in                   327 seconds 
+ 0.24 %  in                   337 seconds 
+ 0.25 %  in                   347 seconds 
+ 0.25 %  in                   357 seconds 
+ 0.26 %  in                   367 seconds 
+ 0.26 %  in                   377 seconds 
+ 0.27 %  in                   387 seconds 
+ 0.27 %  in                   397 seconds 
+ 0.28 %  in                   407 seconds 
+ 0.29 %  in                   417 seconds 
+ 0.29 %  in                   427 seconds 
+ 0.30 %  in                   437 seconds 
+ 0.30 %  in                   447 seconds 
+ 0.31 %  in                   457 seconds 
+ 0.32 %  in                   467 seconds 
+ 0.32 %  in                   477 seconds 
+ 0.33 %  in                   487 seconds 
+ 0.33 %  in                   497 seconds 
+ 0.34 %  in                   507 seconds 
+ 0.34 %  in                   517 seconds 
+ 0.35 %  in                   527 seconds 
+ 0.36 %  in                   537 seconds 
+ 0.36 %  in                   547 seconds 
+ 0.37 %  in                   557 seconds 
+ 0.37 %  in                   567 seconds 
+ 0.38 %  in                   577 seconds 
+ 0.38 %  in                   587 seconds 
+ 0.39 %  in                   597 seconds 
+ 0.39 %  in                   607 seconds 
+ 0.40 %  in                   617 seconds 
+ 0.40 %  in                   627 seconds 
+ 0.41 %  in                   637 seconds 
+ 0.41 %  in                   647 seconds 
+ 0.42 %  in                   657 seconds 
+ 0.42 %  in                   667 seconds 
+ 0.43 %  in                   677 seconds 
+ 0.43 %  in                   687 seconds 
+ 0.44 %  in                   697 seconds 
+ 0.44 %  in                   707 seconds 
+ 0.44 %  in                   717 seconds 
+ 0.45 %  in                   727 seconds 
+ 0.45 %  in                   737 seconds 
+ 0.46 %  in                   747 seconds 
+ 0.46 %  in                   757 seconds 
+ 0.47 %  in                   767 seconds 
+ 0.47 %  in                   777 seconds 
+ 0.48 %  in                   787 seconds 
+ 0.48 %  in                   797 seconds 
+ 0.49 %  in                   807 seconds 
+ 0.49 %  in                   817 seconds 
+ 0.50 %  in                   827 seconds 
+ 0.50 %  in                   837 seconds 
+ 0.51 %  in                   847 seconds 
+ 0.51 %  in                   857 seconds 
+ 0.52 %  in                   867 seconds 
+ 0.52 %  in                   877 seconds 
+ 0.52 %  in                   887 seconds 
+ 0.53 %  in                   897 seconds 
+ 0.53 %  in                   907 seconds 
+ 0.54 %  in                   917 seconds 
+ 0.55 %  in                   927 seconds 
+ 0.55 %  in                   937 seconds 
+ 0.55 %  in                   947 seconds 
+ 0.56 %  in                   957 seconds 
+ 0.56 %  in                   967 seconds 
+ 0.57 %  in                   977 seconds 
+ 0.57 %  in                   987 seconds 
+ 0.58 %  in                   997 seconds 
+ 0.58 %  in                  1007 seconds 
+ 0.59 %  in                  1017 seconds 
+ 0.59 %  in                  1027 seconds 
+ 0.60 %  in                  1037 seconds 
+ 0.60 %  in                  1047 seconds 
+ 0.61 %  in                  1057 seconds 
+ 0.61 %  in                  1067 seconds 
+ 0.62 %  in                  1077 seconds 
+ 0.62 %  in                  1087 seconds 
+ 0.63 %  in                  1097 seconds 
+ 0.63 %  in                  1107 seconds 
+ 0.64 %  in                  1117 seconds 
+ 0.64 %  in                  1127 seconds 
+ 0.65 %  in                  1137 seconds 
+ 0.65 %  in                  1147 seconds 
+ 0.66 %  in                  1157 seconds 
+ 0.66 %  in                  1167 seconds 
+ 0.67 %  in                  1177 seconds 
+ 0.67 %  in                  1187 seconds 
+ 0.68 %  in                  1197 seconds 
+ 0.68 %  in                  1207 seconds 
+ 0.69 %  in                  1217 seconds 
+ 0.69 %  in                  1227 seconds 
+ 0.70 %  in                  1237 seconds 
+ 0.70 %  in                  1247 seconds 
+ 0.71 %  in                  1257 seconds 
+ 0.71 %  in                  1267 seconds 
+ 0.72 %  in                  1277 seconds 
+ 0.72 %  in                  1287 seconds 
+ 0.72 %  in                  1297 seconds 
+ 0.73 %  in                  1307 seconds 
+ 0.73 %  in                  1317 seconds 
+ 0.74 %  in                  1327 seconds 
+ 0.74 %  in                  1337 seconds 
+ 0.75 %  in                  1347 seconds 
+ 0.75 %  in                  1357 seconds 
+ 0.76 %  in                  1367 seconds 
+ 0.76 %  in                  1377 seconds 
+ 0.77 %  in                  1387 seconds 
+ 0.77 %  in                  1397 seconds 
+ 0.78 %  in                  1407 seconds 
+ 0.78 %  in                  1417 seconds 
+ 0.79 %  in                  1427 seconds 
+ 0.79 %  in                  1437 seconds 
+ 0.80 %  in                  1447 seconds 
+ 0.80 %  in                  1457 seconds 
+ 0.81 %  in                  1467 seconds 
+ 0.81 %  in                  1477 seconds 
+ 0.82 %  in                  1487 seconds 
+ 0.82 %  in                  1497 seconds 
+ 0.83 %  in                  1507 seconds 
+ 0.83 %  in                  1517 seconds 
+ 0.84 %  in                  1527 seconds 
+ 0.84 %  in                  1537 seconds 
+ 0.85 %  in                  1547 seconds 
+ 0.85 %  in                  1557 seconds 
+ 0.85 %  in                  1567 seconds 
+ 0.86 %  in                  1577 seconds 
+ 0.86 %  in                  1587 seconds 
+ 0.87 %  in                  1597 seconds 
+ 0.87 %  in                  1607 seconds 
+ 0.88 %  in                  1617 seconds 
+ 0.88 %  in                  1627 seconds 
+ 0.89 %  in                  1637 seconds 
+ 0.89 %  in                  1647 seconds 
+ 0.90 %  in                  1657 seconds 
+ 0.90 %  in                  1667 seconds 
+ 0.91 %  in                  1677 seconds 
+ 0.91 %  in                  1687 seconds 
+ 0.92 %  in                  1697 seconds 
+ 0.92 %  in                  1707 seconds 
+ 0.93 %  in                  1717 seconds 
+ 0.93 %  in                  1727 seconds 
+ 0.94 %  in                  1737 seconds 
+ 0.94 %  in                  1747 seconds 
+ 0.95 %  in                  1757 seconds 
+ 0.95 %  in                  1767 seconds 
+ 0.96 %  in                  1777 seconds 
+ 0.96 %  in                  1787 seconds 
+ 0.96 %  in                  1797 seconds 
+ 0.97 %  in                  1807 seconds 
+ 0.97 %  in                  1817 seconds 
+ 0.98 %  in                  1827 seconds 
+ 0.98 %  in                  1837 seconds 
+ 0.99 %  in                  1847 seconds 
+ 0.99 %  in                  1857 seconds 
+ 1.00 %  in                  1867 seconds 
+ 1.00 %  in                  1877 seconds 
+ 1.01 %  in                  1887 seconds 
+ 1.01 %  in                  1897 seconds 
+ 1.02 %  in                  1907 seconds 
+ 1.02 %  in                  1917 seconds 
+ 1.03 %  in                  1927 seconds 
+ 1.03 %  in                  1937 seconds 
+ 1.04 %  in                  1947 seconds 
+ 1.04 %  in                  1957 seconds 
+ 1.05 %  in                  1967 seconds 
+ 1.05 %  in                  1977 seconds 
+ 1.06 %  in                  1987 seconds 
+ 1.06 %  in                  1997 seconds 
+ 1.06 %  in                  2007 seconds 
+ 1.07 %  in                  2017 seconds 
+ 1.07 %  in                  2027 seconds 
+ 1.08 %  in                  2037 seconds 
+ 1.08 %  in                  2047 seconds 
+ 1.08 %  in                  2057 seconds 
+ 1.09 %  in                  2067 seconds 
+ 1.09 %  in                  2077 seconds 
+ 1.10 %  in                  2087 seconds 
+ 1.10 %  in                  2097 seconds 
+ 1.10 %  in                  2109 seconds 
+ 1.10 %  in                  2121 seconds 
+                                                                            0.00 %  in                     7 seconds 
+ 0.00 %  in                    17 seconds 
+ 0.01 %  in                    27 seconds 
+ 0.01 %  in                    37 seconds 
+ 0.02 %  in                    47 seconds 
+ 0.02 %  in                    57 seconds 
+ 0.03 %  in                    67 seconds 
+ 0.04 %  in                    77 seconds 
+ 0.04 %  in                    87 seconds 
+ 0.05 %  in                    97 seconds 
+ 0.06 %  in                   107 seconds 
+ 0.07 %  in                   117 seconds 
+ 0.08 %  in                   127 seconds 
+ 0.09 %  in                   137 seconds 
+ 0.10 %  in                   147 seconds 
+ 0.11 %  in                   157 seconds 
+ 0.11 %  in                   167 seconds 
+ 0.12 %  in                   177 seconds 
+ 0.13 %  in                   187 seconds 
+ 0.14 %  in                   197 seconds 
+ 0.15 %  in                   207 seconds 
+ 0.16 %  in                   217 seconds 
+ 0.17 %  in                   227 seconds 
+ 0.18 %  in                   237 seconds 
+ 0.18 %  in                   247 seconds 
+ 0.19 %  in                   257 seconds 
+ 0.20 %  in                   267 seconds 
+ 0.21 %  in                   277 seconds 
+ 0.21 %  in                   287 seconds 
+ 0.22 %  in                   297 seconds 
+ 0.24 %  in                   307 seconds 
+ 0.24 %  in                   317 seconds 
+ 0.25 %  in                   327 seconds 
+ 0.26 %  in                   337 seconds 
+ 0.26 %  in                   347 seconds 
+ 0.27 %  in                   357 seconds 
+ 0.28 %  in                   367 seconds 
+ 0.28 %  in                   377 seconds 
+ 0.29 %  in                   387 seconds 
+ 0.30 %  in                   397 seconds 
+ 0.31 %  in                   407 seconds 
+ 0.31 %  in                   417 seconds 
+ 0.32 %  in                   427 seconds 
+ 0.32 %  in                   437 seconds 
+ 0.33 %  in                   447 seconds 
+ 0.34 %  in                   457 seconds 
+ 0.35 %  in                   467 seconds 
+ 0.35 %  in                   477 seconds 
+ 0.36 %  in                   487 seconds 
+ 0.36 %  in                   497 seconds 
+ 0.37 %  in                   507 seconds 
+ 0.38 %  in                   517 seconds 
+ 0.38 %  in                   527 seconds 
+ 0.39 %  in                   537 seconds 
+ 0.39 %  in                   547 seconds 
+ 0.40 %  in                   557 seconds 
+ 0.41 %  in                   567 seconds 
+ 0.41 %  in                   577 seconds 
+ 0.42 %  in                   587 seconds 
+ 0.42 %  in                   597 seconds 
+ 0.43 %  in                   607 seconds 
+ 0.43 %  in                   617 seconds 
+ 0.43 %  in                   627 seconds 
+ 0.44 %  in                   637 seconds 
+ 0.45 %  in                   647 seconds 
+ 0.45 %  in                   657 seconds 
+ 0.46 %  in                   667 seconds 
+ 0.46 %  in                   677 seconds 
+ 0.46 %  in                   687 seconds 
+ 0.47 %  in                   697 seconds 
+ 0.47 %  in                   707 seconds 
+ 0.48 %  in                   717 seconds 
+ 0.48 %  in                   727 seconds 
+ 0.49 %  in                   737 seconds 
+ 0.50 %  in                   747 seconds 
+ 0.50 %  in                   757 seconds 
+ 0.51 %  in                   767 seconds 
+ 0.51 %  in                   777 seconds 
+ 0.52 %  in                   787 seconds 
+ 0.52 %  in                   797 seconds 
+ 0.53 %  in                   807 seconds 
+ 0.53 %  in                   817 seconds 
+ 0.54 %  in                   827 seconds 
+ 0.54 %  in                   837 seconds 
+ 0.55 %  in                   847 seconds 
+ 0.55 %  in                   857 seconds 
+ 0.56 %  in                   867 seconds 
+ 0.56 %  in                   877 seconds 
+ 0.57 %  in                   887 seconds 
+ 0.57 %  in                   897 seconds 
+ 0.58 %  in                   907 seconds 
+ 0.58 %  in                   917 seconds 
+ 0.59 %  in                   927 seconds 
+ 0.60 %  in                   937 seconds 
+ 0.60 %  in                   947 seconds 
+ 0.61 %  in                   957 seconds 
+ 0.61 %  in                   967 seconds 
+ 0.62 %  in                   977 seconds 
+ 0.62 %  in                   987 seconds 
+ 0.63 %  in                   997 seconds 
+ 0.63 %  in                  1007 seconds 
+ 0.64 %  in                  1017 seconds 
+ 0.64 %  in                  1027 seconds 
+ 0.65 %  in                  1037 seconds 
+ 0.65 %  in                  1047 seconds 
+ 0.66 %  in                  1057 seconds 
+ 0.66 %  in                  1067 seconds 
+ 0.67 %  in                  1077 seconds 
+ 0.67 %  in                  1087 seconds 
+ 0.68 %  in                  1097 seconds 
+ 0.68 %  in                  1107 seconds 
+ 0.69 %  in                  1117 seconds 
+ 0.69 %  in                  1127 seconds 
+ 0.70 %  in                  1137 seconds 
+ 0.70 %  in                  1147 seconds 
+ 0.71 %  in                  1157 seconds 
+ 0.71 %  in                  1167 seconds 
+ 0.72 %  in                  1177 seconds 
+ 0.72 %  in                  1187 seconds 
+ 0.73 %  in                  1197 seconds 
+ 0.73 %  in                  1207 seconds 
+ 0.74 %  in                  1217 seconds 
+ 0.74 %  in                  1227 seconds 
+ 0.75 %  in                  1237 seconds 
+ 0.76 %  in                  1247 seconds 
+ 0.76 %  in                  1257 seconds 
+ 0.77 %  in                  1267 seconds 
+ 0.77 %  in                  1277 seconds 
+ 0.78 %  in                  1287 seconds 
+ 0.78 %  in                  1297 seconds 
+ 0.79 %  in                  1307 seconds 
+ 0.79 %  in                  1317 seconds 
+ 0.80 %  in                  1327 seconds 
+ 0.80 %  in                  1337 seconds 
+ 0.81 %  in                  1347 seconds 
+ 0.81 %  in                  1357 seconds 
+ 0.82 %  in                  1367 seconds 
+ 0.82 %  in                  1377 seconds 
+ 0.83 %  in                  1387 seconds 
+ 0.83 %  in                  1397 seconds 
+ 0.84 %  in                  1407 seconds 
+ 0.84 %  in                  1417 seconds 
+ 0.85 %  in                  1427 seconds 
+ 0.85 %  in                  1437 seconds 
+ 0.86 %  in                  1447 seconds 
+ 0.86 %  in                  1457 seconds 
+ 0.87 %  in                  1467 seconds 
+ 0.87 %  in                  1477 seconds 
+ 0.88 %  in                  1487 seconds 
+ 0.89 %  in                  1497 seconds 
+ 0.89 %  in                  1507 seconds 
+ 0.90 %  in                  1517 seconds 
+ 0.90 %  in                  1527 seconds 
+ 0.91 %  in                  1537 seconds 
+ 0.91 %  in                  1547 seconds 
+ 0.92 %  in                  1557 seconds 
+ 0.92 %  in                  1567 seconds 
+ 0.93 %  in                  1577 seconds 
+ 0.93 %  in                  1587 seconds 
+ 0.94 %  in                  1597 seconds 
+ 0.94 %  in                  1607 seconds 
+ 0.95 %  in                  1617 seconds 
+ 0.95 %  in                  1627 seconds 
+ 0.96 %  in                  1638 seconds 
+                                                                            0.22 %  in                    98 seconds 
+ 0.44 %  in                   168 seconds 
+ 0.66 %  in                   294 seconds 
+ 0.88 %  in                   589 seconds 
+ 1.10 %  in                   873 seconds 
+ 1.32 %  in                  1150 seconds 
+ 1.55 %  in                  1427 seconds 
+ 1.77 %  in                  1706 seconds 
+ 1.99 %  in                  1978 seconds 
+ 2.21 %  in                  2150 seconds 
+ 2.43 %  in                  2319 seconds 
+ 2.65 %  in                  2473 seconds 
+ 2.87 %  in                  2608 seconds 
+ 3.09 %  in                  2741 seconds 
+ 3.31 %  in                  2861 seconds 
+ 3.53 %  in                  3015 seconds 
+ 3.75 %  in                  3175 seconds 
+ 3.97 %  in                  3305 seconds 
+ 4.19 %  in                  3435 seconds 
+ 4.42 %  in                  3550 seconds 
+ 4.64 %  in                  3611 seconds 
+ 4.86 %  in                  3785 seconds 
+ 5.08 %  in                  3947 seconds 
+ 5.30 %  in                  4079 seconds 
+ 5.52 %  in                  4214 seconds 
+ 5.74 %  in                  4338 seconds 
+ 5.96 %  in                  4410 seconds 
+ 6.18 %  in                  4470 seconds 
+ 6.40 %  in                  4633 seconds 
+ 6.62 %  in                  4782 seconds 
+ 6.84 %  in                  4913 seconds 
+ 7.06 %  in                  5038 seconds 
+ 7.28 %  in                  5125 seconds 
+ 7.51 %  in                  5187 seconds 
+ 7.73 %  in                  5310 seconds 
+ 7.95 %  in                  5476 seconds 
+ 8.17 %  in                  5610 seconds 
+ 8.39 %  in                  5743 seconds 
+ 8.61 %  in                  5869 seconds 
+ 8.83 %  in                  5944 seconds 
+ 9.05 %  in                  6011 seconds 
+ 9.27 %  in                  6088 seconds 
+ 9.49 %  in                  6250 seconds 
+ 9.71 %  in                  6393 seconds 
+ 9.93 %  in                  6523 seconds 
+10.15 %  in                  6646 seconds 
+10.38 %  in                  6725 seconds 
+10.60 %  in                  6790 seconds 
+10.82 %  in                  6898 seconds 
+11.04 %  in                  7060 seconds 
+11.26 %  in                  7195 seconds 
+11.48 %  in                  7326 seconds 
+11.70 %  in                  7438 seconds 
+11.92 %  in                  7497 seconds 
+12.14 %  in                  7559 seconds 
+12.36 %  in                  7663 seconds 
+12.58 %  in                  7820 seconds 
+12.80 %  in                  7945 seconds 
+13.02 %  in                  8075 seconds 
+13.25 %  in                  8194 seconds 
+13.47 %  in                  8277 seconds 
+13.69 %  in                  8332 seconds 
+13.91 %  in                  8392 seconds 
+14.13 %  in                  8442 seconds 
+14.35 %  in                  8499 seconds 
+14.57 %  in                  8551 seconds 
+14.79 %  in                  8594 seconds 
+15.01 %  in                  8653 seconds 
+15.23 %  in                  8700 seconds 
+15.45 %  in                  8743 seconds 
+15.67 %  in                  8800 seconds 
+15.89 %  in                  8882 seconds 
+16.11 %  in                  9039 seconds 
+16.34 %  in                  9167 seconds 
+16.56 %  in                  9291 seconds 
+16.78 %  in                  9409 seconds 
+17.00 %  in                  9485 seconds 
+17.22 %  in                  9537 seconds 
+17.44 %  in                  9596 seconds 
+17.66 %  in                  9650 seconds 
+17.88 %  in                  9702 seconds 
+18.10 %  in                  9755 seconds 
+18.32 %  in                  9800 seconds 
+18.54 %  in                  9856 seconds 
+18.76 %  in                  9904 seconds 
+18.98 %  in                  9948 seconds 
+19.21 %  in                 10000 seconds 
+19.43 %  in                 10051 seconds 
+19.65 %  in                 10103 seconds 
+19.87 %  in                 10132 seconds 
+20.09 %  in                 10199 seconds 
+20.31 %  in                 10346 seconds 
+20.53 %  in                 10463 seconds 
+20.75 %  in                 10574 seconds 
+20.97 %  in                 10644 seconds 
+21.19 %  in                 10694 seconds 
+21.41 %  in                 10743 seconds 
+21.63 %  in                 10788 seconds 
+21.85 %  in                 10832 seconds 
+22.08 %  in                 10883 seconds 
+22.30 %  in                 10927 seconds 
+22.52 %  in                 10972 seconds 
+22.74 %  in                 11016 seconds 
+22.96 %  in                 11064 seconds 
+23.18 %  in                 11092 seconds 
+23.40 %  in                 11134 seconds 
+23.62 %  in                 11179 seconds 
+23.84 %  in                 11204 seconds 
+24.06 %  in                 11270 seconds 
+24.28 %  in                 11413 seconds 
+24.50 %  in                 11534 seconds 
+24.72 %  in                 11606 seconds 
+24.94 %  in                 11654 seconds 
+25.17 %  in                 11705 seconds 
+25.39 %  in                 11755 seconds 
+25.61 %  in                 11802 seconds 
+25.83 %  in                 11847 seconds 
+26.05 %  in                 11896 seconds 
+26.27 %  in                 11925 seconds 
+26.49 %  in                 11970 seconds 
+26.71 %  in                 11992 seconds 
+26.93 %  in                 12028 seconds 
+27.15 %  in                 12120 seconds 
+27.37 %  in                 12262 seconds 
+27.59 %  in                 12381 seconds 
+27.81 %  in                 12493 seconds 
+28.04 %  in                 12549 seconds 
+28.26 %  in                 12602 seconds 
+28.48 %  in                 12657 seconds 
+28.70 %  in                 12707 seconds 
+28.92 %  in                 12756 seconds 
+29.14 %  in                 12803 seconds 
+29.36 %  in                 12850 seconds 
+29.58 %  in                 12898 seconds 
+29.80 %  in                 12947 seconds 
+30.02 %  in                 12976 seconds 
+30.24 %  in                 13031 seconds 
+30.46 %  in                 13062 seconds 
+30.68 %  in                 13101 seconds 
+30.91 %  in                 13133 seconds 
+31.13 %  in                 13170 seconds 
+31.35 %  in                 13197 seconds 
+31.57 %  in                 13342 seconds 
+31.79 %  in                 13469 seconds 
+32.01 %  in                 13589 seconds 
+32.23 %  in                 13672 seconds 
+32.45 %  in                 13725 seconds 
+32.67 %  in                 13777 seconds 
+32.89 %  in                 13826 seconds 
+33.11 %  in                 13874 seconds 
+33.33 %  in                 13924 seconds 
+33.55 %  in                 13972 seconds 
+33.77 %  in                 14021 seconds 
+34.00 %  in                 14073 seconds 
+34.22 %  in                 14109 seconds 
+34.44 %  in                 14150 seconds 
+34.66 %  in                 14194 seconds 
+34.88 %  in                 14223 seconds 
+35.10 %  in                 14266 seconds 
+35.32 %  in                 14293 seconds 
+35.54 %  in                 14329 seconds 
+35.76 %  in                 14369 seconds 
+35.98 %  in                 14398 seconds 
+36.20 %  in                 14486 seconds 
+36.42 %  in                 14618 seconds 
+36.64 %  in                 14734 seconds 
+36.87 %  in                 14809 seconds 
+37.09 %  in                 14857 seconds 
+37.31 %  in                 14906 seconds 
+37.53 %  in                 14948 seconds 
+37.75 %  in                 14994 seconds 
+37.97 %  in                 15041 seconds 
+38.19 %  in                 15085 seconds 
+38.41 %  in                 15122 seconds 
+38.63 %  in                 15163 seconds 
+38.85 %  in                 15193 seconds 
+39.07 %  in                 15228 seconds 
+39.29 %  in                 15259 seconds 
+39.51 %  in                 15295 seconds 
+39.74 %  in                 15320 seconds 
+39.96 %  in                 15359 seconds 
+40.18 %  in                 15416 seconds 
+40.40 %  in                 15558 seconds 
+40.62 %  in                 15673 seconds 
+40.84 %  in                 15771 seconds 
+41.06 %  in                 15822 seconds 
+41.28 %  in                 15870 seconds 
+41.50 %  in                 15919 seconds 
+41.72 %  in                 15966 seconds 
+41.94 %  in                 16010 seconds 
+42.16 %  in                 16052 seconds 
+42.38 %  in                 16098 seconds 
+42.60 %  in                 16136 seconds 
+42.83 %  in                 16170 seconds 
+43.05 %  in                 16206 seconds 
+43.27 %  in                 16231 seconds 
+43.49 %  in                 16263 seconds 
+43.71 %  in                 16301 seconds 
+43.93 %  in                 16334 seconds 
+44.15 %  in                 16362 seconds 
+44.37 %  in                 16396 seconds 
+44.59 %  in                 16417 seconds 
+44.81 %  in                 16548 seconds 
+45.03 %  in                 16670 seconds 
+45.25 %  in                 16774 seconds 
+45.47 %  in                 16826 seconds 
+45.70 %  in                 16875 seconds 
+45.92 %  in                 16921 seconds 
+46.14 %  in                 16966 seconds 
+46.36 %  in                 17007 seconds 
+46.58 %  in                 17052 seconds 
+46.80 %  in                 17094 seconds 
+47.02 %  in                 17129 seconds 
+47.24 %  in                 17163 seconds 
+47.46 %  in                 17195 seconds 
+47.68 %  in                 17220 seconds 
+47.90 %  in                 17249 seconds 
+48.12 %  in                 17287 seconds 
+48.34 %  in                 17317 seconds 
+48.57 %  in                 17346 seconds 
+48.79 %  in                 17378 seconds 
+49.01 %  in                 17405 seconds 
+49.23 %  in                 17431 seconds 
+49.45 %  in                 17550 seconds 
+49.67 %  in                 17657 seconds 
+49.89 %  in                 17704 seconds 
+50.11 %  in                 17750 seconds 
+50.33 %  in                 17794 seconds 
+50.55 %  in                 17831 seconds 
+50.77 %  in                 17864 seconds 
+50.99 %  in                 17892 seconds 
+51.21 %  in                 17924 seconds 
+51.43 %  in                 17953 seconds 
+51.66 %  in                 17977 seconds 
+51.88 %  in                 18005 seconds 
+52.10 %  in                 18108 seconds 
+52.32 %  in                 18225 seconds 
+52.54 %  in                 18292 seconds 
+52.76 %  in                 18342 seconds 
+52.98 %  in                 18394 seconds 
+53.20 %  in                 18431 seconds 
+53.42 %  in                 18464 seconds 
+53.64 %  in                 18492 seconds 
+53.86 %  in                 18523 seconds 
+54.08 %  in                 18551 seconds 
+54.30 %  in                 18579 seconds 
+54.53 %  in                 18622 seconds 
+54.75 %  in                 18758 seconds 
+54.97 %  in                 18861 seconds 
+55.19 %  in                 18914 seconds 
+55.41 %  in                 18963 seconds 
+55.63 %  in                 19013 seconds 
+55.85 %  in                 19051 seconds 
+56.07 %  in                 19082 seconds 
+56.29 %  in                 19108 seconds 
+56.51 %  in                 19136 seconds 
+56.73 %  in                 19167 seconds 
+56.95 %  in                 19196 seconds 
+57.17 %  in                 19219 seconds 
+57.40 %  in                 19350 seconds 
+57.62 %  in                 19445 seconds 
+57.84 %  in                 19491 seconds 
+58.06 %  in                 19536 seconds 
+58.28 %  in                 19579 seconds 
+58.50 %  in                 19612 seconds 
+58.72 %  in                 19637 seconds 
+58.94 %  in                 19668 seconds 
+59.16 %  in                 19696 seconds 
+59.38 %  in                 19718 seconds 
+59.60 %  in                 19743 seconds 
+59.82 %  in                 19775 seconds 
+60.04 %  in                 19909 seconds 
+60.26 %  in                 19995 seconds 
+60.49 %  in                 20045 seconds 
+60.71 %  in                 20093 seconds 
+60.93 %  in                 20135 seconds 
+61.15 %  in                 20168 seconds 
+61.37 %  in                 20195 seconds 
+61.59 %  in                 20225 seconds 
+61.81 %  in                 20255 seconds 
+62.03 %  in                 20282 seconds 
+62.25 %  in                 20327 seconds 
+62.47 %  in                 20460 seconds 
+62.69 %  in                 20550 seconds 
+62.91 %  in                 20599 seconds 
+63.13 %  in                 20649 seconds 
+63.36 %  in                 20694 seconds 
+63.58 %  in                 20727 seconds 
+63.80 %  in                 20754 seconds 
+64.02 %  in                 20786 seconds 
+64.24 %  in                 20814 seconds 
+64.46 %  in                 20840 seconds 
+64.68 %  in                 20870 seconds 
+64.90 %  in                 20955 seconds 
+65.12 %  in                 21070 seconds 
+65.34 %  in                 21122 seconds 
+65.56 %  in                 21173 seconds 
+65.78 %  in                 21209 seconds 
+66.00 %  in                 21236 seconds 
+66.23 %  in                 21267 seconds 
+66.45 %  in                 21294 seconds 
+66.67 %  in                 21319 seconds 
+66.89 %  in                 21422 seconds 
+67.11 %  in                 21541 seconds 
+67.33 %  in                 21598 seconds 
+67.55 %  in                 21653 seconds 
+67.77 %  in                 21696 seconds 
+67.99 %  in                 21730 seconds 
+68.21 %  in                 21761 seconds 
+68.43 %  in                 21791 seconds 
+68.65 %  in                 21821 seconds 
+68.87 %  in                 21850 seconds 
+69.09 %  in                 21967 seconds 
+69.32 %  in                 22079 seconds 
+69.54 %  in                 22134 seconds 
+69.76 %  in                 22188 seconds 
+69.98 %  in                 22230 seconds 
+70.20 %  in                 22266 seconds 
+70.42 %  in                 22297 seconds 
+70.64 %  in                 22327 seconds 
+70.86 %  in                 22356 seconds 
+71.08 %  in                 22387 seconds 
+71.30 %  in                 22502 seconds 
+71.52 %  in                 22590 seconds 
+71.74 %  in                 22642 seconds 
+71.96 %  in                 22686 seconds 
+72.19 %  in                 22718 seconds 
+72.41 %  in                 22746 seconds 
+72.63 %  in                 22776 seconds 
+72.85 %  in                 22801 seconds 
+73.07 %  in                 22896 seconds 
+73.29 %  in                 23006 seconds 
+73.51 %  in                 23062 seconds 
+73.73 %  in                 23113 seconds 
+73.95 %  in                 23147 seconds 
+74.17 %  in                 23180 seconds 
+74.39 %  in                 23209 seconds 
+74.61 %  in                 23282 seconds 
+74.83 %  in                 23409 seconds 
+75.06 %  in                 23471 seconds 
+75.28 %  in                 23526 seconds 
+75.50 %  in                 23563 seconds 
+75.72 %  in                 23596 seconds 
+75.94 %  in                 23628 seconds 
+76.16 %  in                 23659 seconds 
+76.38 %  in                 23764 seconds 
+76.60 %  in                 23857 seconds 
+76.82 %  in                 23908 seconds 
+77.04 %  in                 23950 seconds 
+77.26 %  in                 23981 seconds 
+77.48 %  in                 24010 seconds 
+77.70 %  in                 24038 seconds 
+77.92 %  in                 24066 seconds 
+78.15 %  in                 24175 seconds 
+78.37 %  in                 24273 seconds 
+78.59 %  in                 24330 seconds 
+78.81 %  in                 24375 seconds 
+79.03 %  in                 24407 seconds 
+79.25 %  in                 24437 seconds 
+79.47 %  in                 24469 seconds 
+79.69 %  in                 24578 seconds 
+79.91 %  in                 24674 seconds 
+80.13 %  in                 24731 seconds 
+80.35 %  in                 24775 seconds 
+80.57 %  in                 24806 seconds 
+80.79 %  in                 24836 seconds 
+81.02 %  in                 24866 seconds 
+81.24 %  in                 24964 seconds 
+81.46 %  in                 25051 seconds 
+81.68 %  in                 25106 seconds 
+81.90 %  in                 25142 seconds 
+82.12 %  in                 25174 seconds 
+82.34 %  in                 25202 seconds 
+82.56 %  in                 25300 seconds 
+82.78 %  in                 25394 seconds 
+83.00 %  in                 25452 seconds 
+83.22 %  in                 25482 seconds 
+83.44 %  in                 25515 seconds 
+83.66 %  in                 25574 seconds 
+83.89 %  in                 25694 seconds 
+84.11 %  in                 25751 seconds 
+84.33 %  in                 25789 seconds 
+84.55 %  in                 25822 seconds 
+84.77 %  in                 25856 seconds 
+84.99 %  in                 25979 seconds 
+85.21 %  in                 26049 seconds 
+85.43 %  in                 26090 seconds 
+85.65 %  in                 26126 seconds 
+85.87 %  in                 26242 seconds 
+86.09 %  in                 26325 seconds 
+86.31 %  in                 26373 seconds 
+86.53 %  in                 26411 seconds 
+86.75 %  in                 26498 seconds 
+86.98 %  in                 26597 seconds 
+87.20 %  in                 26651 seconds 
+87.42 %  in                 26691 seconds 
+87.64 %  in                 26791 seconds 
+87.86 %  in                 26881 seconds 
+88.08 %  in                 26931 seconds 
+88.30 %  in                 26967 seconds 
+88.52 %  in                 27054 seconds 
+88.74 %  in                 27145 seconds 
+88.96 %  in                 27193 seconds 
+89.18 %  in                 27229 seconds 
+89.40 %  in                 27326 seconds 
+89.62 %  in                 27409 seconds 
+89.85 %  in                 27452 seconds 
+90.07 %  in                 27504 seconds 
+90.29 %  in                 27621 seconds 
+90.51 %  in                 27677 seconds 
+90.73 %  in                 27713 seconds 
+90.95 %  in                 27814 seconds 
+91.17 %  in                 27893 seconds 
+91.39 %  in                 27934 seconds 
+91.61 %  in                 27995 seconds 
+91.83 %  in                 28107 seconds 
+92.05 %  in                 28162 seconds 
+92.27 %  in                 28238 seconds 
+92.49 %  in                 28333 seconds 
+92.72 %  in                 28380 seconds 
+92.94 %  in                 28488 seconds 
+93.16 %  in                 28556 seconds 
+93.38 %  in                 28596 seconds 
+93.60 %  in                 28708 seconds 
+93.82 %  in                 28783 seconds 
+94.04 %  in                 28826 seconds 
+94.26 %  in                 28892 seconds 
+94.48 %  in                 28970 seconds 
+94.70 %  in                 29005 seconds 
+94.92 %  in                 29116 seconds 
+95.14 %  in                 29171 seconds 
+95.36 %  in                 29281 seconds 
+95.58 %  in                 29338 seconds 
+95.81 %  in                 29437 seconds 
+96.03 %  in                 29487 seconds 
+96.25 %  in                 29593 seconds 
+96.47 %  in                 29648 seconds 
+96.69 %  in                 29754 seconds 
+96.91 %  in                 29807 seconds 
+97.13 %  in                 29924 seconds 
+97.35 %  in                 29980 seconds 
+97.57 %  in                 30094 seconds 
+97.79 %  in                 30153 seconds 
+98.01 %  in                 30244 seconds 
+98.23 %  in                 30295 seconds 
+98.45 %  in                 30394 seconds 
+98.68 %  in                 30471 seconds 
+98.90 %  in                 30554 seconds 
+99.12 %  in                 30655 seconds 
+99.34 %  in                 30717 seconds 
+99.56 %  in                 30813 seconds 
+99.78 %  in                 30858 seconds 
+                                                                           forrtl: severe (41): insufficient virtual memory
+Image              PC                Routine            Line        Source             
+fci                0000000000736555  Unknown               Unknown  Unknown
+fci                000000000047139E  davidson_diag_hjj         495  diagonalization_hs2_dressed.irp.F90
+fci                000000000046E64B  davidson_diag_hs2         197  diagonalization_hs2_dressed.irp.F90
+fci                000000000047EE79  bld_ci_electronic         277  diagonalize_ci.irp.F90
+fci                000000000047DB5F  provide_ci_electr         209  diagonalize_ci.irp.F90
+fci                000000000047CE4B  diagonalize_ci_           560  diagonalize_ci.irp.F90
+fci                0000000000465861  run_stochastic_ci         626  stochastic_cipsi.irp.F90
+fci                000000000040D56D  fci_                       50  fci.irp.F90
+fci                000000000040D493  MAIN__                     11  fci.irp.F90
+fci                000000000040D412  Unknown               Unknown  Unknown
+libc-2.17.so       00007FCDCE0AF555  __libc_start_main     Unknown  Unknown
+fci                000000000040D32A  Unknown               Unknown  Unknown

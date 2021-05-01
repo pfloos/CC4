@@ -1,0 +1,86 @@
+bash: no job control in this shell
+
+                   ___       ___          ___
+      ___         /  /\     /  /\        /__/\
+     /  /\       /  /::\   /  /:/_       \  \:\
+    /  /::\     /  /:/\:\ /  /:/ /\       \__\:\
+   /  /:/\:\   /  /:/~/://  /:/ /::\  ___ /  /::\
+  /  /:/~/::\ /__/:/ /://__/:/ /:/\:\/__/\  /:/\:\
+ /__/:/ /:/\:\\  \:\/:/ \  \:\/:/~/:/\  \:\/:/__\/
+ \  \:\/:/__\/ \  \::/   \  \::/ /:/  \  \::/
+  \  \::/       \  \:\    \__\/ /:/    \  \:\
+   \__\/         \  \:\     /__/:/      \  \:\
+                  \__\/     \__\/        \__\/
+
+
+
+   -- Quantum  Package  Shell --
+
+ 0.07 %  in                     1 seconds 
+                                                                            0.07 %  in                     0 seconds 
+                                                                            0.07 %  in                     0 seconds 
+                                                                            0.28 %  in                     0 seconds 
+                                                                            0.10 %  in                     0 seconds 
+                                                                            0.09 %  in                     0 seconds 
+                                                                            0.09 %  in                     0 seconds 
+                                                                            0.09 %  in                     0 seconds 
+                                                                            0.09 %  in                     0 seconds 
+                                                                            0.05 %  in                     0 seconds 
+                                                                            0.05 %  in                     0 seconds 
+                                                                            0.04 %  in                     0 seconds 
+                                                                            0.05 %  in                     0 seconds 
+                                                                            0.04 %  in                     0 seconds 
+                                                                            0.02 %  in                     0 seconds 
+                                                                            0.02 %  in                     0 seconds 
+                                                                            0.02 %  in                     0 seconds 
+                                                                            0.02 %  in                     0 seconds 
+                                                                            0.02 %  in                     0 seconds 
+                                                                            0.01 %  in                     0 seconds 
+                                                                            0.01 %  in                     0 seconds 
+                                                                            0.01 %  in                     0 seconds 
+                                                                            0.01 %  in                     1 seconds 
+                                                                            0.01 %  in                     0 seconds 
+                                                                            0.00 %  in                     1 seconds 
+                                                                            0.00 %  in                     0 seconds 
+                                                                            0.00 %  in                     0 seconds 
+                                                                            0.00 %  in                     0 seconds 
+                                                                            0.00 %  in                     0 seconds 
+                                                                            0.00 %  in                     0 seconds 
+                                                                            0.00 %  in                     1 seconds 
+                                                                            0.00 %  in                     0 seconds 
+                                                                            0.00 %  in                     0 seconds 
+                                                                            0.00 %  in                     1 seconds 
+                                                                           10.00 %  in                     5 seconds 
+slurmstepd: error: *** JOB 1157474 ON compute-11-0 CANCELLED AT 2021-03-20T08:15:52 ***
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+fci                000000000070D7A5  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007FBAF0AB2630  Unknown               Unknown  Unknown
+libc-2.17.so       00007FBAF07C8C3D  __poll                Unknown  Unknown
+fci                00000000006BAB58  Unknown               Unknown  Unknown
+fci                00000000006B0F9C  Unknown               Unknown  Unknown
+fci                00000000006BC12B  Unknown               Unknown  Unknown
+fci                00000000006BCACB  Unknown               Unknown  Unknown
+fci                00000000006A20A9  Unknown               Unknown  Unknown
+fci                00000000006A2960  Unknown               Unknown  Unknown
+fci                000000000046D697  davidson_pull_res         363  davidson_parallel.irp.F90
+fci                000000000046CD53  davidson_collecto         419  davidson_parallel.irp.F90
+fci                000000000046BE3E  h_s2_u_0_nstates_         599  davidson_parallel.irp.F90
+libiomp5.so        00007FBAF1A56A43  __kmp_invoke_micr     Unknown  Unknown
+libiomp5.so        00007FBAF1A19CDA  Unknown               Unknown  Unknown
+libiomp5.so        00007FBAF1A1B5B6  __kmp_fork_call       Unknown  Unknown
+libiomp5.so        00007FBAF19D9BB0  __kmpc_fork_call      Unknown  Unknown
+fci                000000000046C268  h_s2_u_0_nstates_         596  davidson_parallel.irp.F90
+fci                00000000004863BD  u_0_h_u_0_                206  u0_h_u0.irp.F90
+fci                0000000000485979  bld_psi_energy_           110  u0_h_u0.irp.F90
+fci                0000000000485166  provide_psi_energ          92  u0_h_u0.irp.F90
+fci                0000000000484581  provide_psi_energ         128  u0_h_u0.irp.F90
+fci                00000000004656B5  run_stochastic_ci         549  stochastic_cipsi.irp.F90
+fci                000000000040D56D  fci_                       50  fci.irp.F90
+fci                000000000040D493  MAIN__                     11  fci.irp.F90
+fci                000000000040D412  Unknown               Unknown  Unknown
+libc-2.17.so       00007FBAF06F7555  __libc_start_main     Unknown  Unknown
+fci                000000000040D32A  Unknown               Unknown  Unknown
+Fatal error: exception (Sys_error
+  "/mnt/beegfs/tmpdir/1157474/qp_edit_fe2cef.rst: No such file or directory")
+Fatal error: exception (Failure "Error: Input inconsistent\n")
