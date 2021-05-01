@@ -15,15 +15,21 @@
 \newcommand{\fnt}{\footnotetext}
 \newcommand{\tabc}[1]{\multicolumn{1}{c}{#1}}
 
-% Softwares
+% softwares
 \newcommand{\QP}{\textsc{quantum package}}
 \newcommand{\MRCC}{\textsc{mrcc}}
 \newcommand{\CFOUR}{\textsc{cfour}}
+\newcommand{\DALTON}{\textsc{dalton}}
+
 
 % variables
 \newcommand{\hH}{\Hat{H}}
 \newcommand{\hT}{\Hat{T}}
 \newcommand{\bH}{\Bar{H}}
+
+% excited states
+\newcommand{\npis}{n \to \pi^*}
+\newcommand{\pipis}{\pi \to \pi^*}
 
 \usepackage[
 	colorlinks=true,
@@ -70,17 +76,22 @@ However, it is not computationally viable due to its exponential scaling with sy
 Popular choices are CC with singles and doubles (CCSD), CC with singles, doubles, and triples (CCSDT), CC with singles, doubles, triples, and quadruples (CCSDTQ), and 
 CC with singles, doubles, triples, quadruples, and pentuples (CCSDTQP) with corresponding computational scalings of $\order*{N^{6}}$, $\order*{N^{8}}$,  $\order*{N^{10}}$, and  $\order*{N^{12}}$, respectively (where $N$ denotes the number of orbitals).
 An alternative systematically-improvable family of methods is provided by the CC2, CC3, and CC4 models which have been introduced by the Aarhus group in the context of CC response theory.
-These methods scale as $\order*{N^{5}}$, $\order*{N^{7}}$, and $\order*{N^{9}}$, respectively, and can be seen as a cheap approximation of CCSD, CCSDT, and CCSDTQ, by skipping the most expensive terms and avoiding the storage of the higher-excitation amplitudes.
+These methods scale as $\order*{N^{5}}$, $\order*{N^{7}}$, and $\order*{N^{9}}$, respectively, and can be seen as cheaper approximations of CCSD, CCSDT, and CCSDTQ, by skipping the most expensive terms and avoiding the storage of the higher-excitation amplitudes.
 A similar strategy has been applied to produce the CCSDT-3 and CCSDTQ-3 models based on arguments stemming from perturbation theory.
 Of course, many more approximate CC models have been developed and we refer the interested reader to specialized reviews for more details.
 
 Coupled-cluster methods have been particularly successful for small- and medium-sized molecules in the field of thermodynamics, kinetics, and spectroscopy, thanks to the computations of accurate geometries, potential energy surfaces, couplings between electronic states, and a vast panel of properties such as dipoles (and higher moments), vibrational frequencies, NMR chemical shifts, magnetizabilities, polarizabilities, etc.
 Although originally developed from ground-state energies and properties, CC has been successfully extended to excited states thanks to the equation-of-motion (EOM) and linear-response (LR) formalisms which are known to produce identical excitation energies but different properties.
 In EOM-CC, one obtains vertical excitation energies via the diagonalization of the similarity-transformed Hamiltonian $\bH = e^{-\hT} \hH e^{\hT}$.
-A more general procedure to compute excitation energies that can be straightforwardly applied to any approximate CC model (as the ones mentioned above) consists in diagonalizing the so-called CC Jacobian obtained via the differentiation of the CC amplitude equations.
+A more general procedure to compute excitation energies that can be applied to any approximate CC model consists in diagonalizing the so-called CC Jacobian obtained via the differentiation of the CC amplitude equations.
 
-The purpose of the present study is to assess the accuracy of the approximate CC4 model against the most expensive CCSDTQ and CCSDTQP methods.
-near-FCI results.
+\titou{Here comes the paragraph on SCI methods.}
+
+The main purpose of the present study is to assess the relative accuracy of the approximate CC4 model against the most expensive CCSDTQ and CCSDTQP methods in the case of vertical excitation energies.
+We are also interested in its absolute accuracy with respect to FCI.
+To do so, we consider a set of 8 small molecules (\ce{NH3}, \ce{BH}, \ce{BF}, \ce{CO}, \ce{N2}, \ce{HCl}, \ce{H2S}, and \ce{H2O}) and we compare the excitation energies associated with 25 singlet excited states of various natures ($\npis$, $\pipis$, Rydberg, valence, charge-transfer, \ldots) and spatial symmetries obtained with various high-level CC methods.
+Although several studies have been published on the performance of CC4 for ground-state energies and properties, to the best of our knowledge, CC4 has never been used to compute excited-states energies before.
+As we shall see below, CC4 is an excellent approximation to its CCSDTQ parent, and produces excitation energies with sub-kJ/mol accuracy, well below the chemical accuracy threshold.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Computational details}
@@ -89,6 +100,12 @@ near-FCI results.
 Each method used in the present study is reported in Table \ref{tab:scaling} alongside its formal computational scaling and the electronic structure software used to compute the excitation energies.
 In a nutshell, we have used by default the {\CFOUR} program to compute the CC energies at the notable exception of CCSDTQP where we have employed {\MRCC} and its automated implementation of high-order CC methods based on the strings of spin-orbital indices.
 The FCI estimates were obtained with the CIPSI algorithm implemented in {\QP}.
+The present {\CFOUR} calculations have been performed with the new and very fast CC module (\texttt{xncc}) written by one of author (DAM) which couples a general algebraic
+and graphical interpretation of the non-orthogonal spin-adaptation approach with highly efficient storage format and set of implementation techniques designed to minimize data movement and to avoid costly tensor transposes.
+
+\titou{The error bars at the CIPSI level have been computed using our recently-developed protocol presented in Ref.~\cite{QUEST}.
+Two basis sets are used (aug-cc-pVDZ and aug-cc-pVTZ). 
+For the small ones, we could compute CCSDTQP energies but not in the larger one.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results and discussion}
@@ -102,7 +119,7 @@ The FCI estimates were obtained with the CIPSI algorithm implemented in {\QP}.
 	\begin{tabular}{lccc}
 		Method	&	Scaling					&	Code		&	Ref.					\\
 		\hline
-		CC3			&	$\order*{N^{7}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
+		CC3			&	$\order*{N^{7}}$	&	\DALTON		&	\onlinecite{dalton}		\\
 		CCSDT-3		&	$\order*{N^{7}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
 		CCSDT		&	$\order*{N^{8}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
 		CC4			&	$\order*{N^{9}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
@@ -122,8 +139,8 @@ The FCI estimates were obtained with the CIPSI algorithm implemented in {\QP}.
 	\begin{tabular}{llrrrrrrrrrrrr}
 				&		&	\mc{7}{c}{aug-cc-pVDZ}		&		\mc{5}{c}{aug-cc-pVTZ}		\\	
 				\cline{3-9} \cline{10-14}
-	Mol.	&	State				&CC3	&CCSDT-3&CCSDT	&CC4	&CCSDTQ	&CCSDTQP	&CIPSI	
-									&CC3	&CCSDT	&CC4	&CCSDTQ	&CIPSI			\\
+	Mol.	&	State				&CC3	&CCSDT-3&CCSDT	&CC4	&CCSDTQ	&CCSDTQP	&FCI	
+									&CC3	&CCSDT	&CC4	&CCSDTQ	&FCI			\\
 	\hline
 	\ce{NH3}	&	$^1A_2$ 		&6.464	&6.472	&6.462	&6.479	&6.480	&6.482	&6.483(1)	&6.573	&6.571	&6.585	&6.586	&	6.593(22)	\\	
 				&	$^1E$			&8.061	&8.065	&8.057	&8.078	&8.079	&8.081	&8.082(1)	&8.146	&8.143	&8.161	&8.161	&	8.171(20)	\\	
