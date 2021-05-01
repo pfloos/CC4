@@ -60,9 +60,11 @@
 % Title
 \maketitle
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The hierarchy of coupled cluster (CC) methods provide a route to systematically improvable energies and properties via the systematic increase of the maximum excitation degree of the cluster operator $\hT = \hT_1 + \hT_2 + \ldots + \hT_N$ (where $N$ is the number of electrons).
+Coupled cluster (CC) theory provides a hierarchy of methods that provide systematically improvable energies and properties via the systematic increase of the maximum excitation degree of the cluster operator $\hT = \hT_1 + \hT_2 + \ldots + \hT_N$ (where $N$ is the number of electrons).
 Without any truncation, full CC (FCC) is equivalent to full configuration interaction (FCI) and provides the exact energy of the system. 
 However, it is not computationally viable and one usually resorts to truncated CC methods.
 Popular choices are CC with singles and doubles (CCSD), CC with singles, doubles, and triples (CCSDT), CC with singles, doubles, triples, and quadruples (CCSDTQ), and 
@@ -72,7 +74,7 @@ These methods scale as $\order*{M^{5}}$, $\order*{M^{7}}$, and $\order*{M^{9}}$,
 A similar strategy has been applied to produce the CCSDT-3 and CCSDTQ-3 models based on arguments stemming from perturbation theory.
 Of course, many more approximate CC methods have been developed and we refer the interested reader to specialized reviews for more details.
 
-Coupled-cluster methods have been particularly successful for small- and medium-sized molecules in the field of thermodynamics and spectroscopy, thanks to the computations of accurate geometries, potential energy surfaces, couplings between electronic states, a vast panel of properties such as oscillator strengths as well as ground- and excited-state dipoles.
+Coupled-cluster methods have been particularly successful for small- and medium-sized molecules in the field of thermodynamics, kinetics, and spectroscopy, thanks to the computations of accurate geometries, potential energy surfaces, couplings between electronic states, a vast panel of properties such as dipoles and higher moments, vibrational frequencies, NMR chemical shifts, magnetizabilities, polarizabilities, etc.
 Although originally developed from ground-state energies and properties, CC has been successfully extended to excited states thanks to the equation-of-motion (EOM) and linear-response (LR) formalisms which are known to produce identical excitation energies but different properties.
 In EOM-CC, one obtains vertical excitation energies via the diagonalization of the similarity-transformed Hamiltonian $\bH = e^{-\hT} \hH e^{\hT}$.
 A more general procedure to compute excitation energies that can be straightforwardly applied to any truncated CC family as the ones mentioned above consists in diagonalizing the so-called CC Jacobian obtained via the differentiation of the CC amplitude equations.
@@ -80,11 +82,17 @@ A more general procedure to compute excitation energies that can be straightforw
 The purpose of the present study is to assess the accuracy of the approximate CC4 model against the most expensive CCSDTQ and CCSDTQP methods.
 near-FCI results.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Computational details}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Each method used in the present study is reported in Table \ref{tab:scaling} alongside its formal computational scaling and the electronic structure software used to compute the excitation energies.
+In a nutshell, we have used by default the {\CFOUR} program to compute the CC energies at the notable exception of CCSDTQP where we have employed {\MRCC} and its automated implementation of high-order CC methods based on the strings of spin-orbital indices.
+The FCI estimates were obtained with the CIPSI algorithm implemented in {\QP}.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results and discussion}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{table}
 	\caption{Methods considered, their formal computational scaling and the name of the electronic structure software where it has been implemented.
@@ -149,18 +157,26 @@ Each method used in the present study is reported in Table \ref{tab:scaling} alo
 \end{table*}
 \end{squeezetable}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \titou{Here comes the conclusion.}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{acknowledgements}
 This work was performed using HPC resources from CALMIP (Toulouse) under allocation 2021-18005.
 PFL has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (Grant agreement No.~863481).
 \end{acknowledgements}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Data availability statement}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 The data that support the findings of this study are openly available in Zenodo at \href{http://doi.org/XX.XXXX/zenodo.XXXXXXX}{http://doi.org/XX.XXXX/zenodo.XXXXXXX}.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bibliography{CC4}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
