@@ -75,15 +75,15 @@
 \section{Introduction}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Single-reference coupled-cluster (CC) theory provides a hierarchy of size-extensive methods which delivers increasingly accurate energies and properties via the systematic increase of the maximum excitation degree of the cluster operator $\hT = \hT_1 + \hT_2 + \ldots + \hT_k$ (where $k \ge n$ and $n$ is the number of electrons).
+Single-reference coupled-cluster (CC) theory cprovides a hierarchy of size-extensive methods which delivers increasingly accurate energies and properties via the systematic increase of the maximum excitation degree of the cluster operator $\hT = \hT_1 + \hT_2 + \ldots + \hT_k$ (where $k \ge n$ and $n$ is the number of electrons). \cite{Cizek_1966,Paldus_1972,Crawford_2000,Bartlett_2007,Shavitt_2009}
 Without any truncation (\ie, $k = n$), the so-called full CC (FCC) method is equivalent to full configuration interaction (FCI), hence providing the exact energy and wave function of the system within a given basis set.
 However, it is not computationally viable due to its exponential scaling with system size, and one has to resort to truncated CC methods  (\ie, $k \ll n$) for computational convenience.
-Popular choices are CC with singles and doubles (CCSD), CC with singles, doubles, and triples (CCSDT), CC with singles, doubles, triples, and quadruples (CCSDTQ), and 
-CC with singles, doubles, triples, quadruples, and pentuples (CCSDTQP) with corresponding computational scalings of $\order*{N^{6}}$, $\order*{N^{8}}$,  $\order*{N^{10}}$, and  $\order*{N^{12}}$, respectively (where $N$ denotes the number of orbitals).
-An alternative, systematically-improvable family of methods is defined by the CC2, CC3, and CC4 series of models which have been introduced by the Aarhus group in the context of CC response theory.
+Popular choices are CC with singles and doubles (CCSD), \cite{Cizek_1966,Purvis_1982} CC with singles, doubles, and triples (CCSDT), \cite{Noga_1987a,Scuseria_1988} CC with singles, doubles, triples, and quadruples (CCSDTQ), \cite{Oliphant_1991,Kucharski_1992} and 
+CC with singles, doubles, triples, quadruples, and pentuples (CCSDTQP) \cite{Hirata_2000,Kallay_2001} with corresponding computational scalings of $\order*{N^{6}}$, $\order*{N^{8}}$,  $\order*{N^{10}}$, and  $\order*{N^{12}}$, respectively (where $N$ denotes the number of orbitals).
+An alternative, systematically-improvable family of methods is defined by the CC2, \cite{Christiansen_1995a} CC3, \cite{Christiansen_1995b,Koch_1997} and CC4 \cite{Kallay_2005} series of models which have been introduced by the Aarhus group in the context of CC response theory. \cite{Christiansen_1998}
 These methods scale as $\order*{N^{5}}$, $\order*{N^{7}}$, and $\order*{N^{9}}$, respectively, and can be seen as cheaper approximations of CCSD, CCSDT, and CCSDTQ, by skipping the most expensive terms and avoiding the storage of the higher-excitation amplitudes.
-A somehow similar strategy has been applied to produce the CCSDT-3 and CCSDTQ-3 models based on arguments stemming from perturbation theory.
-Of course, many more approximate CC models have been developed and we refer the interested reader to specialized reviews for more details.
+A somehow similar strategy has been applied to produce the CCSDT-3 \cite{Urban_1985,Noga_1987b} and CCSDTQ-3 \cite{Kallay_2005} models based on arguments stemming from perturbation theory.
+Of course, many more approximate CC models have been developed and we refer the interested reader to specialized reviews for more details. \cite{Crawford_2000,Bartlett_2007,Shavitt_2009}
 
 Coupled-cluster methods have been particularly successful for small- and medium-sized molecules in the field of thermodynamics, kinetics, and spectroscopy, thanks to the computations of accurate geometries, potential energy surfaces, couplings between electronic states, and a vast panel of properties such as dipoles (and higher moments), vibrational frequencies, NMR chemical shifts, magnetizabilities, polarizabilities, etc.
 Although originally developed for ground-state energies and properties, CC has been successfully extended to excited states thanks to the equation-of-motion (EOM) and linear-response (LR) formalisms which are known to produce identical excitation energies but different properties.
@@ -154,7 +154,8 @@ Note that CCSDTQP energies could only be computed for the smaller basis (aug-cc-
 %%% TABLE II %%%
 \begin{squeezetable}
 \begin{table*}
-	\caption{Vertical excitation energies (in eV) of a selection of molecular excited states obtained at various levels of theory with the aug-cc-pVDZ and aug-cc-pVTZ basis sets.
+	\caption{Vertical excitation energies (in eV) of a selection of molecular excited states obtained at various levels of theory with the aug-cc-pVDZ and aug-cc-pVTZ basis sets. 
+	For the aug-cc-pVDZ basis, the mean absolute error (MAE) and mean signed error (MSE) with respect to CCSDTQP is reported.
 	\label{tab:BigTab}}
 	\begin{ruledtabular}
 	\begin{tabular}{llrrrrrrrrrrrrrr}
@@ -189,7 +190,8 @@ Note that CCSDTQP energies could only be computed for the smaller basis (aug-cc-
 				&	$^1A_2$  		&9.213	&9.293	&9.291	&9.279	&9.317	&9.313	&9.318	&9.318(0)	&9.361	&9.382	&9.368	&9.405	&9.400	&9.407(7)\\
 				&	$^1A_1$  		&9.861	&9.921	&9.919	&9.903	&9.940	&9.937	&9.941	&9.941(0)	&9.957	&9.966	&9.949	&9.986	&9.981	&9.986(2)\\
 	\hline
-	MAE			&					&	\\
+	MAE			&					&0.112	&0.041	&0.028	&0.018	&0.003	&0.002	\\
+	MSE			&					&0.079	&0.032	&0.014	&0.002	&0.000	&0.000	\\
 	\end{tabular}
 	\end{ruledtabular}
 \end{table*}
@@ -197,6 +199,15 @@ Note that CCSDTQP energies could only be computed for the smaller basis (aug-cc-
 %%% %%% %%% %%%
 
 Table \ref{tab:BigTab} gathers vertical excitation energies obtained with various CC models as well as FCI estimates.
+
+%%% FIG 1 %%%
+\begin{figure}
+	\includegraphics[width=\linewidth]{histograms_MAE_AVDZ}
+	\caption{
+	Distribution of the error (in eV) in excitation energies (with respect to the CCSDTQP values) for various methods obtained with the aug-cc-pVDZ basis.
+	See Table \ref{tab:BigTab} for the raw data.
+	\label{fig:MAE}}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}
