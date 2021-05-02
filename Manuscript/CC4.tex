@@ -70,22 +70,28 @@
 \section{Introduction}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Coupled cluster (CC) theory provides a hierarchy of methods which delivers increasingly accurate energies and properties via the systematic increase of the maximum excitation degree of the cluster operator $\hT = \hT_1 + \hT_2 + \ldots + \hT_n$ (where $n$ is the number of electrons).
-Without any truncation, the so-called full CC (FCC) method is equivalent to full configuration interaction (FCI), hence providing the exact energy and wave function of the system within a given basis set.
-However, it is not computationally viable due to its exponential scaling with system size, and one has to resort to truncated CC methods for computational convenience.
+Single-reference coupled-cluster (CC) theory provides a hierarchy of size-extensive methods which delivers increasingly accurate energies and properties via the systematic increase of the maximum excitation degree of the cluster operator $\hT = \hT_1 + \hT_2 + \ldots + \hT_k$ (where $k \ge n$ and $n$ is the number of electrons).
+Without any truncation (\ie, $k = n$), the so-called full CC (FCC) method is equivalent to full configuration interaction (FCI), hence providing the exact energy and wave function of the system within a given basis set.
+However, it is not computationally viable due to its exponential scaling with system size, and one has to resort to truncated CC methods  (\ie, $k \ll n$) for computational convenience.
 Popular choices are CC with singles and doubles (CCSD), CC with singles, doubles, and triples (CCSDT), CC with singles, doubles, triples, and quadruples (CCSDTQ), and 
 CC with singles, doubles, triples, quadruples, and pentuples (CCSDTQP) with corresponding computational scalings of $\order*{N^{6}}$, $\order*{N^{8}}$,  $\order*{N^{10}}$, and  $\order*{N^{12}}$, respectively (where $N$ denotes the number of orbitals).
-An alternative systematically-improvable family of methods is provided by the CC2, CC3, and CC4 models which have been introduced by the Aarhus group in the context of CC response theory.
+An alternative, systematically-improvable family of methods is defined by the CC2, CC3, and CC4 series of models which have been introduced by the Aarhus group in the context of CC response theory.
 These methods scale as $\order*{N^{5}}$, $\order*{N^{7}}$, and $\order*{N^{9}}$, respectively, and can be seen as cheaper approximations of CCSD, CCSDT, and CCSDTQ, by skipping the most expensive terms and avoiding the storage of the higher-excitation amplitudes.
-A similar strategy has been applied to produce the CCSDT-3 and CCSDTQ-3 models based on arguments stemming from perturbation theory.
+A somehow similar strategy has been applied to produce the CCSDT-3 and CCSDTQ-3 models based on arguments stemming from perturbation theory.
 Of course, many more approximate CC models have been developed and we refer the interested reader to specialized reviews for more details.
 
 Coupled-cluster methods have been particularly successful for small- and medium-sized molecules in the field of thermodynamics, kinetics, and spectroscopy, thanks to the computations of accurate geometries, potential energy surfaces, couplings between electronic states, and a vast panel of properties such as dipoles (and higher moments), vibrational frequencies, NMR chemical shifts, magnetizabilities, polarizabilities, etc.
-Although originally developed from ground-state energies and properties, CC has been successfully extended to excited states thanks to the equation-of-motion (EOM) and linear-response (LR) formalisms which are known to produce identical excitation energies but different properties.
-In EOM-CC, one obtains vertical excitation energies via the diagonalization of the similarity-transformed Hamiltonian $\bH = e^{-\hT} \hH e^{\hT}$.
-A more general procedure to compute excitation energies that can be applied to any approximate CC model consists in diagonalizing the so-called CC Jacobian obtained via the differentiation of the CC amplitude equations.
+Although originally developed for ground-state energies and properties, CC has been successfully extended to excited states thanks to the equation-of-motion (EOM) and linear-response (LR) formalisms which are known to produce identical excitation energies but different properties.
+In EOM-CC, one determines vertical excitation energies via the diagonalization of the similarity-transformed Hamiltonian $\bH = e^{-\hT} \hH e^{\hT}$.
+A more general procedure to compute excitation energies that can be applied to any approximate CC model (as the ones mentioned above) consists in diagonalizing the so-called CC Jacobian obtained via the differentiation of the CC amplitude equations.
+Again, by systematically increasing the maximum excitation degree of $\hT$, one can systematically produce increasingly accurate excitation energies with the ``complete'' series CCSD, CCSDT, CCSDTQ, CCSDTP, \ldots or the ``approximate'' series CC2, CC3, CC4, \ldots while retaining the formal scaling of their ground-state analog.
 
-\titou{Here comes the paragraph on SCI methods.}
+Recently, a large collection of deterministic, stochastic or hybrid selected CI (SCI) methods has (re)appeared in the electronic structure landscape providing an alternative route to highly-accurate ground- and excited-state energies.
+The general idea behind SCI methods is simple: rather than exploring the entire FCI space by systematically increasing the maximum excitation degree of the determinants taken into account (leading to the slowly convergent and size-inconsistent series of methods CISD, CISDT, CISDTQ, \ldots), one performs a sparse exploration of the FCI space by selecting only the most energetically-important determinants thanks to a suitable criterion usually based on perturbation theory.
+By iteratively increasing the number of determinants of the variational space and supplemented it with a second-order perturbative correction (PT2), the SCI+PT2 family of methods has been recently shown to produce near-FCI correlation and excitation energies for small- and medium-size molecules in compact basis sets.
+
+Taking advantage of the high accuracy of CC and SCI+PT2 methods, we have very recently created a large dataset of more than 500 highly-accurate vertical excitation energies of various natures in small- and medium-sized molecules, many of which can be reasonably considered as chemically accurate (\ie, within $1$ kcal.mol$^{-1}$ of the FCI limit).
+
 
 The main purpose of the present study is to assess the relative accuracy of the approximate CC4 model against the most expensive CCSDTQ and CCSDTQP methods in the case of vertical excitation energies.
 We are also interested in its absolute accuracy with respect to FCI.
@@ -103,7 +109,7 @@ The FCI estimates were obtained with the CIPSI algorithm implemented in {\QP}.
 The present {\CFOUR} calculations have been performed with the new and very fast CC module (\texttt{xncc}) written by one of author (DAM) which couples a general algebraic
 and graphical interpretation of the non-orthogonal spin-adaptation approach with highly efficient storage format and set of implementation techniques designed to minimize data movement and to avoid costly tensor transposes.
 
-\titou{The error bars at the CIPSI level have been computed using our recently-developed protocol presented in Ref.~\cite{QUEST}.
+\titou{The error bars at the CIPSI level have been computed using our recently-developed protocol presented in Ref.~\onlinecite{Veril_2021}.
 Two basis sets are used (aug-cc-pVDZ and aug-cc-pVTZ). 
 For the small ones, we could compute CCSDTQP energies but not in the larger one.}
 
@@ -136,43 +142,56 @@ For the small ones, we could compute CCSDTQP energies but not in the larger one.
 	\caption{Vertical excitation energies (in eV) of a selection of molecular excited states obtained at various levels of theory with the aug-cc-pVDZ and aug-cc-pVTZ basis sets.
 	\label{tab:BigTab}}
 	\begin{ruledtabular}
-	\begin{tabular}{llrrrrrrrrrrrr}
-				&		&	\mc{7}{c}{aug-cc-pVDZ}		&		\mc{5}{c}{aug-cc-pVTZ}		\\	
-				\cline{3-9} \cline{10-14}
-	Mol.	&	State				&CC3	&CCSDT-3&CCSDT	&CC4	&CCSDTQ	&CCSDTQP	&FCI	
-									&CC3	&CCSDT	&CC4	&CCSDTQ	&FCI			\\
+	\begin{tabular}{llrrrrrrrrrrrrrr}
+				&		&	\mc{8}{c}{aug-cc-pVDZ}		&		\mc{6}{c}{aug-cc-pVTZ}		\\	
+				\cline{3-10} \cline{11-16}
+	Mol.	&	State				&CCSD	&CC3	&CCSDT-3&CCSDT	&CC4	&CCSDTQ	&CCSDTQP	&FCI	
+									&CCSD	&CC3	&CCSDT	&CC4	&CCSDTQ	&FCI			\\
 	\hline
-	\ce{NH3}	&	$^1A_2$ 		&6.464	&6.472	&6.462	&6.479	&6.480	&6.482	&6.483(1)	&6.573	&6.571	&6.585	&6.586	&	6.593(22)	\\	
-				&	$^1E$			&8.061	&8.065	&8.057	&8.078	&8.079	&8.081	&8.082(1)	&8.146	&8.143	&8.161	&8.161	&	8.171(20)	\\	
-				&	$^1A_1$ 		&9.664	&9.668	&9.659	&9.677	&9.677	&9.680	&9.681(8)	&9.318	&9.314	&9.331	&9.331	&	9.340(19)	\\
-				&	$^1A_2$ 		&10.396	&10.402	&10.391	&10.409	&10.409	&10.411	&10.412(1)	&9.945	&9.939	&9.957	&9.957	&	9.967(19)	\\
-	\ce{BH}		&	$^1\Pi$ 		&2.955	&2.958	&2.946	&2.947	&2.947	&2.947	&2.947(0)	&2.910	&2.900	&2.901	&2.901	&2.901(0)	\\
-	\ce{BF}		&	$^1\Pi$ 		&6.478	&6.491	&6.491	&6.484	&6.485	&6.485	&6.485(1)	&6.410	&6.423	&6.416	&6.417	&6.418(2)\\
-	\ce{CO}		&	$^1\Pi$ 		&8.572	&8.591	&8.574	&8.562	&8.563	&8.561	&8.565(2)	&8.486	&8.492	&8.479	&8.480	&	\\
-				&	$^1\Sigma^-$ 	&10.122	&10.112	&10.062	&10.055	&10.057	&10.057	&10.056(1)	&9.992	&9.940	&9.930	&9.932	&	\\
-				&	$^1\Delta$ 		&10.225	&10.220	&10.178	&10.167	&10.169	&10.168	&10.168(1)	&10.119	&10.076	&10.064	&10.066	&	\\
-				&	$^1\Sigma^+$ 	&10.917	&10.989	&10.944	&10.925	&10.926	&10.919	&			&10.943	&10.987	&10.961	&10.963	&	\\
-				&	$^1\Sigma^+$ 	&11.483	&11.543	&11.518	&11.510	&11.510	&11.506	&			&11.489	&11.540	&11.521	&11.523	&	\\
-				&	$^1\Pi$ 		&11.737	&11.802	&11.767	&11.757	&11.758	&11.753	&			&11.690	&11.737	&11.719	&11.720	&	\\
-	\ce{N2}		&	$^1\Pi_g$  		&9.442	&9.450	&9.417	&9.409	&9.411	&9.409	&9.411(3)	&9.344	&9.326	&9.317	&9.319	&	\\
-				&	$^1\Sigma_u^-$	&10.059	&10.063	&10.060	&10.063	&10.055	&10.054	&10.054(0)	&9.885	&9.890	&9.883	&9.878	&	9.879(4)\\
-				&	$^1\Delta_u$ 	&10.433	&10.449	&10.436	&10.439	&10.430	&10.428	&10.429(0)	&10.293	&10.302	&10.294	&10.287	&	10.289(12)\\
-				&	$^1\Sigma_g^+$	&13.229	&13.270	&13.202	&13.171	&13.182	&13.181	&13.180(1)	&13.013	&12.999	&12.962	&12.974	&	\\
-				&	$^1\Pi_u$  		&13.279	&13.323	&13.174	&13.128	&13.131	&13.127	&			&13.223	&13.140	&13.091	&13,095	&	\\
-				&	$^1\Sigma_u^+$	&13.146	&13.186	&13.130	&13.099	&13.109	&13.107	&			&13.120	&13.118	&13.078	&13.090	&	\\
-				&	$^1\Pi_u$ 		&13.635	&13.663	&13.591	&13.551	&13.560	&13.558	&			&13.494	&13.455	&13.409	&13.419\\
-	\ce{HCl}	&	$^1\Pi$ 		&7.819	&7.828	&7.815	&7.822	&7.822	&7.823	&7.823(0)	&7.840	&7.834	&7.837	&7.837	&7.838(1)\\
-	\ce{H2S}	&	$^1B_1$  		&6.098	&6.110	&6.098	&6.102	&6.103	&6.103	&6.103(1)	&6.240	&6.237	&6.238	&6.238	&6.240(7)\\
-				&	$^1A_2$  		&6.293	&6.299	&6.286	&6.286	&6.286	&6.286	&6.286(0)	&6.192	&6.185	&6.181	&6.181	&6.181(6) \\
-	\ce{H2O}	&	$^1B_1$  		&7.511	&7.510	&7.497	&7.531	&7.528	&7.532	&7.533(0)	&7.605	&7.591	&7.623	&7.620	&7.626(3)\\
-				&	$^1A_2$  		&9.293	&9.291	&9.279	&9.317	&9.313	&9.318	&9.318(0)	&9.382	&9.368	&9.405	&9.400	&9.407(7)\\
-				&	$^1A_1$  		&9.921	&9.919	&9.903	&9.940	&9.937	&9.941	&9.941(0)	&9.966	&9.949	&9.986	&9.981	&9.986(2)\\
+	\ce{NH3}	&	$^1A_2$ 		&6.455	&6.464	&6.472	&6.462	&6.479	&6.480	&6.482	&6.483(1)	&6.600	&6.573	&6.571	&6.585	&6.586	&6.593(22)	\\	
+				&	$^1E$			&8.024	&8.061	&8.065	&8.057	&8.078	&8.079	&8.081	&8.082(1)	&8.148	&8.146	&8.143	&8.161	&8.161	&8.171(20)	\\	
+				&	$^1A_1$ 		&9.649	&9.664	&9.668	&9.659	&9.677	&9.677	&9.680	&9.681(8)	&9.334	&9.318	&9.314	&9.331	&9.331	&9.340(19)	\\
+				&	$^1A_2$ 		&10.376	&10.396	&10.402	&10.391	&10.409	&10.409	&10.411	&10.412(1)	&9.953	&9.945	&9.939	&9.957	&9.957	&9.967(19)	\\
+	\ce{BH}		&	$^1\Pi$ 		&2.970	&2.955	&2.958	&2.946	&2.947	&2.947	&2.947	&2.947(0)	&2.928	&2.910	&2.900	&2.901	&2.901	&2.901(0)	\\
+	\ce{BF}		&	$^1\Pi$ 		&6.534	&6.478	&6.491	&6.491	&6.484	&6.485	&6.485	&6.485(1)	&6.464	&6.410	&6.423	&6.416	&6.417	&6.418(2)\\
+	\ce{CO}		&	$^1\Pi$ 		&8.671	&8.572	&8.591	&8.574	&8.562	&8.563	&8.561	&8.565(2)	&8.587	&8.486	&8.492	&8.479	&8.480	&	\\
+				&	$^1\Sigma^-$ 	&10.096	&10.122	&10.112	&10.062	&10.055	&10.057	&10.057	&10.056(1)	&9.986	&9.992	&9.940	&9.930	&9.932	&	\\
+				&	$^1\Delta$ 		&10.210	&10.225	&10.220	&10.178	&10.167	&10.169	&10.168	&10.168(1)	&10.123	&10.119	&10.076	&10.064	&10.066	&	\\
+				&	$^1\Sigma^+$ 	&11.171	&10.917	&10.989	&10.944	&10.925	&10.926	&10.919	&			&11.222	&10.943	&10.987	&10.961	&10.963	&	\\
+				&	$^1\Sigma^+$ 	&11.710	&11.483	&11.543	&11.518	&11.510	&11.510	&11.506	&			&11.751	&11.489	&11.540	&11.521	&11.523	&	\\
+				&	$^1\Pi$ 		&11.973	&11.737	&11.802	&11.767	&11.757	&11.758	&11.753	&			&11.960	&11.690	&11.737	&11.719	&11.720	&	\\
+	\ce{N2}		&	$^1\Pi_g$  		&9.495	&9.442	&9.450	&9.417	&9.409	&9.411	&9.409	&9.411(3)	&9.408	&9.344	&9.326	&9.317	&9.319	&	\\
+				&	$^1\Sigma_u^-$	&10.197	&10.059	&10.063	&10.060	&10.063	&10.055	&10.054	&10.054(0)	&9.996	&9.885	&9.890	&9.883	&9.878	&9.879(4)\\
+				&	$^1\Delta_u$ 	&10.607	&10.433	&10.449	&10.436	&10.439	&10.430	&10.428	&10.429(0)	&10.443	&10.293	&10.302	&10.294	&10.287	&10.289(12)\\
+				&	$^1\Sigma_g^+$	&13.326	&13.229	&13.270	&13.202	&13.171	&13.182	&13.181	&13.180(1)	&13.151	&13.013	&12.999	&12.962	&12.974	&	\\
+				&	$^1\Pi_u$  		&13.451	&13.279	&13.323	&13.174	&13.128	&13.131	&13.127	&			&13.422	&13.223	&13.140	&13.091	&13,095	&	\\
+				&	$^1\Sigma_u^+$	&13.250	&13.146	&13.186	&13.130	&13.099	&13.109	&13.107	&			&13.263	&13.120	&13.118	&13.078	&13.090	&	\\
+				&	$^1\Pi_u$ 		&13.765	&13.635	&13.663	&13.591	&13.551	&13.560	&13.558	&			&13.674	&13.494	&13.455	&13.409	&13.419\\
+	\ce{HCl}	&	$^1\Pi$ 		&7.862	&7.819	&7.828	&7.815	&7.822	&7.822	&7.823	&7.823(0)	&7.906	&7.840	&7.834	&7.837	&7.837	&7.838(1)\\
+	\ce{H2S}	&	$^1B_1$  		&6.141	&6.098	&6.110	&6.098	&6.102	&6.103	&6.103	&6.103(1)	&6.294	&6.240	&6.237	&6.238	&6.238	&6.240(7)\\
+				&	$^1A_2$  		&6.343	&6.293	&6.299	&6.286	&6.286	&6.286	&6.286	&6.286(0)	&6.246	&6.192	&6.185	&6.181	&6.181	&6.181(6) \\
+	\ce{H2O}	&	$^1B_1$  		&7.447	&7.511	&7.510	&7.497	&7.531	&7.528	&7.532	&7.533(0)	&7.597	&7.605	&7.591	&7.623	&7.620	&7.626(3)\\
+				&	$^1A_2$  		&9.213	&9.293	&9.291	&9.279	&9.317	&9.313	&9.318	&9.318(0)	&9.361	&9.382	&9.368	&9.405	&9.400	&9.407(7)\\
+				&	$^1A_1$  		&9.861	&9.921	&9.919	&9.903	&9.940	&9.937	&9.941	&9.941(0)	&9.957	&9.966	&9.949	&9.986	&9.981	&9.986(2)\\
 	\hline
 	MAE			&					&	\\
 	\end{tabular}
 	\end{ruledtabular}
 \end{table*}
 \end{squeezetable}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}
