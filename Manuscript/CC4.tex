@@ -83,20 +83,20 @@ CC with singles, doubles, triples, quadruples, and pentuples (CCSDTQP) \cite{Hir
 An alternative, systematically-improvable family of methods is defined by the CC2, \cite{Christiansen_1995a} CC3, \cite{Christiansen_1995b,Koch_1997} and CC4 \cite{Kallay_2005} series of models which have been introduced by the Aarhus group in the context of CC response theory. \cite{Christiansen_1998}
 These methods scale as $\order*{N^{5}}$, $\order*{N^{7}}$, and $\order*{N^{9}}$, respectively, and can be seen as cheaper approximations of CCSD, CCSDT, and CCSDTQ, by skipping the most expensive terms and avoiding the storage of the higher-excitation amplitudes.
 A somehow similar strategy has been applied to produce the CCSDT-3 \cite{Urban_1985,Noga_1987b} and CCSDTQ-3 \cite{Kallay_2005} models based on arguments stemming from perturbation theory.
-Of course, many more approximate CC models have been developed and we refer the interested reader to specialized reviews for more details. \cite{Crawford_2000,Bartlett_2007,Shavitt_2009}
+Of course, many more approximate CC models have been developed and we refer the interested reader to specialized reviews for more details. \cite{Crawford_2000,Piecuch_2002,Bartlett_2007,Shavitt_2009}
 
-Coupled-cluster methods have been particularly successful for small- and medium-sized molecules in the field of thermodynamics, kinetics, and spectroscopy, thanks to the computations of accurate geometries, potential energy surfaces, couplings between electronic states, and a vast panel of properties such as dipoles (and higher moments), vibrational frequencies, NMR chemical shifts, magnetizabilities, polarizabilities, etc.
-Although originally developed for ground-state energies and properties, CC has been successfully extended to excited states thanks to the equation-of-motion (EOM) and linear-response (LR) formalisms which are known to produce identical excitation energies but different properties.
+Coupled-cluster methods have been particularly successful for small- and medium-sized molecules in the field of thermodynamics, kinetics, and spectroscopy, thanks to the computations of accurate equilibrium geometries, \cite{Kallay_2003} potential energy surfaces, vibrational frequencies, \cite{Kallay_2004a} Born-Oppenheimer correction, \cite{Gauss_2006} and a vast panel of properties such as dipoles (and higher moments), \cite{Kallay_2003}  NMR chemical shifts, \cite{Kallay_2004a} magnetizabilities, \cite{Gauss_2009} polarizabilities, \cite{Kallay_2006} etc.
+Although originally developed for ground-state energies and properties, CC has been successfully extended to excited states \cite{Monkhorst_1977} thanks to the equation-of-motion (EOM) \cite{Emrich_1981,Comeau_1993,Stanton_1993,Krylov_2008} and linear-response (LR) \cite{Ghosh_1981,Sekino_1984,Koch_1990a,Koch_1990b,Rico_1993} formalisms which are known to produce identical excitation energies but different properties.
 In EOM-CC, one determines vertical excitation energies via the diagonalization of the similarity-transformed Hamiltonian $\bH = e^{-\hT} \hH e^{\hT}$.
 A more general procedure to compute excitation energies that can be applied to any approximate CC model (as the ones mentioned above) consists in diagonalizing the so-called CC Jacobian obtained via the differentiation of the CC amplitude equations.
-Again, by systematically increasing the maximum excitation degree of $\hT$, one can systematically produce increasingly accurate excitation energies with the ``complete'' series CCSD, CCSDT, CCSDTQ, CCSDTP, \ldots or the ``approximate'' series CC2, CC3, CC4, \ldots while retaining the formal scaling of their ground-state analog.
+Again, by systematically increasing the maximum excitation degree of $\hT$, one can systematically produce increasingly accurate excitation energies with the ``complete'' series CCSD, \cite{Stanton_1993} CCSDT, \cite{Kowalski_2001,Kucharski_2001} CCSDTQ, \cite{Hirata_2004} CCSDTQP, \cite{Kallay_2004b} \ldots~or the ``approximate'' series CC2, \cite{Christiansen_1995a} CC3, \cite{Christiansen_1995b} CC4, \cite{Kallay_2004b} \ldots~while retaining the formal scaling of their ground-state analog.
 
-Recently, a large collection of deterministic, stochastic or hybrid selected CI (SCI) methods has (re)appeared in the electronic structure landscape providing an alternative route to highly-accurate ground- and excited-state energies.
-The general idea behind SCI methods is simple: rather than exploring the entire FCI space by systematically increasing the maximum excitation degree of the determinants taken into account (leading to the slowly convergent and size-inconsistent series of methods CISD, CISDT, CISDTQ, \ldots), one performs a sparse exploration of the FCI space by selecting only the most energetically-important determinants thanks to a suitable criterion usually based on perturbation theory.
-By iteratively increasing the number of determinants of the variational space and supplemented it with a second-order perturbative correction (PT2), the SCI+PT2 family of methods has been recently shown to produce near-FCI correlation and excitation energies for small- and medium-size molecules in compact basis sets.
-Although the formal scaling of such algorithms remain exponential, the prefactor is greatly reduced which explains their current attractiveness in the electronic structure community and much wider applicability than their common FCI parent.
+Recently, a large collection of deterministic, stochastic or hybrid selected CI (SCI) methods \cite{Bender_1969,Whitten_1969,Huron_1973} has (re)appeared \cite{Booth_2009,Deustua_2017,Holmes_2016,Eriksen_2017,Xu_2018,Giner_2013,Giner_2015,Evangelista_2014,Tubman_2016,Liu_2016,Ohtsuka_2017,Zimmerman_2017,Coe_2018,Garniron_2018} in the electronic structure landscape providing an alternative route to highly-accurate ground- and excited-state energies \cite{Holmes_2017,Li_2018,Li_2020,Loos_2018a,Chien_2018,Loos_2019,Loos_2020b,Loos_2020c,Loos_2020e,qp2,Eriksen_2020,Yao_2020,Veril_2021} (see Refs.~\onlinecite{Loos_2020a,Eriksen_2021} for recent reviews).
+The general idea behind SCI methods is simple: rather than exploring the entire FCI space by systematically increasing the maximum excitation degree of the determinants taken into account (leading to the slowly convergent and size-inconsistent series of methods CISD, CISDT, CISDTQ, \ldots), one performs a sparse exploration of the FCI space by selecting only the most energetically-important determinants thanks to a suitable criterion usually based on perturbation theory. \cite{Huron_1973,Garniron_2017,Sharma_2017,qp2}
+By iteratively increasing the number of determinants of the variational space and supplemented it with a second-order perturbative correction (PT2), the SCI+PT2 family of methods has been recently shown to produce near-FCI correlation and excitation energies for small- and medium-size molecules in compact basis sets.\cite{Holmes_2017,Loos_2018a,Chien_2018,Loos_2019,Loos_2020b,Loos_2020c,qp2,Veril_2021}
+Although the formal scaling of such algorithms remain exponential, the prefactor is greatly reduced which explains their current attractiveness in the electronic structure community and much wider applicability than their common FCI parent. 
 
-Taking advantage of the high accuracy of CC and SCI+PT2 methods, we have very recently created a large dataset gathering more than 500 highly-accurate vertical excitation energies for electronic transitions of various natures (valence, Rydberg, $\npis$, $\pipis$, singlet, doublet, triplet, charge-transfer, and double excitations) in small- and medium-sized molecules ranging from diatomics to molecules as large as naphthalene. 
+Taking advantage of the high accuracy of CC and SCI+PT2 methods, we have very recently created a large dataset gathering more than 500 highly-accurate vertical excitation energies for electronic transitions of various natures (valence, Rydberg, $\npis$, $\pipis$, singlet, doublet, triplet, charge-transfer, and double excitations) in small- and medium-sized molecules ranging from diatomics to molecules as large as naphthalene. \cite{Loos_2018a,Loos_2019,Loos_2020a,Loos_2020b,Loos_2020c,Veril_2021}
 The main purpose of this so-called QUEST database is to provide reference excitation energies in order to perform fair and reliable comparisons between electronic structure methods and assess their strengths and weakness in a large panel of chemical scenarios.
 Most of these reference transition energies, which rely exclusively on high-level \textit{ab initio} calculations, can be reasonably considered as chemically accurate, \ie, within \SI{1}{\kcal\per\mol} or \SI{0.043}{\eV} of the FCI limit.
 However, their accuracy may rapidly deteriorate, in particular, as the system size grows.
@@ -106,7 +106,7 @@ Of course, it would be highly valuable to have access to more accurate methods (
 
 In this context, the main purpose of the present study is to assess the relative accuracy of the approximate CC4 model against the most expensive CCSDTQ and CCSDTQP methods in the case of vertical excitation energies, as well as its absolute accuracy with respect to FCI.
 To do so, we consider a set of 8 small molecules (\ce{NH3}, \ce{BH}, \ce{BF}, \ce{CO}, \ce{N2}, \ce{HCl}, \ce{H2S}, and \ce{H2O}) and we compare the excitation energies associated with 25 singlet excited states of various natures ($\npis$, $\pipis$, Rydberg, valence, charge-transfer, \ldots) and spatial symmetries obtained with various high-level CC methods.
-Although several studies have been published on the performance of CC4 for ground-state energies and properties, to the best of our knowledge, CC4 has never been considered to compute excited-states energies before.
+Although several studies have been published on the performance of CC4 for ground-state energies and properties, \cite{Kallay_2005,Matthews_2015a,Matthews_2021} to the best of our knowledge, CC4 has never been considered to compute excited-states energies before.
 As we shall see below, CC4 is an excellent approximation to its CCSDTQ parent, and produces excitation energies with sub-\si{\kJ\per\mol} accuracy for this set of small molecules, well below the chemical accuracy threshold.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -122,11 +122,13 @@ As we shall see below, CC4 is an excellent approximation to its CCSDTQ parent, a
 	\begin{tabular}{lccc}
 		Method	&	Scaling					&	Code		&	Ref.					\\
 		\hline
+		CC2			&	$\order*{N^{5}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
+		CCSD		&	$\order*{N^{6}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
 		CC3			&	$\order*{N^{7}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
-		CCSDT-3		&	$\order*{N^{7}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
+%		CCSDT-3		&	$\order*{N^{7}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
 		CCSDT		&	$\order*{N^{8}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
 		CC4			&	$\order*{N^{9}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
-		CCSDTQ-3	&	$\order*{N^{9}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
+%		CCSDTQ-3	&	$\order*{N^{9}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
 		CCSDTQ		&	$\order*{N^{10}}$	&	\CFOUR		&	\onlinecite{cfour}		\\
 		CCSDTQP		&	$\order*{N^{12}}$	&	\MRCC		&	\onlinecite{mrcc}		\\	
 		CIPSI		&	$\order*{e^{N}}$	&	\QP			&	\onlinecite{qp2}		\\
@@ -136,13 +138,13 @@ As we shall see below, CC4 is an excellent approximation to its CCSDTQ parent, a
 %%% %%% %%% %%%
 
 All the methods considered in the present study are listed in Table \ref{tab:scaling} alongside their formal computational scaling and the electronic structure software employed to compute the excitation energies.
-In a nutshell, we have used by default {\CFOUR} to compute the CC energies at the notable exception of CCSDTQP for which we have employed {\MRCC} and its automated implementation of high-order CC methods.
-The present {\CFOUR} calculations have been performed with the new and fast CC module (\texttt{xncc}) written by one of author (DAM) which couples a general algebraic
-and graphical interpretation of the non-orthogonal spin-adaptation approach with highly efficient storage format and implementation techniques designed to minimize data movement and to avoid costly tensor transposes.
-The FCI estimates were obtained with the SCI algorithm known as \textit{``configuration interaction using a perturbative selection made iteratively''} (CIPSI) implemented in {\QP}.
+In a nutshell, we have used by default {\CFOUR} \cite{cfour} to compute the CC energies at the notable exception of CCSDTQP for which we have employed {\MRCC} and its automated implementation of high-order CC methods. \cite{mrcc}
+The present {\CFOUR} calculations have been performed with the new and fast CC module (\texttt{xncc})  written by one of author (DAM) which couples a general algebraic
+and graphical interpretation of the non-orthogonal spin-adaptation approach with highly efficient storage format and implementation techniques designed to minimize data movement and to avoid costly tensor transposes. \cite{Matthews_2015b}
+The FCI estimates were obtained with the SCI algorithm known as \textit{``configuration interaction using a perturbative selection made iteratively''} (CIPSI) implemented in {\QP}. \cite{qp2}
 The error bars associated with these CIPSI calculations have been computed using our recently-developed protocol presented in Ref.~\onlinecite{Veril_2021}.
 
-All calculations have been performed in the frozen-core approximation and the CC3/aug-cc-pVTZ geometries of the system considered here have been extracted from previous studies at the exception of \ce{BH} and \ce{BF}.
+All calculations have been performed in the frozen-core approximation and the CC3/aug-cc-pVTZ geometries of the system considered here have been extracted from previous studies at the exception of \ce{BH} and \ce{BF}. \cite{Loos_2018a}
 In the following, we consider diffuse-containing Dunning's double- and triple-$\zeta$ basis sets (aug-cc-pVDZ and aug-cc-pVTZ).
 Note that CCSDTQP energies could only be computed for the smaller basis (aug-cc-pVDZ).
 
