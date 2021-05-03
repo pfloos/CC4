@@ -65,7 +65,9 @@
 
 % Abstract
 \begin{abstract}
-\titou{Here comes the abstract.}
+We report the first investigation of the performance of the CC4 model, which approximately includes quadruple excitations within coupled-cluster theory, for vertical excitation energies in molecular systems.
+By considering a set of 25 excited states in 8 small molecules for which we have computed CCSDTQP and FCI reference energies, we show that CC4 yields excitation energies with sub-kJ~mol$^{-1}$ accuracy in very close agreement with its more expensive CCSDTQ parent.
+Therefore, if one aims at high accuracy, CC4 stands as a highly competitive approximate method to model molecular excited states.
 \end{abstract}
 
 % Title
@@ -75,7 +77,7 @@
 \section{Introduction}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Single-reference coupled-cluster (CC) theory cprovides a hierarchy of size-extensive methods which delivers increasingly accurate energies and properties via the systematic increase of the maximum excitation degree of the cluster operator $\hT = \hT_1 + \hT_2 + \ldots + \hT_k$ (where $k \ge n$ and $n$ is the number of electrons). \cite{Cizek_1966,Paldus_1972,Crawford_2000,Bartlett_2007,Shavitt_2009}
+Single-reference coupled-cluster (CC) theory provides a hierarchy of size-extensive methods which delivers increasingly accurate energies and properties via the systematic increase of the maximum excitation degree of the cluster operator $\hT = \hT_1 + \hT_2 + \ldots + \hT_k$ (where $k \ge n$ and $n$ is the number of electrons). \cite{Cizek_1966,Paldus_1972,Crawford_2000,Bartlett_2007,Shavitt_2009}
 Without any truncation (\ie, $k = n$), the so-called full CC (FCC) method is equivalent to full configuration interaction (FCI), hence providing the exact energy and wave function of the system within a given basis set.
 However, it is not computationally viable due to its exponential scaling with system size, and one has to resort to truncated CC methods  (\ie, $k \ll n$) for computational convenience.
 Popular choices are CC with singles and doubles (CCSD), \cite{Cizek_1966,Purvis_1982} CC with singles, doubles, and triples (CCSDT), \cite{Noga_1987a,Scuseria_1988} CC with singles, doubles, triples, and quadruples (CCSDTQ), \cite{Oliphant_1991,Kucharski_1992} and 
@@ -142,7 +144,7 @@ In a nutshell, we have used by default {\CFOUR} \cite{cfour} to compute the CC e
 The present {\CFOUR} calculations have been performed with the new and fast CC module (\texttt{xncc})  written by one of author (DAM) which couples a general algebraic
 and graphical interpretation of the non-orthogonal spin-adaptation approach with highly efficient storage format and implementation techniques designed to minimize data movement and to avoid costly tensor transposes. \cite{Matthews_2015b}
 The FCI estimates were obtained with the SCI algorithm known as \textit{``configuration interaction using a perturbative selection made iteratively''} (CIPSI) implemented in {\QP}. \cite{qp2}
-The error bars associated with these CIPSI calculations have been computed using our recently-developed protocol presented in Ref.~\onlinecite{Veril_2021}.
+The error bars associated with the extrapolation step of the CIPSI calculations (see Ref.~\onlinecite{qp2}) have been computed using our recently-developed protocol presented in Ref.~\onlinecite{Veril_2021}.
 
 All calculations have been performed in the frozen-core approximation and the CC3/aug-cc-pVTZ geometries of the system considered here have been extracted from previous studies at the exception of \ce{BH} and \ce{BF}. \cite{Loos_2018a}
 In the following, we consider diffuse-containing Dunning's double- and triple-$\zeta$ basis sets (aug-cc-pVDZ and aug-cc-pVTZ).
@@ -172,7 +174,7 @@ Note that CCSDTQP energies could only be computed for the smaller basis (aug-cc-
 				&	$^1A_2$ 		&10.148	&10.376	&10.396	&10.391	&10.409	&10.409	&10.411	&10.412(1)	&9.654	&9.953	&9.945	&9.939	&9.957	&9.957	&9.967(19)	\\
 	\ce{BH}		&	$^1\Pi$ 		&2.862	&2.970	&2.955	&2.946	&2.947	&2.947	&2.947	&2.947(0)	&2.831	&2.928	&2.910	&2.900	&2.901	&2.901	&2.901(0)	\\
 	\ce{BF}		&	$^1\Pi$ 		&6.509	&6.534	&6.478	&6.491	&6.484	&6.485	&6.485	&6.485(1)	&6.445	&6.464	&6.410	&6.423	&6.416	&6.417	&6.418(2)\\
-	\ce{CO}		&	$^1\Pi$ 		&8.724	&8.671	&8.572	&8.574	&8.562	&8.563	&8.561	&8.565(2)	&8.638	&8.587	&8.486	&8.492	&8.479	&8.480	&	\\
+	\ce{CO}		&	$^1\Pi$ 		&8.724	&8.671	&8.572	&8.574	&8.562	&8.563	&8.561	&8.563(4)	&8.638	&8.587	&8.486	&8.492	&8.479	&8.480	&	\\
 				&	$^1\Sigma^-$ 	&10.381	&10.096	&10.122	&10.062	&10.055	&10.057	&10.057	&10.056(1)	&10.297	&9.986	&9.992	&9.940	&9.930	&9.932	&	\\
 				&	$^1\Delta$ 		&10.685	&10.210	&10.225	&10.178	&10.167	&10.169	&10.168	&10.168(1)	&10.604	&10.123	&10.119	&10.076	&10.064	&10.066	&	\\
 				&	$^1\Sigma^+$ 	&11.089	&11.171	&10.917	&10.944	&10.925	&10.926	&10.919	&			&11.106	&11.222	&10.943	&10.987	&10.961	&10.963	&	\\
@@ -200,22 +202,33 @@ Note that CCSDTQP energies could only be computed for the smaller basis (aug-cc-
 \end{squeezetable}
 %%% %%% %%% %%%
 
-Table \ref{tab:BigTab} gathers vertical excitation energies obtained with various CC models as well as FCI estimates for the two basis sets as well as the mean absolute errors (MAEs) and mean signed errors (MSEs) with respect to CCSDTQP for these models.
-
 %%% FIG 1 %%%
 \begin{figure}
 	\includegraphics[width=\linewidth]{histograms_MAE_AVDZ}
 	\caption{
-	Distribution of the error (in eV) in excitation energies (with respect to the CCSDTQP values) for various methods obtained with the aug-cc-pVDZ basis.
+	Distribution of the error (in eV) in excitation energies (with respect to the CCSDTQP values) for CC2, CC3, and CC4 (top) and CCSD, CCSDT, and CCSDTQ (bottom) obtained with the aug-cc-pVDZ basis.
 	See Table \ref{tab:BigTab} for the raw data.
-	\label{fig:MAE}}
+	\label{fig:error}}
 \end{figure}
+%%% %%% %%% %%%
+
+Table \ref{tab:BigTab} gathers, for the two considered basis sets, the 25 vertical excitation energies computed for our set of 8 molecules with various CC models as well as the FCI estimates computed with CIPSI.
+The mean absolute errors (MAEs) and mean signed errors (MSEs) with respect to CCSDTQP are also reported for these models.
+These statistical quantities nicely illustrate the systematic improvement of the transition energies when one ramps up the computational effort following the series CC2, CCSD, CC3, CCSDT, CC4, and CCSDTQ.
+The distribution of the errors are reported in Fig.~\ref{fig:error} for these 6 levels of theory.
+The FCI estimates shows how accurate are the CCSDTQP reference data with a maximum deviation of \SI{0.002}{\eV} when one considers the aug-cc-pVDZ basis.
+For the larger aug-cc-pVTZ basis, the CCSDTQ and FCI remain in excellent agreement although the error bars associated with the extrapolated FCI values prevent us from any quantitative comparisons.
+
+For the two basis sets, the key result that we would like to highlight here is the outstanding similarity of the CC4 and CCSDTQ excitation energies with mean absolute and signed deviations below (equal to) \SI{0.001}{\eV} and a maximum deviation of \SI{0.011}{\eV} (\SI{0.007}{\eV}) between to the two sets of data obtained with the aug-cc-pVDZ (aug-cc-pVTZ) basis set.
+Overall, including quadruples allows to reach sub-\si{\kJ\per\mol} accuracy (\ie, average error below \SI{0.01}{\eV}) with only a rather minor improvement going from CC4 to CCSDTQ.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\titou{Here comes the conclusion.}
+We can therefore conclude that, for this set of small molecules at least, CC4 is a rather competitive approximation to its more expensive CCSDTQ parent.
+Although further investigations on larger compounds is definitely required, the present results are very encouraging as CC4, with its $\order*{N^9}$ scaling, can be applied to significantly larger systems than CCSDTQ (which scales as $\order*{N^{10}}$).
+This will certainly allow us to revisit, in the near future, some of the theoretical best estimates defined in the context of the QUEST database.\cite{Loos_2020a,Veril_2021}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{acknowledgements}
