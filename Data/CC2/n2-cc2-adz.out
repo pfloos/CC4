@@ -1,0 +1,3032 @@
+ --invoking executable--
+/home/CEISAM/blondel-a/soft/cfour2.1/cfour2.1-serial-mkl/bin/xjoda
+
+
+   *************************************************************************
+         <<<     CCCCCC     CCCCCC   |||     CCCCCC     CCCCCC   >>>
+       <<<      CCC        CCC       |||    CCC        CCC         >>>
+      <<<      CCC        CCC        |||   CCC        CCC            >>>
+    <<<        CCC        CCC        |||   CCC        CCC              >>>
+      <<<      CCC        CCC        |||   CCC        CCC            >>>
+       <<<      CCC        CCC       |||    CCC        CCC         >>>
+         <<<     CCCCCC     CCCCCC   |||     CCCCCC     CCCCCC   >>>
+   *************************************************************************
+
+     ****************************************************************
+     * CFOUR Coupled-Cluster techniques for Computational Chemistry *
+     ****************************************************************
+ 
+
+   Department of Chemistry                Institut fuer Physikalische Chemie
+   University of Florida                  Universitaet Mainz
+   Gainesville, FL 32611, USA             D-55099 Mainz, Germany
+
+   Department of Chemistry                Fakultaet fuer Chemie und Biowiss.
+   Johns Hopkins University               Karlsruher Institut fuer Technologie
+   Baltimore, MD 21218, USA               D-76131 Karlsruhe, Germany
+
+   Department of Chemistry                Department of Physical Chemistry
+   Southern Methodist University          Eotvos Lorand University
+   Dallas, TX 75275, USA                  H-1053 Budapest, Hungary
+
+ 
+                       Version 2.1
+ 
+                     cribbar041                                        
+                     Mon May  3 08:10:31 CEST 2021                     
+                     integer*8 version is running
+ 
+********************************************************************************
+*                          Input from ZMAT file                                *
+********************************************************************************
+Ketene -GS                                                                      
+N     0.0000000000            0.0000000000            1.0400863228              
+N     0.0000000000            0.0000000000           -1.0400863228              
+                                                                                
+*CFOUR(COORD=CARTESIAN,UNITS=BOHR                                               
+       MEMORY=250,MEM_UNIT=GB,CC_PROG=ECC                                       
+       FROZEN_CORE=1                                                            
+       CALC=CC2,BASIS=AUG-PVDZ                                                  
+       SCF_CONV=8,CC_CONV=7,ESTATE_CONV=5,ESTATE_MAXCYC=120                     
+       EXCITE=EOMEE,ESTATE_SYM=3/3/3/3/3/3/3/3)                                 
+                                                                                
+********************************************************************************
+    -------------------------------------------------------------------
+                    CFOUR Control Parameters 
+    -------------------------------------------------------------------
+        External           Internal           Value            Units
+          Name               Name
+    -------------------------------------------------------------------
+       ABCDTYPE             IABCDT         STANDARD    [  0]    ***   
+       ANHARMONIC           IANHAR         OFF         [  0]    ***   
+       ANH_ALGORIT          IANALG         STANDARD    [  0]    ***   
+       ANH_DERIVAT          IANDER         SECOND      [  1]    ***   
+       ANH_MODE             ANHMOD         VIBRATION   [  0]    ***   
+       ANH_STEPSIZ          ICUBST             50000          x 10-6  
+       ANH_SYMMETR          IANHSM         ABELIAN     [  0]    ***   
+       AO_LADDERS           IAOLAD         SINGLEPASS  [  1]    ***   
+       AV_SCF               IAVSCF         OFF         [  0]    ***   
+       BASIS                IBASIS         AUG-PVDZ    [ 33]    ***   
+       BOTHVECTORS          BOTHVC         OFF         [  0]    ***   
+       BOX_POTENT           IPIAB          OFF         [  0]    ***   
+       BREIT                IBREIT         OFF         [  0]    ***   
+       BRUCK_CONV           IBRTOL          10D-  4             ***   
+       BRUECKNER            IBRKNR         OFF         [  0]    ***   
+       BUFFERSIZE           IBUFFS              4096            ***   
+       CACHE_RECS           ICHREC             10               ***   
+       CALCLEVEL            ICLLVL         CC2         [ 31]    ***   
+       CCORBOPT             ICCORB         OFF         [  0]  x 0.01  
+       CC_CONV              ICCCNV          10D-  7             ***   
+       CC_EXPORDER          ICCEOR              5               ***   
+       CC_EXTRAPOL          ICCEXT         DIIS        [  1]    ***   
+       CC_GUESS             ICCGES         MP2         [  0]    ***   
+       CC_MAXCYC            ICCCYC            100              cycles 
+       CC_PROGRAM           ICCPRO         VCC         [  0]    ***   
+       CHARGE               ICHRGE              0               ***   
+       CHOLESKY             ICHOLE         OFF         [  0]    ***   
+       CIS_CONV             ICISTL              5               ***   
+       COMM_SIZE            IPSIZE            ***               ***   
+       CONSTANT             ICONST         OLD         [  1]    ***   
+       CONTINUUM            ICONTU         NONE        [  0]    ***   
+       CONTRACTION          ICNTYP         GENERAL     [  1]    ***   
+       COORDINATES          ICOORD         CARTESIAN   [  1]    ***   
+       CPHF_CONVER          ICPHFT          10D- 16             ***   
+       CPHF_MAXCYC          ICPHFC             64              cycles 
+       CUBIC                ICUBIC         OFF         [  0]    ***   
+       CURVILINEAR          ICURVY         OFF         [  0]    ***   
+       DBOC                 IDBOC          OFF         [  0]    ***   
+       DCT                  IDCT           OFF         [  0]    ***   
+       DERIV_LEV            IDRLVL         ZERO        [  0]    ***   
+       DEVMEM_SIZE          IDVMEM         *********           MByte  
+       DIAG_MRCC            IEOMST          10D-  0             ***   
+       DIFF_TYPE            IDIFTY         RELAXED     [  0]    ***   
+       DIRECT               IDIRCT         OFF         [  0]    ***   
+       DROPMO               IDRPMO      NONE         
+       ECP                  IECP           OFF         [  0]    ***   
+       EIGENVECTOR          IVEC                1               ***   
+       EL_ANHARM            IELANH         OFF         [  0]    ***   
+       EOMFOLLOW            IEOMSR         ENERGY      [  0]    ***   
+       EOMIP                IEOMIP         OFF         [  0]    ***   
+       EOMLEVEL             HBARFM         SAME        [  0]    ***   
+       EOM_MRCC             IMRCCE         NEW         [  1]    ***   
+       EOM_NONIT            EOMNON         OFF         [  0]    ***   
+       EOM_NSING            IEOMSI          10D-  0             ***   
+       EOM_NSTATES          IMRCCD         DAVIDSON    [  0]    ***   
+       EOM_NTRIP            IEOMTR          10D-  0             ***   
+       EOM_ORDER            IEXORD         ENERGY      [  0]    ***   
+       EOM_PROPSTA          IEOMST              0               ***   
+       ESTATE_CONV          IEXTOL          10D-  5             ***   
+       ESTATE_DIAG          IEXDIG         ITERATIVE   [  0]    ***   
+       ESTATE_LOCK          IESLOC         ON          [  1]    ***   
+       ESTATE_MAXC          IEXMXC            120               ***   
+       ESTATE_PROP          IEXPRP         OFF         [  0]    ***   
+       ESTATE_SYM           IEXSYM   3,  3,  3,  3,  3,  3,  3,  3,
+       EVAL_HESS            IRECAL              0            # of cyc.
+       EXCITATION           IEXCIT              0               ***   
+       EXCITE               IEXCIT         EOMEE       [  3]    ***   
+       EXTERN_POT           IEXPOT         OFF         [  0]    ***   
+       FCGRADNEW            IFCGNW         OFF         [  0]    ***   
+       FC_FIELD             IFINFC              0             x 10-6  
+       FD_CALTYPE           IFDCAL         GRADONLY    [  0]    ***   
+       FD_PROJECT           IFDPRJ         OFF         [  1]    ***   
+       FD_STEPSIZE          IDISFD              0            10-4 bohr
+       FD_USEGROUP          IFDGRP         FULL        [  0]    ***   
+       FILE_RECSIZ          IFLREC              4096           words  
+       FINITE_PERT          IFIPER              0             x 10-6  
+       FIXGEOM              IFIXGM         OFF         [  0]    ***   
+       FOCK                 IFOCK          AO          [  1]    ***   
+       FREQ_ALGORI          IVIALG         STANDARD    [  0]    ***   
+       FROZEN_CORE          IFROCO         ON          [  1]    ***   
+       GAMMA_ABCD           IGABCD         STORE       [  0]    ***   
+       GAMMA_ABCI           IGABCI         STORE       [  0]    ***   
+       GENBAS_1             IGNBS1              0               ***   
+       GENBAS_2             IGNBS2              0               ***   
+       GENBAS_3             IGNBS3              0               ***   
+       GENBAS_4             IGNBS4              0               ***   
+       GEO_CONV             ICONTL              5              H/bohr 
+       GEO_MAXCYC           IOPTCY             50               ***   
+       GEO_MAXSTEP          IMXSTP            300            millibohr
+       GEO_METHOD           INR            SINGLE_POINT[  5]    ***   
+       GIAO                 IGIAO          OFF         [  1]    ***   
+       GIMIC                IGIMIC         OFF         [  0]    ***   
+       GRID                 IGRID          OFF         [  0]    ***   
+       GRID_ALGO            IGALGO         SERIAL      [  0]    ***   
+       GUESS                IGUESS         MOREAD      [  0]    ***   
+       HBAR                 IHBAR          ON          [  1]    ***   
+       HESS_TYPE            IHESTP         SCF         [  0]    ***   
+       HF2_FILE             IHF2Fl         USE         [  1]    ***   
+       HFSTABILITY          ISTABL         OFF         [  0]    ***   
+       INCORE               INCORE         OFF         [  0]    ***   
+       INPUT_MRCC           IMRCC          ON          [  1]    ***   
+       INTEGRALS            INTTYP         VMOL        [  1]    ***   
+       JODA_PRINT           IJPRNT              0               ***   
+       KEYWORD_OUT          IDMPKW         NO          [  0]    ***   
+       LINDEP_TOL           ILINDP              8               ***   
+       LINEQ_CONV           IZTACN          10D-  7           cycles  
+       LINEQ_EXPOR          ILMAXD              5               ***   
+       LINEQ_MAXCY          ILMAXC            100               ***   
+       LINEQ_TYPE           ILTYPE         DIIS        [  1]    ***   
+       LOCK_ORBOCC          ILOCOC         OFF         [  0]    ***   
+       MEMORY_SIZE          IMEMSZ         *********           words  
+       MEM_UNIT             IMEMU          GB          [  3]    ***   
+       MRCC                 IMRCCC         OFF         [  0]    ***   
+       MULTIPLICTY          IMULTP              1               ***   
+       NACOUPLING           IVCOUP         OFF         [  0]    ***   
+       NEGEVAL              IDIE           ABORT       [  0]    ***   
+       NEWNORM              INEWNO         OFF         [  0]    ***   
+       NON-HF               INONHF         OFF         [  0]    ***   
+       NTOP_TAMP            ITOPT2             15               ***   
+       NUC_MODEL            INUCMO         POINT       [  0]    ***   
+       OCCUPATION           IOCCU   ESTIMATED BY SCF 
+       OPEN-SHELL           IOPEN          SPIN-ORBITAL[  0]    ***   
+       OPTVIB               IOPTVB         OFF         [  0]    ***   
+       ORBITALS             IORBTP         STANDARD    [  0]    ***   
+       PARALLEL             IPARAL         ON          [  1]    ***   
+       PARA_INT             IPINTS         ON          [  1]    ***   
+       PARA_PRINT           IPPRIN              0               ***   
+       PERT_ORB             IPTORB         STANDARD    [  0]    ***   
+       POINTS               IGRDFD              0               ***   
+       PRINT                IPRNT               0               ***   
+       PROPS                IPROPS         OFF         [  0]    ***   
+       PROP_INTEGR          IINTYP         INTERNAL    [  0]    ***   
+       PSI                  IPSI           OFF         [  0]    ***   
+       QC_ALG               IQCALG         FLM         [  0]    ***   
+       QC_LINALG            IQCLIN         TRIDIAG     [  2]    ***   
+       QC_MAXCYC            IQCMAX          10D-100           cycles  
+       QC_MAXSCFCY          IQCMSC          10D- 15           cycles  
+       QC_RTRUST            IQCRTR          10D-  0           x 10-3  
+       QC_SKIPSCF           IQCSKI         OFF         [  0]    ***   
+       QC_START             IQCSTA          10D-  1             ***   
+       QRHFGUESS            IQGUES         OFF         [  0]    ***   
+       QUARTIC              IQUART         OFF         [  0]    ***   
+       RAMAN_INT            IRAMIN         OFF         [  0]    ***   
+       RAMAN_ORB            IRAMRE         UNRELAXED   [  0]    ***   
+       RDO                  IRDOFM         OFF         [  0]    ***   
+       REDUCE_REPR          REDREP         Ir          [  0]    ***   
+       REFERENCE            IREFNC         RHF         [  0]    ***   
+       RELATIVIST           IRELAT         OFF         [  0]    ***   
+       RELAX_DENS           IRDENS         OFF         [  0]    ***   
+       RESET_FLAGS          IRESET         OFF         [  0]    ***   
+       RESTART_CC           ICCRES         OFF         [  0]    ***   
+       ROT_EVEC             ROTVEC              0               ***   
+       SAVE_INTS            ISVINT         OFF         [  0]    ***   
+       SCALE_ON             ISTCRT              0               ***   
+       SCF_CONV             ISCFCV          10D-  8             ***   
+       SCF_DAMPING          IDAMP               0             x 10-3  
+       SCF_EXPORDE          IRPPOR              6               ***   
+       SCF_EXPSTAR          IRPPLS              8               ***   
+       SCF_EXTRAPO          IRPP           ON          [  1]    ***   
+       SCF_MAXCYC           ISCFCY            150              cycles 
+       SCF_NOSTOP           ISCFST         OFF         [  0]    ***   
+       SCF_PRINT            ISCFPR              0               ***   
+       SCF_PROG             ISCFPR         SCF         [  0]    ***   
+       SD_FIELD             IFINSD              0             x 10-6  
+       SOPERT               IPERSO         OFF         [  0]    ***   
+       SPHERICAL            IDFGHI         ON          [  1]    ***   
+       SPINORBIT            ISOCAL         OFF         [  0]    ***   
+       SPINROTATIO          ISRCON         OFF         [  0]    ***   
+       SPIN_FLIP            ISPFLP         OFF         [  0]    ***   
+       SPIN_ORBIT           ISPORB         OFF         [  0]    ***   
+       SPIN_SCAL            ISCSMP         OFF         [  0]    ***   
+       STEEPSCALE           ISTPSC              1000          x 10-3  
+       SUBGROUP             ISUBGP         DEFAULT     [  0]    ***   
+       SUBGRPAXIS           ISBXYZ         X           [  0]    ***   
+       SYMMETRY             ISYM           ON          [  0]    ***   
+       SYM_CHECK            ISYMCK         OVERRIDE    [  1]    ***   
+       T3_EXTRAPOL          IT3EXT         OFF         [  0]    ***   
+       T4_EXTRAPOL          IT4EXP         OFF         [  0]    ***   
+       TAMP_SUM             IEVERY              5               ***   
+       TESTSUITE            ITESTS         OFF         [  0]    ***   
+       THERMOCH             ITHERM         OFF         [  0]    ***   
+       TOL_CHOLESK          ITOLCH          10D-  4             ***   
+       TRANGRAD             IRESRM         OFF         [  0]    ***   
+       TRANS_INV            ITRAIN         USE         [  0]    ***   
+       TREAT_PERT           ITREAT         SIMULTANEOUS[  0]    ***   
+       TRIP_ALGORI          ITRALG         NORMAL      [  0]    ***   
+       UIJ_THRESHO          IUIJTH              1               ***   
+       UNITS                IUNITS         BOHR        [  1]    ***   
+       UNOS                 IUNOS          OFF         [  0]    ***   
+       UPDATE_HESS          IHUPDT         ON          [  1]    ***   
+       VIBPHASE             ISETPH         STANDARD    [  0]    ***   
+       VIBRATION            IVIB           NO          [  0]    ***   
+       VIB_ALGORIT          IGEALG         STANDARD    [  0]    ***   
+       VNATORB              IVNORB         OFF         [  0]    ***   
+       VTRAN                IVTRAN         FULL/PARTIAL[  0]    ***   
+       XFIELD               IXEFLD              0             x 10-6  
+       XFORM_TOL            IXFTOL          10D- 11             ***   
+       YFIELD               IYEFLD              0             x 10-6  
+       ZFIELD               IZEFLD              0             x 10-6  
+       ZSCALE_EXP           IZEXPS         OFF         [  0]    ***   
+    -------------------------------------------------------------------
+  @GETXYZ-I,     2 atoms read from ZMAT.
+   Rotational constants (in cm-1): 
+          1.9870203770             1.9870203770
+   Rotational constants (in MHz): 
+      59569.3806383154         59569.3806383154
+********************************************************************************
+   The full molecular point group is DXh .
+   The largest Abelian subgroup of the full molecular point group is D2h .
+   The computational point group is D2h .
+********************************************************************************
+
+
+ ----------------------------------------------------------------
+         Coordinates used in calculation (QCOMP) 
+ ----------------------------------------------------------------
+ Z-matrix   Atomic            Coordinates (in bohr)
+  Symbol    Number           X              Y              Z
+ ----------------------------------------------------------------
+     N         7         0.00000000     0.00000000    -1.04008632
+     N         7        -0.00000000     0.00000000     1.04008632
+ ----------------------------------------------------------------
+ 
+   Interatomic distance matrix (Angstroms) 
+ 
+                 N             N    
+                [ 1]        [ 2]
+  N    [ 1]     0.00000
+  N    [ 2]     1.10078     0.00000
+ rotcon2
+   Rotational constants (in cm-1): 
+          1.9870203770             0.0000000000
+   Rotational constants (in MHz): 
+      59569.3806383154             0.0000000000
+  There are   2 frozen-core orbitals.
+  There are   46 basis functions.
+ @GEOPT-W, Archive file not created for single-point calculation.
+ @CHECKOUT-I, Total execution time (CPU/WALL):        0.16/       1.52 seconds.
+--executable xjoda finished with status     0 in        2.15 seconds (walltime).
+ --invoking executable--
+/home/CEISAM/blondel-a/soft/cfour2.1/cfour2.1-serial-mkl/bin/xvmol
+ SERIAL VERSION OF MOLECULE STARTED
+********************************************************************************
+                    INPUT FROM MOL FILE
+********************************************************************************
+INTGRL        1    0    1    0    0    0    0    0    0                         
+         *** CFOUR Program System (Release V0.1) ***                            
+Ketene -GS                                                                      
+    1    3 X  Y   Z   0.10E-08              0    0                              
+   9999.00      3.00                                                            
+          7.00000000    1    3    1    1    1                                   
+N #1   0.000000000000000   0.000000000000000  -1.040086322800000                
+   10    4                                                                      
+   9046.00000000000       7.000000000000000E-004 -1.530000000000000E-004        
+  0.000000000000000E+000  0.000000000000000E+000                                
+   1357.00000000000       5.389000000000000E-003 -1.208000000000000E-003        
+  0.000000000000000E+000  0.000000000000000E+000                                
+   309.300000000000       2.740600000000000E-002 -5.992000000000000E-003        
+  0.000000000000000E+000  0.000000000000000E+000                                
+   87.7300000000000       0.103207000000000      -2.454400000000000E-002        
+  0.000000000000000E+000  0.000000000000000E+000                                
+   28.5600000000000       0.278723000000000      -6.745900000000001E-002        
+  0.000000000000000E+000  0.000000000000000E+000                                
+   10.2100000000000       0.448540000000000      -0.158078000000000             
+  0.000000000000000E+000  0.000000000000000E+000                                
+   3.83800000000000       0.278238000000000      -0.121831000000000             
+  0.000000000000000E+000  0.000000000000000E+000                                
+  0.746600000000000       1.544000000000000E-002  0.549003000000000             
+  0.000000000000000E+000  0.000000000000000E+000                                
+  0.224800000000000      -2.864000000000000E-003  0.578815000000000             
+   1.00000000000000       0.000000000000000E+000                                
+  6.124000000000000E-002  0.000000000000000E+000  0.000000000000000E+000        
+  0.000000000000000E+000   1.00000000000000                                     
+    5    3                                                                      
+   13.5500000000000       3.991900000000000E-002  0.000000000000000E+000        
+  0.000000000000000E+000                                                        
+   2.91700000000000       0.217169000000000       0.000000000000000E+000        
+  0.000000000000000E+000                                                        
+  0.797300000000000       0.510319000000000       0.000000000000000E+000        
+  0.000000000000000E+000                                                        
+  0.218500000000000       0.462214000000000        1.00000000000000             
+  0.000000000000000E+000                                                        
+  5.611000000000000E-002  0.000000000000000E+000  0.000000000000000E+000        
+   1.00000000000000                                                             
+    2    2                                                                      
+  0.817000000000000        1.00000000000000       0.000000000000000E+000        
+  0.230000000000000       0.000000000000000E+000   1.00000000000000             
+FINISH                                                                          
+ 
+********************************************************************************
+ ONE- AND TWO-ELECTRON INTEGRALS OVER SYMMETRY-ADAPTED AOS ARE CALCULATED.
+
+  SPHERICAL HARMONICS ARE USED.
+  
+  INTEGRALS LESS THAN  0.10E-13 ARE NEGLECTED.
+
+  NUCLEAR REPULSION ENERGY :   23.5557371181 A.U.
+  @MOLECU-I, ONE ELECTRON INTEGRALS (CPU/WALL):        0.02/       0.13 SECONDS.
+  @TWOEL-I,       3188 INTEGRALS OF SYMMETRY TYPE  I I I I
+  @TWOEL-I,      19765 INTEGRALS OF SYMMETRY TYPE  I J I J
+  @TWOEL-I,      12843 INTEGRALS OF SYMMETRY TYPE  I I J J
+  @TWOEL-I,      34045 INTEGRALS OF SYMMETRY TYPE  I J K L
+  @TWOEL-I, TOTAL NUMBER OF 2-E INTEGRALS      69841.
+  @MOLECU-I, TWO ELECTRON INTEGRALS (CPU/WALL):        0.38/       0.11 SECONDS.
+ @CHECKOUT-I, Total execution time (CPU/WALL):        0.42/       0.26 seconds.
+
+Running with 20 threads/proc
+
+--executable xvmol finished with status     0 in        0.83 seconds (walltime).
+ --invoking executable--
+/home/CEISAM/blondel-a/soft/cfour2.1/cfour2.1-serial-mkl/bin/xvmol2ja
+ @GETMEM-I,  Allocated  238418 MB of main memory.
+ @CHECKOUT-I, Total execution time (CPU/WALL):        0.03/       0.06 seconds.
+--executable xvmol2ja finished with status     0 in        0.62 seconds (walltime).
+ --invoking executable--
+/home/CEISAM/blondel-a/soft/cfour2.1/cfour2.1-serial-mkl/bin/xvscf
+  There are   46 functions in the AO basis.
+
+  There are 8 irreducible representations.
+
+       Irrep        # of functions
+         1                 11
+         2                  5
+         3                  5
+         4                  2
+         5                 11
+         6                  5
+         7                  5
+         8                  2
+
+
+  Parameters for SCF calculation: 
+        SCF reference function:  RHF  
+  Maximum number of iterations:  150
+     Full symmetry point group: DXh 
+     Computational point group: D2h 
+        Initial density matrix: MOREAD                 
+     SCF convergence tolerance: 10**(- 8)
+  DIIS convergence acceleration:  ON
+          Latest start for DIIS:   8
+                     DIIS order:   6
+
+  Memory information:     120694 words required.
+  Fock matrices are constructed from AO integral file.
+ @GETMEM-I,  Allocated       0 MB of main memory.
+  Initialization and symmetry analysis required      0.003 seconds.
+
+  @INITGES-I, Occupancies from core Hamiltonian:
+
+          Alpha population by irrep:   2    1    1    0    2    1    0    0
+           Beta population by irrep:   2    1    1    0    2    1    0    0
+
+
+ total no. of electrons in initial guess :  0.000000000000000E+000
+  --------------------------------------------------------------------
+  Iteration         Total Energy            Largest Density Difference
+  --------------------------------------------------------------------
+       0            23.555737118092217              0.0000000000D+00
+   current occupation vector 
+     2  1  1  0  2  1  0  0
+     2  1  1  0  2  1  0  0
+       1           -99.502880021728402              0.4661528001D+01
+   current occupation vector 
+     2  1  1  0  2  1  0  0
+     2  1  1  0  2  1  0  0
+       2           -98.094192186658177              0.8826123372D+02
+   current occupation vector 
+     3  1  1  0  2  0  0  0
+     3  1  1  0  2  0  0  0
+       3          -107.370558596361690              0.8858035765D+02
+   current occupation vector 
+     3  1  1  0  2  0  0  0
+     3  1  1  0  2  0  0  0
+       4          -108.796517714132563              0.2749979987D+01
+   current occupation vector 
+     3  1  1  0  2  0  0  0
+     3  1  1  0  2  0  0  0
+       5          -108.947438439351970              0.3522575821D+00
+   current occupation vector 
+     3  1  1  0  2  0  0  0
+     3  1  1  0  2  0  0  0
+       6          -108.960153202978091              0.1528121004D+00
+   current occupation vector 
+     3  1  1  0  2  0  0  0
+     3  1  1  0  2  0  0  0
+       7          -108.960220973177314              0.9108795474D-02
+   current occupation vector 
+     3  1  1  0  2  0  0  0
+     3  1  1  0  2  0  0  0
+       8          -108.960221610178309              0.9602944254D-03
+   current occupation vector 
+     3  1  1  0  2  0  0  0
+     3  1  1  0  2  0  0  0
+       9          -108.960221623369478              0.9772513702D-04
+   current occupation vector 
+     3  1  1  0  2  0  0  0
+     3  1  1  0  2  0  0  0
+      10          -108.960221623721111              0.1242832760D-04
+   current occupation vector 
+     3  1  1  0  2  0  0  0
+     3  1  1  0  2  0  0  0
+      11          -108.960221623725914              0.2368161760D-05
+   current occupation vector 
+     3  1  1  0  2  0  0  0
+     3  1  1  0  2  0  0  0
+      12          -108.960221623725772              0.1607790541D-06
+   current occupation vector 
+     3  1  1  0  2  0  0  0
+     3  1  1  0  2  0  0  0
+      13          -108.960221623725658              0.3353672823D-07
+   current occupation vector 
+     3  1  1  0  2  0  0  0
+     3  1  1  0  2  0  0  0
+
+  SCF has converged.
+
+ Density matrix saved to file den.dat
+ total electron number:   14.0000000000000     
+     E(SCF)=      -108.960221623726000              0.6230591792D-08
+
+
+  Final occupancies:
+
+     Alpha population by irrep:   3    1    1    0    2    0    0    0
+      Beta population by irrep:   3    1    1    0    2    0    0    0
+
+
+  Eigenvector printing suppressed.
+
+ @PUTMOS-I, Writing converged MOs to NEWMOS. 
+ @PUTMOS-I, Symmetry   1 Full Blocks  2 Partial Blocksize   3
+ @PUTMOS-I, Symmetry   2 Full Blocks  1 Partial Blocksize   1
+ @PUTMOS-I, Symmetry   3 Full Blocks  1 Partial Blocksize   1
+ @PUTMOS-I, Symmetry   4 Full Blocks  0 Partial Blocksize   2
+ @PUTMOS-I, Symmetry   5 Full Blocks  2 Partial Blocksize   3
+ @PUTMOS-I, Symmetry   6 Full Blocks  1 Partial Blocksize   1
+ @PUTMOS-I, Symmetry   7 Full Blocks  1 Partial Blocksize   1
+ @PUTMOS-I, Symmetry   8 Full Blocks  0 Partial Blocksize   2
+ @PUTFOCK-I, Writing converged Fock matrix to NEWFOCK. 
+ @PUTFOCK-I, Symmetry   1 Full Blocks  2 Partial Blocksize   3
+ @PUTFOCK-I, Symmetry   2 Full Blocks  1 Partial Blocksize   1
+ @PUTFOCK-I, Symmetry   3 Full Blocks  1 Partial Blocksize   1
+ @PUTFOCK-I, Symmetry   4 Full Blocks  0 Partial Blocksize   2
+ @PUTFOCK-I, Symmetry   5 Full Blocks  2 Partial Blocksize   3
+ @PUTFOCK-I, Symmetry   6 Full Blocks  1 Partial Blocksize   1
+ @PUTFOCK-I, Symmetry   7 Full Blocks  1 Partial Blocksize   1
+ @PUTFOCK-I, Symmetry   8 Full Blocks  0 Partial Blocksize   2
+
+
+ 
+  ORBITAL EIGENVALUES (ALPHA)  (1H = 27.2113834 eV)
+
+       MO #        E(hartree)               E(eV)           FULLSYM    COMPSYM
+       ----   --------------------   --------------------   -------   ---------
+    1     1         -15.6994448433        -427.2036127972    SGg+        Ag (1)
+    2    24         -15.6960811551        -427.1120821888    SGu+       B1u (5)
+    3     2          -1.4770591452         -40.1928227035    SGg+        Ag (1)
+    4    25          -0.7821829174         -21.2842792552    SGu+       B1u (5)
+    5     3          -0.6341075338         -17.2549432186    SGg+        Ag (1)
+    6    17          -0.6141211135         -16.7110850739    PIu        B3u (3)
+    7    12          -0.6141211135         -16.7110850727    PIu        B2u (2)
+  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    8    26           0.1038381301           2.8255791691    SGu+       B1u (5)
+    9    40           0.1236188885           3.3638409708    PIg        B2g (7)
+   10    35           0.1236188885           3.3638409709    PIg        B3g (6)
+   11     4           0.1401572174           3.8138717788    SGg+        Ag (1)
+   12    18           0.1504793630           4.0947516402    PIu        B3u (3)
+   13    13           0.1504793630           4.0947516405    PIu        B2u (2)
+   14     5           0.1961538393           5.3376173278    SGg+        Ag (1)
+   15    41           0.2522283563           6.8634825073    PIg        B2g (7)
+   16    36           0.2522283563           6.8634825076    PIg        B3g (6)
+   17    27           0.3252061619           8.8493095549    SGu+       B1u (5)
+   18    22           0.5859803303          15.9453354314    DEg        B1g (4)
+   19     6           0.5859803303          15.9453354314    DEg         Ag (1)
+   20     7           0.6908673395          18.7994560543    SGg+        Ag (1)
+   21    28           0.7118254817          19.3697560978    SGu+       B1u (5)
+   22    19           0.8004592901          21.7816046377    PIu        B3u (3)
+   23    14           0.8004592901          21.7816046379    PIu        B2u (2)
+   24    45           0.8658480530          23.5609233373    DEu         Au (8)
+   25    29           0.8658480530          23.5609233373    DEu        B1u (5)
+   26    30           0.9472897124          25.7770635542    SGu+       B1u (5)
+   27    42           0.9810683574          26.6962272138    PIg        B2g (7)
+   28    37           0.9810683574          26.6962272141    PIg        B3g (6)
+   29    20           1.0843677242          29.5071458898    PIu        B3u (3)
+   30    15           1.0843677242          29.5071458904    PIu        B2u (2)
+   31     8           1.1363255699          30.9209907495    SGg+        Ag (1)
+   32    31           1.3273571706          36.1192248772    SGu+       B1u (5)
+   33    43           1.3838434260          37.6562940308    PIg        B2g (7)
+   34    38           1.3838434260          37.6562940313    PIg        B3g (6)
+   35     9           1.9001133306          51.7047123435    SGg+        Ag (1)
+   36    21           2.2223941051          60.4744180596    PIu        B3u (3)
+   37    16           2.2223941051          60.4744180597    PIu        B2u (2)
+   38    10           2.2452964552          61.0976226894    DEg         Ag (1)
+   39    23           2.2452964552          61.0976226894    DEg        B1g (4)
+   40    46           2.6507038518          72.1293187904    DEu         Au (8)
+   41    32           2.6507038518          72.1293187904    DEu        B1u (5)
+   42    11           2.9527910327          80.3495288911    SGg+        Ag (1)
+   43    33           2.9979409575          81.5781208051    SGu+       B1u (5)
+   44    44           3.1307456314          85.1919197026    PIg        B2g (7)
+   45    39           3.1307456314          85.1919197026    PIg        B3g (6)
+   46    34           3.3303992005          90.6247695194    SGu+       B1u (5)
+
+
+  VSCF finished.
+
+ @CHECKOUT-I, Total execution time (CPU/WALL):        0.08/       0.37 seconds.
+--executable xvscf finished with status     0 in        0.93 seconds (walltime).
+ --invoking executable--
+/home/CEISAM/blondel-a/soft/cfour2.1/cfour2.1-serial-mkl/bin/xvtran
+ @GETMEM-I,  Allocated  238418 MB of main memory.
+  Full RHF integral transformation
+  The following   2 MOs will be dropped:
+    1  6
+  There are  44 active molecular orbitals.
+  Transformation of IIII integrals :
+  1 pass through the AO integral file was required.
+        3188 AO integrals were read.
+        3572 MO integrals were written to HF2.
+  Transformation of IIJJ integrals :
+  1 pass through the AO integral file was required.
+       12843 AO integrals were read.
+       12004 MO integrals were written to HF2.
+  Transformation of IJIJ integrals :
+  1 pass through the AO integral file was required.
+       19765 AO integrals were read.
+       18489 MO integrals were written to HF2.
+  Transformation of IJKL integrals :
+  1 pass through the AO integral file was required.
+       34045 AO integrals were read.
+       30674 MO integrals were written to HF2.
+  Summary of active molecular orbitals: 
+------------------------------------------------------------------------
+ 
+  Index      Eigenvalue    Symmetry    Index      Eigenvalue    Symmetry
+------------------------------------------------------------------------
+     1        -1.4770591        1        23         2.2452965        4
+     2        -0.6341075        1        24         0.1038381        5
+     3        -0.6141211        2        25         0.3252062        5
+     4        -0.6141211        3        26         0.7118255        5
+     5        -0.7821829        5        27         0.8658481        5
+     6         0.1401572        1        28         0.9472897        5
+     7         0.1961538        1        29         1.3273572        5
+     8         0.5859803        1        30         2.6507039        5
+     9         0.6908673        1        31         2.9979410        5
+    10         1.1363256        1        32         3.3303992        5
+    11         1.9001133        1        33         0.1236189        6
+    12         2.2452965        1        34         0.2522284        6
+    13         2.9527910        1        35         0.9810684        6
+    14         0.1504794        2        36         1.3838434        6
+    15         0.8004593        2        37         3.1307456        6
+    16         1.0843677        2        38         0.1236189        7
+    17         2.2223941        2        39         0.2522284        7
+    18         0.1504794        3        40         0.9810684        7
+    19         0.8004593        3        41         1.3838434        7
+    20         1.0843677        3        42         3.1307456        7
+    21         2.2223941        3        43         0.8658481        8
+    22         0.5859803        4        44         2.6507039        8
+------------------------------------------------------------------------
+  -1.47705914516340      -0.634107533782648      -0.614121113469562     
+ -0.614121113515909      -0.782182917433188       0.140157217393514     
+  0.196153839345690       0.585980330254164       0.690867339522041     
+   1.13632556988874        1.90011333063832        2.24529645520952     
+   2.95279103270884       0.150479363005528       0.800459290058381     
+   1.08436772422347        2.22239410509834       0.150479362994573     
+  0.800459290051755        1.08436772419942        2.22239410509336     
+  0.585980330254160        2.24529645520952       0.103838130077419     
+  0.325206161879075       0.711825481748970       0.865848053035013     
+  0.947289712370121        1.32735717057363        2.65070385177108     
+   2.99794095750024        3.33039920048170       0.123618888517078     
+  0.252228356299929       0.981068357371740        1.38384342602925     
+   3.13074563135171       0.123618888511220       0.252228356286826     
+  0.981068357361389        1.38384342601441        3.13074563135162     
+  0.865848053035006        2.65070385177107     
+ @CHECKOUT-I, Total execution time (CPU/WALL):        0.05/       0.12 seconds.
+--executable xvtran finished with status     0 in        0.67 seconds (walltime).
+ --invoking executable--
+/home/CEISAM/blondel-a/soft/cfour2.1/cfour2.1-serial-mkl/bin/xintprc
+ @GETMEM-I,  Allocated  238418 MB of main memory.
+  @GMOIAA-I, Processing MO integrals for spin case AA.
+  @GMOIAA-I, Generation of integral list completed.
+                      TYPE                NUMBER
+                      ----               --------
+                      PPPP                 39913
+                      PPPH                 20001
+                      PPHH                  2669
+                      PHPH                  1697
+                      PHHH                   426
+                      HHHH                    33
+
+                     TOTAL                 64739
+
+  @FORMT2-I, Second-order MP correlation energies:
+            ------------------------------------------------
+            E(SCF)                  =   -108.960221623726 a.u.
+            E2(AA)                  =     -0.042423039488 a.u.
+            E2(AB)                  =     -0.233282598057 a.u.
+            E2(TOT)                 =     -0.318128677033 a.u.
+            Total MP2 energy        =   -109.278350300759 a.u.
+            ------------------------------------------------
+   Largest T2 amplitudes for spin case AB:
+       _       _                 _       _                 _       _
+   i   j   a   b             i   j   a   b             i   j   a   b
+-----------------------------------------------------------------------------
+[  4   4  38  38]-0.04875 [  3   3  33  33]-0.04875 [  4   4  39  38]-0.04434
+[  4   4  38  39]-0.04434 [  3   3  34  33]-0.04434 [  3   3  33  34]-0.04434
+[  3   3  34  34]-0.04167 [  4   4  39  39]-0.04167 [  4   3  38  33]-0.03918
+[  3   4  33  38]-0.03918 [  4   3  38  34]-0.03559 [  3   4  34  38]-0.03559
+[  4   3  39  33]-0.03559 [  3   4  33  39]-0.03559 [  4   3  39  34]-0.03324
+-----------------------------------------------------------------------------
+   Norm of T2AB vector (     5145 symmetry allowed elements):  0.2885862353.
+-----------------------------------------------------------------------------
+ @CHECKOUT-I, Total execution time (CPU/WALL):        0.09/       0.13 seconds.
+--executable xintprc finished with status     0 in        0.69 seconds (walltime).
+  calling xvcc 
+ --invoking executable--
+/home/CEISAM/blondel-a/soft/cfour2.1/cfour2.1-serial-mkl/bin/xvcc
+ @GETMEM-I,  Allocated  238418 MB of main memory.
+   CC2 energy will be calculated.
+   The total correlation energy is -0.318128677033 a.u.
+   The total correlation energy is -0.318043146221 a.u.
+  Convergence information after     1 iterations: 
+  Largest element of residual vector :  0.17812542E-01.
+  Largest element of DIIS residual   :  0.17812542E-01.
+   The total correlation energy is -0.322235500092 a.u.
+  Convergence information after     2 iterations: 
+  Largest element of residual vector : -0.40044797E-02.
+  Largest element of DIIS residual   : -0.34083000E-02.
+   The total correlation energy is -0.322924046117 a.u.
+  Convergence information after     3 iterations: 
+  Largest element of residual vector : -0.23970091E-02.
+  Largest element of DIIS residual   : -0.12823623E-02.
+   The total correlation energy is -0.323472069827 a.u.
+  Convergence information after     4 iterations: 
+  Largest element of residual vector : -0.54443769E-03.
+  Largest element of DIIS residual   : -0.29619832E-03.
+   The total correlation energy is -0.323481602899 a.u.
+  Convergence information after     5 iterations: 
+  Largest element of residual vector : -0.17017691E-03.
+  Largest element of DIIS residual   : -0.55397120E-04.
+   The total correlation energy is -0.323482292509 a.u.
+  Convergence information after     6 iterations: 
+  Largest element of residual vector : -0.19211856E-04.
+  Largest element of DIIS residual   : -0.13087418E-04.
+   The total correlation energy is -0.323482135102 a.u.
+  Convergence information after     7 iterations: 
+  Largest element of residual vector : -0.74751484E-05.
+  Largest element of DIIS residual   :  0.46567307E-05.
+   The total correlation energy is -0.323482083836 a.u.
+  Convergence information after     8 iterations: 
+  Largest element of residual vector :  0.86966107E-06.
+  Largest element of DIIS residual   :  0.81612287E-06.
+   The total correlation energy is -0.323482202176 a.u.
+  Convergence information after     9 iterations: 
+  Largest element of residual vector :  0.54029367E-06.
+  Largest element of DIIS residual   :  0.27838204E-06.
+   The total correlation energy is -0.323482247161 a.u.
+  Convergence information after    10 iterations: 
+  Largest element of residual vector : -0.12489359E-06.
+  Largest element of DIIS residual   : -0.10840069E-06.
+   The total correlation energy is -0.323482266288 a.u.
+  Convergence information after    11 iterations: 
+  Largest element of residual vector : -0.53474106E-07.
+  Largest element of DIIS residual   : -0.37326559E-07.
+  Amplitude equations converged in    11iterations.
+   The total correlation energy is -0.323482268238 a.u.
+   The CC iterations have converged.
+
+   Largest T1 amplitudes for spin case AA:
+   i       a                 i       a                 i       a    
+-----------------------------------------------------------------------------
+[  3      16    ] 0.02233 [  4      20    ] 0.02233 [  2       6    ]-0.01984
+[  5      26    ] 0.01115 [  4      21    ] 0.01101 [  3      17    ] 0.01101
+[  3      14    ] 0.01093 [  4      18    ] 0.01093 [  2       7    ]-0.01005
+[  5      29    ]-0.00864 [  5      25    ] 0.00477 [  2      13    ] 0.00406
+[  1      13    ]-0.00395 [  5      24    ]-0.00386 [  1       6    ]-0.00305
+-----------------------------------------------------------------------------
+   Norm of T1AA vector (       33 symmetry allowed elements):  0.0478991517.
+-----------------------------------------------------------------------------
+   Largest T2 amplitudes for spin case AB:
+       _       _                 _       _                 _       _
+   i   j   a   b             i   j   a   b             i   j   a   b
+-----------------------------------------------------------------------------
+[  4   4  38  38]-0.05013 [  3   3  33  33]-0.05013 [  4   4  39  38]-0.04587
+[  4   4  38  39]-0.04587 [  3   3  34  33]-0.04587 [  3   3  33  34]-0.04587
+[  3   3  34  34]-0.04326 [  4   4  39  39]-0.04326 [  4   3  38  33]-0.04037
+[  3   4  33  38]-0.04037 [  4   3  38  34]-0.03689 [  3   4  34  38]-0.03689
+[  4   3  39  33]-0.03689 [  3   4  33  39]-0.03689 [  4   3  39  34]-0.03458
+-----------------------------------------------------------------------------
+   Norm of T2AB vector (     5145 symmetry allowed elements):  0.2950077203.
+-----------------------------------------------------------------------------
+       Summary of iterative solution of CC equations 
+      -----------------------------------------------------------
+                       Correlation           Total
+       Iteration         Energy              Energy
+      -----------------------------------------------------------
+            0        -0.318128677033    -109.278350300759  DIIS 
+            1        -0.318043146221    -109.278264769947  DIIS 
+            2        -0.322235500092    -109.282457123818  DIIS 
+            3        -0.322924046117    -109.283145669843  DIIS 
+            4        -0.323472069827    -109.283693693553  DIIS 
+            5        -0.323481602899    -109.283703226625  DIIS 
+            6        -0.323482292509    -109.283703916235  DIIS 
+            7        -0.323482135102    -109.283703758828  DIIS 
+            8        -0.323482083836    -109.283703707562  DIIS 
+            9        -0.323482202176    -109.283703825902  DIIS 
+           10        -0.323482247161    -109.283703870887  DIIS 
+           11        -0.323482268238    -109.283703891964  DIIS 
+      -----------------------------------------------------------
+      A miracle has come to pass. The CC iterations have converged.
+      The reference energy is      -108.96022162372600 a.u.
+      The correlation energy is      -0.32348226823840 a.u.
+      The total energy is          -109.28370389196441 a.u.
+ @CHECKOUT-I, Total execution time (CPU/WALL):        1.96/       0.16 seconds.
+--executable xvcc finished with status     0 in        0.74 seconds (walltime).
+ --invoking executable--
+/home/CEISAM/blondel-a/soft/cfour2.1/cfour2.1-serial-mkl/bin/xlambda
+ @GETMEM-I,  Allocated  238418 MB of main memory.
+ Hbar is calculated for a CC2 wave function.
+ Calculation of Hbar completed.
+ @CHECKOUT-I, Total execution time (CPU/WALL):        0.24/       0.11 seconds.
+--executable xlambda finished with status     0 in        0.66 seconds (walltime).
+ --invoking executable--
+/home/CEISAM/blondel-a/soft/cfour2.1/cfour2.1-serial-mkl/bin/xvee
+ @GETMEM-I,  Allocated  238418 MB of main memory.
+  cc2 and ccprog  T                     0
+  EOMEE-CC2 excitation energies will be evaluated.
+  @SETMET-I, VPROP property integrals are used.
+  @SETMET-I, A total of  24 target states will be studied.
+  Summary of active alpha molecular orbitals:
+------------------------------------------------------------------------------
+Orbital      Sym   Eigenvalue  <xx>     <yy>     <zz>     <xy>     <xz>     <yz>
+        SCF
+  #  position
+------------------------------------------------------------------------------
+   1      3    1      -1.4771   0.000    0.000    0.000    0.000    0.000    0.000
+   2      5    1      -0.6341   0.000    0.000    0.000    0.000    0.000    0.000
+   3      7    2      -0.6141   0.000    0.000    0.000    0.000    0.000    0.000
+   4      6    3      -0.6141   0.000    0.000    0.000    0.000    0.000    0.000
+   5      4    5      -0.7822   0.000    0.000    0.000    0.000    0.000    0.000
+   6     11    1       0.1402   0.000    0.000    0.000    0.000    0.000    0.000
+   7     14    1       0.1962   0.000    0.000    0.000    0.000    0.000    0.000
+   8     19    1       0.5860   0.000    0.000    0.000    0.000    0.000    0.000
+   9     20    1       0.6909   0.000    0.000    0.000    0.000    0.000    0.000
+  10     31    1       1.1363   0.000    0.000    0.000    0.000    0.000    0.000
+  11     35    1       1.9001   0.000    0.000    0.000    0.000    0.000    0.000
+  12     38    1       2.2453   0.000    0.000    0.000    0.000    0.000    0.000
+  13     42    1       2.9528   0.000    0.000    0.000    0.000    0.000    0.000
+  14     13    2       0.1505   0.000    0.000    0.000    0.000    0.000    0.000
+  15     23    2       0.8005   0.000    0.000    0.000    0.000    0.000    0.000
+  16     30    2       1.0844   0.000    0.000    0.000    0.000    0.000    0.000
+  17     37    2       2.2224   0.000    0.000    0.000    0.000    0.000    0.000
+  18     12    3       0.1505   0.000    0.000    0.000    0.000    0.000    0.000
+  19     22    3       0.8005   0.000    0.000    0.000    0.000    0.000    0.000
+  20     29    3       1.0844   0.000    0.000    0.000    0.000    0.000    0.000
+  21     36    3       2.2224   0.000    0.000    0.000    0.000    0.000    0.000
+  22     18    4       0.5860   0.000    0.000    0.000    0.000    0.000    0.000
+  23     39    4       2.2453   0.000    0.000    0.000    0.000    0.000    0.000
+  24      8    5       0.1038   0.000    0.000    0.000    0.000    0.000    0.000
+  25     17    5       0.3252   0.000    0.000    0.000    0.000    0.000    0.000
+  26     21    5       0.7118   0.000    0.000    0.000    0.000    0.000    0.000
+  27     25    5       0.8658   0.000    0.000    0.000    0.000    0.000    0.000
+  28     26    5       0.9473   0.000    0.000    0.000    0.000    0.000    0.000
+  29     32    5       1.3274   0.000    0.000    0.000    0.000    0.000    0.000
+  30     41    5       2.6507   0.000    0.000    0.000    0.000    0.000    0.000
+  31     43    5       2.9979   0.000    0.000    0.000    0.000    0.000    0.000
+  32     46    5       3.3304   0.000    0.000    0.000    0.000    0.000    0.000
+  33     10    6       0.1236   0.000    0.000    0.000    0.000    0.000    0.000
+  34     16    6       0.2522   0.000    0.000    0.000    0.000    0.000    0.000
+  35     28    6       0.9811   0.000    0.000    0.000    0.000    0.000    0.000
+  36     34    6       1.3838   0.000    0.000    0.000    0.000    0.000    0.000
+  37     45    6       3.1307   0.000    0.000    0.000    0.000    0.000    0.000
+  38      9    7       0.1236   0.000    0.000    0.000    0.000    0.000    0.000
+  39     15    7       0.2522   0.000    0.000    0.000    0.000    0.000    0.000
+  40     27    7       0.9811   0.000    0.000    0.000    0.000    0.000    0.000
+  41     33    7       1.3838   0.000    0.000    0.000    0.000    0.000    0.000
+  42     44    7       3.1307   0.000    0.000    0.000    0.000    0.000    0.000
+  43     24    8       0.8658   0.000    0.000    0.000    0.000    0.000    0.000
+  44     40    8       2.6507   0.000    0.000    0.000    0.000    0.000    0.000
+------------------------------------------------------------------------------
+  @DRVTDA-I, Roots obtained by Davidson method.
+  calling tda davidson                       6                     1
+  after tda davidson                      6                     6
+                     3                     3
+  kroot is                      3
+  calling tda davidson                       6                     2
+  after tda davidson                      6                     6
+                     3                     3
+  kroot is                      3
+  calling tda davidson                       6                     3
+  after tda davidson                      6                     6
+                     3                     3
+  kroot is                      3
+  calling tda davidson                       6                     4
+  after tda davidson                      6                     6
+                     3                     3
+  kroot is                      3
+  calling tda davidson                       6                     5
+  after tda davidson                      6                     6
+                     3                     3
+  kroot is                      3
+  calling tda davidson                       6                     6
+  after tda davidson                      6                     6
+                     3                     3
+  kroot is                      3
+  calling tda davidson                       6                     7
+  after tda davidson                      6                     6
+                     3                     3
+  kroot is                      3
+  calling tda davidson                       6                     8
+  after tda davidson                      6                     6
+                     3                     3
+  kroot is                      3
+__________________________________________________________________________
+    Tamm-Dancoff (CIS) Excitation Energies and Transition Moments
+
+                Excitation         Transition Dipole         Oscillator
+ Root  Symmetry  Energy         x           y           z     Strength
+__________________________________________________________________________
+   1       1    0.54191      0.0000      0.0000      0.0000  .00000000D+00
+__________________________________________________________________________
+ 
+__________________________________________________________________________
+  TDA excitation ergy:             0.541913727066 a.u.   14.7462 eV
+  Total TDA electronic energy:  -108.418307896660 a.u.
+ 
+  Dominant contributions: 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    6    0   12    0   0.7042007289 AA  
+    7    0   13    0  -0.7042004651 AA  
+    7    0   30    0  -0.0520563416 AA  
+    6    0   29    0   0.0520560643 AA  
+    7    0   23    0  -0.0338526251 AA  
+    6    0   22    0   0.0338524290 AA  
+    5    0   19    0   0.0156199455 AA  
+    3    0   19    0   0.0113878298 AA  
+    4    0   25    0   0.0067818257 AA  
+    3    0   38    0   0.0053330392 AA  
+    6    0   36    0  -0.0043391353 AA  
+    7    0   37    0   0.0043388222 AA  
+    5    0   38    0   0.0022770693 AA  
+    4    0   41    0   0.0006452072 AA  
+    4    0   17    0   0.0000018517 AA  
+--------------------------------------------------------------------------------
+   2       1    0.55065      0.0000      0.0000      0.0000  .00000000D+00
+__________________________________________________________________________
+ 
+__________________________________________________________________________
+  TDA excitation ergy:             0.550653426661 a.u.   14.9840 eV
+  Total TDA electronic energy:  -108.409568197065 a.u.
+ 
+  Dominant contributions: 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0   11    0   0.7819642434 AA  
+    6    0   12    0  -0.3969855818 AA  
+    7    0   13    0  -0.3969843840 AA  
+    5    0   14    0   0.1890689235 AA  
+    4    0    8    0   0.1570021606 AA  
+    4    0   17    0  -0.0791013630 AA  
+    5    0   31    0  -0.0501456213 AA  
+    6    0   29    0  -0.0354929460 AA  
+    7    0   30    0  -0.0354927678 AA  
+    3    0   14    0  -0.0197972490 AA  
+    4    0   26    0   0.0193692986 AA  
+    4    0   21    0   0.0188677800 AA  
+    3    0   11    0  -0.0147820201 AA  
+    5    0   42    0  -0.0073945765 AA  
+    6    0   22    0  -0.0058102131 AA  
+--------------------------------------------------------------------------------
+   3       1    0.57516      0.0000      0.0000      0.0000  .00000000D+00
+__________________________________________________________________________
+ 
+__________________________________________________________________________
+  TDA excitation ergy:             0.575155732906 a.u.   15.6508 eV
+  Total TDA electronic energy:  -108.385065890820 a.u.
+ 
+  Dominant contributions: 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    7    0   13    0   0.5428260823 AA  
+    6    0   12    0   0.5428249772 AA  
+    5    0   14    0   0.4484176392 AA  
+    5    0   11    0   0.4462774040 AA  
+    5    0   20    0  -0.0819413572 AA  
+    4    0   21    0  -0.0330703485 AA  
+    5    0   31    0   0.0207445846 AA  
+    4    0   26    0  -0.0207191607 AA  
+    3    0   20    0   0.0196368629 AA  
+    6    0   29    0  -0.0182406453 AA  
+    7    0   30    0  -0.0182400946 AA  
+    3    0   35    0   0.0159047457 AA  
+    4    0    8    0  -0.0096440464 AA  
+    5    0   35    0  -0.0095171475 AA  
+    4    0   43    0   0.0093540171 AA  
+--------------------------------------------------------------------------------
+   1       2    0.52031      0.0000      0.0000      0.0000  .00000000D+00
+__________________________________________________________________________
+ 
+__________________________________________________________________________
+  TDA excitation ergy:             0.520305780207 a.u.   14.1582 eV
+  Total TDA electronic energy:  -108.439915843519 a.u.
+ 
+  Dominant contributions: 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    7    0   11    0  -0.8631433574 AA  
+    7    0   14    0  -0.4754779476 AA  
+    5    0   13    0  -0.1375589752 AA  
+    7    0   31    0   0.0556482122 AA  
+    7    0   20    0   0.0509848906 AA  
+    4    0   16    0  -0.0472558570 AA  
+    4    0   10    0  -0.0348173790 AA  
+    3    0   13    0  -0.0195747008 AA  
+    7    0   35    0   0.0117579507 AA  
+    5    0   30    0  -0.0112635576 AA  
+    4    0   28    0  -0.0075115407 AA  
+    3    0   30    0  -0.0067656002 AA  
+    6    0   18    0  -0.0053426305 AA  
+    7    0   19    0  -0.0053426305 AA  
+    4    0   34    0  -0.0031694011 AA  
+--------------------------------------------------------------------------------
+   2       2    0.55744      0.0000      0.0000      0.0000  .00000000D+00
+__________________________________________________________________________
+ 
+__________________________________________________________________________
+  TDA excitation ergy:             0.557438356130 a.u.   15.1687 eV
+  Total TDA electronic energy:  -108.402783267596 a.u.
+ 
+  Dominant contributions: 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0   13    0   0.8002125804 AA  
+    4    0   10    0   0.4302322431 AA  
+    4    0   16    0   0.3346173498 AA  
+    7    0   11    0  -0.1904612227 AA  
+    5    0   30    0   0.0907963139 AA  
+    4    0   28    0   0.0625192813 AA  
+    7    0   19    0  -0.0594977079 AA  
+    6    0   18    0  -0.0594977079 AA  
+    7    0   14    0   0.0469602165 AA  
+    5    0   23    0   0.0411048292 AA  
+    4    0   34    0   0.0359161166 AA  
+    7    0   20    0  -0.0265796602 AA  
+    7    0   31    0   0.0203275442 AA  
+    3    0   23    0  -0.0126665723 AA  
+    6    0   39    0   0.0121372214 AA  
+--------------------------------------------------------------------------------
+   3       2    0.58318      0.0000      0.0000      0.0000  .00000000D+00
+__________________________________________________________________________
+ 
+__________________________________________________________________________
+  TDA excitation ergy:             0.583180251657 a.u.   15.8691 eV
+  Total TDA electronic energy:  -108.377041372069 a.u.
+ 
+  Dominant contributions: 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    4    0   10    0   0.6748741425 AA  
+    5    0   13    0  -0.5494972364 AA  
+    7    0   14    0   0.3496671412 AA  
+    4    0   16    0   0.2675082002 AA  
+    7    0   11    0  -0.1507895911 AA  
+    7    0   20    0  -0.0877481229 AA  
+    7    0   19    0  -0.0830712209 AA  
+    6    0   18    0  -0.0830712209 AA  
+    5    0   23    0  -0.0393450113 AA  
+    4    0   28    0   0.0216958090 AA  
+    7    0   38    0   0.0203660931 AA  
+    6    0   39    0   0.0203660931 AA  
+    4    0   34    0   0.0196180185 AA  
+    7    0   35    0  -0.0169187957 AA  
+    3    0   23    0  -0.0165704296 AA  
+--------------------------------------------------------------------------------
+   1       3    0.52031      0.0000      0.0000      0.0000  .00000000D+00
+__________________________________________________________________________
+ 
+__________________________________________________________________________
+  TDA excitation ergy:             0.520305780247 a.u.   14.1582 eV
+  Total TDA electronic energy:  -108.439915843479 a.u.
+ 
+  Dominant contributions: 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    6    0   11    0  -0.8631433574 AA  
+    6    0   14    0  -0.4754779476 AA  
+    5    0   12    0  -0.1375589753 AA  
+    6    0   31    0   0.0556482122 AA  
+    6    0   20    0   0.0509848906 AA  
+    4    0   15    0  -0.0472558570 AA  
+    4    0    9    0  -0.0348173790 AA  
+    3    0   12    0  -0.0195747008 AA  
+    6    0   35    0   0.0117579507 AA  
+    5    0   29    0  -0.0112635576 AA  
+    4    0   27    0  -0.0075115407 AA  
+    3    0   29    0  -0.0067656002 AA  
+    6    0   19    0   0.0053426305 AA  
+    7    0   18    0  -0.0053426305 AA  
+    4    0   33    0  -0.0031694011 AA  
+--------------------------------------------------------------------------------
+   2       3    0.55744      0.0000      0.0000      0.0000  .00000000D+00
+__________________________________________________________________________
+ 
+__________________________________________________________________________
+  TDA excitation ergy:             0.557438356129 a.u.   15.1687 eV
+  Total TDA electronic energy:  -108.402783267597 a.u.
+ 
+  Dominant contributions: 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0   12    0   0.8002125804 AA  
+    4    0    9    0   0.4302322431 AA  
+    4    0   15    0   0.3346173498 AA  
+    6    0   11    0  -0.1904612227 AA  
+    5    0   29    0   0.0907963139 AA  
+    4    0   27    0   0.0625192813 AA  
+    7    0   18    0  -0.0594977079 AA  
+    6    0   19    0   0.0594977079 AA  
+    6    0   14    0   0.0469602163 AA  
+    5    0   22    0   0.0411048292 AA  
+    4    0   33    0   0.0359161166 AA  
+    6    0   20    0  -0.0265796601 AA  
+    6    0   31    0   0.0203275442 AA  
+    3    0   22    0  -0.0126665723 AA  
+    6    0   38    0  -0.0121372214 AA  
+--------------------------------------------------------------------------------
+   3       3    0.58318      0.0000      0.0000      0.0000  .00000000D+00
+__________________________________________________________________________
+ 
+__________________________________________________________________________
+  TDA excitation ergy:             0.583180251653 a.u.   15.8691 eV
+  Total TDA electronic energy:  -108.377041372073 a.u.
+ 
+  Dominant contributions: 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    4    0    9    0   0.6748741428 AA  
+    5    0   12    0  -0.5494972365 AA  
+    6    0   14    0   0.3496671405 AA  
+    4    0   15    0   0.2675082004 AA  
+    6    0   11    0  -0.1507895906 AA  
+    6    0   20    0  -0.0877481229 AA  
+    7    0   18    0  -0.0830712210 AA  
+    6    0   19    0   0.0830712210 AA  
+    5    0   22    0  -0.0393450113 AA  
+    4    0   27    0   0.0216958090 AA  
+    7    0   39    0   0.0203660931 AA  
+    6    0   38    0  -0.0203660931 AA  
+    4    0   33    0   0.0196180185 AA  
+    6    0   35    0  -0.0169187957 AA  
+    3    0   22    0  -0.0165704296 AA  
+--------------------------------------------------------------------------------
+   1       4    0.54191      0.0000      0.0000      0.0000  .00000000D+00
+__________________________________________________________________________
+ 
+__________________________________________________________________________
+  TDA excitation ergy:             0.541913727057 a.u.   14.7462 eV
+  Total TDA electronic energy:  -108.418307896669 a.u.
+ 
+  Dominant contributions: 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    6    0   13    0  -0.7042005995 AA  
+    7    0   12    0  -0.7042005501 AA  
+    7    0   29    0  -0.0520561614 AA  
+    6    0   30    0  -0.0520560618 AA  
+    6    0   23    0  -0.0338531914 AA  
+    7    0   22    0  -0.0338529549 AA  
+    5    0   18    0   0.0156210445 AA  
+    3    0   18    0   0.0113865386 AA  
+    4    0   24    0   0.0067828086 AA  
+    3    0   39    0   0.0053331001 AA  
+    7    0   36    0   0.0043386201 AA  
+    6    0   37    0   0.0043385388 AA  
+    5    0   39    0   0.0022761890 AA  
+    4    0   40    0   0.0006449929 AA  
+--------------------------------------------------------------------------------
+   2       4    0.54526      0.0000      0.0000      0.0000  .00000000D+00
+__________________________________________________________________________
+ 
+__________________________________________________________________________
+  TDA excitation ergy:             0.545257665689 a.u.   14.8372 eV
+  Total TDA electronic energy:  -108.414963958037 a.u.
+ 
+  Dominant contributions: 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    6    0   13    0  -0.7041547601 AA  
+    7    0   12    0   0.7041547444 AA  
+    7    0   29    0   0.0533821409 AA  
+    6    0   30    0  -0.0533821146 AA  
+    7    0   22    0   0.0359667175 AA  
+    6    0   23    0  -0.0359664950 AA  
+    6    0   37    0   0.0047790228 AA  
+    7    0   36    0  -0.0047784906 AA  
+    5    0   18    0  -0.0000047349 AA  
+    3    0   18    0   0.0000021894 AA  
+    4    0   24    0   0.0000012884 AA  
+    3    0   39    0  -0.0000004582 AA  
+    5    0   39    0   0.0000003070 AA  
+    4    0   40    0  -0.0000001083 AA  
+--------------------------------------------------------------------------------
+   3       4    0.88505      0.0000      0.0000      0.0000  .00000000D+00
+__________________________________________________________________________
+ 
+__________________________________________________________________________
+  TDA excitation ergy:             0.885046644803 a.u.   24.0833 eV
+  Total TDA electronic energy:  -108.075174978923 a.u.
+ 
+  Dominant contributions: 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0   18    0  -0.9926043565 AA  
+    4    0   24    0  -0.1073203165 AA  
+    5    0   39    0   0.0374595178 AA  
+    3    0   18    0   0.0272019882 AA  
+    6    0   23    0   0.0134346218 AA  
+    7    0   22    0   0.0134333601 AA  
+    7    0   12    0  -0.0125787188 AA  
+    6    0   13    0  -0.0125723050 AA  
+    4    0   40    0   0.0117382740 AA  
+    3    0   39    0  -0.0103157852 AA  
+    6    0   30    0   0.0087838163 AA  
+    7    0   29    0   0.0087823713 AA  
+    6    0   37    0  -0.0001708132 AA  
+    7    0   36    0  -0.0001706815 AA  
+--------------------------------------------------------------------------------
+   1       5    0.33115      0.0000      0.0000      0.0000  .00000000D+00
+__________________________________________________________________________
+ 
+__________________________________________________________________________
+  TDA excitation ergy:             0.331145414001 a.u.    9.0109 eV
+  Total TDA electronic energy:  -108.629076209725 a.u.
+ 
+  Dominant contributions: 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    6    0    9    0   0.5959436029 AA  
+    7    0   10    0  -0.5959428007 AA  
+    6    0   15    0   0.3743770979 AA  
+    7    0   16    0  -0.3743733825 AA  
+    6    0   27    0   0.0593161818 AA  
+    7    0   28    0  -0.0593150694 AA  
+    6    0   33    0   0.0319158201 AA  
+    7    0   34    0  -0.0319152219 AA  
+    3    0   25    0  -0.0130919022 AA  
+    3    0   41    0   0.0083814544 AA  
+    7    0   45    0  -0.0058447603 AA  
+    6    0   44    0   0.0058443421 AA  
+    5    0   25    0  -0.0014469213 AA  
+    4    0   38    0  -0.0013567707 AA  
+    4    0   19    0  -0.0010571164 AA  
+--------------------------------------------------------------------------------
+   2       5    0.53440      0.0000      0.0000      0.0000  .00000000D+00
+__________________________________________________________________________
+ 
+__________________________________________________________________________
+  TDA excitation ergy:             0.534396554163 a.u.   14.5417 eV
+  Total TDA electronic energy:  -108.425825069563 a.u.
+ 
+  Dominant contributions: 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0    8    0  -0.6463294745 AA  
+    6    0    9    0   0.4558036073 AA  
+    7    0   10    0   0.4557979775 AA  
+    4    0   11    0  -0.3181686409 AA  
+    5    0   17    0   0.2128610252 AA  
+    4    0   14    0  -0.0731096059 AA  
+    5    0   32    0  -0.0638591013 AA  
+    5    0   21    0   0.0527180514 AA  
+    4    0   31    0   0.0510398660 AA  
+    5    0   26    0  -0.0510323510 AA  
+    3    0   32    0   0.0225515941 AA  
+    3    0   17    0   0.0200567036 AA  
+    3    0    8    0  -0.0173967675 AA  
+    3    0   21    0  -0.0169711080 AA  
+    4    0   35    0   0.0154045491 AA  
+--------------------------------------------------------------------------------
+   3       5    0.56982      0.0000      0.0000      0.0000  .00000000D+00
+__________________________________________________________________________
+ 
+__________________________________________________________________________
+  TDA excitation ergy:             0.569816040694 a.u.   15.5055 eV
+  Total TDA electronic energy:  -108.390405583032 a.u.
+ 
+  Dominant contributions: 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0    8    0   0.6954287183 AA  
+    7    0   10    0   0.4721628509 AA  
+    6    0    9    0   0.4721565728 AA  
+    5    0   21    0   0.1453274227 AA  
+    4    0   14    0  -0.1447098339 AA  
+    5    0   17    0  -0.0732211198 AA  
+    5    0   32    0  -0.0725202002 AA  
+    6    0   15    0  -0.0680718641 AA  
+    7    0   16    0  -0.0680639414 AA  
+    4    0   20    0   0.0418316006 AA  
+    3    0   32    0   0.0350763200 AA  
+    7    0   28    0  -0.0294233209 AA  
+    6    0   27    0  -0.0294202230 AA  
+    4    0   31    0   0.0256865545 AA  
+    3    0   21    0  -0.0249787220 AA  
+--------------------------------------------------------------------------------
+   1       6    0.36634      0.0000      0.0000      0.0000  .00000000D+00
+__________________________________________________________________________
+ 
+__________________________________________________________________________
+  TDA excitation ergy:             0.366335751629 a.u.    9.9685 eV
+  Total TDA electronic energy:  -108.593885872097 a.u.
+ 
+  Dominant contributions: 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0   10    0  -0.8368892310 AA  
+    5    0   16    0  -0.5237283019 AA  
+    5    0   28    0  -0.0919790443 AA  
+    3    0   10    0   0.0685571871 AA  
+    3    0   16    0   0.0646439987 AA  
+    5    0   34    0  -0.0505688936 AA  
+    4    0   30    0  -0.0356085591 AA  
+    3    0   28    0   0.0277606290 AA  
+    7    0    8    0   0.0270139210 AA  
+    7    0   21    0   0.0213127917 AA  
+    7    0   17    0  -0.0203025386 AA  
+    4    0   13    0  -0.0195020810 AA  
+    5    0   45    0  -0.0154247253 AA  
+    4    0   23    0   0.0149973932 AA  
+    3    0   34    0   0.0135211741 AA  
+--------------------------------------------------------------------------------
+   2       6    0.54593      0.0000      0.0000      0.0000  .00000000D+00
+__________________________________________________________________________
+ 
+__________________________________________________________________________
+  TDA excitation ergy:             0.545927721539 a.u.   14.8554 eV
+  Total TDA electronic energy:  -108.414293902187 a.u.
+ 
+  Dominant contributions: 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    7    0    8    0  -0.9737640459 AA  
+    7    0   17    0   0.2120633484 AA  
+    5    0   16    0  -0.0543402632 AA  
+    7    0   21    0  -0.0407380709 AA  
+    7    0   26    0  -0.0356738567 AA  
+    4    0   13    0  -0.0206175536 AA  
+    3    0   10    0   0.0145331825 AA  
+    5    0   28    0  -0.0103766042 AA  
+    4    0   23    0  -0.0074764122 AA  
+    6    0   24    0   0.0058633176 AA  
+    7    0   25    0   0.0058633176 AA  
+    7    0   43    0   0.0044996828 AA  
+    6    0   40    0  -0.0031273947 AA  
+    7    0   41    0  -0.0031273947 AA  
+    5    0   45    0  -0.0026687213 AA  
+--------------------------------------------------------------------------------
+   3       6    0.63953      0.0000      0.0000      0.0000  .00000000D+00
+__________________________________________________________________________
+ 
+__________________________________________________________________________
+  TDA excitation ergy:             0.639528741068 a.u.   17.4025 eV
+  Total TDA electronic energy:  -108.320692882658 a.u.
+ 
+  Dominant contributions: 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0   16    0  -0.7742821889 AA  
+    5    0   10    0   0.5112746853 AA  
+    4    0   13    0  -0.3480569089 AA  
+    5    0   28    0  -0.0909501610 AA  
+    7    0    8    0   0.0576677499 AA  
+    4    0   23    0  -0.0409161891 AA  
+    5    0   34    0  -0.0364866111 AA  
+    4    0   30    0  -0.0320665854 AA  
+    7    0   17    0   0.0285039989 AA  
+    3    0   10    0   0.0266147502 AA  
+    3    0   16    0   0.0174885391 AA  
+    7    0   21    0   0.0130996513 AA  
+    7    0   25    0   0.0093607238 AA  
+    6    0   24    0   0.0093607238 AA  
+    4    0   37    0  -0.0080281180 AA  
+--------------------------------------------------------------------------------
+   1       7    0.36634      0.0000      0.0000      0.0000  .00000000D+00
+__________________________________________________________________________
+ 
+__________________________________________________________________________
+  TDA excitation ergy:             0.366335751611 a.u.    9.9685 eV
+  Total TDA electronic energy:  -108.593885872115 a.u.
+ 
+  Dominant contributions: 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0    9    0  -0.8368892310 AA  
+    5    0   15    0  -0.5237283019 AA  
+    5    0   27    0  -0.0919790443 AA  
+    3    0    9    0   0.0685571871 AA  
+    3    0   15    0   0.0646439987 AA  
+    5    0   33    0  -0.0505688936 AA  
+    4    0   29    0  -0.0356085591 AA  
+    3    0   27    0   0.0277606290 AA  
+    6    0    8    0   0.0270139210 AA  
+    6    0   21    0   0.0213127917 AA  
+    6    0   17    0  -0.0203025386 AA  
+    4    0   12    0  -0.0195020810 AA  
+    5    0   44    0  -0.0154247253 AA  
+    4    0   22    0   0.0149973932 AA  
+    3    0   33    0   0.0135211741 AA  
+--------------------------------------------------------------------------------
+   2       7    0.54593      0.0000      0.0000      0.0000  .00000000D+00
+__________________________________________________________________________
+ 
+__________________________________________________________________________
+  TDA excitation ergy:             0.545927721584 a.u.   14.8554 eV
+  Total TDA electronic energy:  -108.414293902142 a.u.
+ 
+  Dominant contributions: 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    6    0    8    0  -0.9737640459 AA  
+    6    0   17    0   0.2120633484 AA  
+    5    0   15    0  -0.0543402633 AA  
+    6    0   21    0  -0.0407380709 AA  
+    6    0   26    0  -0.0356738567 AA  
+    4    0   12    0  -0.0206175536 AA  
+    3    0    9    0   0.0145331825 AA  
+    5    0   27    0  -0.0103766042 AA  
+    4    0   22    0  -0.0074764122 AA  
+    6    0   25    0  -0.0058633176 AA  
+    7    0   24    0   0.0058633176 AA  
+    6    0   43    0   0.0044996828 AA  
+    6    0   41    0   0.0031273947 AA  
+    7    0   40    0  -0.0031273947 AA  
+    5    0   44    0  -0.0026687213 AA  
+--------------------------------------------------------------------------------
+   3       7    0.63953      0.0000      0.0000      0.0000  .00000000D+00
+__________________________________________________________________________
+ 
+__________________________________________________________________________
+  TDA excitation ergy:             0.639528741063 a.u.   17.4025 eV
+  Total TDA electronic energy:  -108.320692882663 a.u.
+ 
+  Dominant contributions: 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0   15    0  -0.7742821890 AA  
+    5    0    9    0   0.5112746853 AA  
+    4    0   12    0  -0.3480569088 AA  
+    5    0   27    0  -0.0909501610 AA  
+    6    0    8    0   0.0576677499 AA  
+    4    0   22    0  -0.0409161891 AA  
+    5    0   33    0  -0.0364866111 AA  
+    4    0   29    0  -0.0320665854 AA  
+    6    0   17    0   0.0285039989 AA  
+    3    0    9    0   0.0266147502 AA  
+    3    0   15    0   0.0174885391 AA  
+    6    0   21    0   0.0130996513 AA  
+    7    0   24    0   0.0093607238 AA  
+    6    0   25    0  -0.0093607238 AA  
+    4    0   36    0  -0.0080281180 AA  
+--------------------------------------------------------------------------------
+   1       8    0.31056      0.0000      0.0000      0.0000  .00000000D+00
+__________________________________________________________________________
+ 
+__________________________________________________________________________
+  TDA excitation ergy:             0.310559328256 a.u.    8.4507 eV
+  Total TDA electronic energy:  -108.649662295470 a.u.
+ 
+  Dominant contributions: 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    6    0   10    0   0.5879361517 AA  
+    7    0    9    0  -0.5879356027 AA  
+    6    0   16    0   0.3854188929 AA  
+    7    0   15    0  -0.3854186425 AA  
+    7    0   27    0  -0.0668062361 AA  
+    6    0   28    0   0.0668046738 AA  
+    6    0   34    0   0.0356282961 AA  
+    7    0   33    0  -0.0356273593 AA  
+    6    0   45    0   0.0071743797 AA  
+    7    0   44    0  -0.0071737014 AA  
+    5    0   24    0   0.0000025266 AA  
+    4    0   18    0   0.0000024995 AA  
+    5    0   40    0  -0.0000013915 AA  
+    4    0   39    0  -0.0000013765 AA  
+    3    0   24    0  -0.0000005041 AA  
+--------------------------------------------------------------------------------
+   2       8    0.33115      0.0000      0.0000      0.0000  .00000000D+00
+__________________________________________________________________________
+ 
+__________________________________________________________________________
+  TDA excitation ergy:             0.331145413931 a.u.    9.0109 eV
+  Total TDA electronic energy:  -108.629076209795 a.u.
+ 
+  Dominant contributions: 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    7    0    9    0  -0.5959433098 AA  
+    6    0   10    0  -0.5959428837 AA  
+    7    0   15    0  -0.3743756375 AA  
+    6    0   16    0  -0.3743752053 AA  
+    6    0   28    0  -0.0593155223 AA  
+    7    0   27    0  -0.0593147707 AA  
+    6    0   34    0  -0.0319165841 AA  
+    7    0   33    0  -0.0319163775 AA  
+    3    0   24    0  -0.0130899182 AA  
+    3    0   40    0   0.0083812696 AA  
+    7    0   44    0  -0.0058458334 AA  
+    6    0   45    0  -0.0058457812 AA  
+    5    0   24    0  -0.0014473956 AA  
+    4    0   39    0  -0.0013551694 AA  
+    4    0   18    0  -0.0010571613 AA  
+--------------------------------------------------------------------------------
+   3       8    0.63193      0.0000      0.0000      0.0000  .00000000D+00
+__________________________________________________________________________
+ 
+__________________________________________________________________________
+  TDA excitation ergy:             0.631926061326 a.u.   17.1956 eV
+  Total TDA electronic energy:  -108.328295562400 a.u.
+ 
+  Dominant contributions: 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    6    0   16    0   0.5934784806 AA  
+    7    0   15    0   0.5934763413 AA  
+    6    0   10    0  -0.3795814821 AA  
+    7    0    9    0  -0.3795800546 AA  
+    6    0   28    0   0.0546162393 AA  
+    7    0   27    0   0.0546150946 AA  
+    6    0   34    0   0.0249728531 AA  
+    7    0   33    0   0.0249709232 AA  
+    5    0   24    0  -0.0094037740 AA  
+    4    0   18    0  -0.0077640982 AA  
+    3    0   24    0  -0.0042892913 AA  
+    3    0   40    0  -0.0042717542 AA  
+    6    0   45    0   0.0018097021 AA  
+    7    0   44    0   0.0018057601 AA  
+    5    0   40    0  -0.0008400655 AA  
+--------------------------------------------------------------------------------
+__________________________________________________________________________
+  @DOEOMEE-I, Excitation energies computed by the EOMEE-CC2/CC2-LR method.
+  @DOEOMEE-I, right-hand eigenvectors will be computed.
+  Beginning symmetry block   1.   3 roots requested.
+  @DOEOMEE-I, Matrix dimension for diagonalization:     5178
+  Creating initial guess for root
+________________________________________________________________________
+            Subspace          Eigenvalue           
+ Iteration  Dimension   (a.u.)         (eV)       Overlap      Residual
+________________________________________________________________________
+  @NEWGES-I, Using TDA initial guess.
+  1   1  0.6320622642D+00  0.1719928860D+02  0.0000000000D+00  0.2037197025D+00
+  2   2  0.5601425965D+00  0.1524225495D+02  0.9795066802D+00  0.2022831433D-01
+  3   3  0.5598754767D+00  0.1523498625D+02  0.9998618695D+00  0.3224833913D-02
+  L-O-C-K-I-N-G O-N R-O-O-T 
+  4   4  0.5598577463D+00  0.1523450378D+02  0.9999931036D+00  0.6615790937D-03
+  5   5  0.5598581668D+00  0.1523451523D+02  0.9999997828D+00  0.2162450999D-03
+  6   6  0.5598582119D+00  0.1523451645D+02  0.9999999835D+00  0.3612615729D-04
+  7   7  0.5598582440D+00  0.1523451733D+02  0.9999999990D+00  0.2164003260D-04
+  8   8  0.5598582503D+00  0.1523451750D+02  0.9999999996D+00  0.5143239590D-04
+  9   9  0.5598582461D+00  0.1523451738D+02  0.9999999993D+00  0.1799861158D-04
+ 10  10  0.5598582633D+00  0.1523451785D+02  0.9999999971D+00  0.1503921046D-04
+ 11  11  0.5598582414D+00  0.1523451726D+02  0.9999999998D+00  0.3551792573D-05
+  Converged eigenvalue:   0.559858241365857       a.u.
+   Total EOMEE-CC2 electronic energy     -108.723845650598548 a.u.
+  Converged eigenvector 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    6    0   12    0  -0.4873201740 AA  
+    7    0   13    0   0.4873195039 AA  
+    7    7   13   13   0.0551659048 ABAB
+    6    6   12   12  -0.0551658281 ABAB
+    6    0   29    0  -0.0388348256 AA  
+    7    0   30    0   0.0388347619 AA  
+    7    5   13   11   0.0252714413 ABAB
+    5    7   11   13   0.0252714413 ABAB
+    6    5   12   11  -0.0252714018 ABAB
+    5    6   11   12  -0.0252714018 ABAB
+    6    0   22    0  -0.0221586808 AA  
+    7    0   23    0   0.0221586665 AA  
+    6    7   29   13   0.0201442928 ABAB
+    7    6   13   29   0.0201442928 ABAB
+    6    7   12   30  -0.0201442661 ABAB
+--------------------------------------------------------------------------------
+  Converged eigenvector, normalized to one 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    6    0   12    0  -0.4873201740 AA  
+    7    0   13    0   0.4873195039 AA  
+    7    7   13   13   0.0551659048 ABAB
+    6    6   12   12  -0.0551658281 ABAB
+    6    0   29    0  -0.0388348256 AA  
+    7    0   30    0   0.0388347619 AA  
+    7    5   13   11   0.0252714413 ABAB
+    5    7   11   13   0.0252714413 ABAB
+    6    5   12   11  -0.0252714018 ABAB
+    5    6   11   12  -0.0252714018 ABAB
+    6    0   22    0  -0.0221586808 AA  
+    7    0   23    0   0.0221586665 AA  
+    6    7   29   13   0.0201442928 ABAB
+    7    6   13   29   0.0201442928 ABAB
+    6    7   12   30  -0.0201442661 ABAB
+--------------------------------------------------------------------------------
+
+  Eigenvector is saved on CCRE_1_1  
+
+  Adding new vector to expansion space.
+  Guess for next eigenvalue   0.550653426660960     
+ 12  12  0.4828984282D+00  0.1314033427D+02  0.5595679693D+00  0.6054105292D-01
+ 13  13  0.4813320576D+00  0.1309771116D+02  0.9988858557D+00  0.2891758772D-01
+ 14  14  0.4808438276D+00  0.1308442575D+02  0.9992150535D+00  0.1244414378D-01
+ 15  15  0.4806262180D+00  0.1307850429D+02  0.9996177997D+00  0.7869779206D-02
+ 16  16  0.4805684402D+00  0.1307693208D+02  0.9997913362D+00  0.4264505820D-02
+  L-O-C-K-I-N-G O-N R-O-O-T 
+ 17  17  0.4805567786D+00  0.1307661475D+02  0.9999689885D+00  0.1693107949D-02
+ 18  18  0.4805546136D+00  0.1307655584D+02  0.9999911378D+00  0.9465208948D-03
+ 19  19  0.4805574096D+00  0.1307663192D+02  0.9999986143D+00  0.3848843146D-03
+ 20  20  0.4805569921D+00  0.1307662056D+02  0.9999996708D+00  0.1740717414D-03
+ The phase angle is:   0.666611062455489     
+ Cr.Cr.  0.167227325132358     
+ Ci.Ci.  0.832772674867642     
+ 21  21  0.4805567145D+00  0.1307661300D+02  0.9999999395D+00  0.6067588605D-04
+ 22  22  0.4805565617D+00  0.1307660885D+02  0.9999999968D+00  0.1819130080D-04
+ 23  23  0.4805565950D+00  0.1307660975D+02  0.9999999998D+00  0.7917177733D-05
+  Converged eigenvalue:   0.480556594968595       a.u.
+   Total EOMEE-CC2 electronic energy     -108.803147296995817 a.u.
+  Converged eigenvector 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0   11    0  -0.6275330676 AA  
+    5    0   14    0  -0.2431695299 AA  
+    5    5   11   11  -0.0729775404 ABAB
+    4    6   11    9  -0.0534573754 ABAB
+    6    4    9   11  -0.0534573754 ABAB
+    4    7   11   10  -0.0534572713 ABAB
+    7    4   10   11  -0.0534572713 ABAB
+    4    6   11   15  -0.0469953865 ABAB
+    6    4   15   11  -0.0469953865 ABAB
+    4    7   11   16  -0.0469953105 ABAB
+    7    4   16   11  -0.0469953105 ABAB
+    4    4   11   11  -0.0428985424 ABAB
+    6    0   12    0   0.0329470629 AA  
+    7    0   13    0   0.0329470448 AA  
+    6    5   29   11  -0.0246762028 ABAB
+--------------------------------------------------------------------------------
+  Converged eigenvector, normalized to one 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0   11    0  -0.6275330676 AA  
+    5    0   14    0  -0.2431695299 AA  
+    5    5   11   11  -0.0729775404 ABAB
+    4    6   11    9  -0.0534573754 ABAB
+    6    4    9   11  -0.0534573754 ABAB
+    4    7   11   10  -0.0534572713 ABAB
+    7    4   10   11  -0.0534572713 ABAB
+    4    6   11   15  -0.0469953865 ABAB
+    6    4   15   11  -0.0469953865 ABAB
+    4    7   11   16  -0.0469953105 ABAB
+    7    4   16   11  -0.0469953105 ABAB
+    4    4   11   11  -0.0428985424 ABAB
+    6    0   12    0   0.0329470629 AA  
+    7    0   13    0   0.0329470448 AA  
+    6    5   29   11  -0.0246762028 ABAB
+--------------------------------------------------------------------------------
+
+  Eigenvector is saved on CCRE_1_2  
+
+  Adding new vector to expansion space.
+  Guess for next eigenvalue   0.575155732905695     
+ 24  24  0.5391528182D+00  0.1467109405D+02  0.3119075801D+00  0.3687499568D-01
+ 25  25  0.5385684150D+00  0.1465519163D+02  0.9996403364D+00  0.8112678002D-02
+ 26  26  0.5385127793D+00  0.1465367770D+02  0.9999120355D+00  0.2667302703D-02
+  L-O-C-K-I-N-G O-N R-O-O-T 
+ 27  27  0.5385062650D+00  0.1465350044D+02  0.9999869979D+00  0.1061415711D-02
+ 28  28  0.5385039195D+00  0.1465343662D+02  0.9999979060D+00  0.2928293220D-03
+ 29  29  0.5385036121D+00  0.1465342825D+02  0.9999998340D+00  0.9752716458D-04
+ 30  30  0.5385037435D+00  0.1465343183D+02  0.9999999914D+00  0.2120974935D-04
+ 31  31  0.5385037479D+00  0.1465343195D+02  0.9999999996D+00  0.5104892420D-05
+  Converged eigenvalue:   0.538503747907614       a.u.
+   Total EOMEE-CC2 electronic energy     -108.745200144056795 a.u.
+  Converged eigenvector 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0   14    0   0.6110639776 AA  
+    5    0   11    0  -0.2217993534 AA  
+    6    0   12    0   0.1136100554 AA  
+    7    0   13    0   0.1136099325 AA  
+    4    0    8    0  -0.0887913129 AA  
+    5    0   20    0  -0.0729705221 AA  
+    4    7   14   10   0.0510317107 ABAB
+    7    4   10   14   0.0510317107 ABAB
+    4    6   14    9   0.0510316856 ABAB
+    6    4    9   14   0.0510316856 ABAB
+    4    7   14   16   0.0447034545 ABAB
+    7    4   16   14   0.0447034545 ABAB
+    4    6   14   15   0.0447034492 ABAB
+    6    4   15   14   0.0447034492 ABAB
+    5    5   14   11   0.0359988758 ABAB
+--------------------------------------------------------------------------------
+  Converged eigenvector, normalized to one 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0   14    0   0.6110639776 AA  
+    5    0   11    0  -0.2217993534 AA  
+    6    0   12    0   0.1136100554 AA  
+    7    0   13    0   0.1136099325 AA  
+    4    0    8    0  -0.0887913129 AA  
+    5    0   20    0  -0.0729705221 AA  
+    4    7   14   10   0.0510317107 ABAB
+    7    4   10   14   0.0510317107 ABAB
+    4    6   14    9   0.0510316856 ABAB
+    6    4    9   14   0.0510316856 ABAB
+    4    7   14   16   0.0447034545 ABAB
+    7    4   16   14   0.0447034545 ABAB
+    4    6   14   15   0.0447034492 ABAB
+    6    4   15   14   0.0447034492 ABAB
+    5    5   14   11   0.0359988758 ABAB
+--------------------------------------------------------------------------------
+
+  Eigenvector is saved on CCRE_1_3  
+
+  Solution of   3 roots required   31 iterations.
+  @DOEOMEE-I, right-hand eigenvectors will be computed.
+  Beginning symmetry block   2.   3 roots requested.
+  @DOEOMEE-I, Matrix dimension for diagonalization:     4785
+  Creating initial guess for root
+________________________________________________________________________
+            Subspace          Eigenvalue           
+ Iteration  Dimension   (a.u.)         (eV)       Overlap      Residual
+________________________________________________________________________
+  @NEWGES-I, Using TDA initial guess.
+  1   1  0.6137442500D+00  0.1670083010D+02  0.0000000000D+00  0.6512657904D+00
+  2   2  0.5491371364D+00  0.1494278116D+02  0.8781548067D+00  0.3726138114D+00
+  3   3  0.5250197852D+00  0.1428651467D+02  0.9895050150D+00  0.1231655311D+00
+  4   4  0.5045861168D+00  0.1373048628D+02  0.7930527840D+00  0.2227770151D+00
+  5   5  0.4906405708D+00  0.1335100868D+02  0.9520174182D+00  0.4107226099D-01
+  6   6  0.4895561973D+00  0.1332150138D+02  0.9992656503D+00  0.2525278005D-01
+  7   7  0.4893407245D+00  0.1331563807D+02  0.9996777098D+00  0.7777596768D-02
+  8   8  0.4892508687D+00  0.1331319297D+02  0.9997834460D+00  0.8438296473D-02
+  9   9  0.4891730260D+00  0.1331107476D+02  0.9993739970D+00  0.6863390310D-02
+  L-O-C-K-I-N-G O-N R-O-O-T 
+ 10  10  0.4891279251D+00  0.1330984750D+02  0.9993642274D+00  0.3750519256D-02
+ 11  11  0.4891122422D+00  0.1330942075D+02  0.9999441547D+00  0.1746706417D-02
+ 12  12  0.4891103373D+00  0.1330936891D+02  0.9999980639D+00  0.4305637413D-03
+ 13  13  0.4891100808D+00  0.1330936193D+02  0.9999999517D+00  0.1163836453D-03
+ 14  14  0.4891099296D+00  0.1330935782D+02  0.9999999944D+00  0.3253153923D-04
+ 15  15  0.4891099585D+00  0.1330935861D+02  0.9999999995D+00  0.6200798767D-05
+  Converged eigenvalue:   0.489109958522446       a.u.
+   Total EOMEE-CC2 electronic energy     -108.794593933441959 a.u.
+  Converged eigenvector 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0   13    0   0.6632822306 AA  
+    4    0   10    0  -0.1000933912 AA  
+    7    0   11    0   0.0678938266 AA  
+    4    6   13    9   0.0558388777 ABAB
+    6    4    9   13   0.0558388777 ABAB
+    4    7   13   10   0.0552439651 ABAB
+    7    4   10   13   0.0552439651 ABAB
+    4    7   13   16   0.0494008059 ABAB
+    7    4   16   13   0.0494008059 ABAB
+    4    6   13   15   0.0493379056 ABAB
+    6    4   15   13   0.0493379056 ABAB
+    5    0   30    0   0.0467170201 AA  
+    5    5   13   11   0.0433296295 ABAB
+    5    5   11   13   0.0433296295 ABAB
+    7    0   14    0   0.0336453036 AA  
+--------------------------------------------------------------------------------
+  Converged eigenvector, normalized to one 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0   13    0   0.6632822306 AA  
+    4    0   10    0  -0.1000933912 AA  
+    7    0   11    0   0.0678938266 AA  
+    4    6   13    9   0.0558388777 ABAB
+    6    4    9   13   0.0558388777 ABAB
+    4    7   13   10   0.0552439651 ABAB
+    7    4   10   13   0.0552439651 ABAB
+    4    7   13   16   0.0494008059 ABAB
+    7    4   16   13   0.0494008059 ABAB
+    4    6   13   15   0.0493379056 ABAB
+    6    4   15   13   0.0493379056 ABAB
+    5    0   30    0   0.0467170201 AA  
+    5    5   13   11   0.0433296295 ABAB
+    5    5   11   13   0.0433296295 ABAB
+    7    0   14    0   0.0336453036 AA  
+--------------------------------------------------------------------------------
+
+  Eigenvector is saved on CCRE_2_1  
+
+  Adding new vector to expansion space.
+  Guess for next eigenvalue   0.557438356129708     
+ 16  16  0.5180605348D+00  0.1409714384D+02  0.4654925437D+00  0.1153197784D-01
+ 17  17  0.5178572193D+00  0.1409161134D+02  0.9998917508D+00  0.4617769110D-02
+  L-O-C-K-I-N-G O-N R-O-O-T 
+ 18  18  0.5178323428D+00  0.1409093442D+02  0.9999668897D+00  0.1042853097D-02
+ 19  19  0.5178291908D+00  0.1409084865D+02  0.9999982789D+00  0.2107939761D-03
+ 20  20  0.5178290955D+00  0.1409084605D+02  0.9999999588D+00  0.4560264400D-04
+ 21  21  0.5178291736D+00  0.1409084818D+02  0.9999999986D+00  0.9300549493D-05
+  Converged eigenvalue:   0.517829173648016       a.u.
+   Total EOMEE-CC2 electronic energy     -108.765874718316397 a.u.
+  Converged eigenvector 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    4    0   10    0   0.5949442200 AA  
+    4    0   16    0   0.2648984568 AA  
+    7    0   11    0  -0.1107947195 AA  
+    5    0   13    0   0.0997997721 AA  
+    7    5   10   10   0.0764989944 ABAB
+    5    7   10   10   0.0764989944 ABAB
+    6    5    9   10   0.0610981629 ABAB
+    5    6   10    9   0.0610981629 ABAB
+    7    5   16   10   0.0590435106 ABAB
+    5    7   10   16   0.0590435106 ABAB
+    7    0   19    0  -0.0555153735 AA  
+    6    0   18    0  -0.0555153735 AA  
+    6    5   15   10   0.0520967806 ABAB
+    5    6   10   15   0.0520967806 ABAB
+    7    5   10   16   0.0352746896 ABAB
+--------------------------------------------------------------------------------
+  Converged eigenvector, normalized to one 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    4    0   10    0   0.5949442200 AA  
+    4    0   16    0   0.2648984568 AA  
+    7    0   11    0  -0.1107947195 AA  
+    5    0   13    0   0.0997997721 AA  
+    7    5   10   10   0.0764989944 ABAB
+    5    7   10   10   0.0764989944 ABAB
+    6    5    9   10   0.0610981629 ABAB
+    5    6   10    9   0.0610981629 ABAB
+    7    5   16   10   0.0590435106 ABAB
+    5    7   10   16   0.0590435106 ABAB
+    7    0   19    0  -0.0555153735 AA  
+    6    0   18    0  -0.0555153735 AA  
+    6    5   15   10   0.0520967806 ABAB
+    5    6   10   15   0.0520967806 ABAB
+    7    5   10   16   0.0352746896 ABAB
+--------------------------------------------------------------------------------
+
+  Eigenvector is saved on CCRE_2_2  
+
+  Adding new vector to expansion space.
+  Guess for next eigenvalue   0.583180251656984     
+ 22  22  0.5399453488D+00  0.1469265990D+02  0.8553342412D-01  0.3920109302D-02
+  L-O-C-K-I-N-G O-N R-O-O-T 
+ 23  23  0.5399197251D+00  0.1469196265D+02  0.9999840374D+00  0.8581983038D-03
+ 24  24  0.5399187119D+00  0.1469193508D+02  0.9999995617D+00  0.2014748357D-03
+ 25  25  0.5399184105D+00  0.1469192687D+02  0.9999999783D+00  0.2364897178D-04
+ 26  26  0.5399184321D+00  0.1469192746D+02  0.9999999997D+00  0.4388123184D-05
+  Converged eigenvalue:   0.539918432061092       a.u.
+   Total EOMEE-CC2 electronic energy     -108.743785459903322 a.u.
+  Converged eigenvector 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    7    0   11    0  -0.6111373007 AA  
+    7    0   14    0  -0.3103201031 AA  
+    5    0   13    0   0.0616990092 AA  
+    7    0   31    0   0.0410487101 AA  
+    4    0   10    0  -0.0382192929 AA  
+    7    7   13   11  -0.0349606764 ABAB
+    7    7   11   13  -0.0349606764 ABAB
+    7    0   20    0   0.0318602813 AA  
+    7    5   11   11  -0.0312065641 ABAB
+    5    7   11   11  -0.0312065641 ABAB
+    6    7   12   11  -0.0280851988 ABAB
+    7    6   11   12  -0.0280851988 ABAB
+    7    7   30   11  -0.0230825542 ABAB
+    7    7   11   30  -0.0230825542 ABAB
+    6    7   29   11  -0.0223429424 ABAB
+--------------------------------------------------------------------------------
+  Converged eigenvector, normalized to one 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    7    0   11    0  -0.6111373007 AA  
+    7    0   14    0  -0.3103201031 AA  
+    5    0   13    0   0.0616990092 AA  
+    7    0   31    0   0.0410487101 AA  
+    4    0   10    0  -0.0382192929 AA  
+    7    7   13   11  -0.0349606764 ABAB
+    7    7   11   13  -0.0349606764 ABAB
+    7    0   20    0   0.0318602813 AA  
+    7    5   11   11  -0.0312065641 ABAB
+    5    7   11   11  -0.0312065641 ABAB
+    6    7   12   11  -0.0280851988 ABAB
+    7    6   11   12  -0.0280851988 ABAB
+    7    7   30   11  -0.0230825542 ABAB
+    7    7   11   30  -0.0230825542 ABAB
+    6    7   29   11  -0.0223429424 ABAB
+--------------------------------------------------------------------------------
+
+  Eigenvector is saved on CCRE_2_3  
+
+  Solution of   3 roots required   26 iterations.
+  @DOEOMEE-I, right-hand eigenvectors will be computed.
+  Beginning symmetry block   3.   3 roots requested.
+  @DOEOMEE-I, Matrix dimension for diagonalization:     4785
+  Creating initial guess for root
+________________________________________________________________________
+            Subspace          Eigenvalue           
+ Iteration  Dimension   (a.u.)         (eV)       Overlap      Residual
+________________________________________________________________________
+  @NEWGES-I, Using TDA initial guess.
+  1   1  0.6137442500D+00  0.1670083010D+02  0.0000000000D+00  0.6512657938D+00
+  2   2  0.5491371366D+00  0.1494278116D+02  0.8781548061D+00  0.3726138128D+00
+  3   3  0.5250197852D+00  0.1428651467D+02  0.9895050149D+00  0.1231655311D+00
+  4   4  0.5045861168D+00  0.1373048628D+02  0.7930527854D+00  0.2227770150D+00
+  5   5  0.4906405708D+00  0.1335100868D+02  0.9520174180D+00  0.4107226092D-01
+  6   6  0.4895561973D+00  0.1332150138D+02  0.9992656503D+00  0.2525278000D-01
+  7   7  0.4893407245D+00  0.1331563807D+02  0.9996777098D+00  0.7777596758D-02
+  8   8  0.4892508687D+00  0.1331319297D+02  0.9997834460D+00  0.8438296462D-02
+  9   9  0.4891730260D+00  0.1331107476D+02  0.9993739970D+00  0.6863390308D-02
+  L-O-C-K-I-N-G O-N R-O-O-T 
+ 10  10  0.4891279251D+00  0.1330984750D+02  0.9993642274D+00  0.3750519246D-02
+ 11  11  0.4891122421D+00  0.1330942075D+02  0.9999441547D+00  0.1746706410D-02
+ 12  12  0.4891103373D+00  0.1330936891D+02  0.9999980639D+00  0.4305637404D-03
+ 13  13  0.4891100808D+00  0.1330936193D+02  0.9999999517D+00  0.1163836449D-03
+ 14  14  0.4891099296D+00  0.1330935782D+02  0.9999999944D+00  0.3253153928D-04
+ 15  15  0.4891099585D+00  0.1330935861D+02  0.9999999995D+00  0.6200798783D-05
+  Converged eigenvalue:   0.489109958517795       a.u.
+   Total EOMEE-CC2 electronic energy     -108.794593933446606 a.u.
+  Converged eigenvector 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0   12    0   0.6632822306 AA  
+    4    0    9    0  -0.1000933911 AA  
+    6    0   11    0   0.0678938266 AA  
+    4    7   12   10   0.0558388777 ABAB
+    7    4   10   12   0.0558388777 ABAB
+    4    6   12    9   0.0552439651 ABAB
+    6    4    9   12   0.0552439651 ABAB
+    4    6   12   15   0.0494008059 ABAB
+    6    4   15   12   0.0494008059 ABAB
+    4    7   12   16   0.0493379056 ABAB
+    7    4   16   12   0.0493379056 ABAB
+    5    0   29    0   0.0467170201 AA  
+    5    5   12   11   0.0433296295 ABAB
+    5    5   11   12   0.0433296295 ABAB
+    6    0   14    0   0.0336453036 AA  
+--------------------------------------------------------------------------------
+  Converged eigenvector, normalized to one 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0   12    0   0.6632822306 AA  
+    4    0    9    0  -0.1000933911 AA  
+    6    0   11    0   0.0678938266 AA  
+    4    7   12   10   0.0558388777 ABAB
+    7    4   10   12   0.0558388777 ABAB
+    4    6   12    9   0.0552439651 ABAB
+    6    4    9   12   0.0552439651 ABAB
+    4    6   12   15   0.0494008059 ABAB
+    6    4   15   12   0.0494008059 ABAB
+    4    7   12   16   0.0493379056 ABAB
+    7    4   16   12   0.0493379056 ABAB
+    5    0   29    0   0.0467170201 AA  
+    5    5   12   11   0.0433296295 ABAB
+    5    5   11   12   0.0433296295 ABAB
+    6    0   14    0   0.0336453036 AA  
+--------------------------------------------------------------------------------
+
+  Eigenvector is saved on CCRE_3_1  
+
+  Adding new vector to expansion space.
+  Guess for next eigenvalue   0.557438356128676     
+ 16  16  0.5180605348D+00  0.1409714384D+02  0.4654925437D+00  0.1153197783D-01
+ 17  17  0.5178572193D+00  0.1409161134D+02  0.9998917508D+00  0.4617769103D-02
+  L-O-C-K-I-N-G O-N R-O-O-T 
+ 18  18  0.5178323428D+00  0.1409093442D+02  0.9999668897D+00  0.1042853095D-02
+ 19  19  0.5178291908D+00  0.1409084865D+02  0.9999982789D+00  0.2107939763D-03
+ 20  20  0.5178290954D+00  0.1409084605D+02  0.9999999588D+00  0.4560264437D-04
+ 21  21  0.5178291736D+00  0.1409084818D+02  0.9999999986D+00  0.9300549713D-05
+  Converged eigenvalue:   0.517829173638750       a.u.
+   Total EOMEE-CC2 electronic energy     -108.765874718325662 a.u.
+  Converged eigenvector 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    4    0    9    0   0.5949442200 AA  
+    4    0   15    0   0.2648984568 AA  
+    6    0   11    0  -0.1107947194 AA  
+    5    0   12    0   0.0997997720 AA  
+    6    5    9    9   0.0764989944 ABAB
+    5    6    9    9   0.0764989944 ABAB
+    7    5   10    9   0.0610981629 ABAB
+    5    7    9   10   0.0610981629 ABAB
+    6    5   15    9   0.0590435106 ABAB
+    5    6    9   15   0.0590435106 ABAB
+    7    0   18    0  -0.0555153735 AA  
+    6    0   19    0   0.0555153735 AA  
+    7    5   16    9   0.0520967806 ABAB
+    5    7    9   16   0.0520967806 ABAB
+    6    5    9   15   0.0352746896 ABAB
+--------------------------------------------------------------------------------
+  Converged eigenvector, normalized to one 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    4    0    9    0   0.5949442200 AA  
+    4    0   15    0   0.2648984568 AA  
+    6    0   11    0  -0.1107947194 AA  
+    5    0   12    0   0.0997997720 AA  
+    6    5    9    9   0.0764989944 ABAB
+    5    6    9    9   0.0764989944 ABAB
+    7    5   10    9   0.0610981629 ABAB
+    5    7    9   10   0.0610981629 ABAB
+    6    5   15    9   0.0590435106 ABAB
+    5    6    9   15   0.0590435106 ABAB
+    7    0   18    0  -0.0555153735 AA  
+    6    0   19    0   0.0555153735 AA  
+    7    5   16    9   0.0520967806 ABAB
+    5    7    9   16   0.0520967806 ABAB
+    6    5    9   15   0.0352746896 ABAB
+--------------------------------------------------------------------------------
+
+  Eigenvector is saved on CCRE_3_2  
+
+  Adding new vector to expansion space.
+  Guess for next eigenvalue   0.583180251652512     
+ 22  22  0.5399453488D+00  0.1469265990D+02  0.8553342422D-01  0.3920109305D-02
+  L-O-C-K-I-N-G O-N R-O-O-T 
+ 23  23  0.5399197252D+00  0.1469196265D+02  0.9999840374D+00  0.8581983065D-03
+ 24  24  0.5399187120D+00  0.1469193508D+02  0.9999995617D+00  0.2014748359D-03
+ 25  25  0.5399184105D+00  0.1469192687D+02  0.9999999783D+00  0.2364897199D-04
+ 26  26  0.5399184321D+00  0.1469192746D+02  0.9999999997D+00  0.4388123056D-05
+  Converged eigenvalue:   0.539918432097267       a.u.
+   Total EOMEE-CC2 electronic energy     -108.743785459867141 a.u.
+  Converged eigenvector 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    6    0   11    0  -0.6111373007 AA  
+    6    0   14    0  -0.3103201032 AA  
+    5    0   12    0   0.0616990091 AA  
+    6    0   31    0   0.0410487101 AA  
+    4    0    9    0  -0.0382192929 AA  
+    6    6   12   11  -0.0349606763 ABAB
+    6    6   11   12  -0.0349606763 ABAB
+    6    0   20    0   0.0318602813 AA  
+    6    5   11   11  -0.0312065641 ABAB
+    5    6   11   11  -0.0312065641 ABAB
+    6    7   11   13  -0.0280851988 ABAB
+    7    6   13   11  -0.0280851988 ABAB
+    6    6   29   11  -0.0230825542 ABAB
+    6    6   11   29  -0.0230825542 ABAB
+    6    7   11   30  -0.0223429424 ABAB
+--------------------------------------------------------------------------------
+  Converged eigenvector, normalized to one 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    6    0   11    0  -0.6111373007 AA  
+    6    0   14    0  -0.3103201032 AA  
+    5    0   12    0   0.0616990091 AA  
+    6    0   31    0   0.0410487101 AA  
+    4    0    9    0  -0.0382192929 AA  
+    6    6   12   11  -0.0349606763 ABAB
+    6    6   11   12  -0.0349606763 ABAB
+    6    0   20    0   0.0318602813 AA  
+    6    5   11   11  -0.0312065641 ABAB
+    5    6   11   11  -0.0312065641 ABAB
+    6    7   11   13  -0.0280851988 ABAB
+    7    6   13   11  -0.0280851988 ABAB
+    6    6   29   11  -0.0230825542 ABAB
+    6    6   11   29  -0.0230825542 ABAB
+    6    7   11   30  -0.0223429424 ABAB
+--------------------------------------------------------------------------------
+
+  Eigenvector is saved on CCRE_3_3  
+
+  Solution of   3 roots required   26 iterations.
+  @DOEOMEE-I, right-hand eigenvectors will be computed.
+  Beginning symmetry block   4.   3 roots requested.
+  @DOEOMEE-I, Matrix dimension for diagonalization:     4398
+  Creating initial guess for root
+________________________________________________________________________
+            Subspace          Eigenvalue           
+ Iteration  Dimension   (a.u.)         (eV)       Overlap      Residual
+________________________________________________________________________
+  @NEWGES-I, Using TDA initial guess.
+  1   1  0.6320622651D+00  0.1719928863D+02  0.0000000000D+00  0.2074198184D+00
+  2   2  0.5601665104D+00  0.1524290568D+02  0.9795096408D+00  0.2198929433D-01
+  3   3  0.5598772019D+00  0.1523503320D+02  0.9998467356D+00  0.3317197357D-02
+  L-O-C-K-I-N-G O-N R-O-O-T 
+  4   4  0.5598577832D+00  0.1523450479D+02  0.9999925096D+00  0.6472583784D-03
+  5   5  0.5598581781D+00  0.1523451553D+02  0.9999997858D+00  0.2052995211D-03
+  6   6  0.5598582134D+00  0.1523451649D+02  0.9999999846D+00  0.3363012171D-04
+  7   7  0.5598582468D+00  0.1523451740D+02  0.9999999990D+00  0.2048842692D-04
+  8   8  0.5598582509D+00  0.1523451751D+02  0.9999999995D+00  0.2986688009D-05
+  Converged eigenvalue:   0.559858250884884       a.u.
+   Total EOMEE-CC2 electronic energy     -108.723845641079521 a.u.
+  Converged eigenvector 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    6    0   13    0  -0.4873198412 AA  
+    7    0   12    0  -0.4873198360 AA  
+    6    0   30    0  -0.0388345711 AA  
+    7    0   29    0  -0.0388345692 AA  
+    6    6   12   13  -0.0283057660 ABAB
+    6    6   13   12  -0.0283057660 ABAB
+    7    7   12   13  -0.0283057648 ABAB
+    7    7   13   12  -0.0283057648 ABAB
+    6    7   13   13  -0.0268595001 ABAB
+    7    6   13   13  -0.0268595001 ABAB
+    6    7   12   12  -0.0268594989 ABAB
+    7    6   12   12  -0.0268594989 ABAB
+    6    5   13   11  -0.0252715021 ABAB
+    5    6   11   13  -0.0252715021 ABAB
+    7    5   12   11  -0.0252715009 ABAB
+--------------------------------------------------------------------------------
+  Converged eigenvector, normalized to one 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    6    0   13    0  -0.4873198412 AA  
+    7    0   12    0  -0.4873198360 AA  
+    6    0   30    0  -0.0388345711 AA  
+    7    0   29    0  -0.0388345692 AA  
+    6    6   12   13  -0.0283057660 ABAB
+    6    6   13   12  -0.0283057660 ABAB
+    7    7   12   13  -0.0283057648 ABAB
+    7    7   13   12  -0.0283057648 ABAB
+    6    7   13   13  -0.0268595001 ABAB
+    7    6   13   13  -0.0268595001 ABAB
+    6    7   12   12  -0.0268594989 ABAB
+    7    6   12   12  -0.0268594989 ABAB
+    6    5   13   11  -0.0252715021 ABAB
+    5    6   11   13  -0.0252715021 ABAB
+    7    5   12   11  -0.0252715009 ABAB
+--------------------------------------------------------------------------------
+
+  Eigenvector is saved on CCRE_4_1  
+
+  Adding new vector to expansion space.
+  Guess for next eigenvalue   0.545257665689350     
+  9   9  0.6354028982D+00  0.1729019188D+02  0.9999999944D+00  0.2857762621D+00
+ 10  10  0.5646853690D+00  0.1536587008D+02  0.9798917027D+00  0.3811741497D-01
+ 11  11  0.5640951819D+00  0.1534981027D+02  0.9996574331D+00  0.3893317245D-02
+  L-O-C-K-I-N-G O-N R-O-O-T 
+ 12  12  0.5640622215D+00  0.1534891337D+02  0.9999860413D+00  0.5666500524D-03
+ 13  13  0.5640619288D+00  0.1534890541D+02  0.9999998191D+00  0.9930752082D-04
+ 14  14  0.5640619662D+00  0.1534890642D+02  0.9999999962D+00  0.8992401687D-05
+  Converged eigenvalue:   0.564061966203707       a.u.
+   Total EOMEE-CC2 electronic energy     -108.719641925760698 a.u.
+  Converged eigenvector 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    7    0   12    0  -0.4875978432 AA  
+    6    0   13    0   0.4875978411 AA  
+    6    0   30    0   0.0388304386 AA  
+    7    0   29    0  -0.0388304338 AA  
+    6    6   12   13   0.0253999760 ABAB
+    6    6   13   12   0.0253999760 ABAB
+    6    7   13   13   0.0253999758 ABAB
+    7    6   13   13   0.0253999758 ABAB
+    6    7   12   12  -0.0253999705 ABAB
+    7    6   12   12  -0.0253999705 ABAB
+    7    7   12   13  -0.0253999703 ABAB
+    7    7   13   12  -0.0253999703 ABAB
+    6    5   13   11   0.0253738718 ABAB
+    5    6   11   13   0.0253738718 ABAB
+    7    5   12   11  -0.0253738675 ABAB
+--------------------------------------------------------------------------------
+  Converged eigenvector, normalized to one 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    7    0   12    0  -0.4875978432 AA  
+    6    0   13    0   0.4875978411 AA  
+    6    0   30    0   0.0388304386 AA  
+    7    0   29    0  -0.0388304338 AA  
+    6    6   12   13   0.0253999760 ABAB
+    6    6   13   12   0.0253999760 ABAB
+    6    7   13   13   0.0253999758 ABAB
+    7    6   13   13   0.0253999758 ABAB
+    6    7   12   12  -0.0253999705 ABAB
+    7    6   12   12  -0.0253999705 ABAB
+    7    7   12   13  -0.0253999703 ABAB
+    7    7   13   12  -0.0253999703 ABAB
+    6    5   13   11   0.0253738718 ABAB
+    5    6   11   13   0.0253738718 ABAB
+    7    5   12   11  -0.0253738675 ABAB
+--------------------------------------------------------------------------------
+
+  Eigenvector is saved on CCRE_4_2  
+
+  Adding new vector to expansion space.
+  Guess for next eigenvalue   0.885046644802767     
+ 15  15  0.8384111601D+00  0.2281432752D+02  0.7788028464D+00  0.8707870292D-01
+ 16  16  0.8254126297D+00  0.2246061953D+02  0.9957453559D+00  0.3987989762D-01
+ 17  17  0.8246572268D+00  0.2244006397D+02  0.9991306543D+00  0.6848833481D-02
+ 18  18  0.8245747163D+00  0.2243781875D+02  0.9999423400D+00  0.1568596236D-02
+  L-O-C-K-I-N-G O-N R-O-O-T 
+ 19  19  0.8245678449D+00  0.2243763177D+02  0.9999984079D+00  0.3426253563D-03
+ 20  20  0.8245683568D+00  0.2243764570D+02  0.9999999250D+00  0.5174076425D-04
+ 21  21  0.8245683009D+00  0.2243764417D+02  0.9999999972D+00  0.1031420351D-04
+ 22  22  0.8245682934D+00  0.2243764397D+02  0.9999999999D+00  0.1686835631D-05
+  Converged eigenvalue:   0.824568293432833       a.u.
+   Total EOMEE-CC2 electronic energy     -108.459135598531574 a.u.
+  Converged eigenvector 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0   18    0   0.6822175715 AA  
+    4    7   18   10   0.0516876037 ABAB
+    7    4   10   18   0.0516876037 ABAB
+    4    6   18    9   0.0516876037 ABAB
+    6    4    9   18   0.0516876037 ABAB
+    4    7   18   16   0.0458312290 ABAB
+    7    4   16   18   0.0458312290 ABAB
+    4    6   18   15   0.0458312290 ABAB
+    6    4   15   18   0.0458312290 ABAB
+    5    5   18   11   0.0304815070 ABAB
+    5    5   11   18   0.0304815070 ABAB
+    6    5   29   18   0.0279469696 ABAB
+    5    6   18   29   0.0279469696 ABAB
+    7    5   30   18   0.0279469696 ABAB
+    5    7   18   30   0.0279469696 ABAB
+--------------------------------------------------------------------------------
+  Converged eigenvector, normalized to one 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0   18    0   0.6822175715 AA  
+    4    7   18   10   0.0516876037 ABAB
+    7    4   10   18   0.0516876037 ABAB
+    4    6   18    9   0.0516876037 ABAB
+    6    4    9   18   0.0516876037 ABAB
+    4    7   18   16   0.0458312290 ABAB
+    7    4   16   18   0.0458312290 ABAB
+    4    6   18   15   0.0458312290 ABAB
+    6    4   15   18   0.0458312290 ABAB
+    5    5   18   11   0.0304815070 ABAB
+    5    5   11   18   0.0304815070 ABAB
+    6    5   29   18   0.0279469696 ABAB
+    5    6   18   29   0.0279469696 ABAB
+    7    5   30   18   0.0279469696 ABAB
+    5    7   18   30   0.0279469696 ABAB
+--------------------------------------------------------------------------------
+
+  Eigenvector is saved on CCRE_4_3  
+
+  Solution of   3 roots required   22 iterations.
+  @DOEOMEE-I, right-hand eigenvectors will be computed.
+  Beginning symmetry block   5.   3 roots requested.
+  @DOEOMEE-I, Matrix dimension for diagonalization:     5160
+  Creating initial guess for root
+________________________________________________________________________
+            Subspace          Eigenvalue           
+ Iteration  Dimension   (a.u.)         (eV)       Overlap      Residual
+________________________________________________________________________
+  @NEWGES-I, Using TDA initial guess.
+  1   1  0.4770016512D+00  0.1297987481D+02  0.0000000000D+00  0.1942671423D+00
+  2   2  0.4042286457D+00  0.1099962066D+02  0.9834990817D+00  0.9416560017D-01
+  3   3  0.4028334085D+00  0.1096165432D+02  0.9985726503D+00  0.7697595730D-02
+  L-O-C-K-I-N-G O-N R-O-O-T 
+  4   4  0.4028027855D+00  0.1096082103D+02  0.9999733929D+00  0.1580427927D-02
+  5   5  0.4027948459D+00  0.1096060498D+02  0.9999983883D+00  0.3881853457D-03
+  6   6  0.4027965824D+00  0.1096065224D+02  0.9999998886D+00  0.6798123534D-04
+  7   7  0.4027965128D+00  0.1096065034D+02  0.9999999969D+00  0.1518598063D-04
+  8   8  0.4027965071D+00  0.1096065019D+02  0.9999999998D+00  0.4845101234D-05
+  Converged eigenvalue:   0.402796507077610       a.u.
+   Total EOMEE-CC2 electronic energy     -108.880907384886797 a.u.
+  Converged eigenvector 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    7    0   10    0  -0.4266893140 AA  
+    6    0    9    0   0.4266878316 AA  
+    7    0   16    0  -0.2439977038 AA  
+    6    0   15    0   0.2439972703 AA  
+    7    0   28    0  -0.0354970673 AA  
+    6    0   27    0   0.0354969636 AA  
+    7    0   34    0  -0.0219345722 AA  
+    6    0   33    0   0.0219344904 AA  
+    4    5    9    9   0.0167829007 ABAB
+    5    4    9    9   0.0167829007 ABAB
+    4    5   10   10  -0.0167828660 ABAB
+    5    4   10   10  -0.0167828660 ABAB
+    6    6   15   29  -0.0148553884 ABAB
+    6    6   29   15  -0.0148553884 ABAB
+    7    7   16   30   0.0148553632 ABAB
+--------------------------------------------------------------------------------
+  Converged eigenvector, normalized to one 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    7    0   10    0  -0.4266893140 AA  
+    6    0    9    0   0.4266878316 AA  
+    7    0   16    0  -0.2439977038 AA  
+    6    0   15    0   0.2439972703 AA  
+    7    0   28    0  -0.0354970673 AA  
+    6    0   27    0   0.0354969636 AA  
+    7    0   34    0  -0.0219345722 AA  
+    6    0   33    0   0.0219344904 AA  
+    4    5    9    9   0.0167829007 ABAB
+    5    4    9    9   0.0167829007 ABAB
+    4    5   10   10  -0.0167828660 ABAB
+    5    4   10   10  -0.0167828660 ABAB
+    6    6   15   29  -0.0148553884 ABAB
+    6    6   29   15  -0.0148553884 ABAB
+    7    7   16   30   0.0148553632 ABAB
+--------------------------------------------------------------------------------
+
+  Eigenvector is saved on CCRE_5_1  
+
+  Adding new vector to expansion space.
+  Guess for next eigenvalue   0.534396554162996     
+  9   9  0.6040241624D+00  0.1643633307D+02  0.9999189258D+00  0.8228506921D+00
+ 10  10  0.5096067004D+00  0.1386710331D+02  0.8861296815D+00  0.3378596379D+00
+ 11  11  0.4849065950D+00  0.1319497927D+02  0.9855653025D+00  0.8734801461D-01
+ 12  12  0.4809200476D+00  0.1308649980D+02  0.9967460451D+00  0.2114567239D+00
+ 13  13  0.4771428952D+00  0.1298371826D+02  0.9818635709D+00  0.5995552725D-01
+ 14  14  0.4759250365D+00  0.1295057864D+02  0.9985064729D+00  0.1708789535D-01
+ 15  15  0.4755466935D+00  0.1294028340D+02  0.9994217751D+00  0.1474081451D-01
+ 16  16  0.4754391262D+00  0.1293735635D+02  0.9997307589D+00  0.5815049793D-02
+  L-O-C-K-I-N-G O-N R-O-O-T 
+ 17  17  0.4754164886D+00  0.1293674035D+02  0.9999825609D+00  0.2257636183D-02
+ 18  18  0.4754116768D+00  0.1293660941D+02  0.9999974982D+00  0.9220614585D-03
+ 19  19  0.4754114609D+00  0.1293660354D+02  0.9999994846D+00  0.3151128730D-03
+ 20  20  0.4754115525D+00  0.1293660603D+02  0.9999999497D+00  0.8715490278D-04
+ 21  21  0.4754116837D+00  0.1293660960D+02  0.9999999949D+00  0.3240894916D-04
+ 22  22  0.4754116878D+00  0.1293660971D+02  0.9999999991D+00  0.1086884442D-04
+ 23  23  0.4754116857D+00  0.1293660965D+02  0.9999999999D+00  0.3814795016D-05
+  Converged eigenvalue:   0.475411685666436       a.u.
+   Total EOMEE-CC2 electronic energy     -108.808292206297978 a.u.
+  Converged eigenvector 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0    8    0   0.6549932444 AA  
+    5    0   17    0  -0.1385087562 AA  
+    7    0   10    0  -0.0570370237 AA  
+    6    0    9    0  -0.0570369815 AA  
+    4    0   11    0   0.0561414388 AA  
+    4    6    8    9   0.0548157006 ABAB
+    6    4    9    8   0.0548157006 ABAB
+    4    7    8   10   0.0548156993 ABAB
+    7    4   10    8   0.0548156993 ABAB
+    4    7    8   16   0.0494396865 ABAB
+    7    4   16    8   0.0494396865 ABAB
+    4    6    8   15   0.0494396849 ABAB
+    6    4   15    8   0.0494396849 ABAB
+    5    5    8   11   0.0488102420 ABAB
+    5    5   11    8   0.0488102420 ABAB
+--------------------------------------------------------------------------------
+  Converged eigenvector, normalized to one 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0    8    0   0.6549932444 AA  
+    5    0   17    0  -0.1385087562 AA  
+    7    0   10    0  -0.0570370237 AA  
+    6    0    9    0  -0.0570369815 AA  
+    4    0   11    0   0.0561414388 AA  
+    4    6    8    9   0.0548157006 ABAB
+    6    4    9    8   0.0548157006 ABAB
+    4    7    8   10   0.0548156993 ABAB
+    7    4   10    8   0.0548156993 ABAB
+    4    7    8   16   0.0494396865 ABAB
+    7    4   16    8   0.0494396865 ABAB
+    4    6    8   15   0.0494396849 ABAB
+    6    4   15    8   0.0494396849 ABAB
+    5    5    8   11   0.0488102420 ABAB
+    5    5   11    8   0.0488102420 ABAB
+--------------------------------------------------------------------------------
+
+  Eigenvector is saved on CCRE_5_2  
+
+  Adding new vector to expansion space.
+  Guess for next eigenvalue   0.569816040694448     
+ 24  24  0.5462863708D+00  0.1486520788D+02  0.4778413641D+00  0.1859943860D+00
+ 25  25  0.5452916122D+00  0.1483813912D+02  0.9988419198D+00  0.4219064197D-01
+  L-O-C-K-I-N-G O-N R-O-O-T 
+ 26  26  0.5452649955D+00  0.1483741485D+02  0.9999680090D+00  0.2292007267D-01
+ 27  27  0.5452674827D+00  0.1483748253D+02  0.9999955422D+00  0.6014008856D-02
+ 28  28  0.5452676362D+00  0.1483748671D+02  0.9999993404D+00  0.1269220217D-02
+ 29  29  0.5452666172D+00  0.1483745898D+02  0.9999998197D+00  0.1741526716D-03
+ 30  30  0.5452665124D+00  0.1483745613D+02  0.9999999863D+00  0.6127090180D-04
+ 31  31  0.5452664615D+00  0.1483745474D+02  0.9999999991D+00  0.2385393448D-04
+ 32  32  0.5452664601D+00  0.1483745470D+02  0.9999999999D+00  0.3092800785D-05
+  Converged eigenvalue:   0.545266460057660       a.u.
+   Total EOMEE-CC2 electronic energy     -108.738437431906746 a.u.
+  Converged eigenvector 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    7    0   10    0   0.3867975121 AA  
+    6    0    9    0   0.3867974917 AA  
+    4    0   11    0  -0.3427815827 AA  
+    4    0   14    0  -0.1790353881 AA  
+    5    0    8    0   0.0856165643 AA  
+    5    0   21    0   0.0715874951 AA  
+    5    0   32    0  -0.0457570731 AA  
+    4    0   31    0   0.0394956277 AA  
+    6    5   15   11  -0.0382719931 ABAB
+    5    6   11   15  -0.0382719931 ABAB
+    7    5   16   11  -0.0382719843 ABAB
+    5    7   11   16  -0.0382719843 ABAB
+    5    0   17    0   0.0363630506 AA  
+    6    0   15    0   0.0347514744 AA  
+    7    0   16    0   0.0347514364 AA  
+--------------------------------------------------------------------------------
+  Converged eigenvector, normalized to one 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    7    0   10    0   0.3867975121 AA  
+    6    0    9    0   0.3867974917 AA  
+    4    0   11    0  -0.3427815827 AA  
+    4    0   14    0  -0.1790353881 AA  
+    5    0    8    0   0.0856165643 AA  
+    5    0   21    0   0.0715874951 AA  
+    5    0   32    0  -0.0457570731 AA  
+    4    0   31    0   0.0394956277 AA  
+    6    5   15   11  -0.0382719931 ABAB
+    5    6   11   15  -0.0382719931 ABAB
+    7    5   16   11  -0.0382719843 ABAB
+    5    7   11   16  -0.0382719843 ABAB
+    5    0   17    0   0.0363630506 AA  
+    6    0   15    0   0.0347514744 AA  
+    7    0   16    0   0.0347514364 AA  
+--------------------------------------------------------------------------------
+
+  Eigenvector is saved on CCRE_5_3  
+
+  Solution of   3 roots required   32 iterations.
+  @DOEOMEE-I, right-hand eigenvectors will be computed.
+  Beginning symmetry block   6.   3 roots requested.
+  @DOEOMEE-I, Matrix dimension for diagonalization:     4767
+  Creating initial guess for root
+________________________________________________________________________
+            Subspace          Eigenvalue           
+ Iteration  Dimension   (a.u.)         (eV)       Overlap      Residual
+________________________________________________________________________
+  @NEWGES-I, Using TDA initial guess.
+  1   1  0.4774682611D+00  0.1299257191D+02  0.0000000000D+00  0.3452747487D+00
+  2   2  0.3604326878D+00  0.9807872057D+01  0.9615933603D+00  0.2022259592D+00
+  3   3  0.3517778615D+00  0.9572362262D+01  0.9934477985D+00  0.3540111022D-01
+  4   4  0.3503668492D+00  0.9533966665D+01  0.9991899715D+00  0.1321950123D-01
+  5   5  0.3501528092D+00  0.9528142340D+01  0.9998970857D+00  0.4083555345D-02
+  L-O-C-K-I-N-G O-N R-O-O-T 
+  6   6  0.3501333823D+00  0.9527613708D+01  0.9999749579D+00  0.1270268625D-02
+  7   7  0.3501322485D+00  0.9527582856D+01  0.9999987888D+00  0.3808518482D-03
+  8   8  0.3501330156D+00  0.9527603729D+01  0.9999999113D+00  0.8120588359D-04
+  9   9  0.3501328260D+00  0.9527598568D+01  0.9999999968D+00  0.2599706148D-04
+ 10  10  0.3501328100D+00  0.9527598133D+01  0.9999999996D+00  0.6449274949D-05
+  Converged eigenvalue:   0.350132809961234       a.u.
+   Total EOMEE-CC2 electronic energy     -108.933571082003169 a.u.
+  Converged eigenvector 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0   10    0  -0.5980536703 AA  
+    5    0   16    0  -0.3251160321 AA  
+    4    7   10   10  -0.0561622343 ABAB
+    7    4   10   10  -0.0561622343 ABAB
+    5    0   28    0  -0.0520639306 AA  
+    4    7   10   16  -0.0454059320 ABAB
+    7    4   16   10  -0.0454059320 ABAB
+    4    6   10    9  -0.0449578560 ABAB
+    6    4    9   10  -0.0449578560 ABAB
+    4    6   10   15  -0.0398828227 ABAB
+    6    4   15   10  -0.0398828227 ABAB
+    4    7   16   10  -0.0318254486 ABAB
+    7    4   10   16  -0.0318254486 ABAB
+    5    0   34    0  -0.0294130522 AA  
+    4    5   10   21   0.0283990418 ABAB
+--------------------------------------------------------------------------------
+  Converged eigenvector, normalized to one 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0   10    0  -0.5980536703 AA  
+    5    0   16    0  -0.3251160321 AA  
+    4    7   10   10  -0.0561622343 ABAB
+    7    4   10   10  -0.0561622343 ABAB
+    5    0   28    0  -0.0520639306 AA  
+    4    7   10   16  -0.0454059320 ABAB
+    7    4   16   10  -0.0454059320 ABAB
+    4    6   10    9  -0.0449578560 ABAB
+    6    4    9   10  -0.0449578560 ABAB
+    4    6   10   15  -0.0398828227 ABAB
+    6    4   15   10  -0.0398828227 ABAB
+    4    7   16   10  -0.0318254486 ABAB
+    7    4   10   16  -0.0318254486 ABAB
+    5    0   34    0  -0.0294130522 AA  
+    4    5   10   21   0.0283990418 ABAB
+--------------------------------------------------------------------------------
+
+  Eigenvector is saved on CCRE_6_1  
+
+  Adding new vector to expansion space.
+  Guess for next eigenvalue   0.545927721538564     
+ 11  11  0.6101712317D+00  0.1660360333D+02  0.3265547956D-01  0.3382407785D+00
+ 12  12  0.5987104272D+00  0.1629173898D+02  0.9930751704D+00  0.1527919004D+00
+ 13  13  0.5848044839D+00  0.1591333903D+02  0.8675493070D+00  0.1029915391D+00
+ 14  14  0.5729541105D+00  0.1559087397D+02  0.9384785533D+00  0.4615520166D-01
+ 15  15  0.5715785326D+00  0.1555344259D+02  0.9985929107D+00  0.1310284222D-01
+ 16  16  0.5715173621D+00  0.1555177806D+02  0.9999373240D+00  0.2353486714D-02
+  L-O-C-K-I-N-G O-N R-O-O-T 
+ 17  17  0.5715200948D+00  0.1555185242D+02  0.9999268109D+00  0.2317869919D-02
+ 18  18  0.5715279518D+00  0.1555206622D+02  0.9984659105D+00  0.3042831535D-02
+ 19  19  0.5715193337D+00  0.1555183171D+02  0.9998788194D+00  0.5675117097D-03
+ 20  20  0.5715202657D+00  0.1555185707D+02  0.9999996715D+00  0.1186073999D-03
+ 21  21  0.5715201413D+00  0.1555185368D+02  0.9999999928D+00  0.3849915854D-04
+ 22  22  0.5715201327D+00  0.1555185345D+02  0.9999999987D+00  0.9340834459D-05
+  Converged eigenvalue:   0.571520132695705       a.u.
+   Total EOMEE-CC2 electronic energy     -108.712183759268697 a.u.
+  Converged eigenvector 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0   16    0  -0.5831355969 AA  
+    5    0   10    0   0.3139616189 AA  
+    7    0    8    0   0.1211221411 AA  
+    5    0   28    0  -0.0612095238 AA  
+    4    7   16   16  -0.0524284588 ABAB
+    7    4   16   16  -0.0524284588 ABAB
+    4    6   16    9  -0.0469872679 ABAB
+    6    4    9   16  -0.0469872679 ABAB
+    4    0   13    0  -0.0432934679 AA  
+    4    6   16   15  -0.0413941299 ABAB
+    6    4   15   16  -0.0413941299 ABAB
+    4    7   16   10  -0.0401254124 ABAB
+    7    4   10   16  -0.0401254124 ABAB
+    4    7   10   10   0.0379481423 ABAB
+    7    4   10   10   0.0379481423 ABAB
+--------------------------------------------------------------------------------
+  Converged eigenvector, normalized to one 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0   16    0  -0.5831355969 AA  
+    5    0   10    0   0.3139616189 AA  
+    7    0    8    0   0.1211221411 AA  
+    5    0   28    0  -0.0612095238 AA  
+    4    7   16   16  -0.0524284588 ABAB
+    7    4   16   16  -0.0524284588 ABAB
+    4    6   16    9  -0.0469872679 ABAB
+    6    4    9   16  -0.0469872679 ABAB
+    4    0   13    0  -0.0432934679 AA  
+    4    6   16   15  -0.0413941299 ABAB
+    6    4   15   16  -0.0413941299 ABAB
+    4    7   16   10  -0.0401254124 ABAB
+    7    4   10   16  -0.0401254124 ABAB
+    4    7   10   10   0.0379481423 ABAB
+    7    4   10   10   0.0379481423 ABAB
+--------------------------------------------------------------------------------
+
+  Eigenvector is saved on CCRE_6_2  
+
+  Adding new vector to expansion space.
+  Guess for next eigenvalue   0.639528741068053     
+ 23  23  0.5574641776D+00  0.1516937147D+02  0.9494133425D-01  0.2261760871D-02
+  L-O-C-K-I-N-G O-N R-O-O-T 
+ 24  24  0.5574601584D+00  0.1516926210D+02  0.9999970084D+00  0.5408070698D-03
+ 25  25  0.5574592851D+00  0.1516923834D+02  0.9999998142D+00  0.1471006098D-03
+ 26  26  0.5574592474D+00  0.1516923731D+02  0.9999999824D+00  0.3708473840D-04
+ 27  27  0.5574592924D+00  0.1516923854D+02  0.9999999992D+00  0.8249495291D-05
+  Converged eigenvalue:   0.557459292424515       a.u.
+   Total EOMEE-CC2 electronic energy     -108.726244599539896 a.u.
+  Converged eigenvector 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    7    0    8    0   0.6588654107 AA  
+    7    0   17    0  -0.1468329800 AA  
+    5    0   16    0   0.1262199171 AA  
+    5    0   10    0  -0.0433790377 AA  
+    7    5    8   11   0.0396302637 ABAB
+    5    7   11    8   0.0396302637 ABAB
+    7    7    8   13   0.0390351107 ABAB
+    7    7   13    8   0.0390351107 ABAB
+    6    7   12    8   0.0344060913 ABAB
+    7    6    8   12   0.0344060913 ABAB
+    7    5    8   31  -0.0272370291 ABAB
+    5    7   31    8  -0.0272370291 ABAB
+    7    7    8   30   0.0262108477 ABAB
+    7    7   30    8   0.0262108477 ABAB
+    6    7   29    8   0.0258207050 ABAB
+--------------------------------------------------------------------------------
+  Converged eigenvector, normalized to one 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    7    0    8    0   0.6588654107 AA  
+    7    0   17    0  -0.1468329800 AA  
+    5    0   16    0   0.1262199171 AA  
+    5    0   10    0  -0.0433790377 AA  
+    7    5    8   11   0.0396302637 ABAB
+    5    7   11    8   0.0396302637 ABAB
+    7    7    8   13   0.0390351107 ABAB
+    7    7   13    8   0.0390351107 ABAB
+    6    7   12    8   0.0344060913 ABAB
+    7    6    8   12   0.0344060913 ABAB
+    7    5    8   31  -0.0272370291 ABAB
+    5    7   31    8  -0.0272370291 ABAB
+    7    7    8   30   0.0262108477 ABAB
+    7    7   30    8   0.0262108477 ABAB
+    6    7   29    8   0.0258207050 ABAB
+--------------------------------------------------------------------------------
+
+  Eigenvector is saved on CCRE_6_3  
+
+  Solution of   3 roots required   27 iterations.
+  @DOEOMEE-I, right-hand eigenvectors will be computed.
+  Beginning symmetry block   7.   3 roots requested.
+  @DOEOMEE-I, Matrix dimension for diagonalization:     4767
+  Creating initial guess for root
+________________________________________________________________________
+            Subspace          Eigenvalue           
+ Iteration  Dimension   (a.u.)         (eV)       Overlap      Residual
+________________________________________________________________________
+  @NEWGES-I, Using TDA initial guess.
+  1   1  0.4774682611D+00  0.1299257191D+02  0.0000000000D+00  0.3452747487D+00
+  2   2  0.3604326878D+00  0.9807872057D+01  0.9615933603D+00  0.2022259592D+00
+  3   3  0.3517778615D+00  0.9572362261D+01  0.9934477985D+00  0.3540111021D-01
+  4   4  0.3503668492D+00  0.9533966664D+01  0.9991899715D+00  0.1321950123D-01
+  5   5  0.3501528092D+00  0.9528142339D+01  0.9998970857D+00  0.4083555344D-02
+  L-O-C-K-I-N-G O-N R-O-O-T 
+  6   6  0.3501333823D+00  0.9527613707D+01  0.9999749579D+00  0.1270268625D-02
+  7   7  0.3501322485D+00  0.9527582855D+01  0.9999987888D+00  0.3808518480D-03
+  8   8  0.3501330156D+00  0.9527603729D+01  0.9999999113D+00  0.8120588358D-04
+  9   9  0.3501328260D+00  0.9527598568D+01  0.9999999968D+00  0.2599706149D-04
+ 10  10  0.3501328099D+00  0.9527598132D+01  0.9999999996D+00  0.6449274949D-05
+  Converged eigenvalue:   0.350132809949953       a.u.
+   Total EOMEE-CC2 electronic energy     -108.933571082014453 a.u.
+  Converged eigenvector 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0    9    0  -0.5980536703 AA  
+    5    0   15    0  -0.3251160321 AA  
+    4    6    9    9  -0.0561622343 ABAB
+    6    4    9    9  -0.0561622343 ABAB
+    5    0   27    0  -0.0520639306 AA  
+    4    6    9   15  -0.0454059320 ABAB
+    6    4   15    9  -0.0454059320 ABAB
+    4    7    9   10  -0.0449578560 ABAB
+    7    4   10    9  -0.0449578560 ABAB
+    4    7    9   16  -0.0398828227 ABAB
+    7    4   16    9  -0.0398828227 ABAB
+    4    6   15    9  -0.0318254486 ABAB
+    6    4    9   15  -0.0318254486 ABAB
+    5    0   33    0  -0.0294130522 AA  
+    4    5    9   21   0.0283990418 ABAB
+--------------------------------------------------------------------------------
+  Converged eigenvector, normalized to one 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0    9    0  -0.5980536703 AA  
+    5    0   15    0  -0.3251160321 AA  
+    4    6    9    9  -0.0561622343 ABAB
+    6    4    9    9  -0.0561622343 ABAB
+    5    0   27    0  -0.0520639306 AA  
+    4    6    9   15  -0.0454059320 ABAB
+    6    4   15    9  -0.0454059320 ABAB
+    4    7    9   10  -0.0449578560 ABAB
+    7    4   10    9  -0.0449578560 ABAB
+    4    7    9   16  -0.0398828227 ABAB
+    7    4   16    9  -0.0398828227 ABAB
+    4    6   15    9  -0.0318254486 ABAB
+    6    4    9   15  -0.0318254486 ABAB
+    5    0   33    0  -0.0294130522 AA  
+    4    5    9   21   0.0283990418 ABAB
+--------------------------------------------------------------------------------
+
+  Eigenvector is saved on CCRE_7_1  
+
+  Adding new vector to expansion space.
+  Guess for next eigenvalue   0.545927721583560     
+ 11  11  0.6101712317D+00  0.1660360333D+02  0.3265547967D-01  0.3382407786D+00
+ 12  12  0.5987104272D+00  0.1629173898D+02  0.9930751704D+00  0.1527919004D+00
+ 13  13  0.5848044839D+00  0.1591333903D+02  0.8675493069D+00  0.1029915390D+00
+ 14  14  0.5729541105D+00  0.1559087397D+02  0.9384785534D+00  0.4615520157D-01
+ 15  15  0.5715785326D+00  0.1555344259D+02  0.9985929107D+00  0.1310284219D-01
+ 16  16  0.5715173621D+00  0.1555177806D+02  0.9999373240D+00  0.2353486700D-02
+  L-O-C-K-I-N-G O-N R-O-O-T 
+ 17  17  0.5715200948D+00  0.1555185242D+02  0.9999268109D+00  0.2317869850D-02
+ 18  18  0.5715279518D+00  0.1555206622D+02  0.9984659105D+00  0.3042831593D-02
+ 19  19  0.5715193337D+00  0.1555183171D+02  0.9998788194D+00  0.5675117112D-03
+ 20  20  0.5715202657D+00  0.1555185707D+02  0.9999996715D+00  0.1186074003D-03
+ 21  21  0.5715201413D+00  0.1555185368D+02  0.9999999928D+00  0.3849915867D-04
+ 22  22  0.5715201327D+00  0.1555185345D+02  0.9999999987D+00  0.9340834499D-05
+  Converged eigenvalue:   0.571520132691761       a.u.
+   Total EOMEE-CC2 electronic energy     -108.712183759272648 a.u.
+  Converged eigenvector 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0   15    0  -0.5831355969 AA  
+    5    0    9    0   0.3139616189 AA  
+    6    0    8    0   0.1211221415 AA  
+    5    0   27    0  -0.0612095238 AA  
+    4    6   15   15  -0.0524284588 ABAB
+    6    4   15   15  -0.0524284588 ABAB
+    4    7   15   10  -0.0469872679 ABAB
+    7    4   10   15  -0.0469872679 ABAB
+    4    0   12    0  -0.0432934679 AA  
+    4    7   15   16  -0.0413941299 ABAB
+    7    4   16   15  -0.0413941299 ABAB
+    4    6   15    9  -0.0401254124 ABAB
+    6    4    9   15  -0.0401254124 ABAB
+    4    6    9    9   0.0379481423 ABAB
+    6    4    9    9   0.0379481423 ABAB
+--------------------------------------------------------------------------------
+  Converged eigenvector, normalized to one 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    5    0   15    0  -0.5831355969 AA  
+    5    0    9    0   0.3139616189 AA  
+    6    0    8    0   0.1211221415 AA  
+    5    0   27    0  -0.0612095238 AA  
+    4    6   15   15  -0.0524284588 ABAB
+    6    4   15   15  -0.0524284588 ABAB
+    4    7   15   10  -0.0469872679 ABAB
+    7    4   10   15  -0.0469872679 ABAB
+    4    0   12    0  -0.0432934679 AA  
+    4    7   15   16  -0.0413941299 ABAB
+    7    4   16   15  -0.0413941299 ABAB
+    4    6   15    9  -0.0401254124 ABAB
+    6    4    9   15  -0.0401254124 ABAB
+    4    6    9    9   0.0379481423 ABAB
+    6    4    9    9   0.0379481423 ABAB
+--------------------------------------------------------------------------------
+
+  Eigenvector is saved on CCRE_7_2  
+
+  Adding new vector to expansion space.
+  Guess for next eigenvalue   0.639528741063401     
+ 23  23  0.5574641777D+00  0.1516937147D+02  0.9494133461D-01  0.2261760866D-02
+  L-O-C-K-I-N-G O-N R-O-O-T 
+ 24  24  0.5574601585D+00  0.1516926210D+02  0.9999970084D+00  0.5408070687D-03
+ 25  25  0.5574592852D+00  0.1516923834D+02  0.9999998142D+00  0.1471006093D-03
+ 26  26  0.5574592475D+00  0.1516923731D+02  0.9999999824D+00  0.3708473828D-04
+ 27  27  0.5574592925D+00  0.1516923854D+02  0.9999999992D+00  0.8249495293D-05
+  Converged eigenvalue:   0.557459292461131       a.u.
+   Total EOMEE-CC2 electronic energy     -108.726244599503275 a.u.
+  Converged eigenvector 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    6    0    8    0   0.6588654106 AA  
+    6    0   17    0  -0.1468329800 AA  
+    5    0   15    0   0.1262199175 AA  
+    5    0    9    0  -0.0433790379 AA  
+    6    5    8   11   0.0396302637 ABAB
+    5    6   11    8   0.0396302637 ABAB
+    6    6    8   12   0.0390351107 ABAB
+    6    6   12    8   0.0390351107 ABAB
+    6    7    8   13   0.0344060913 ABAB
+    7    6   13    8   0.0344060913 ABAB
+    6    5    8   31  -0.0272370291 ABAB
+    5    6   31    8  -0.0272370291 ABAB
+    6    6    8   29   0.0262108477 ABAB
+    6    6   29    8   0.0262108477 ABAB
+    6    7    8   30   0.0258207050 ABAB
+--------------------------------------------------------------------------------
+  Converged eigenvector, normalized to one 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    6    0    8    0   0.6588654106 AA  
+    6    0   17    0  -0.1468329800 AA  
+    5    0   15    0   0.1262199175 AA  
+    5    0    9    0  -0.0433790379 AA  
+    6    5    8   11   0.0396302637 ABAB
+    5    6   11    8   0.0396302637 ABAB
+    6    6    8   12   0.0390351107 ABAB
+    6    6   12    8   0.0390351107 ABAB
+    6    7    8   13   0.0344060913 ABAB
+    7    6   13    8   0.0344060913 ABAB
+    6    5    8   31  -0.0272370291 ABAB
+    5    6   31    8  -0.0272370291 ABAB
+    6    6    8   29   0.0262108477 ABAB
+    6    6   29    8   0.0262108477 ABAB
+    6    7    8   30   0.0258207050 ABAB
+--------------------------------------------------------------------------------
+
+  Eigenvector is saved on CCRE_7_3  
+
+  Solution of   3 roots required   27 iterations.
+  @DOEOMEE-I, right-hand eigenvectors will be computed.
+  Beginning symmetry block   8.   3 roots requested.
+  @DOEOMEE-I, Matrix dimension for diagonalization:     4380
+  Creating initial guess for root
+________________________________________________________________________
+            Subspace          Eigenvalue           
+ Iteration  Dimension   (a.u.)         (eV)       Overlap      Residual
+________________________________________________________________________
+  @NEWGES-I, Using TDA initial guess.
+  1   1  0.4533173476D+00  0.1233539215D+02  0.0000000000D+00  0.1806974805D+00
+  2   2  0.3844336433D+00  0.1046097126D+02  0.9855875404D+00  0.9951211784D-01
+  3   3  0.3832360422D+00  0.1042838288D+02  0.9987017446D+00  0.6044772673D-02
+  L-O-C-K-I-N-G O-N R-O-O-T 
+  4   4  0.3832356865D+00  0.1042837320D+02  0.9999853562D+00  0.1135745129D-02
+  5   5  0.3832321935D+00  0.1042827815D+02  0.9999992249D+00  0.2494262845D-03
+  6   6  0.3832329952D+00  0.1042829997D+02  0.9999999558D+00  0.4211639334D-04
+  7   7  0.3832330123D+00  0.1042830043D+02  0.9999999989D+00  0.6996369846D-05
+  Converged eigenvalue:   0.383233012285018       a.u.
+   Total EOMEE-CC2 electronic energy     -108.900470879679389 a.u.
+  Converged eigenvector 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    7    0    9    0  -0.4199794047 AA  
+    6    0   10    0   0.4199793943 AA  
+    7    0   15    0  -0.2556794168 AA  
+    6    0   16    0   0.2556794103 AA  
+    7    0   27    0  -0.0419086352 AA  
+    6    0   28    0   0.0419086343 AA  
+    7    0   33    0  -0.0247463435 AA  
+    6    0   34    0   0.0247463429 AA  
+    6    7   15   29   0.0102866730 ABAB
+    7    6   29   15   0.0102866730 ABAB
+    6    7   30   16  -0.0102866727 ABAB
+    7    6   16   30  -0.0102866727 ABAB
+    6    7    9   29   0.0102517529 ABAB
+    7    6   29    9   0.0102517529 ABAB
+    6    7   30   10  -0.0102517526 ABAB
+--------------------------------------------------------------------------------
+  Converged eigenvector, normalized to one 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    7    0    9    0  -0.4199794047 AA  
+    6    0   10    0   0.4199793943 AA  
+    7    0   15    0  -0.2556794168 AA  
+    6    0   16    0   0.2556794103 AA  
+    7    0   27    0  -0.0419086352 AA  
+    6    0   28    0   0.0419086343 AA  
+    7    0   33    0  -0.0247463435 AA  
+    6    0   34    0   0.0247463429 AA  
+    6    7   15   29   0.0102866730 ABAB
+    7    6   29   15   0.0102866730 ABAB
+    6    7   30   16  -0.0102866727 ABAB
+    7    6   16   30  -0.0102866727 ABAB
+    6    7    9   29   0.0102517529 ABAB
+    7    6   29    9   0.0102517529 ABAB
+    6    7   30   10  -0.0102517526 ABAB
+--------------------------------------------------------------------------------
+
+  Eigenvector is saved on CCRE_8_1  
+
+  Adding new vector to expansion space.
+  Guess for next eigenvalue   0.331145413931324     
+  8   8  0.4770016843D+00  0.1297987571D+02  0.1000000000D+01  0.2332017872D+00
+  9   9  0.4059324919D+00  0.1104598467D+02  0.9807093866D+00  0.1688912728D+00
+ 10  10  0.4028597510D+00  0.1096237114D+02  0.9966366894D+00  0.9170290904D-02
+ 11  11  0.4028083398D+00  0.1096097217D+02  0.9999553846D+00  0.2463185068D-02
+  L-O-C-K-I-N-G O-N R-O-O-T 
+ 12  12  0.4027948122D+00  0.1096060407D+02  0.9999955780D+00  0.5373279213D-03
+ 13  13  0.4027965881D+00  0.1096065239D+02  0.9999998094D+00  0.7948320212D-04
+ 14  14  0.4027965341D+00  0.1096065092D+02  0.9999999962D+00  0.1601700781D-04
+ 15  15  0.4027965102D+00  0.1096065027D+02  0.9999999998D+00  0.3170132532D-05
+  Converged eigenvalue:   0.402796510200564       a.u.
+   Total EOMEE-CC2 electronic energy     -108.880907381763848 a.u.
+  Converged eigenvector 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    6    0   10    0   0.4266883450 AA  
+    7    0    9    0   0.4266883441 AA  
+    6    0   16    0   0.2439978798 AA  
+    7    0   15    0   0.2439978792 AA  
+    6    0   28    0   0.0354970914 AA  
+    7    0   27    0   0.0354970913 AA  
+    6    0   34    0   0.0219347767 AA  
+    7    0   33    0   0.0219347767 AA  
+    4    5   10    9   0.0167828257 ABAB
+    5    4    9   10   0.0167828257 ABAB
+    4    5    9   10   0.0167828257 ABAB
+    5    4   10    9   0.0167828257 ABAB
+    4    3    9   10   0.0143281081 ABAB
+    3    4   10    9   0.0143281081 ABAB
+    4    3   10    9   0.0143281081 ABAB
+--------------------------------------------------------------------------------
+  Converged eigenvector, normalized to one 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    6    0   10    0   0.4266883450 AA  
+    7    0    9    0   0.4266883441 AA  
+    6    0   16    0   0.2439978798 AA  
+    7    0   15    0   0.2439978792 AA  
+    6    0   28    0   0.0354970914 AA  
+    7    0   27    0   0.0354970913 AA  
+    6    0   34    0   0.0219347767 AA  
+    7    0   33    0   0.0219347767 AA  
+    4    5   10    9   0.0167828257 ABAB
+    5    4    9   10   0.0167828257 ABAB
+    4    5    9   10   0.0167828257 ABAB
+    5    4   10    9   0.0167828257 ABAB
+    4    3    9   10   0.0143281081 ABAB
+    3    4   10    9   0.0143281081 ABAB
+    4    3   10    9   0.0143281081 ABAB
+--------------------------------------------------------------------------------
+
+  Eigenvector is saved on CCRE_8_2  
+
+  Adding new vector to expansion space.
+  Guess for next eigenvalue   0.631926061326095     
+ 16  16  0.6503263167D+00  0.1769627874D+02  0.8043774650D+00  0.1148531758D+00
+ 17  17  0.6481405025D+00  0.1763679971D+02  0.9988009423D+00  0.1423916985D-01
+ 18  18  0.6480638416D+00  0.1763471366D+02  0.9999718287D+00  0.3179053621D-02
+  L-O-C-K-I-N-G O-N R-O-O-T 
+ 19  19  0.6480594452D+00  0.1763459403D+02  0.9999986120D+00  0.2901121065D-03
+ 20  20  0.6480591458D+00  0.1763458588D+02  0.9999999743D+00  0.1395131732D-03
+ 21  21  0.6480591579D+00  0.1763458621D+02  0.9999999949D+00  0.2511256076D-04
+ 22  22  0.6480591817D+00  0.1763458686D+02  0.9999999998D+00  0.5088964181D-05
+  Converged eigenvalue:   0.648059181703320       a.u.
+   Total EOMEE-CC2 electronic energy     -108.635644710261090 a.u.
+  Converged eigenvector 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    7    0   15    0  -0.4229487477 AA  
+    6    0   16    0  -0.4229285443 AA  
+    7    0    9    0   0.2396286723 AA  
+    6    0   10    0   0.2396164251 AA  
+    7    0   27    0  -0.0424247207 AA  
+    6    0   28    0  -0.0424226626 AA  
+    7    5    9   11   0.0224165883 ABAB
+    5    7   11    9   0.0224165883 ABAB
+    6    5   10   11   0.0224154912 ABAB
+    5    6   11   10   0.0224154912 ABAB
+    7    7    9   13   0.0216993042 ABAB
+    7    7   13    9   0.0216993042 ABAB
+    6    6   10   12   0.0216982411 ABAB
+    6    6   12   10   0.0216982411 ABAB
+    6    7   12    9   0.0216302222 ABAB
+--------------------------------------------------------------------------------
+  Converged eigenvector, normalized to one 
+  SCF eigenvalue ordering used in list below. 
+--------------------------------------------------------------------------------
+    I    j    A    b
+--------------------------------------------------------------------------------
+    7    0   15    0  -0.4229487477 AA  
+    6    0   16    0  -0.4229285443 AA  
+    7    0    9    0   0.2396286723 AA  
+    6    0   10    0   0.2396164251 AA  
+    7    0   27    0  -0.0424247207 AA  
+    6    0   28    0  -0.0424226626 AA  
+    7    5    9   11   0.0224165883 ABAB
+    5    7   11    9   0.0224165883 ABAB
+    6    5   10   11   0.0224154912 ABAB
+    5    6   11   10   0.0224154912 ABAB
+    7    7    9   13   0.0216993042 ABAB
+    7    7   13    9   0.0216993042 ABAB
+    6    6   10   12   0.0216982411 ABAB
+    6    6   12   10   0.0216982411 ABAB
+    6    7   12    9   0.0216302222 ABAB
+--------------------------------------------------------------------------------
+
+  Eigenvector is saved on CCRE_8_3  
+
+  Solution of   3 roots required   22 iterations.
+ @CHECKOUT-I, Total execution time (CPU/WALL):        7.47/       2.80 seconds.
+--executable xvee finished with status     0 in        3.35 seconds (walltime).
+  The final electronic energy is      -108.635644710261090 a.u. 
+  This computation required                           11.34 seconds (walltime).
