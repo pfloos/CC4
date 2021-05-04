@@ -67,7 +67,7 @@
 \begin{abstract}
 We report the first investigation of the performance of EOM-CC4 --- an approximate equation-of-motion coupled-cluster model which includes iteratively quadruple excitations --- for vertical excitation energies in molecular systems.
 By considering a set of 25 excited states in 8 small molecules for which we have computed CCSDTQP and FCI reference energies, we show that CC4 yields excitation energies with sub-kJ~mol$^{-1}$ accuracy, in very close agreement with its more expensive CCSDTQ parent.
-Therefore, if one aims at high accuracy, CC4 stands as a highly competitive approximate method to model molecular excited states, significantly improving over both CC3 and CCSDT.
+Therefore, if one aims at high accuracy, CC4 stands as a highly competitive approximate method to model molecular excited states, with a significant improvement over both CC3 and CCSDT.
 \end{abstract}
 
 % Title
@@ -88,12 +88,13 @@ A somehow similar strategy has been applied to define the CCSDT-3 \cite{Urban_19
 Of course, a plethora of other approximate CC models have been developed over the years and we refer the interested reader to specialized reviews for more details. \cite{Crawford_2000,Piecuch_2002,Bartlett_2007,Shavitt_2009}
 
 Coupled-cluster methods have been particularly successful for small- and medium-sized molecules in the field of thermodynamics, kinetics, and spectroscopy, thanks to the computations of accurate equilibrium geometries, \cite{Kallay_2003} potential energy surfaces, vibrational frequencies, \cite{Kallay_2004a} Born-Oppenheimer corrections, \cite{Gauss_2006} and a vast panel of properties such as dipoles (and higher moments), \cite{Kallay_2003}  NMR chemical shifts, \cite{Kallay_2004a} magnetizabilities, \cite{Gauss_2009} polarizabilities, \cite{Kallay_2006} etc.
-Although originally developed for ground-state energies and properties, CC has been successfully extended to excited states \cite{Monkhorst_1977} thanks to the equation-of-motion (EOM) \cite{Emrich_1981,Comeau_1993,Stanton_1993,Krylov_2008} and linear-response (LR) \cite{Ghosh_1981,Sekino_1984,Koch_1990a,Koch_1990b,Rico_1993} formalisms which are known to produce identical excitation energies but different properties. \cite{Chrayteh_2021,Sarkar_2021}%DJ: Pas sur que les deux meilleures refs ici, si ? Tu veux pas des trucs plus seminaux ?
+Although originally developed for ground-state energies and properties, CC has been successfully extended to excited states \cite{Monkhorst_1977} thanks to the equation-of-motion (EOM) \cite{Emrich_1981,Comeau_1993,Stanton_1993,Krylov_2008} and linear-response (LR) \cite{Ghosh_1981,Sekino_1984,Koch_1990a,Koch_1990b,Rico_1993} formalisms which are known to produce identical excitation energies but different properties. 
 In EOM-CC, one determines vertical excitation energies via the diagonalization of the similarity-transformed Hamiltonian $\bH = e^{-\hT} \hH e^{\hT}$.
 A more general procedure to compute excitation energies that can be applied to any approximate CC model (as the ones mentioned above) consists in diagonalizing the so-called CC Jacobian obtained via the differentiation of the CC amplitude equations.
-Again, by systematically increasing the maximum excitation degree of $\hT$, one can systematically produce increasingly accurate EOM/LR excitation energies with the ``complete'' series CCSD, \cite{Stanton_1993} CCSDT, \cite{Kowalski_2001,Kucharski_2001} CCSDTQ, \cite{Hirata_2004} CCSDTQP\cite{Kallay_2004b} \ldots~or the ``approximate'' series CC2, \cite{Christiansen_1995a} CC3, \cite{Christiansen_1995b} CC4 \cite{Kallay_2004b} \ldots~while retaining the formal scaling of their ground-state analog. We drop the EOM prefix below as all our calculations are made within that approach.
+Again, by increasing the maximum excitation degree of $\hT$, one can systematically produce increasingly accurate EOM/LR excitation energies with the ``complete'' series CCSD, \cite{Stanton_1993} CCSDT, \cite{Kowalski_2001,Kucharski_2001} CCSDTQ, \cite{Hirata_2004} CCSDTQP\cite{Kallay_2004b} \ldots~or the ``approximate'' series CC2, \cite{Christiansen_1995a} CC3, \cite{Christiansen_1995b} CC4 \cite{Kallay_2004b} \ldots~while retaining the formal scaling of their ground-state analog. 
+From here on, we drop the EOM prefix as all our calculations are performed within this approach.
 
-Recently, a large collection of deterministic, stochastic or hybrid selected CI (SCI) methods \cite{Bender_1969,Whitten_1969,Huron_1973} made their comeback \cite{Booth_2009,Deustua_2017,Holmes_2016,Eriksen_2017,Xu_2018,Giner_2013,Giner_2015,Evangelista_2014,Tubman_2016,Liu_2016,Ohtsuka_2017,Zimmerman_2017,Coe_2018,Garniron_2018,Eriksen_2019} in the electronic structure landscape providing an alternative route to highly-accurate ground- and excited-state energies \cite{Holmes_2017,Li_2018,Li_2020,Loos_2018a,Chien_2018,Loos_2019,Loos_2020b,Loos_2020c,Loos_2020e,qp2,Eriksen_2020,Yao_2020,Veril_2021} (see Refs.~\onlinecite{Loos_2020a,Eriksen_2021} for recent reviews).
+Recently, a large collection of deterministic, stochastic or hybrid selected CI (SCI) methods \cite{Bender_1969,Whitten_1969,Huron_1973} has (re)appeared \cite{Booth_2009,Deustua_2017,Holmes_2016,Eriksen_2017,Xu_2018,Giner_2013,Giner_2015,Evangelista_2014,Tubman_2016,Liu_2016,Ohtsuka_2017,Zimmerman_2017,Coe_2018,Garniron_2018,Eriksen_2019} in the electronic structure landscape providing an alternative route to highly-accurate ground- and excited-state energies \cite{Holmes_2017,Li_2018,Li_2020,Loos_2018a,Chien_2018,Loos_2019,Loos_2020b,Loos_2020c,Loos_2020e,qp2,Eriksen_2020,Yao_2020,Veril_2021} (see Refs.~\onlinecite{Loos_2020a,Eriksen_2021} for recent reviews).
 The general idea behind SCI methods is simple: rather than exploring the entire FCI space by systematically increasing the maximum excitation degree of the determinants taken into account (leading to the slowly convergent and size-inconsistent series of methods CISD, CISDT, CISDTQ, \ldots), one performs a sparse exploration of the FCI space by selecting only the most energetically important determinants thanks to a suitable criterion usually based on perturbation theory. \cite{Huron_1973,Garniron_2017,Sharma_2017,qp2}
 By iteratively increasing the number of determinants of the variational space and supplementing it with a second-order perturbative correction (PT2), the SCI+PT2 family of methods has been recently shown to produce near-FCI correlation and excitation energies for small- and medium-size molecules in compact basis sets.\cite{Holmes_2017,Loos_2018a,Chien_2018,Loos_2019,Loos_2020b,Loos_2020c,qp2,Veril_2021}
 Although the formal scaling of such algorithms remain exponential, the prefactor is greatly reduced which explains their current attractiveness in the electronic structure community and much wider applicability than their standard FCI parent. 
@@ -108,7 +109,7 @@ Of course, it would be highly valuable to have access to more accurate methods (
 
 In this context, the main purpose of the present study is to assess the relative accuracy of the approximate iterative CC4 model against the more expensive CCSDTQ and CCSDTQP methods in the case of vertical excitation energies, as well as its absolute accuracy with respect to FCI.
 To do so, we consider a set of 8 small molecules (\ce{NH3}, \ce{BH}, \ce{BF}, \ce{CO}, \ce{N2}, \ce{HCl}, \ce{H2S}, and \ce{H2O}) and we compare the excitation energies associated with 25 singlet excited states of various natures ($\npis$, $\pipis$, Rydberg, valence, charge-transfer\ldots) and spatial symmetries obtained with various high-level CC methods.
-Although a small number of studies have been published on the performance of CC4 for ground-state energies and properties, \cite{Kallay_2005,Matthews_2015a,Matthews_2021} this work stands, to the best of our knowledge, as the first to consider CC4  to compute excited-states energies.
+Although a small number of studies have been published on the performance of CC4 for ground-state energies and properties, \cite{Kallay_2005,Matthews_2015a,Matthews_2021} this work stands, to the best of our knowledge, as the first to consider CC4 for the computation of excited-states energies.
 As we shall see below, CC4 is an excellent approximation to its CCSDTQ parent, and produces excitation energies with sub-\si{\kJ\per\mol} accuracy for this set of small molecules, well below the chemical accuracy threshold.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -213,27 +214,27 @@ Note that CCSDTQP energies could only be computed for the smaller basis (aug-cc-
 %%% %%% %%% %%%
 
 Table \ref{tab:BigTab} gathers, for the two considered basis sets, the 25 vertical excitation energies computed for our set of 8 molecules with various CC models as well as the FCI estimates computed with CIPSI.
-First, we underline that the FCI estimates show how accurate are the CCSDTQP reference data are, with a maximum deviation of \SI{0.002}{\eV} when one considers the aug-cc-pVDZ basis. For the larger aug-cc-pVTZ basis, 
-the CCSDTQ and FCI remain in excellent agreement although the error bars associated with the extrapolated FCI values prevent us from any quantitative comparisons.
+First, we underline that the FCI estimates show how accurate the CCSDTQP reference data are, with a maximum deviation of \SI{0.002}{\eV} when one considers the aug-cc-pVDZ basis. 
+For the larger aug-cc-pVTZ basis, the CCSDTQ and FCI remain in excellent agreement although the error bars associated with the extrapolated FCI values prevent us from any quantitative comparisons.
 
-The mean absolute errors (MAEs) and mean signed errors (MSEs) with respect to CCSDTQP are reported in the bottom of  Table \ref{tab:BigTab} for the CC2-to-CCSDTQ models for the aug-cc-pVDZ basis.
+The mean absolute errors (MAEs) and mean signed errors (MSEs) with respect to CCSDTQP (and computed in the aug-cc-pVDZ basis) are reported in the bottom of Table \ref{tab:BigTab} for the CC2-to-CCSDTQ models.
 The distribution of the errors are reported in Fig.~\ref{fig:error} for each level of theory.
-The statistical quantities nicely illustrate the systematic improvement of the transition energies when one ramps up the computational effort following the series CC2, CCSD, CC3, CCSDT, CC4, and CCSDTQ.
-We note that the errors decrease by ca. one order of magnitude when switching from CCSD to CC3 and from CCSDT to CC4, whilst improvements of ca. 50\%\ ``only'' are noted when going from
-approximate to full levels, i.e., when going from CC2 to CCSD, from CC3 to CCSDT, and from CC4 to CCSDTQ. In other works  CC4 brings significant improvement in terms of MAE and MSE as compared to 
-the third-order methods, CC3 and CCSDT, which demonstrates the importance of quadruple excitations when one aims for high accuracy.  Besides, for the two basis sets, there is an outstanding similarity of the CC4 
-and CCSDTQ excitation energies with mean absolute and signed deviations below (equal to) \SI{0.001}{\eV} and a maximum deviation of \SI{0.011}{\eV} (\SI{0.007}{\eV}) between to the two sets of data obtained with 
-the aug-cc-pVDZ (aug-cc-pVTZ) basis set. Therefore, including quadruples allows to reach sub-\si{\kJ\per\mol} accuracy (\ie, average error below \SI{0.01}{\eV}) with only a rather minor improvement going from CC4 to CCSDTQ.
-
+These statistical quantities nicely illustrate the systematic improvement of the transition energies when one ramps up the computational effort following the series CC2, CCSD, CC3, CCSDT, CC4, and CCSDTQ.
+We note that the errors decrease by roughly one order of magnitude when switching from CCSD to CC3 and from CCSDT to CC4, whilst improvements of approximately 50\% ``only'' are noted when going from the ``approximate'' model to the ``complete'' method (\ie, from CC2 to CCSD, from CC3 to CCSDT, and from CC4 to CCSDTQ).
+In other words, CC4 brings significant improvement in terms of MAE and MSE as compared to the third-order methods, CC3 and CCSDT, which demonstrates the importance of quadruple excitations when one aims at high accuracy.  
+Besides, for the two basis sets, there is an outstanding similarity between the CC4 and CCSDTQ excitation energies with mean absolute and signed deviations below (equal to) \SI{0.001}{\eV} and a maximum deviation of \SI{0.011}{\eV} (\SI{0.007}{\eV}) between to the two sets of data obtained with 
+the aug-cc-pVDZ (aug-cc-pVTZ) basis set. 
+Therefore, including quadruples allows to reach sub-\si{\kJ\per\mol} accuracy (\ie, average error below \SI{0.01}{\eV}) with only a rather minor improvement going from CC4 to CCSDTQ.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-For this set of small molecules at least, CC4 is a rather competitive approximation to its more expensive CCSDTQ parent as well as a very significant improvement of its third-order version, CC3, and the ``complete'' CCSDT method.
-This finding is promising, though we are well aware that the conclusions obtained for small and larger molecules might differ, i.e., CCSD outperforms CC2 for compact molecules (as here), but the reverse trend is often found
-for larger compounds.\cite{Loos_2018a,Loos_2020a,Veril_2021} Therefore, although further investigations on larger compounds are definitely required, the present results are very encouraging as CC4, with its $\order*{N^9}$ scaling, 
-can be applied to significantly larger molecules than CCSDTQ [which scales as $\order*{N^{10}}$]. This will likely allow us to revisit, in the future, some of the theoretical best estimates defined in the context of the QUEST database.\cite{Loos_2020a,Veril_2021}
+For this set of small molecules at least, CC4 is a rather competitive approximation to its more expensive CCSDTQ parent as well as a very significant improvement over its third-order version, CC3, and the ``complete'' CCSDT method.
+These findings are promising, though we are well aware that the conclusions obtained for small and larger molecules might differ significantly.
+For example, CCSD outperforms CC2 for compact molecules (as here), but the opposite trend is often found for larger compounds.\cite{Loos_2018a,Loos_2020a,Veril_2021} 
+Therefore, although further investigations on larger compounds are definitely required, the present results are very encouraging as CC4, with its $\order*{N^9}$ scaling, can be applied to significantly larger molecules than CCSDTQ [which scales as $\order*{N^{10}}$]. 
+This will likely allow us to revisit, in the future, some of the theoretical best estimates defined in the context of the QUEST database.\cite{Loos_2020a,Veril_2021}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{acknowledgements}
