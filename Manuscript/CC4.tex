@@ -66,7 +66,8 @@
 % Abstract
 \begin{abstract}
 We report the first investigation of the performance of EOM-CC4 --- an approximate equation-of-motion coupled-cluster model which includes iterative quadruple excitations --- for vertical excitation energies in molecular systems.
-By considering a set of 25 excited states in 8 small molecules for which we have computed CCSDTQP and FCI reference energies, we show that CC4 yields excitation energies with sub-kJ~mol$^{-1}$ accuracy, in very close agreement with its more expensive CCSDTQ parent.
+By considering a set of 28 excited states in 10 small molecules for which we have computed CCSDTQP and FCI reference energies, we show that, in the case of excited states with a dominant contribution from the single excitations, CC4 yields excitation energies with sub-kJ~mol$^{-1}$ accuracy, in very close agreement with its more expensive CCSDTQ parent.
+\titou{doubles?}
 Therefore, if one aims at high accuracy, CC4 stands as a highly competitive approximate method to model molecular excited states, with a significant improvement over both CC3 and CCSDT.
 \end{abstract}
 
@@ -108,9 +109,9 @@ Therefore, for the larger molecules of the QUEST database, we mostly relied on C
 Of course, it would be highly valuable to have access to more accurate methods (including, at least, quadruple excitations) in order to refine these theoretical best estimates.
 
 In this context, the main purpose of the present study is to assess the relative accuracy of the approximate iterative CC4 model against the more expensive CCSDTQ and CCSDTQP methods in the case of vertical excitation energies, as well as its absolute accuracy with respect to FCI.
-To do so, we consider a set of 8 small molecules (\ce{NH3}, \ce{BH}, \ce{BF}, \ce{CO}, \ce{N2}, \ce{HCl}, \ce{H2S}, and \ce{H2O}) and we compare the excitation energies associated with 25 singlet excited states of various natures ($\npis$, $\pipis$, Rydberg, valence, charge-transfer\ldots) and spatial symmetries obtained with various high-level CC methods.
+To do so, we consider a set of 10 small molecules (\ce{NH3}, \ce{C2}, \ce{BH}, \ce{BF}, \ce{CO}, \ce{N2}, \ce{HCl}, \ce{H2S}, \ce{HNO} and \ce{H2O}) and we compare the excitation energies associated with 28 singlet excited states of various natures ($\npis$, $\pipis$, Rydberg, valence, charge-transfer, and double excitations) and spatial symmetries obtained with various high-level CC methods.
 Although a small number of studies have been published on the performance of CC4 for ground-state energies and properties, \cite{Kallay_2005,Matthews_2021} this work stands, to the best of our knowledge, as the first to consider CC4 for the computation of excited-states energies.
-As we shall see below, CC4 is an excellent approximation to its CCSDTQ parent, and produces excitation energies with sub-\si{\kJ\per\mol} accuracy for this set of small molecules, well below the chemical accuracy threshold.
+As we shall see below, CC4 is an excellent approximation to its CCSDTQ parent, and produces, in the case of excited states with a dominant contribution from the single excitations, excitation energies with sub-\si{\kJ\per\mol} accuracy for this set of small molecules, well below the chemical accuracy threshold.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Computational details}
@@ -164,45 +165,46 @@ Note that CCSDTQP energies could only be computed for the smaller basis (aug-cc-
 %%% TABLE II %%%
 \begin{squeezetable}
 \begin{table*}
-	\caption{Vertical excitation energies (in eV) of a selection of molecular excited states obtained at various levels of theory with the aug-cc-pVDZ and aug-cc-pVTZ basis sets. 
-	For the aug-cc-pVDZ basis, the mean absolute error (MAE) and mean signed error (MSE) with respect to CCSDTQP is reported.
+	\caption{Vertical excitation energies (in eV) of a selection of singly-excited states obtained at various levels of theory with the aug-cc-pVDZ and aug-cc-pVTZ basis sets. 
+	$\%T_1$ is the percentage of single excitations involved in the transition (computed at the CC3/aug-cc-pVTZ level).
+	For the aug-cc-pVDZ basis, the mean absolute error (MAE), mean signed error (MSE), and maximum error (Max) with respect to CCSDTQP is reported.
 	\label{tab:BigTab}}
 	\begin{ruledtabular}
-	\begin{tabular}{llrrrrrrrrrrrrrrr}
+	\begin{tabular}{llrrrrrrrrrrrrrrrr}
 				&		&	\mc{8}{c}{aug-cc-pVDZ}		&		\mc{7}{c}{aug-cc-pVTZ}		\\	
-				\cline{3-10} \cline{11-17}
-	Mol.	&	State				&CC2	&CCSD	&CC3	&CCSDT	&CC4	&CCSDTQ	&CCSDTQP	&FCI	
+				\cline{4-11} \cline{12-18}
+	Mol.	&	State	& $\%T_1$	&CC2	&CCSD	&CC3	&CCSDT	&CC4	&CCSDTQ	&CCSDTQP	&FCI	
 									&CC2	&CCSD	&CC3	&CCSDT	&CC4	&CCSDTQ	&FCI			\\
 	\hline
-	\ce{NH3}	&	$^1A_2$ 		&6.249	&6.455	&6.464	&6.462	&6.479	&6.480	&6.482	&6.483(1)	&6.387	&6.600	&6.573	&6.571	&6.585	&6.586	&6.593(22)	\\	
-				&	$^1E$			&7.733	&8.024	&8.061	&8.057	&8.078	&8.079	&8.081	&8.082(1)	&7.847	&8.148	&8.146	&8.143	&8.161	&8.161	&8.171(20)	\\	
-				&	$^1A_1$ 		&9.400	&9.649	&9.664	&9.659	&9.677	&9.677	&9.680	&9.681(8)	&9.051	&9.334	&9.318	&9.314	&9.331	&9.331	&9.340(19)	\\
-				&	$^1A_2$ 		&10.148	&10.376	&10.396	&10.391	&10.409	&10.409	&10.411	&10.412(1)	&9.654	&9.953	&9.945	&9.939	&9.957	&9.957	&9.967(19)	\\
-	\ce{BH}		&	$^1\Pi$ 		&2.862	&2.970	&2.955	&2.946	&2.947	&2.947	&2.947	&2.947(0)	&2.831	&2.928	&2.910	&2.900	&2.901	&2.901	&2.901(0)	\\
-	\ce{BF}		&	$^1\Pi$ 		&6.509	&6.534	&6.478	&6.491	&6.484	&6.485	&6.485	&6.485(1)	&6.445	&6.464	&6.410	&6.423	&6.416	&6.417	&6.418(2)\\
-	\ce{CO}		&	$^1\Pi$ 		&8.724	&8.671	&8.572	&8.574	&8.562	&8.563	&8.561	&8.563(4)	&8.638	&8.587	&8.486	&8.492	&8.479	&8.480	&	\\
-				&	$^1\Sigma^-$ 	&10.381	&10.096	&10.122	&10.062	&10.055	&10.057	&10.057	&10.056(1)	&10.297	&9.986	&9.992	&9.940	&9.930	&9.932	&	\\
-				&	$^1\Delta$ 		&10.685	&10.210	&10.225	&10.178	&10.167	&10.169	&10.168	&10.168(1)	&10.604	&10.123	&10.119	&10.076	&10.064	&10.066	&	\\
-				&	$^1\Sigma^+$ 	&11.089	&11.171	&10.917	&10.944	&10.925	&10.926	&10.919	&			&11.106	&11.222	&10.943	&10.987	&10.961	&10.963	&	\\
-				&	$^1\Sigma^+$ 	&11.628	&11.710	&11.483	&11.518	&11.510	&11.510	&11.506	&			&11.626	&11.751	&11.489	&11.540	&11.521	&11.523	&	\\
-				&	$^1\Pi$ 		&11.878	&11.973	&11.737	&11.767	&11.757	&11.758	&11.753	&			&11.825	&11.960	&11.690	&11.737	&11.719	&11.720	&	\\
-	\ce{N2}		&	$^1\Pi_g$  		&9,528	&9.495	&9.442	&9.417	&9.409	&9.411	&9.409	&9.411(3)	&9.439	&9.408	&9.344	&9.326	&9.317	&9.319	&	\\
-				&	$^1\Sigma_u^-$	&10.428	&10.197	&10.059	&10.060	&10.063	&10.055	&10.054	&10.054(0)	&10.320	&9.996	&9.885	&9.890	&9.883	&9.878	&9.879(4)\\
-				&	$^1\Delta_u$ 	&10.961	&10.607	&10.433	&10.436	&10.439	&10.430	&10.428	&10.429(0)	&10.863	&10.443	&10.293	&10.302	&10.294	&10.287	&10.289(12)\\
-				&	$^1\Sigma_g^+$	&13.077	&13.326	&13.229	&13.202	&13.171	&13.182	&13.181	&13.180(1)	&12.833	&13.151	&13.013	&12.999	&12.962	&12.974	&	\\
-				&	$^1\Pi_u$  		&13.309	&13.451	&13.279	&13.174	&13.128	&13.131	&13.127	&			&13.152	&13.422	&13.223	&13.140	&13.091	&13,095	&	\\
-				&	$^1\Sigma_u^+$	&12.937	&13.250	&13.146	&13.130	&13.099	&13.109	&13.107	&			&12.888	&13.263	&13.120	&13.118	&13.078	&13.090	&	\\
-				&	$^1\Pi_u$ 		&14.091	&13.765	&13.635	&13.591	&13.551	&13.560	&13.558	&			&13.963	&13.674	&13.494	&13.455	&13.409	&13.419\\
-	\ce{HCl}	&	$^1\Pi$ 		&7.895	&7.862	&7.819	&7.815	&7.822	&7.822	&7.823	&7.823(0)	&7.959	&7.906	&7.840	&7.834	&7.837	&7.837	&7.838(1)\\
-	\ce{H2S}	&	$^1B_1$  		&6.157	&6.141	&6.098	&6.098	&6.102	&6.103	&6.103	&6.103(1)	&6.304	&6.294	&6.240	&6.237	&6.238	&6.238	&6.240(7)\\
-				&	$^1A_2$  		&6.431	&6.343	&6.293	&6.286	&6.286	&6.286	&6.286	&6.286(0)	&6.345	&6.246	&6.192	&6.185	&6.181	&6.181	&6.181(6) \\
-	\ce{H2O}	&	$^1B_1$  		&7.089	&7.447	&7.511	&7.497	&7.531	&7.528	&7.532	&7.533(0)	&7.234	&7.597	&7.605	&7.591	&7.623	&7.620	&7.626(3)\\
-				&	$^1A_2$  		&8.743	&9.213	&9.293	&9.279	&9.317	&9.313	&9.318	&9.318(0)	&8.889	&9.361	&9.382	&9.368	&9.405	&9.400	&9.407(7)\\
-				&	$^1A_1$  		&9.486	&9.861	&9.921	&9.903	&9.940	&9.937	&9.941	&9.941(0)	&9.580	&9.957	&9.966	&9.949	&9.986	&9.981	&9.986(2)\\
+	\ce{NH3}	&	$^1A_2$ 		&93	&6.249	&6.455	&6.464	&6.462	&6.479	&6.480	&6.482	&6.483(1)	&6.387	&6.600	&6.573	&6.571	&6.585	&6.586	&6.593(22)	\\	
+				&	$^1E$			&93	&7.733	&8.024	&8.061	&8.057	&8.078	&8.079	&8.081	&8.082(1)	&7.847	&8.148	&8.146	&8.143	&8.161	&8.161	&8.171(20)	\\	
+				&	$^1A_1$ 		&94	&9.400	&9.649	&9.664	&9.659	&9.677	&9.677	&9.680	&9.681(8)	&9.051	&9.334	&9.318	&9.314	&9.331	&9.331	&9.340(19)	\\
+				&	$^1A_2$ 		&93	&10.148	&10.376	&10.396	&10.391	&10.409	&10.409	&10.411	&10.412(1)	&9.654	&9.953	&9.945	&9.939	&9.957	&9.957	&9.967(19)	\\
+	\ce{BH}		&	$^1\Pi$ 		&95	&2.862	&2.970	&2.955	&2.946	&2.947	&2.947	&2.947	&2.947(0)	&2.831	&2.928	&2.910	&2.900	&2.901	&2.901	&2.901(0)	\\
+	\ce{BF}		&	$^1\Pi$ 		&94	&6.509	&6.534	&6.478	&6.491	&6.484	&6.485	&6.485	&6.485(1)	&6.445	&6.464	&6.410	&6.423	&6.416	&6.417	&6.418(2)\\
+	\ce{CO}		&	$^1\Pi$ 		&93	&8.724	&8.671	&8.572	&8.574	&8.562	&8.563	&8.561	&8.563(4)	&8.638	&8.587	&8.486	&8.492	&8.479	&8.480	&	\\
+				&	$^1\Sigma^-$ 	&93	&10.381	&10.096	&10.122	&10.062	&10.055	&10.057	&10.057	&10.056(1)	&10.297	&9.986	&9.992	&9.940	&9.930	&9.932	&	\\
+				&	$^1\Delta$ 		&91	&10.685	&10.210	&10.225	&10.178	&10.167	&10.169	&10.168	&10.168(1)	&10.604	&10.123	&10.119	&10.076	&10.064	&10.066	&	\\
+				&	$^1\Sigma^+$ 	&91	&11.089	&11.171	&10.917	&10.944	&10.925	&10.926	&10.919	&			&11.106	&11.222	&10.943	&10.987	&10.961	&10.963	&	\\
+				&	$^1\Sigma^+$ 	&92	&11.628	&11.710	&11.483	&11.518	&11.510	&11.510	&11.506	&			&11.626	&11.751	&11.489	&11.540	&11.521	&11.523	&	\\
+				&	$^1\Pi$ 		&92	&11.878	&11.973	&11.737	&11.767	&11.757	&11.758	&11.753	&			&11.825	&11.960	&11.690	&11.737	&11.719	&11.720	&	\\
+	\ce{N2}		&	$^1\Pi_g$  		&92	&9,528	&9.495	&9.442	&9.417	&9.409	&9.411	&9.409	&9.411(3)	&9.439	&9.408	&9.344	&9.326	&9.317	&9.319	&	\\
+				&	$^1\Sigma_u^-$	&97	&10.428	&10.197	&10.059	&10.060	&10.063	&10.055	&10.054	&10.054(0)	&10.320	&9.996	&9.885	&9.890	&9.883	&9.878	&9.879(4)\\
+				&	$^1\Delta_u$ 	&95	&10.961	&10.607	&10.433	&10.436	&10.439	&10.430	&10.428	&10.429(0)	&10.863	&10.443	&10.293	&10.302	&10.294	&10.287	&10.289(12)\\
+				&	$^1\Sigma_g^+$	&92	&13.077	&13.326	&13.229	&13.202	&13.171	&13.182	&13.181	&13.180(1)	&12.833	&13.151	&13.013	&12.999	&12.962	&12.974	&	\\
+				&	$^1\Pi_u$  		&82	&13.309	&13.451	&13.279	&13.174	&13.128	&13.131	&13.127	&			&13.152	&13.422	&13.223	&13.140	&13.091	&13,095	&	\\
+				&	$^1\Sigma_u^+$	&92	&12.937	&13.250	&13.146	&13.130	&13.099	&13.109	&13.107	&			&12.888	&13.263	&13.120	&13.118	&13.078	&13.090	&	\\
+				&	$^1\Pi_u$ 		&87	&14.091	&13.765	&13.635	&13.591	&13.551	&13.560	&13.558	&			&13.963	&13.674	&13.494	&13.455	&13.409	&13.419\\
+	\ce{HCl}	&	$^1\Pi$ 		&94	&7.895	&7.862	&7.819	&7.815	&7.822	&7.822	&7.823	&7.823(0)	&7.959	&7.906	&7.840	&7.834	&7.837	&7.837	&7.838(1)\\
+	\ce{H2S}	&	$^1B_1$  		&94	&6.157	&6.141	&6.098	&6.098	&6.102	&6.103	&6.103	&6.103(1)	&6.304	&6.294	&6.240	&6.237	&6.238	&6.238	&6.240(7)\\
+				&	$^1A_2$  		&94	&6.431	&6.343	&6.293	&6.286	&6.286	&6.286	&6.286	&6.286(0)	&6.345	&6.246	&6.192	&6.185	&6.181	&6.181	&6.181(6) \\
+	\ce{H2O}	&	$^1B_1$  		&93	&7.089	&7.447	&7.511	&7.497	&7.531	&7.528	&7.532	&7.533(0)	&7.234	&7.597	&7.605	&7.591	&7.623	&7.620	&7.626(3)\\
+				&	$^1A_2$  		&93	&8.743	&9.213	&9.293	&9.279	&9.317	&9.313	&9.318	&9.318(0)	&8.889	&9.361	&9.382	&9.368	&9.405	&9.400	&9.407(7)\\
+				&	$^1A_1$  		&93	&9.486	&9.861	&9.921	&9.903	&9.940	&9.937	&9.941	&9.941(0)	&9.580	&9.957	&9.966	&9.949	&9.986	&9.981	&9.986(2)\\
 	\hline
-	MAE			&					&0.257	&0.112	&0.028	&0.018	&0.003	&0.002	\\
-	MSE			&					&0.031	&0.079	&0.014	&0.002	&0.000	&0.000	\\
-	\titou{Max}			&						\\
+	MAE			&					&	&0.257	&0.109	&0.028	&0.018	&0.003	&0.002	\\
+	MSE			&					&	&0.020	&0.075	&0.013	&0.000	&0.000	&0.000	\\
+	Max			&					&	&0.575	&0.324	&0.152	&0.047	&0.011	&0.007	\\
 	\end{tabular}
 	\end{ruledtabular}
 \end{table*}
@@ -219,7 +221,7 @@ Note that CCSDTQP energies could only be computed for the smaller basis (aug-cc-
 \end{figure}
 %%% %%% %%% %%%
 
-Table \ref{tab:BigTab} gathers, for the two considered basis sets, the 25 vertical excitation energies computed for our set of 8 molecules with various CC models as well as the FCI estimates computed with CIPSI.
+Table \ref{tab:BigTab} gathers, for the two considered basis sets, 25 vertical excitation energies with a dominant contribution for the single excitations computed for a set of 8 molecules with various CC models as well as the FCI estimates computed with CIPSI.
 First, we underline that the FCI estimates show how accurate the CCSDTQP reference data are, with a maximum deviation of \SI{0.002}{\eV} when one considers the aug-cc-pVDZ basis. 
 For the larger aug-cc-pVTZ basis, the CCSDTQ and FCI remain in excellent agreement although the error bars associated with the extrapolated FCI values prevent us from any quantitative comparisons.
 
@@ -230,9 +232,30 @@ We note that the errors decrease by roughly one order of magnitude when switchin
 In other words, CC4 brings significant improvement in terms of MAE and MSE as compared to the third-order methods, CC3 and CCSDT, which demonstrates the importance of quadruple excitations when one aims at high accuracy.  
 Besides, for the two basis sets, there is an outstanding similarity between the CC4 and CCSDTQ excitation energies with mean absolute and signed deviations below (equal to) \SI{0.001}{\eV} and a maximum deviation of \SI{0.011}{\eV} (\SI{0.007}{\eV}) between to the two sets of data obtained with 
 the aug-cc-pVDZ (aug-cc-pVTZ) basis set. 
-Therefore, including quadruples allows to reach sub-\si{\kJ\per\mol} accuracy (\ie, average error below \SI{0.01}{\eV}) with only a rather minor improvement going from CC4 to CCSDTQ.
+Therefore, including quadruples allows to reach sub-\si{\kJ\per\mol} accuracy (\ie, average error below \SI{0.01}{\eV}) for singly-excited states with only a rather minor improvement going from CC4 to CCSDTQ.
 
-\titou{T2: add comment on double excitations.}
+Table \ref{tab:doubles} reports vertical excitation energies for double excitations (\ie, transition with a dominant contribution from the doubly-excited determinants) in the carbon dimer, \ce{C2}, and nitroxyl, \ce{HNO}, computed with the aug-cc-pVDZ basis.
+These transitions can be labeled as ``pure'' double excitations as they involve an insignificant amount of single excitations.
+In this case, the differences between methods is magnified.
+
+%%% TABLE II %%%
+\begin{squeezetable}
+\begin{table}
+	\caption{Vertical excitation energies (in eV) of a selection of doubly-excited states obtained at various levels of theory with the aug-cc-pVDZ basis set. 
+	$\%T_1$ is the percentage of single excitations involved in the transition (computed at the CC3/aug-cc-pVTZ level).
+	\label{tab:doubles}}
+	\begin{ruledtabular}
+	\begin{tabular}{llrrrrrrr}
+	Mol.		&	State			& $\%T_1$	&CC3	&CCSDT	&CC4	&CCSDTQ	&CCSDTQP	&FCI	\\
+	\hline
+	\ce{C2}		&	$^1\Delta_g$ 	&	1		&3.107	&2.632	&2.341	&2.241	&2.214	&2.21(0)	\\	
+				&	$^1\Sigma_g^+$ 	&	1		&3.283	&2.874	&2.602	&2.521	&2.505	&2.50(0)	\\	
+	\ce{HNO}	&	$^1A'$ 			&	0		&5.247	&4.756	&4.454	&4.424	&		&4.40(1)	\\
+	\end{tabular}
+	\end{ruledtabular}
+\end{table}
+\end{squeezetable}
+%%% %%% %%% %%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}
