@@ -65,7 +65,7 @@
 
 % Abstract
 \begin{abstract}
-We report the first investigation of the performance of EOM-CC4 --- an approximate equation-of-motion coupled-cluster model which includes iteratively quadruple excitations --- for vertical excitation energies in molecular systems.
+We report the first investigation of the performance of EOM-CC4 --- an approximate equation-of-motion coupled-cluster model which includes iterative quadruple excitations --- for vertical excitation energies in molecular systems.
 By considering a set of 25 excited states in 8 small molecules for which we have computed CCSDTQP and FCI reference energies, we show that CC4 yields excitation energies with sub-kJ~mol$^{-1}$ accuracy, in very close agreement with its more expensive CCSDTQ parent.
 Therefore, if one aims at high accuracy, CC4 stands as a highly competitive approximate method to model molecular excited states, with a significant improvement over both CC3 and CCSDT.
 \end{abstract}
@@ -84,7 +84,7 @@ Popular choices are CC with singles and doubles (CCSD), \cite{Cizek_1966,Purvis_
 CC with singles, doubles, triples, quadruples, and pentuples (CCSDTQP) \cite{Hirata_2000,Kallay_2001} with corresponding computational scalings of $\order*{N^{6}}$, $\order*{N^{8}}$,  $\order*{N^{10}}$, and  $\order*{N^{12}}$, respectively (where $N$ denotes the number of orbitals).
 An alternative, systematically-improvable family of methods is defined by the CC2, \cite{Christiansen_1995a} CC3, \cite{Christiansen_1995b,Koch_1997} and CC4 \cite{Kallay_2005} series of models which have been introduced by the Aarhus group in the context of CC response theory. \cite{Christiansen_1998}
 These iterative methods scale as $\order*{N^{5}}$, $\order*{N^{7}}$, and $\order*{N^{9}}$, respectively, and can be seen as cheaper approximations of CCSD, CCSDT, and CCSDTQ, by skipping the most expensive terms and avoiding the storage of the higher-excitation amplitudes.
-A somehow similar strategy has been applied to define the CCSDT-3 \cite{Urban_1985,Noga_1987b} and CCSDTQ-3 \cite{Kallay_2005} models based on arguments stemming from perturbation theory.
+A somewhat similar strategy has been applied to define the CCSDT-3 \cite{Urban_1985,Noga_1987b} and CCSDTQ-3 \cite{Kallay_2005} models based on arguments stemming from perturbation theory.
 Of course, a plethora of other approximate CC models have been developed over the years and we refer the interested reader to specialized reviews for more details. \cite{Crawford_2000,Piecuch_2002,Bartlett_2007,Shavitt_2009}
 
 Coupled-cluster methods have been particularly successful for small- and medium-sized molecules in the field of thermodynamics, kinetics, and spectroscopy, thanks to the computations of accurate equilibrium geometries, \cite{Kallay_2003} potential energy surfaces, vibrational frequencies, \cite{Kallay_2004a} Born-Oppenheimer corrections, \cite{Gauss_2006} and a vast panel of properties such as dipoles (and higher moments), \cite{Kallay_2003}  NMR chemical shifts, \cite{Kallay_2004a} magnetizabilities, \cite{Gauss_2009} polarizabilities, \cite{Kallay_2006} etc.
@@ -109,7 +109,7 @@ Of course, it would be highly valuable to have access to more accurate methods (
 
 In this context, the main purpose of the present study is to assess the relative accuracy of the approximate iterative CC4 model against the more expensive CCSDTQ and CCSDTQP methods in the case of vertical excitation energies, as well as its absolute accuracy with respect to FCI.
 To do so, we consider a set of 8 small molecules (\ce{NH3}, \ce{BH}, \ce{BF}, \ce{CO}, \ce{N2}, \ce{HCl}, \ce{H2S}, and \ce{H2O}) and we compare the excitation energies associated with 25 singlet excited states of various natures ($\npis$, $\pipis$, Rydberg, valence, charge-transfer\ldots) and spatial symmetries obtained with various high-level CC methods.
-Although a small number of studies have been published on the performance of CC4 for ground-state energies and properties, \cite{Kallay_2005,Matthews_2015a,Matthews_2021} this work stands, to the best of our knowledge, as the first to consider CC4 for the computation of excited-states energies.
+Although a small number of studies have been published on the performance of CC4 for ground-state energies and properties, \cite{Kallay_2005,Matthews_2021} this work stands, to the best of our knowledge, as the first to consider CC4 for the computation of excited-states energies.
 As we shall see below, CC4 is an excellent approximation to its CCSDTQ parent, and produces excitation energies with sub-\si{\kJ\per\mol} accuracy for this set of small molecules, well below the chemical accuracy threshold.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -142,10 +142,15 @@ As we shall see below, CC4 is an excellent approximation to its CCSDTQ parent, a
 
 All the methods considered in the present study are listed in Table \ref{tab:scaling} alongside their formal computational scaling and the electronic structure software employed to compute the excitation energies.
 In a nutshell, we have used by default {\CFOUR} \cite{cfour} to compute the CC energies at the notable exception of CCSDTQP for which we have employed {\MRCC} and its automated implementation of high-order CC methods. \cite{mrcc}
-The present {\CFOUR} calculations have been performed with the new and fast CC module (\texttt{xncc})  written by one of author (DAM) which couples a general algebraic
+The present {\CFOUR} calculations have been performed with the new and fast CC module (\texttt{xncc})  written by one of authors (DAM) which couples a general algebraic
 and graphical interpretation of the non-orthogonal spin-adaptation approach with highly efficient storage format and implementation techniques designed to minimize data movement and to avoid costly tensor transposes. \cite{Matthews_2015b}
 The FCI estimates were obtained with the SCI algorithm known as \textit{``configuration interaction using a perturbative selection made iteratively''} (CIPSI) implemented in {\QP}. \cite{qp2}
 The error bars associated with the extrapolation step of the CIPSI calculations (see Ref.~\onlinecite{qp2}) have been computed using our recently developed protocol presented in Ref.~\onlinecite{Veril_2021}.
+
+Because this is, to our knowledge, the first implementation of EOM-CC4, we have verified its accuracy by comparing the excitation energies obtained from solving for the right- and left-hand wave functions. 
+Coupled cluster is a non-hermitian theory and thus the right- and left-hand eigenfunctions of the Jacobian are distinct, albeit with the same eigenvalue. 
+For the left-hand solution, we have reused the already-verified code for the ground-state $\Lambda$	Bequations which describe the amplitude relaxation contribution in the analytic gradient theory. \cite{Matthews_2021} 
+The structure of the left-hand EOM-CC and $\Lambda$ equations are identical, and so simply interfacing this existing code with a Davidson solver \cite{Davidson_1975} provides left-hand EOM-CC solutions; this procedure has been checked for other known-good methods such as CCSDT and CC3.
 
 All calculations have been performed in the frozen-core approximation and the CC3/aug-cc-pVTZ geometries of the system considered here have been extracted from previous studies. \cite{Loos_2018a,Chrayteh_2021}
 In the following, we consider diffuse-containing Dunning's double- and triple-$\zeta$ basis sets (aug-cc-pVDZ and aug-cc-pVTZ).
@@ -197,6 +202,7 @@ Note that CCSDTQP energies could only be computed for the smaller basis (aug-cc-
 	\hline
 	MAE			&					&0.257	&0.112	&0.028	&0.018	&0.003	&0.002	\\
 	MSE			&					&0.031	&0.079	&0.014	&0.002	&0.000	&0.000	\\
+	\titou{Max}			&						\\
 	\end{tabular}
 	\end{ruledtabular}
 \end{table*}
@@ -226,6 +232,8 @@ Besides, for the two basis sets, there is an outstanding similarity between the 
 the aug-cc-pVDZ (aug-cc-pVTZ) basis set. 
 Therefore, including quadruples allows to reach sub-\si{\kJ\per\mol} accuracy (\ie, average error below \SI{0.01}{\eV}) with only a rather minor improvement going from CC4 to CCSDTQ.
 
+\titou{T2: add comment on double excitations.}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -239,6 +247,7 @@ This will likely allow us to revisit, in the future, some of the theoretical bes
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{acknowledgements}
 PFL has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (Grant agreement No.~863481).
+DAM has received funding from the National Science Foundation (grant No.~OAC-2003931).
 This work was performed using HPC resources from CALMIP (Toulouse) under allocation 2021-18005 and of the CCIPL computational center installed in Nantes.
 \end{acknowledgements}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
