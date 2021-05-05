@@ -1,0 +1,44 @@
+# Test Formaldehyde, petite base
+basis=aug-cc-pVDZ
+dfbasis_scf=none
+dfbasis_cor=none
+mem=50000MB
+
+mult=1
+charge=0 
+
+calc=CCSDTQ
+
+nsing=3
+symm=Ag
+
+diag=follow
+ciguess=on
+2
+2 1 0 5 5 3 3 1.0
+2 1 0 5 5 4 4 1.0
+2
+2 1 0 5 5 3 3 1.0
+2 1 0 5 5 4 4 -1.0
+
+
+tprint=0.05
+verbosity=3
+
+unit=bohr
+geom=xyz
+2
+
+C     0.0000000000            0.0000000000            1.1792292661
+C     0.0000000000            0.0000000000           -1.1792292661
+
+
+
+
+
+
+
+
+
+
+
