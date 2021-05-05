@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    577157,      11634]
-NotebookOptionsPosition[    572843,      11554]
-NotebookOutlinePosition[    573236,      11570]
-CellTagsIndexPosition[    573193,      11567]
+NotebookDataLength[    579341,      11679]
+NotebookOptionsPosition[    574931,      11598]
+NotebookOutlinePosition[    575324,      11614]
+CellTagsIndexPosition[    575281,      11611]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -103,7 +103,7 @@ Cell[BoxData[
    3.828970367419812*^9}, {3.828970770793714*^9, 3.828970770974949*^9}, {
    3.829013346276651*^9, 3.829013375393285*^9}, {3.829013446498712*^9, 
    3.829013450543154*^9}},
- CellLabel->"In[6]:=",ExpressionUUID->"f25eee47-370e-49b9-a86f-65f7c20177dd"]
+ CellLabel->"In[38]:=",ExpressionUUID->"f25eee47-370e-49b9-a86f-65f7c20177dd"]
 }, Closed]],
 
 Cell[CellGroupData[{
@@ -193,7 +193,7 @@ Cell[BoxData[{
   3.8291446617888203`*^9}, {3.8291446959171352`*^9, 3.8291447335896*^9}, {
   3.829144793363516*^9, 3.829144824038878*^9}, {3.829145133121007*^9, 
   3.829145137007601*^9}},
- CellLabel->"In[74]:=",ExpressionUUID->"4c30a075-df91-47ec-a27d-c76dac76a44c"],
+ CellLabel->"In[39]:=",ExpressionUUID->"4c30a075-df91-47ec-a27d-c76dac76a44c"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -208,8 +208,8 @@ Cell[BoxData[
  CellChangeTimes->{{3.8291445271033278`*^9, 3.8291445760050077`*^9}, 
    3.829144608536559*^9, {3.829144649510418*^9, 3.8291446624347563`*^9}, 
    3.829144702369378*^9, 3.8291447340440073`*^9, {3.829144806805273*^9, 
-   3.829144824885892*^9}, 3.8291451373523293`*^9},
- CellLabel->"Out[76]=",ExpressionUUID->"d416604e-fc60-44d4-9149-c3f75dd99080"],
+   3.829144824885892*^9}, 3.8291451373523293`*^9, 3.829203150293007*^9},
+ CellLabel->"Out[41]=",ExpressionUUID->"9e505f7d-aa30-4bb1-919a-eb482ea371dd"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -224,8 +224,8 @@ Cell[BoxData[
  CellChangeTimes->{{3.8291445271033278`*^9, 3.8291445760050077`*^9}, 
    3.829144608536559*^9, {3.829144649510418*^9, 3.8291446624347563`*^9}, 
    3.829144702369378*^9, 3.8291447340440073`*^9, {3.829144806805273*^9, 
-   3.829144824885892*^9}, 3.8291451373552027`*^9},
- CellLabel->"Out[77]=",ExpressionUUID->"ec102ebf-cff8-4365-a53d-f9650138aab1"],
+   3.829144824885892*^9}, 3.8291451373523293`*^9, 3.829203150293928*^9},
+ CellLabel->"Out[42]=",ExpressionUUID->"e2d5c3d6-1e6a-4631-b47a-ef3cd2de1079"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -240,8 +240,8 @@ Cell[BoxData[
  CellChangeTimes->{{3.8291445271033278`*^9, 3.8291445760050077`*^9}, 
    3.829144608536559*^9, {3.829144649510418*^9, 3.8291446624347563`*^9}, 
    3.829144702369378*^9, 3.8291447340440073`*^9, {3.829144806805273*^9, 
-   3.829144824885892*^9}, 3.8291451373581533`*^9},
- CellLabel->"Out[78]=",ExpressionUUID->"b7c9e6be-d740-4c92-8a83-a08dee337ade"]
+   3.829144824885892*^9}, 3.8291451373523293`*^9, 3.829203150294847*^9},
+ CellLabel->"Out[43]=",ExpressionUUID->"495a6edc-c51e-4d9d-9a3d-340c77788e80"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -491,7 +491,7 @@ Cell[BoxData[{
    3.8289716807824*^9}, {3.8289726897460527`*^9, 3.828972701135597*^9}, {
    3.829013365043491*^9, 3.8290134207421083`*^9}, 3.829014222045568*^9, 
    3.829144855664092*^9, {3.829147654583634*^9, 3.82914765472192*^9}},
- CellLabel->"In[67]:=",ExpressionUUID->"c6d0c375-b280-4ab2-823e-e9f3d9626111"],
+ CellLabel->"In[44]:=",ExpressionUUID->"c6d0c375-b280-4ab2-823e-e9f3d9626111"],
 
 Cell[BoxData[
  TagBox[GridBox[{
@@ -4623,8 +4623,8 @@ lGAEJwQhCUVowhCWcIQnAhGJRGSiEJVoRCcGMYlFbOIQN8j/f47/AWuchXA=
    3.828971682819531*^9, 3.828971742708087*^9, 3.828972702431507*^9, {
    3.829013368356894*^9, 3.8290133849388514`*^9}, 3.8290134222788267`*^9, 
    3.829013454721984*^9, 3.829014223337551*^9, 3.829059965345224*^9, 
-   3.8291448577123337`*^9, 3.829147655801373*^9},
- CellLabel->"Out[70]=",ExpressionUUID->"8253e494-6559-4d23-be7a-6de754397330"]
+   3.8291448577123337`*^9, 3.829147655801373*^9, 3.8292031510731697`*^9},
+ CellLabel->"Out[47]=",ExpressionUUID->"c5fb5e8f-c854-489d-8555-964a508bb236"]
 }, Open  ]]
 }, Closed]],
 
@@ -4682,6 +4682,8 @@ Cell[BoxData[{
             RowBox[{
              RowBox[{"2", ";;"}], ",", "m"}], "\[RightDoubleBracket]"}], ",", 
            "20", ",", "\"\<PDF\>\"", ",", 
+           RowBox[{"ChartBaseStyle", "\[Rule]", 
+            RowBox[{"EdgeForm", "[", "Thick", "]"}]}], ",", 
            RowBox[{"PlotTheme", "\[Rule]", "\"\<Scientific\>\""}], ",", 
            RowBox[{"BaseStyle", "\[Rule]", "14"}], ",", 
            RowBox[{"PlotRange", "\[Rule]", 
@@ -4691,6 +4693,9 @@ Cell[BoxData[{
                RowBox[{
                 RowBox[{"-", "0.25"}], ",", "0.25"}], "}"}], ",", "All"}], 
              "}"}]}], ",", 
+           RowBox[{"FrameStyle", "\[Rule]", 
+            RowBox[{"Directive", "[", 
+             RowBox[{"Thick", ",", "20", ",", "Black"}], "]"}]}], ",", 
            RowBox[{"FrameLabel", "\[Rule]", 
             RowBox[{"{", 
              RowBox[{"\"\<Error (eV)\>\"", ",", "None"}], "}"}]}], ",", 
@@ -4722,7 +4727,7 @@ Cell[BoxData[{
                     RowBox[{"MAEDZ", "\[LeftDoubleBracket]", 
                     RowBox[{";;", ",", "m"}], "\[RightDoubleBracket]"}], 
                     "]"}], "]"}], ",", "4"}], "]"}], "]"}], "<>", 
-               "\"\< eV\>\""}], ",", "14"}], "]"}]}]}], "]"}], 
+               "\"\< eV\>\""}], ",", "20"}], "]"}]}]}], "]"}], 
          "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
          RowBox[{"SmoothHistogram", "[", 
           RowBox[{
@@ -4747,11 +4752,11 @@ Cell[BoxData[{
                RowBox[{"ColorData", "[", 
                 RowBox[{"1", ",", "\"\<ColorList\>\""}], "]"}], 
                "\[LeftDoubleBracket]", "m", "\[RightDoubleBracket]"}], ",", 
-              RowBox[{"Thickness", "[", "0.01", "]"}]}], "]"}]}], ",", 
+              RowBox[{"Thickness", "[", "0.02", "]"}]}], "]"}]}], ",", 
            RowBox[{"Filling", "\[Rule]", "Bottom"}], ",", 
            RowBox[{"PlotTheme", "\[Rule]", "\"\<Web\>\""}]}], "]"}]}], 
         "\[IndentingNewLine]", "}"}], ",", 
-       RowBox[{"ImageSize", "\[Rule]", "200"}]}], "]"}], 
+       RowBox[{"ImageSize", "\[Rule]", "300"}]}], "]"}], 
      "\[IndentingNewLine]", ",", 
      RowBox[{"{", 
       RowBox[{"m", ",", 
@@ -4888,17 +4893,19 @@ Cell[BoxData[{
    3.829013750094686*^9}, {3.829013787830523*^9, 3.8290140489018793`*^9}, 
    3.8291448755711823`*^9, {3.82914735441136*^9, 3.829147402626953*^9}, {
    3.829147439087702*^9, 3.829147461422819*^9}, {3.8291475454890623`*^9, 
-   3.8291475953713083`*^9}, {3.829147628374885*^9, 3.829147645787499*^9}},
- CellLabel->"In[62]:=",ExpressionUUID->"cf3632c1-378c-45f7-a37c-dc4e7dbf002a"],
+   3.8291475953713083`*^9}, {3.829147628374885*^9, 3.829147645787499*^9}, {
+   3.829203138307541*^9, 3.829203188163787*^9}, {3.829203248772952*^9, 
+   3.829203263266103*^9}},
+ CellLabel->"In[74]:=",ExpressionUUID->"cf3632c1-378c-45f7-a37c-dc4e7dbf002a"],
 
 Cell[BoxData[
  TagBox[GridBox[{
     {
      GraphicsBox[{{
         {RGBColor[0.92, 0.488, 0.2432], EdgeForm[{Opacity[0.602], Thickness[
-         Small]}], {}, 
+         Large]}], {}, 
          {RGBColor[0.92, 0.488, 0.2432], EdgeForm[{Opacity[0.602], Thickness[
-          Small]}], 
+          Large]}], 
           TagBox[
            TooltipBox[
             TagBox[
@@ -4915,8 +4922,8 @@ Cell[BoxData[
                  RectangleBox[{-0.6, 0}, {-0.55, 0.8333333333333334}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{27.97, 34.41}, {17.557681451515375`, 
-                 47.12072977247919}}],
+                ImageSizeCache->{{41.579999999999984`, 52.48999999999997}, {
+                 29.961522177273075`, 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 0.8333333333333334]& ,
              TagBoxNote->"0.8333333333333334"],
@@ -4941,8 +4948,8 @@ Cell[BoxData[
                  RectangleBox[{-0.5, 0}, {-0.45, 0.8333333333333334}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{39.85, 46.29}, {17.557681451515375`, 
-                 47.12072977247919}}],
+                ImageSizeCache->{{59.39999999999998, 70.30999999999997}, {
+                 29.961522177273075`, 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 0.8333333333333334]& ,
              TagBoxNote->"0.8333333333333334"],
@@ -4967,8 +4974,8 @@ Cell[BoxData[
                  RectangleBox[{-0.45, 0}, {-0.4, 0.8333333333333334}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{45.79, 52.23}, {17.557681451515375`, 
-                 47.12072977247919}}],
+                ImageSizeCache->{{68.30999999999997, 79.21999999999997}, {
+                 29.961522177273075`, 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 0.8333333333333334]& ,
              TagBoxNote->"0.8333333333333334"],
@@ -4993,8 +5000,8 @@ Cell[BoxData[
                  RectangleBox[{-0.35, 0}, {-0.3, 0.8333333333333334}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{57.67, 64.11}, {17.557681451515375`, 
-                 47.12072977247919}}],
+                ImageSizeCache->{{86.12999999999998, 97.03999999999998}, {
+                 29.961522177273075`, 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 0.8333333333333334]& ,
              TagBoxNote->"0.8333333333333334"],
@@ -5019,8 +5026,9 @@ Cell[BoxData[
                  RectangleBox[{-0.3, 0}, {-0.25, 1.6666666666666667`}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{63.61, 70.05}, {-11.505366869448437`, 
-                 47.12072977247919}}],
+                ImageSizeCache->{{95.03999999999998, 
+                 105.94999999999997`}, {-13.633050304172627`, 
+                 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 1.6666666666666667`]& ,
              TagBoxNote->"1.6666666666666667"],
@@ -5046,8 +5054,8 @@ Cell[BoxData[
                  RectangleBox[{-0.2, 0}, {-0.15, 0.8333333333333334}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{75.49, 81.93}, {17.557681451515375`, 
-                 47.12072977247919}}],
+                ImageSizeCache->{{112.85999999999997`, 123.76999999999998`}, {
+                 29.961522177273075`, 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 0.8333333333333334]& ,
              TagBoxNote->"0.8333333333333334"],
@@ -5072,8 +5080,8 @@ Cell[BoxData[
                  RectangleBox[{-0.15, 0}, {-0.1, 0.8333333333333334}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{81.43, 87.87}, {17.557681451515375`, 
-                 47.12072977247919}}],
+                ImageSizeCache->{{121.76999999999998`, 132.67999999999998`}, {
+                 29.961522177273075`, 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 0.8333333333333334]& ,
              TagBoxNote->"0.8333333333333334"],
@@ -5098,8 +5106,8 @@ Cell[BoxData[
                  RectangleBox[{-0.1, 0}, {-0.05, 0.8333333333333334}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{87.37, 93.81}, {17.557681451515375`, 
-                 47.12072977247919}}],
+                ImageSizeCache->{{130.67999999999998`, 141.58999999999997`}, {
+                 29.961522177273075`, 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 0.8333333333333334]& ,
              TagBoxNote->"0.8333333333333334"],
@@ -5124,8 +5132,8 @@ Cell[BoxData[
                  RectangleBox[{0., 0}, {0.05, 0.8333333333333334}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{99.25, 105.69}, {17.557681451515375`, 
-                 47.12072977247919}}],
+                ImageSizeCache->{{148.49999999999997`, 159.40999999999997`}, {
+                 29.961522177273075`, 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 0.8333333333333334]& ,
              TagBoxNote->"0.8333333333333334"],
@@ -5150,8 +5158,9 @@ Cell[BoxData[
                  RectangleBox[{0.05, 0}, {0.1, 1.6666666666666667`}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{105.19, 111.63}, {-11.505366869448437`, 
-                 47.12072977247919}}],
+                ImageSizeCache->{{157.40999999999997`, 
+                 168.31999999999996`}, {-13.633050304172627`, 
+                 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 1.6666666666666667`]& ,
              TagBoxNote->"1.6666666666666667"],
@@ -5177,8 +5186,9 @@ Cell[BoxData[
                  RectangleBox[{0.1, 0}, {0.15, 3.3333333333333335`}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{111.13, 117.57}, {-69.63146351137607, 
-                 47.120729772479194`}}],
+                ImageSizeCache->{{166.31999999999996`, 
+                 177.22999999999996`}, {-100.82219526706403`, 
+                 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 3.3333333333333335`]& ,
              TagBoxNote->"3.3333333333333335"],
@@ -5202,8 +5212,8 @@ Cell[BoxData[
                     Opacity[0.66]}], {}, {}], 
                  RectangleBox[{0.15, 0}, {0.2, 2.5}, "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{117.07, 123.51}, {-40.568415190412246`, 
-                 47.12072977247919}}],
+                ImageSizeCache->{{175.22999999999996`, 
+                 186.14}, {-57.22762278561832, 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 2.5]& ,
              TagBoxNote->"2.5"],
@@ -5227,8 +5237,8 @@ Cell[BoxData[
                  RectangleBox[{0.3, 0}, {0.35, 0.8333333333333334}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{134.89, 141.32999999999998`}, {
-                 17.557681451515375`, 47.12072977247919}}],
+                ImageSizeCache->{{201.95999999999998`, 212.86999999999995`}, {
+                 29.961522177273075`, 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 0.8333333333333334]& ,
              TagBoxNote->"0.8333333333333334"],
@@ -5253,8 +5263,8 @@ Cell[BoxData[
                  RectangleBox[{0.35, 0}, {0.4, 0.8333333333333334}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{140.82999999999998`, 147.27}, {
-                 17.557681451515375`, 47.12072977247919}}],
+                ImageSizeCache->{{210.86999999999995`, 221.77999999999997`}, {
+                 29.961522177273075`, 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 0.8333333333333334]& ,
              TagBoxNote->"0.8333333333333334"],
@@ -5277,8 +5287,8 @@ Cell[BoxData[
                     Opacity[0.66]}], {}, {}], 
                  RectangleBox[{0.5, 0}, {0.55, 2.5}, "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{158.65, 165.09}, {-40.568415190412246`, 
-                 47.12072977247919}}],
+                ImageSizeCache->{{237.59999999999997`, 
+                 248.51}, {-57.22762278561832, 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 2.5]& ,
              TagBoxNote->"2.5"],
@@ -5593,7 +5603,7 @@ ohONqEQhMpGISATCE46whCE0oQhJCIITjKAB/3/5A/4Hm6KEUw==
               "]]]}, {}, {}}, {{}, {}, 
            {RGBColor[0.24720000000000014`, 0.24, 0.6], PointSize[
              NCache[
-              Rational[1, 120], 0.008333333333333333]], Thickness[0.01], 
+              Rational[1, 120], 0.008333333333333333]], Thickness[0.02], 
             CapForm["Butt"], LineBox[CompressedData["
 1:eJwl10O0GIYSANAX21Zj23Zj27ZtO2mcNrZt27Zt29a/OX9xz8xqdqOEDdtV
 bBsoICAgSpCAgD8xMNKAoAQjOCEISShCE4awhCM8EYhIJCL/qUVUohGdGMQk
@@ -5624,15 +5634,15 @@ EozghCAkoQhNGMISjvBEICKRiBzk/7/E/wAqf4RT
              "]]}}, 
           {RGBColor[0.24720000000000014`, 0.24, 0.6], PointSize[
             NCache[
-             Rational[1, 120], 0.008333333333333333]], Thickness[0.01], 
+             Rational[1, 120], 0.008333333333333333]], Thickness[0.02], 
            CapForm["Butt"]}, {
            {RGBColor[0.24720000000000014`, 0.24, 0.6], PointSize[
              NCache[
-              Rational[1, 120], 0.008333333333333333]], Thickness[0.01], 
+              Rational[1, 120], 0.008333333333333333]], Thickness[0.02], 
             CapForm["Butt"]}, {}}, {
            {RGBColor[0.24720000000000014`, 0.24, 0.6], PointSize[
              NCache[
-              Rational[1, 120], 0.008333333333333333]], Thickness[0.01], 
+              Rational[1, 120], 0.008333333333333333]], Thickness[0.02], 
             CapForm["Butt"]}, {}}}], {{}, {}}}},
       AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
       Axes->{False, False},
@@ -5642,15 +5652,17 @@ EozghCAkoQhNGMISjvBEICKRiBzk/7/E/wAqf4RT
       Frame->True,
       FrameLabel->{{None, None}, {
          FormBox["\"Error (eV)\"", TraditionalForm], None}},
-      FrameStyle->Automatic,
+      FrameStyle->Directive[
+        Thickness[Large], 20, 
+        GrayLevel[0]],
       FrameTicks->{{None, None}, {Automatic, Automatic}},
       GridLines->{{0}, {0}},
       GridLinesStyle->Directive[
         GrayLevel[0.5, 0.4]],
-      ImageSize->200,
+      ImageSize->300,
       LabelStyle->{FontFamily -> "Times"},
       PlotLabel->FormBox[
-        StyleBox["\"CC2 MAE: 0.257 eV\"", 14, StripOnInput -> False], 
+        StyleBox["\"CC2 MAE: 0.257 eV\"", 20, StripOnInput -> False], 
         TraditionalForm],
       PlotRange->{{-0.8, 0.8}, All},
       PlotRangePadding->{{
@@ -5660,9 +5672,9 @@ EozghCAkoQhNGMISjvBEICKRiBzk/7/E/wAqf4RT
       Ticks->{Automatic, Automatic}], 
      GraphicsBox[{{
         {RGBColor[0.92, 0.488, 0.2432], EdgeForm[{Opacity[0.5529999999999999],
-          Thickness[Small]}], {}, 
+          Thickness[Large]}], {}, 
          {RGBColor[0.92, 0.488, 0.2432], EdgeForm[{Opacity[
-          0.5529999999999999], Thickness[Small]}], 
+          0.5529999999999999], Thickness[Large]}], 
           TagBox[
            TooltipBox[
             TagBox[
@@ -5679,9 +5691,8 @@ EozghCAkoQhNGMISjvBEICKRiBzk/7/E/wAqf4RT
                  RectangleBox[{-0.03, 0}, {-0.02, 16.666666666666668`}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{30.31, 
-                 37.589999999999996`}, {-63.29391869306734, 
-                 40.87162613865331}}],
+                ImageSizeCache->{{43.6, 55.9}, {-92.71126291129696, 
+                 66.77474177406037}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 16.666666666666668`]& ,
              TagBoxNote->"16.666666666666668"],
@@ -5707,8 +5718,8 @@ EozghCAkoQhNGMISjvBEICKRiBzk/7/E/wAqf4RT
                  RectangleBox[{-0.02, 0}, {-0.01, 16.666666666666668`}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{37.089999999999996`, 
-                 44.37}, {-63.29391869306734, 40.87162613865331}}],
+                ImageSizeCache->{{53.9, 66.2}, {-92.71126291129696, 
+                 66.77474177406037}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 16.666666666666668`]& ,
              TagBoxNote->"16.666666666666668"],
@@ -5734,8 +5745,8 @@ EozghCAkoQhNGMISjvBEICKRiBzk/7/E/wAqf4RT
                  RectangleBox[{-0.01, 0}, {0., 16.666666666666668`}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{43.87, 51.15}, {-63.29391869306734, 
-                 40.87162613865331}}],
+                ImageSizeCache->{{64.2, 76.5}, {-92.71126291129696, 
+                 66.77474177406037}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 16.666666666666668`]& ,
              TagBoxNote->"16.666666666666668"],
@@ -5757,11 +5768,12 @@ EozghCAkoQhNGMISjvBEICKRiBzk/7/E/wAqf4RT
                     GrayLevel[0.5], 
                     AbsoluteThickness[1.5], 
                     Opacity[0.66]}], {}, {}], 
+                 
                  RectangleBox[{0., 0}, {0.01, 16.666666666666668`}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{50.65, 57.93}, {-63.29391869306734, 
-                 40.87162613865331}}],
+                ImageSizeCache->{{74.5, 86.8}, {-92.71126291129696, 
+                 66.77474177406037}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 16.666666666666668`]& ,
              TagBoxNote->"16.666666666666668"],
@@ -5787,8 +5799,8 @@ EozghCAkoQhNGMISjvBEICKRiBzk/7/E/wAqf4RT
                  RectangleBox[{0.01, 0}, {0.02, 4.166666666666667}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{57.43, 64.71}, {14.455239930723149`, 
-                 40.87162613865331}}],
+                ImageSizeCache->{{84.8, 97.1}, {25.40324060272104, 
+                 66.77474177406037}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 4.166666666666667]& ,
              TagBoxNote->"4.166666666666667"],
@@ -5810,11 +5822,12 @@ EozghCAkoQhNGMISjvBEICKRiBzk/7/E/wAqf4RT
                     GrayLevel[0.5], 
                     AbsoluteThickness[1.5], 
                     Opacity[0.66]}], {}, {}], 
+                 
                  RectangleBox[{0.03, 0}, {0.04, 8.333333333333334}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{70.99, 78.27}, {-11.461146277207014`, 
-                 40.87162613865331}}],
+                ImageSizeCache->{{105.4, 117.7}, {-13.968260568618291`, 
+                 66.77474177406037}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 8.333333333333334]& ,
              TagBoxNote->"8.333333333333334"],
@@ -5840,8 +5853,8 @@ EozghCAkoQhNGMISjvBEICKRiBzk/7/E/wAqf4RT
                  RectangleBox[{0.04, 0}, {0.05, 4.166666666666667}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{77.77, 85.05}, {14.455239930723149`, 
-                 40.87162613865331}}],
+                ImageSizeCache->{{115.7, 128.}, {25.40324060272104, 
+                 66.77474177406037}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 4.166666666666667]& ,
              TagBoxNote->"4.166666666666667"],
@@ -5863,11 +5876,12 @@ EozghCAkoQhNGMISjvBEICKRiBzk/7/E/wAqf4RT
                     GrayLevel[0.5], 
                     AbsoluteThickness[1.5], 
                     Opacity[0.66]}], {}, {}], 
+                 
                  RectangleBox[{0.05, 0}, {0.06, 4.166666666666667}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{84.55, 91.83}, {14.455239930723149`, 
-                 40.87162613865331}}],
+                ImageSizeCache->{{126., 138.3}, {25.40324060272104, 
+                 66.77474177406037}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 4.166666666666667]& ,
              TagBoxNote->"4.166666666666667"],
@@ -5893,8 +5907,8 @@ EozghCAkoQhNGMISjvBEICKRiBzk/7/E/wAqf4RT
                  RectangleBox[{0.06, 0}, {0.07, 4.166666666666667}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{91.33, 98.61000000000001}, {
-                 14.455239930723149`, 40.87162613865331}}],
+                ImageSizeCache->{{136.3, 148.60000000000002`}, {
+                 25.40324060272104, 66.77474177406037}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 4.166666666666667]& ,
              TagBoxNote->"4.166666666666667"],
@@ -5920,8 +5934,8 @@ EozghCAkoQhNGMISjvBEICKRiBzk/7/E/wAqf4RT
                  RectangleBox[{0.07, 0}, {0.08, 4.166666666666667}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{98.11000000000001, 105.39}, {
-                 14.455239930723149`, 40.87162613865331}}],
+                ImageSizeCache->{{146.60000000000002`, 158.9}, {
+                 25.40324060272104, 66.77474177406037}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 4.166666666666667]& ,
              TagBoxNote->"4.166666666666667"],
@@ -5947,8 +5961,8 @@ EozghCAkoQhNGMISjvBEICKRiBzk/7/E/wAqf4RT
                  RectangleBox[{0.15, 0}, {0.16, 4.166666666666667}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{152.35, 159.63}, {14.455239930723149`, 
-                 40.87162613865331}}],
+                ImageSizeCache->{{229., 241.3}, {25.40324060272104, 
+                 66.77474177406037}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 4.166666666666667]& ,
              TagBoxNote->"4.166666666666667"],
@@ -6290,7 +6304,7 @@ RCEykYhIBMITjrCEITShCEkIghOMoAH/f/kD/gckfZIz
               "]]]}, {}, {}}, {{}, {}, 
            {RGBColor[0.24, 0.6, 0.33692049419863584`], PointSize[
              NCache[
-              Rational[1, 120], 0.008333333333333333]], Thickness[0.01], 
+              Rational[1, 120], 0.008333333333333333]], Thickness[0.02], 
             CapForm["Butt"], LineBox[CompressedData["
 1:eJwl11OwGIYSANAb27Zt27Zt21aTtDHb2LZt27Zt23kn8z7O7H7vzCpR4w6V
 2wcKCAioGiQg4E8MjDQgKMEITghCEorQhCEs4QhPBCISichEISrRiE4MYhKL
@@ -6323,15 +6337,15 @@ jOSkICWpSE0a0pKO9GQgI5nITBayko3s5CAnuchNHvKSj/wUoCCFKEwRilKM
              "]]}}, 
           {RGBColor[0.24, 0.6, 0.33692049419863584`], PointSize[
             NCache[
-             Rational[1, 120], 0.008333333333333333]], Thickness[0.01], 
+             Rational[1, 120], 0.008333333333333333]], Thickness[0.02], 
            CapForm["Butt"]}, {
            {RGBColor[0.24, 0.6, 0.33692049419863584`], PointSize[
              NCache[
-              Rational[1, 120], 0.008333333333333333]], Thickness[0.01], 
+              Rational[1, 120], 0.008333333333333333]], Thickness[0.02], 
             CapForm["Butt"]}, {}}, {
            {RGBColor[0.24, 0.6, 0.33692049419863584`], PointSize[
              NCache[
-              Rational[1, 120], 0.008333333333333333]], Thickness[0.01], 
+              Rational[1, 120], 0.008333333333333333]], Thickness[0.02], 
             CapForm["Butt"]}, {}}}], {{}, {}}}},
       AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
       Axes->{False, False},
@@ -6341,15 +6355,17 @@ jOSkICWpSE0a0pKO9GQgI5nITBayko3s5CAnuchNHvKSj/wUoCCFKEwRilKM
       Frame->True,
       FrameLabel->{{None, None}, {
          FormBox["\"Error (eV)\"", TraditionalForm], None}},
-      FrameStyle->Automatic,
+      FrameStyle->Directive[
+        Thickness[Large], 20, 
+        GrayLevel[0]],
       FrameTicks->{{None, None}, {Automatic, Automatic}},
       GridLines->{{0}, {0}},
       GridLinesStyle->Directive[
         GrayLevel[0.5, 0.4]],
-      ImageSize->200,
+      ImageSize->300,
       LabelStyle->{FontFamily -> "Times"},
       PlotLabel->FormBox[
-        StyleBox["\"CC3 MAE: 0.028 eV\"", 14, StripOnInput -> False], 
+        StyleBox["\"CC3 MAE: 0.028 eV\"", 20, StripOnInput -> False], 
         TraditionalForm],
       PlotRange->{{-0.05, 0.2}, All},
       PlotRangePadding->{{
@@ -6359,9 +6375,9 @@ jOSkICWpSE0a0pKO9GQgI5nITBayko3s5CAnuchNHvKSj/wUoCCFKEwRilKM
       Ticks->{Automatic, Automatic}], 
      GraphicsBox[{{
         {RGBColor[0.92, 0.488, 0.2432], EdgeForm[{Opacity[0.5389999999999999],
-          Thickness[Small]}], {}, 
+          Thickness[Large]}], {}, 
          {RGBColor[0.92, 0.488, 0.2432], EdgeForm[{Opacity[
-          0.5389999999999999], Thickness[Small]}], 
+          0.5389999999999999], Thickness[Large]}], 
           TagBox[
            TooltipBox[
             TagBox[
@@ -6378,8 +6394,8 @@ jOSkICWpSE0a0pKO9GQgI5nITBayko3s5CAnuchNHvKSj/wUoCCFKEwRilKM
                  RectangleBox[{-0.01, 0}, {-0.009, 43.47826086956522}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{59.125, 63.862500000000004`}, {
-                 25.56226259126464, 40.871626138653305`}}],
+                ImageSizeCache->{{87.37499999999999, 95.81249999999999}, {
+                 42.27674110472355, 66.7747417740603}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 43.47826086956522]& ,
              TagBoxNote->"43.47826086956522"],
@@ -6405,8 +6421,8 @@ jOSkICWpSE0a0pKO9GQgI5nITBayko3s5CAnuchNHvKSj/wUoCCFKEwRilKM
                  RectangleBox[{-0.008, 0}, {-0.007, 43.47826086956522}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{67.6, 72.3375}, {25.56226259126464, 
-                 40.871626138653305`}}],
+                ImageSizeCache->{{100.24999999999997`, 108.68749999999997`}, {
+                 42.27674110472355, 66.7747417740603}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 43.47826086956522]& ,
              TagBoxNote->"43.47826086956522"],
@@ -6432,8 +6448,8 @@ jOSkICWpSE0a0pKO9GQgI5nITBayko3s5CAnuchNHvKSj/wUoCCFKEwRilKM
                  RectangleBox[{-0.007, 0}, {-0.006, 43.47826086956522}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{71.8375, 76.575}, {25.56226259126464, 
-                 40.871626138653305`}}],
+                ImageSizeCache->{{106.68749999999997`, 115.12499999999997`}, {
+                 42.27674110472355, 66.7747417740603}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 43.47826086956522]& ,
              TagBoxNote->"43.47826086956522"],
@@ -6459,8 +6475,8 @@ jOSkICWpSE0a0pKO9GQgI5nITBayko3s5CAnuchNHvKSj/wUoCCFKEwRilKM
                  RectangleBox[{-0.003, 0}, {-0.002, 86.95652173913044}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{88.7875, 93.525}, {10.752899043875978`, 
-                 40.871626138653305`}}],
+                ImageSizeCache->{{132.43749999999997`, 140.87499999999997`}, {
+                 19.778740435386794`, 66.7747417740603}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 86.95652173913044]& ,
              TagBoxNote->"86.95652173913044"],
@@ -6486,8 +6502,8 @@ jOSkICWpSE0a0pKO9GQgI5nITBayko3s5CAnuchNHvKSj/wUoCCFKEwRilKM
                  RectangleBox[{-0.002, 0}, {-0.001, 86.95652173913044}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{93.025, 97.7625}, {10.752899043875978`, 
-                 40.871626138653305`}}],
+                ImageSizeCache->{{138.87499999999997`, 147.31249999999997`}, {
+                 19.778740435386794`, 66.7747417740603}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 86.95652173913044]& ,
              TagBoxNote->"86.95652173913044"],
@@ -6513,8 +6529,9 @@ jOSkICWpSE0a0pKO9GQgI5nITBayko3s5CAnuchNHvKSj/wUoCCFKEwRilKM
                  RectangleBox[{-0.001, 0}, {0., 304.3478260869565}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{97.2625, 102.}, {-63.29391869306733, 
-                 40.871626138653305`}}],
+                ImageSizeCache->{{145.31249999999997`, 
+                 153.74999999999997`}, {-92.71126291129697, 
+                 66.7747417740603}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 304.3478260869565]& ,
              TagBoxNote->"304.3478260869565"],
@@ -6540,8 +6557,9 @@ jOSkICWpSE0a0pKO9GQgI5nITBayko3s5CAnuchNHvKSj/wUoCCFKEwRilKM
                  RectangleBox[{0., 0}, {0.001, 130.43478260869566`}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{101.5, 106.2375}, {-4.056464503512686, 
-                 40.871626138653305`}}],
+                ImageSizeCache->{{151.74999999999997`, 
+                 160.18749999999997`}, {-2.719260233949967, 
+                 66.7747417740603}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 130.43478260869566`]& ,
              TagBoxNote->"130.43478260869566"],
@@ -6567,8 +6585,8 @@ jOSkICWpSE0a0pKO9GQgI5nITBayko3s5CAnuchNHvKSj/wUoCCFKEwRilKM
                  RectangleBox[{0.001, 0}, {0.002, 86.95652173913044}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{105.7375, 110.475}, {10.752899043875978`, 
-                 40.871626138653305`}}],
+                ImageSizeCache->{{158.18749999999997`, 166.62499999999997`}, {
+                 19.778740435386794`, 66.7747417740603}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 86.95652173913044]& ,
              TagBoxNote->"86.95652173913044"],
@@ -6594,8 +6612,8 @@ jOSkICWpSE0a0pKO9GQgI5nITBayko3s5CAnuchNHvKSj/wUoCCFKEwRilKM
                  RectangleBox[{0.004, 0}, {0.005, 86.95652173913044}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{118.45, 123.1875}, {10.752899043875978`, 
-                 40.871626138653305`}}],
+                ImageSizeCache->{{177.49999999999997`, 185.93749999999997`}, {
+                 19.778740435386794`, 66.7747417740603}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 86.95652173913044]& ,
              TagBoxNote->"86.95652173913044"],
@@ -6621,8 +6639,8 @@ jOSkICWpSE0a0pKO9GQgI5nITBayko3s5CAnuchNHvKSj/wUoCCFKEwRilKM
                  RectangleBox[{0.006, 0}, {0.007, 43.47826086956522}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{126.925, 131.6625}, {25.56226259126464, 
-                 40.871626138653305`}}],
+                ImageSizeCache->{{190.37499999999997`, 198.81249999999997`}, {
+                 42.27674110472355, 66.7747417740603}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 43.47826086956522]& ,
              TagBoxNote->"43.47826086956522"],
@@ -6648,8 +6666,8 @@ jOSkICWpSE0a0pKO9GQgI5nITBayko3s5CAnuchNHvKSj/wUoCCFKEwRilKM
                  RectangleBox[{0.009, 0}, {0.01, 43.47826086956522}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{139.6375, 144.375}, {25.56226259126464, 
-                 40.871626138653305`}}],
+                ImageSizeCache->{{209.68749999999994`, 218.12499999999994`}, {
+                 42.27674110472355, 66.7747417740603}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 43.47826086956522]& ,
              TagBoxNote->"43.47826086956522"],
@@ -7002,7 +7020,7 @@ YhCdaEQlCpGJREQiEJ5whCUMoQlFSEIQnGAEDfj/yx/wP7eXoQk=
               "]]]}, {}, {}}, {{}, {}, 
            {RGBColor[0.6, 0.24, 0.5632658430022722], PointSize[
              NCache[
-              Rational[1, 120], 0.008333333333333333]], Thickness[0.01], 
+              Rational[1, 120], 0.008333333333333333]], Thickness[0.02], 
             CapForm["Butt"], LineBox[CompressedData["
 1:eJwl11OwGIYSANAb27Zt27Zt21Zj27bdxrZttrFt453M+ziz+7+zStS4Q+X2
 gQICAnoGCQj4EwMjDQhKMIITgpCEIjRhCEs4whOBiEQiMlGISjSiE4OYxCI2
@@ -7036,15 +7054,15 @@ aEkrWtOGtrSjPR3oSCc604WudKM7PYL8/7/7HzrMoYU=
              "]]}}, 
           {RGBColor[0.6, 0.24, 0.5632658430022722], PointSize[
             NCache[
-             Rational[1, 120], 0.008333333333333333]], Thickness[0.01], 
+             Rational[1, 120], 0.008333333333333333]], Thickness[0.02], 
            CapForm["Butt"]}, {
            {RGBColor[0.6, 0.24, 0.5632658430022722], PointSize[
              NCache[
-              Rational[1, 120], 0.008333333333333333]], Thickness[0.01], 
+              Rational[1, 120], 0.008333333333333333]], Thickness[0.02], 
             CapForm["Butt"]}, {}}, {
            {RGBColor[0.6, 0.24, 0.5632658430022722], PointSize[
              NCache[
-              Rational[1, 120], 0.008333333333333333]], Thickness[0.01], 
+              Rational[1, 120], 0.008333333333333333]], Thickness[0.02], 
             CapForm["Butt"]}, {}}}], {{}, {}}}},
       AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
       Axes->{False, False},
@@ -7054,15 +7072,17 @@ aEkrWtOGtrSjPR3oSCc604WudKM7PYL8/7/7HzrMoYU=
       Frame->True,
       FrameLabel->{{None, None}, {
          FormBox["\"Error (eV)\"", TraditionalForm], None}},
-      FrameStyle->Automatic,
+      FrameStyle->Directive[
+        Thickness[Large], 20, 
+        GrayLevel[0]],
       FrameTicks->{{None, None}, {Automatic, Automatic}},
       GridLines->{{0}, {0}},
       GridLinesStyle->Directive[
         GrayLevel[0.5, 0.4]],
-      ImageSize->200,
+      ImageSize->300,
       LabelStyle->{FontFamily -> "Times"},
       PlotLabel->FormBox[
-        StyleBox["\"CC4 MAE: 0.003 eV\"", 14, StripOnInput -> False], 
+        StyleBox["\"CC4 MAE: 0.003 eV\"", 20, StripOnInput -> False], 
         TraditionalForm],
       PlotRange->{{-0.02, 0.02}, All},
       PlotRangePadding->{{
@@ -7073,9 +7093,9 @@ aEkrWtOGtrSjPR3oSCc604WudKM7PYL8/7/7HzrMoYU=
     {
      GraphicsBox[{{
         {RGBColor[0.92, 0.488, 0.2432], EdgeForm[{Opacity[0.5529999999999999],
-          Thickness[Small]}], {}, 
+          Thickness[Large]}], {}, 
          {RGBColor[0.92, 0.488, 0.2432], EdgeForm[{Opacity[
-          0.5529999999999999], Thickness[Small]}], 
+          0.5529999999999999], Thickness[Large]}], 
           TagBox[
            TooltipBox[
             TagBox[
@@ -7092,8 +7112,8 @@ aEkrWtOGtrSjPR3oSCc604WudKM7PYL8/7/7HzrMoYU=
                  RectangleBox[{-0.12, 0}, {-0.1, 2.0833333333333335`}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{84.99400000000001, 87.87000000000002}, {
-                 17.557681451515393`, 47.120729772479194`}}],
+                ImageSizeCache->{{127.11600000000001`, 132.68}, {
+                 29.961522177273082`, 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 2.0833333333333335`]& ,
              TagBoxNote->"2.0833333333333335"],
@@ -7119,8 +7139,8 @@ aEkrWtOGtrSjPR3oSCc604WudKM7PYL8/7/7HzrMoYU=
                  RectangleBox[{-0.1, 0}, {-0.08, 2.0833333333333335`}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{87.37000000000002, 90.24600000000001}, {
-                 17.557681451515393`, 47.120729772479194`}}],
+                ImageSizeCache->{{130.68, 136.244}, {29.961522177273082`, 
+                 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 2.0833333333333335`]& ,
              TagBoxNote->"2.0833333333333335"],
@@ -7146,8 +7166,8 @@ aEkrWtOGtrSjPR3oSCc604WudKM7PYL8/7/7HzrMoYU=
                  RectangleBox[{-0.08, 0}, {-0.06, 2.0833333333333335`}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{89.74600000000001, 92.62200000000001}, {
-                 17.557681451515393`, 47.120729772479194`}}],
+                ImageSizeCache->{{134.244, 139.808}, {29.961522177273082`, 
+                 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 2.0833333333333335`]& ,
              TagBoxNote->"2.0833333333333335"],
@@ -7173,8 +7193,8 @@ aEkrWtOGtrSjPR3oSCc604WudKM7PYL8/7/7HzrMoYU=
                  RectangleBox[{-0.06, 0}, {-0.04, 2.0833333333333335`}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{92.12200000000001, 94.99800000000002}, {
-                 17.557681451515393`, 47.120729772479194`}}],
+                ImageSizeCache->{{137.808, 143.372}, {29.961522177273082`, 
+                 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 2.0833333333333335`]& ,
              TagBoxNote->"2.0833333333333335"],
@@ -7200,9 +7220,8 @@ aEkrWtOGtrSjPR3oSCc604WudKM7PYL8/7/7HzrMoYU=
                  RectangleBox[{-0.04, 0}, {-0.02, 4.166666666666667}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{94.49800000000002, 
-                 97.37400000000001}, {-11.505366869448409`, 
-                 47.120729772479194`}}],
+                ImageSizeCache->{{141.372, 146.936}, {-13.633050304172613`, 
+                 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 4.166666666666667]& ,
              TagBoxNote->"4.166666666666667"],
@@ -7228,9 +7247,8 @@ aEkrWtOGtrSjPR3oSCc604WudKM7PYL8/7/7HzrMoYU=
                  RectangleBox[{0.02, 0}, {0.04, 8.333333333333334}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{101.62600000000002`, 
-                 104.50200000000001`}, {-69.63146351137601, 
-                 47.120729772479194`}}],
+                ImageSizeCache->{{152.064, 157.628}, {-100.822195267064, 
+                 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 8.333333333333334]& ,
              TagBoxNote->"8.333333333333334"],
@@ -7254,9 +7272,8 @@ aEkrWtOGtrSjPR3oSCc604WudKM7PYL8/7/7HzrMoYU=
                     Opacity[0.66]}], {}, {}], 
                  RectangleBox[{0.04, 0}, {0.06, 6.25}, "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{104.00200000000001`, 
-                 106.87800000000001`}, {-40.568415190412196`, 
-                 47.120729772479194`}}],
+                ImageSizeCache->{{155.628, 161.192}, {-57.227622785618294`, 
+                 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 6.25]& ,
              TagBoxNote->"6.25"],
@@ -7279,8 +7296,8 @@ aEkrWtOGtrSjPR3oSCc604WudKM7PYL8/7/7HzrMoYU=
                  RectangleBox[{0.08, 0}, {0.1, 2.0833333333333335`}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{108.75400000000002`, 111.63000000000001`}, {
-                 17.557681451515393`, 47.120729772479194`}}],
+                ImageSizeCache->{{162.756, 168.32}, {29.961522177273082`, 
+                 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 2.0833333333333335`]& ,
              TagBoxNote->"2.0833333333333335"],
@@ -7306,8 +7323,8 @@ aEkrWtOGtrSjPR3oSCc604WudKM7PYL8/7/7HzrMoYU=
                  RectangleBox[{0.1, 0}, {0.12, 2.0833333333333335`}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{111.13000000000001`, 114.00600000000001`}, {
-                 17.557681451515393`, 47.120729772479194`}}],
+                ImageSizeCache->{{166.32, 171.884}, {29.961522177273082`, 
+                 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 2.0833333333333335`]& ,
              TagBoxNote->"2.0833333333333335"],
@@ -7331,9 +7348,8 @@ aEkrWtOGtrSjPR3oSCc604WudKM7PYL8/7/7HzrMoYU=
                     Opacity[0.66]}], {}, {}], 
                  RectangleBox[{0.14, 0}, {0.16, 6.25}, "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{115.88200000000002`, 
-                 118.75800000000001`}, {-40.568415190412196`, 
-                 47.120729772479194`}}],
+                ImageSizeCache->{{173.448, 179.012}, {-57.227622785618294`, 
+                 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 6.25]& ,
              TagBoxNote->"6.25"],
@@ -7356,8 +7372,8 @@ aEkrWtOGtrSjPR3oSCc604WudKM7PYL8/7/7HzrMoYU=
                  RectangleBox[{0.16, 0}, {0.18, 2.0833333333333335`}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{118.25800000000001`, 121.13400000000001`}, {
-                 17.557681451515393`, 47.120729772479194`}}],
+                ImageSizeCache->{{177.012, 182.576}, {29.961522177273082`, 
+                 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 2.0833333333333335`]& ,
              TagBoxNote->"2.0833333333333335"],
@@ -7383,9 +7399,8 @@ aEkrWtOGtrSjPR3oSCc604WudKM7PYL8/7/7HzrMoYU=
                  RectangleBox[{0.2, 0}, {0.22, 4.166666666666667}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{123.01000000000002`, 
-                 125.88600000000001`}, {-11.505366869448409`, 
-                 47.120729772479194`}}],
+                ImageSizeCache->{{184.14, 189.704}, {-13.633050304172613`, 
+                 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 4.166666666666667]& ,
              TagBoxNote->"4.166666666666667"],
@@ -7411,8 +7426,8 @@ aEkrWtOGtrSjPR3oSCc604WudKM7PYL8/7/7HzrMoYU=
                  RectangleBox[{0.22, 0}, {0.24, 2.0833333333333335`}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{125.38600000000001`, 128.262}, {
-                 17.557681451515393`, 47.120729772479194`}}],
+                ImageSizeCache->{{187.704, 193.268}, {29.961522177273082`, 
+                 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 2.0833333333333335`]& ,
              TagBoxNote->"2.0833333333333335"],
@@ -7438,8 +7453,8 @@ aEkrWtOGtrSjPR3oSCc604WudKM7PYL8/7/7HzrMoYU=
                  RectangleBox[{0.24, 0}, {0.26, 2.0833333333333335`}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{127.762, 130.638}, {17.557681451515393`, 
-                 47.120729772479194`}}],
+                ImageSizeCache->{{191.268, 196.832}, {29.961522177273082`, 
+                 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 2.0833333333333335`]& ,
              TagBoxNote->"2.0833333333333335"],
@@ -7465,8 +7480,8 @@ aEkrWtOGtrSjPR3oSCc604WudKM7PYL8/7/7HzrMoYU=
                  RectangleBox[{0.32, 0}, {0.34, 2.0833333333333335`}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{137.26600000000002`, 140.14200000000002`}, {
-                 17.557681451515393`, 47.120729772479194`}}],
+                ImageSizeCache->{{205.524, 211.088}, {29.961522177273082`, 
+                 75.55609465871878}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 2.0833333333333335`]& ,
              TagBoxNote->"2.0833333333333335"],
@@ -7783,7 +7798,7 @@ iUVMYhCdaEQlCpGJREQiEJ5whCUMoQlFSEIQnGAEDfh/5A/4H0vhhJ4=
               "]]]}, {}, {}}, {{}, {}, 
            {RGBColor[0.6, 0.24, 0.4428931686004542], PointSize[
              NCache[
-              Rational[1, 120], 0.008333333333333333]], Thickness[0.01], 
+              Rational[1, 120], 0.008333333333333333]], Thickness[0.02], 
             CapForm["Butt"], LineBox[CompressedData["
 1:eJwl10O0GIYSANAX21Zj23Zj27ZtNk5j27aNxrZt28a/OX9xz8xqdqOEDdtV
 bBsoICAgRpCAgD8xMNKAoAQjOCEISShCE4awhCM8EYhIJCIThahEI/qf2sQk
@@ -7814,15 +7829,15 @@ EozghCAkoQhNGMISjvBEICKRiEwUohKN6EH+/1v8D6VbhLk=
              "]]}}, 
           {RGBColor[0.6, 0.24, 0.4428931686004542], PointSize[
             NCache[
-             Rational[1, 120], 0.008333333333333333]], Thickness[0.01], 
+             Rational[1, 120], 0.008333333333333333]], Thickness[0.02], 
            CapForm["Butt"]}, {
            {RGBColor[0.6, 0.24, 0.4428931686004542], PointSize[
              NCache[
-              Rational[1, 120], 0.008333333333333333]], Thickness[0.01], 
+              Rational[1, 120], 0.008333333333333333]], Thickness[0.02], 
             CapForm["Butt"]}, {}}, {
            {RGBColor[0.6, 0.24, 0.4428931686004542], PointSize[
              NCache[
-              Rational[1, 120], 0.008333333333333333]], Thickness[0.01], 
+              Rational[1, 120], 0.008333333333333333]], Thickness[0.02], 
             CapForm["Butt"]}, {}}}], {{}, {}}}},
       AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
       Axes->{False, False},
@@ -7832,15 +7847,17 @@ EozghCAkoQhNGMISjvBEICKRiEwUohKN6EH+/1v8D6VbhLk=
       Frame->True,
       FrameLabel->{{None, None}, {
          FormBox["\"Error (eV)\"", TraditionalForm], None}},
-      FrameStyle->Automatic,
+      FrameStyle->Directive[
+        Thickness[Large], 20, 
+        GrayLevel[0]],
       FrameTicks->{{None, None}, {Automatic, Automatic}},
       GridLines->{{0}, {0}},
       GridLinesStyle->Directive[
         GrayLevel[0.5, 0.4]],
-      ImageSize->200,
+      ImageSize->300,
       LabelStyle->{FontFamily -> "Times"},
       PlotLabel->FormBox[
-        StyleBox["\"CCSD MAE: 0.109 eV\"", 14, StripOnInput -> False], 
+        StyleBox["\"CCSD MAE: 0.109 eV\"", 20, StripOnInput -> False], 
         TraditionalForm],
       PlotRange->{{-0.8, 0.8}, All},
       PlotRangePadding->{{
@@ -7850,9 +7867,9 @@ EozghCAkoQhNGMISjvBEICKRiEwUohKN6EH+/1v8D6VbhLk=
       Ticks->{Automatic, Automatic}], 
      GraphicsBox[{{
         {RGBColor[0.92, 0.488, 0.2432], EdgeForm[{Opacity[0.5599999999999999],
-          Thickness[Small]}], {}, 
+          Thickness[Large]}], {}, 
          {RGBColor[0.92, 0.488, 0.2432], EdgeForm[{Opacity[
-          0.5599999999999999], Thickness[Small]}], 
+          0.5599999999999999], Thickness[Large]}], 
           TagBox[
            TooltipBox[
             TagBox[
@@ -7869,9 +7886,8 @@ EozghCAkoQhNGMISjvBEICKRiEwUohKN6EH+/1v8D6VbhLk=
                  RectangleBox[{-0.04, 0}, {-0.035, 16.666666666666668`}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{23.529999999999998`, 
-                 27.419999999999995`}, {-1.0945917940349474`, 
-                 40.87162613865332}}],
+                ImageSizeCache->{{33.3, 40.449999999999996`}, {
+                 1.7803398999173794`, 66.77474177406032}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 16.666666666666668`]& ,
              TagBoxNote->"16.666666666666668"],
@@ -7897,8 +7913,8 @@ EozghCAkoQhNGMISjvBEICKRiEwUohKN6EH+/1v8D6VbhLk=
                  RectangleBox[{-0.035, 0}, {-0.03, 8.333333333333334}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{26.919999999999995`, 30.81}, {
-                 19.638517172309186`, 40.87162613865332}}],
+                ImageSizeCache->{{38.449999999999996`, 45.6}, {
+                 33.27754083698885, 66.77474177406032}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 8.333333333333334]& ,
              TagBoxNote->"8.333333333333334"],
@@ -7924,9 +7940,8 @@ EozghCAkoQhNGMISjvBEICKRiEwUohKN6EH+/1v8D6VbhLk=
                  RectangleBox[{-0.025, 0}, {-0.02, 16.666666666666668`}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{33.7, 
-                 37.589999999999996`}, {-1.0945917940349474`, 
-                 40.87162613865332}}],
+                ImageSizeCache->{{48.75, 55.9}, {1.7803398999173794`, 
+                 66.77474177406032}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 16.666666666666668`]& ,
              TagBoxNote->"16.666666666666668"],
@@ -7952,8 +7967,8 @@ EozghCAkoQhNGMISjvBEICKRiEwUohKN6EH+/1v8D6VbhLk=
                  RectangleBox[{-0.02, 0}, {-0.015, 8.333333333333334}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{37.089999999999996`, 40.98}, {
-                 19.638517172309186`, 40.87162613865332}}],
+                ImageSizeCache->{{53.9, 61.05}, {33.27754083698885, 
+                 66.77474177406032}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 8.333333333333334]& ,
              TagBoxNote->"8.333333333333334"],
@@ -7979,8 +7994,8 @@ EozghCAkoQhNGMISjvBEICKRiEwUohKN6EH+/1v8D6VbhLk=
                  RectangleBox[{-0.01, 0}, {-0.005, 8.333333333333334}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{43.87, 47.76}, {19.638517172309186`, 
-                 40.87162613865332}}],
+                ImageSizeCache->{{64.2, 71.35}, {33.27754083698885, 
+                 66.77474177406032}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 8.333333333333334]& ,
              TagBoxNote->"8.333333333333334"],
@@ -8006,8 +8021,8 @@ EozghCAkoQhNGMISjvBEICKRiEwUohKN6EH+/1v8D6VbhLk=
                  RectangleBox[{-0.005, 0}, {0., 16.666666666666668`}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{47.26, 51.15}, {-1.0945917940349474`, 
-                 40.87162613865332}}],
+                ImageSizeCache->{{69.35, 76.5}, {1.7803398999173794`, 
+                 66.77474177406032}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 16.666666666666668`]& ,
              TagBoxNote->"16.666666666666668"],
@@ -8033,8 +8048,8 @@ EozghCAkoQhNGMISjvBEICKRiEwUohKN6EH+/1v8D6VbhLk=
                  RectangleBox[{0., 0}, {0.005, 8.333333333333334}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{50.65, 54.54}, {19.638517172309186`, 
-                 40.87162613865332}}],
+                ImageSizeCache->{{74.5, 81.65}, {33.27754083698885, 
+                 66.77474177406032}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 8.333333333333334]& ,
              TagBoxNote->"8.333333333333334"],
@@ -8060,8 +8075,8 @@ EozghCAkoQhNGMISjvBEICKRiEwUohKN6EH+/1v8D6VbhLk=
                  RectangleBox[{0.005, 0}, {0.01, 41.666666666666664`}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{54.04, 57.93}, {-63.29391869306733, 
-                 40.87162613865332}}],
+                ImageSizeCache->{{79.65, 86.8}, {-92.71126291129698, 
+                 66.77474177406032}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 41.666666666666664`]& ,
              TagBoxNote->"41.666666666666664"],
@@ -8087,8 +8102,8 @@ EozghCAkoQhNGMISjvBEICKRiEwUohKN6EH+/1v8D6VbhLk=
                  RectangleBox[{0.01, 0}, {0.015, 33.333333333333336`}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{57.43, 61.32}, {-42.560809726723214`, 
-                 40.87162613865332}}],
+                ImageSizeCache->{{84.8, 91.95}, {-61.214061974225544`, 
+                 66.77474177406032}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 33.333333333333336`]& ,
              TagBoxNote->"33.333333333333336"],
@@ -8114,8 +8129,8 @@ EozghCAkoQhNGMISjvBEICKRiEwUohKN6EH+/1v8D6VbhLk=
                  RectangleBox[{0.02, 0}, {0.025, 16.666666666666668`}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{64.21, 68.1}, {-1.0945917940349474`, 
-                 40.87162613865332}}],
+                ImageSizeCache->{{95.1, 102.25}, {1.7803398999173794`, 
+                 66.77474177406032}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 16.666666666666668`]& ,
              TagBoxNote->"16.666666666666668"],
@@ -8141,8 +8156,8 @@ EozghCAkoQhNGMISjvBEICKRiEwUohKN6EH+/1v8D6VbhLk=
                  RectangleBox[{0.025, 0}, {0.03, 8.333333333333334}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{67.6, 71.49}, {19.638517172309186`, 
-                 40.87162613865332}}],
+                ImageSizeCache->{{100.25, 107.4}, {33.27754083698885, 
+                 66.77474177406032}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 8.333333333333334]& ,
              TagBoxNote->"8.333333333333334"],
@@ -8168,8 +8183,8 @@ EozghCAkoQhNGMISjvBEICKRiEwUohKN6EH+/1v8D6VbhLk=
                  RectangleBox[{0.03, 0}, {0.035, 8.333333333333334}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{70.99, 74.88}, {19.638517172309186`, 
-                 40.87162613865332}}],
+                ImageSizeCache->{{105.4, 112.55000000000001`}, {
+                 33.27754083698885, 66.77474177406032}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 8.333333333333334]& ,
              TagBoxNote->"8.333333333333334"],
@@ -8195,8 +8210,8 @@ EozghCAkoQhNGMISjvBEICKRiEwUohKN6EH+/1v8D6VbhLk=
                  RectangleBox[{0.045, 0}, {0.05, 8.333333333333334}, 
                   "RoundingRadius" -> 0]},
                 
-                ImageSizeCache->{{81.16, 85.05}, {19.638517172309186`, 
-                 40.87162613865332}}],
+                ImageSizeCache->{{120.85, 128.}, {33.27754083698885, 
+                 66.77474177406032}}],
                "DelayedMouseEffectStyle"]},
              StatusArea[#, 8.333333333333334]& ,
              TagBoxNote->"8.333333333333334"],
@@ -8518,7 +8533,7 @@ kZAExCcecYlDbGIRkxhEJxpRiUJkIhGRCIQnHGEJQ2hCEZIQBCcYQQP+//IH
               "]]]}, {}, {}}, {{}, {}, 
            {RGBColor[0.24, 0.3531726744018182, 0.6], PointSize[
              NCache[
-              Rational[1, 120], 0.008333333333333333]], Thickness[0.01], 
+              Rational[1, 120], 0.008333333333333333]], Thickness[0.02], 
             CapForm["Butt"], LineBox[CompressedData["
 1:eJwl10O0GIYSANAX21Yb27Zt27btNLaNNrZt27ZtW//m/MU9M7tZjRI0bFex
 baCAgIC/ggQE/ImBkQYEJRjBCUFIQhGaMIQlHOGJQEQiEZkoRCUa0YlBTGIR
@@ -8550,15 +8565,15 @@ MIITgpCEIjRhCEs4whOBiEQiMlGISjSiE4OYxCI2cYhLvCD//zv+B453hZI=
              "]]}}, 
           {RGBColor[0.24, 0.3531726744018182, 0.6], PointSize[
             NCache[
-             Rational[1, 120], 0.008333333333333333]], Thickness[0.01], 
+             Rational[1, 120], 0.008333333333333333]], Thickness[0.02], 
            CapForm["Butt"]}, {
            {RGBColor[0.24, 0.3531726744018182, 0.6], PointSize[
              NCache[
-              Rational[1, 120], 0.008333333333333333]], Thickness[0.01], 
+              Rational[1, 120], 0.008333333333333333]], Thickness[0.02], 
             CapForm["Butt"]}, {}}, {
            {RGBColor[0.24, 0.3531726744018182, 0.6], PointSize[
              NCache[
-              Rational[1, 120], 0.008333333333333333]], Thickness[0.01], 
+              Rational[1, 120], 0.008333333333333333]], Thickness[0.02], 
             CapForm["Butt"]}, {}}}], {{}, {}}}},
       AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
       Axes->{False, False},
@@ -8568,15 +8583,17 @@ MIITgpCEIjRhCEs4whOBiEQiMlGISjSiE4OYxCI2cYhLvCD//zv+B453hZI=
       Frame->True,
       FrameLabel->{{None, None}, {
          FormBox["\"Error (eV)\"", TraditionalForm], None}},
-      FrameStyle->Automatic,
+      FrameStyle->Directive[
+        Thickness[Large], 20, 
+        GrayLevel[0]],
       FrameTicks->{{None, None}, {Automatic, Automatic}},
       GridLines->{{0}, {0}},
       GridLinesStyle->Directive[
         GrayLevel[0.5, 0.4]],
-      ImageSize->200,
+      ImageSize->300,
       LabelStyle->{FontFamily -> "Times"},
       PlotLabel->FormBox[
-        StyleBox["\"CCSDT MAE: 0.018 eV\"", 14, StripOnInput -> False], 
+        StyleBox["\"CCSDT MAE: 0.018 eV\"", 20, StripOnInput -> False], 
         TraditionalForm],
       PlotRange->{{-0.05, 0.2}, All},
       PlotRangePadding->{{
@@ -8586,9 +8603,9 @@ MIITgpCEIjRhCEs4whOBiEQiMlGISjSiE4OYxCI2cYhLvCD//zv+B453hZI=
       Ticks->{Automatic, Automatic}], 
      GraphicsBox[{{
         {RGBColor[0.92, 0.488, 0.2432], EdgeForm[{Opacity[0.518], Thickness[
-         Small]}], {}, 
+         Large]}], {}, 
          {RGBColor[0.92, 0.488, 0.2432], EdgeForm[{Opacity[0.518], Thickness[
-          Small]}], 
+          Large]}], 
           {RGBColor[0.6, 0.42664098839727194`, 0.24], Opacity[0.5], 
            RectangleBox[{-0.005, 0}, {-0.0045, 86.95652173913044},
             RoundingRadius->0]}, 
@@ -8932,7 +8949,7 @@ AQWGhU8=
               "]]]}, {}, {}}, {{}, {}, 
            {RGBColor[0.6, 0.42664098839727194`, 0.24], PointSize[
              NCache[
-              Rational[1, 120], 0.008333333333333333]], Thickness[0.01], 
+              Rational[1, 120], 0.008333333333333333]], Thickness[0.02], 
             CapForm["Butt"], LineBox[CompressedData["
 1:eJwl10O0GIYSANAX21Zjp7Ft27Zt27adtLGNxrZt23b+zfmLe2Z2sxolbNiu
 YttAAQEB8YIEBPyJgZEGBCUYwQlBSEIRmjCEJRzhiUBEIhGZKEQlGtGJQUxi
@@ -8964,15 +8981,15 @@ lGAEJwQhCUVowhCWcIQnAhGJRGSiEJVoRCcGMYlFbOIQN8j/f47/AWuchXA=
              "]]}}, 
           {RGBColor[0.6, 0.42664098839727194`, 0.24], PointSize[
             NCache[
-             Rational[1, 120], 0.008333333333333333]], Thickness[0.01], 
+             Rational[1, 120], 0.008333333333333333]], Thickness[0.02], 
            CapForm["Butt"]}, {
            {RGBColor[0.6, 0.42664098839727194`, 0.24], PointSize[
              NCache[
-              Rational[1, 120], 0.008333333333333333]], Thickness[0.01], 
+              Rational[1, 120], 0.008333333333333333]], Thickness[0.02], 
             CapForm["Butt"]}, {}}, {
            {RGBColor[0.6, 0.42664098839727194`, 0.24], PointSize[
              NCache[
-              Rational[1, 120], 0.008333333333333333]], Thickness[0.01], 
+              Rational[1, 120], 0.008333333333333333]], Thickness[0.02], 
             CapForm["Butt"]}, {}}}], {{}, {}}}},
       AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
       Axes->{False, False},
@@ -8982,15 +8999,17 @@ lGAEJwQhCUVowhCWcIQnAhGJRGSiEJVoRCcGMYlFbOIQN8j/f47/AWuchXA=
       Frame->True,
       FrameLabel->{{None, None}, {
          FormBox["\"Error (eV)\"", TraditionalForm], None}},
-      FrameStyle->Automatic,
+      FrameStyle->Directive[
+        Thickness[Large], 20, 
+        GrayLevel[0]],
       FrameTicks->{{None, None}, {Automatic, Automatic}},
       GridLines->{{0}, {0}},
       GridLinesStyle->Directive[
         GrayLevel[0.5, 0.4]],
-      ImageSize->200,
+      ImageSize->300,
       LabelStyle->{FontFamily -> "Times"},
       PlotLabel->FormBox[
-        StyleBox["\"CCSDTQ MAE: 0.002 eV\"", 14, StripOnInput -> False], 
+        StyleBox["\"CCSDTQ MAE: 0.002 eV\"", 20, StripOnInput -> False], 
         TraditionalForm],
       PlotRange->{{-0.02, 0.02}, All},
       PlotRangePadding->{{
@@ -9004,8 +9023,9 @@ lGAEJwQhCUVowhCWcIQnAhGJRGSiEJVoRCcGMYlFbOIQN8j/f47/AWuchXA=
   "Grid"]], "Output",
  CellChangeTimes->{{3.8291474570238037`*^9, 3.829147462465005*^9}, {
   3.829147547329199*^9, 3.829147596746649*^9}, {3.829147630466011*^9, 
-  3.829147646877843*^9}},
- CellLabel->"Out[65]=",ExpressionUUID->"1cb8ccd6-93f4-4ad9-a15c-0395d6a4fe4b"]
+  3.829147646877843*^9}, {3.8292031416336308`*^9, 3.829203189366737*^9}, {
+  3.829203251100786*^9, 3.829203264522519*^9}},
+ CellLabel->"Out[77]=",ExpressionUUID->"9a5546cd-406e-47cd-9bb3-b87aa97e4227"]
 }, Open  ]],
 
 Cell[BoxData["\[IndentingNewLine]"], "Input",
@@ -9032,7 +9052,7 @@ Cell[BoxData["\[IndentingNewLine]"], "Input",
  CellChangeTimes->{
   3.828972709475465*^9},ExpressionUUID->"2abaf464-a749-4433-b0e4-\
 cd0319289ae5"]
-}, Closed]],
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -9074,7 +9094,7 @@ Cell[BoxData[{
  CellChangeTimes->{{3.8291844820190153`*^9, 3.829184540539218*^9}, {
   3.829184839684285*^9, 3.829184891562538*^9}, {3.829195595771392*^9, 
   3.829195616278813*^9}},
- CellLabel->"In[13]:=",ExpressionUUID->"bbd61509-e3a1-4101-9807-9566d6c0689b"],
+ CellLabel->"In[11]:=",ExpressionUUID->"bbd61509-e3a1-4101-9807-9566d6c0689b"],
 
 Cell[CellGroupData[{
 
@@ -9092,12 +9112,20 @@ Cell[BoxData[{
        RowBox[{"0", ",", 
         RowBox[{"1", "/", "2"}]}], "}"}]}], ",", "\[IndentingNewLine]", 
      RowBox[{"Frame", "\[Rule]", "True"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"ImageSize", "\[Rule]", "800"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"FrameStyle", "\[Rule]", 
+      RowBox[{"Directive", "[", 
+       RowBox[{"Thick", ",", "20", ",", "Black"}], "]"}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"ImageSize", "\[Rule]", "700"}], ",", "\[IndentingNewLine]", 
      RowBox[{"GridLines", "\[Rule]", 
       RowBox[{"{", 
        RowBox[{"None", ",", "Automatic"}], "}"}]}], ",", 
      "\[IndentingNewLine]", 
      RowBox[{"BaseStyle", "\[Rule]", "20"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"ChartBaseStyle", "\[Rule]", 
+      RowBox[{"EdgeForm", "[", 
+       RowBox[{"Thickness", "[", "0.003", "]"}], "]"}]}], ",", 
+     "\[IndentingNewLine]", 
      RowBox[{"(*", 
       RowBox[{
        RowBox[{"ImagePadding", "\[Rule]", 
@@ -9233,14 +9261,18 @@ Cell[BoxData[{
    3.829184443763492*^9, 3.829184475625578*^9}, {3.829184550394494*^9, 
    3.829184711287158*^9}, 3.829184763573472*^9, {3.829184811521798*^9, 
    3.829184811994122*^9}, {3.829184913367185*^9, 3.829185343625037*^9}, {
-   3.829186689939722*^9, 3.8291867590626497`*^9}},
- CellLabel->"In[15]:=",ExpressionUUID->"7b231729-00c6-46ac-83fd-5ede27f3f2cd"],
+   3.829186689939722*^9, 3.8291867590626497`*^9}, {3.8292029975100737`*^9, 
+   3.82920306025478*^9}, {3.8292030938478527`*^9, 3.829203113576303*^9}, {
+   3.829203337164576*^9, 3.829203354285309*^9}, {3.829203398073018*^9, 
+   3.8292033984226522`*^9}},
+ CellLabel->
+  "In[103]:=",ExpressionUUID->"7b231729-00c6-46ac-83fd-5ede27f3f2cd"],
 
 Cell[BoxData[
  GraphicsBox[{
    {Opacity[0], PointBox[{{0.49, 0.}, {13.75, 0.}}]}, {{}, {{{}, {{}, {
         {RGBColor[0.798413061722744, 0.824719615472648, 0.968322270542458], 
-         EdgeForm[{Opacity[0.616], Thickness[Small]}], 
+         EdgeForm[{Opacity[0.616], Thickness[0.003]}], 
          TagBox[
           TooltipBox[
            TagBox[
@@ -9256,8 +9288,9 @@ Cell[BoxData[
                RectangleBox[{0.75, 0.}, {1.75, 0.8940000000000001}, 
                 "RoundingRadius" -> 0]},
               
-              ImageSizeCache->{{83.61529411764707, 
-               137.94334841628958`}, {-120.95625000000001`, 56.125}}],
+              ImageSizeCache->{{78.99902941176471, 
+               127.48006561085973`}, {-107.80199999999999`, 
+               46.839500000000015`}}],
              "DelayedMouseEffectStyle"],
             StatusArea[#, 0.8940000000000001]& ,
             TagBoxNote->"0.8940000000000001"],
@@ -9267,7 +9300,7 @@ Cell[BoxData[
           Annotation[#, 
            Style[0.8940000000000001, {FontFamily -> "Times"}], "Tooltip"]& ]}, 
         {RGBColor[0.7333333333333333, 1., 0.8337224383916991], EdgeForm[{
-         Opacity[0.616], Thickness[Small]}], 
+         Opacity[0.616], Thickness[0.003]}], 
          TagBox[
           TooltipBox[
            TagBox[
@@ -9283,8 +9316,9 @@ Cell[BoxData[
                RectangleBox[{1.75, 0.}, {2.75, 0.41900000000000004`}, 
                 "RoundingRadius" -> 0]},
               
-              ImageSizeCache->{{137.44334841628958`, 
-               191.77140271493212`}, {-27.135116051454133`, 56.125}}],
+              ImageSizeCache->{{125.55106561085972`, 
+               174.03210180995472`}, {-26.662808165548093`, 
+               46.83950000000001}}],
              "DelayedMouseEffectStyle"],
             StatusArea[#, 0.41900000000000004`]& ,
             TagBoxNote->"0.41900000000000004"],
@@ -9295,7 +9329,7 @@ Cell[BoxData[
            Style[0.41900000000000004`, {FontFamily -> "Times"}], 
            "Tooltip"]& ]}, 
         {RGBColor[1, 0.860624, 0.662562], EdgeForm[{Opacity[0.616], Thickness[
-         Small]}], 
+         0.003]}], 
          TagBox[
           TooltipBox[
            TagBox[
@@ -9311,8 +9345,8 @@ Cell[BoxData[
                RectangleBox[{2.75, 0.}, {3.75, 0.1280000000000001}, 
                 "RoundingRadius" -> 0]},
               
-              ImageSizeCache->{{191.27140271493212`, 245.59945701357464`}, {
-               30.342673378076043`, 56.125}}],
+              ImageSizeCache->{{172.10310180995475`, 220.5841380090498}, {
+               23.045623042505586`, 46.83950000000001}}],
              "DelayedMouseEffectStyle"],
             StatusArea[#, 0.1280000000000001]& ,
             TagBoxNote->"0.1280000000000001"],
@@ -9322,7 +9356,7 @@ Cell[BoxData[
           Annotation[#, 
            Style[0.1280000000000001, {FontFamily -> "Times"}], "Tooltip"]& ]}, 
         {RGBColor[1, 0.696086, 0.721935], EdgeForm[{Opacity[0.616], Thickness[
-         Small]}], 
+         0.003]}], 
          TagBox[
           TooltipBox[
            TagBox[
@@ -9338,8 +9372,8 @@ Cell[BoxData[
                RectangleBox[{3.75, 0.}, {4.75, 0.028000000000000025`}, 
                 "RoundingRadius" -> 0]},
               
-              ImageSizeCache->{{245.09945701357464`, 299.4275113122172}, {
-               50.094491051454135`, 56.125}}],
+              ImageSizeCache->{{218.65513800904978`, 267.1361742081448}, {
+               40.1275581655481, 46.83950000000001}}],
              "DelayedMouseEffectStyle"],
             StatusArea[#, 0.028000000000000025`]& ,
             TagBoxNote->"0.028000000000000025"],
@@ -9350,7 +9384,7 @@ Cell[BoxData[
            Style[0.028000000000000025`, {FontFamily -> "Times"}], 
            "Tooltip"]& ]}}}, {}, {}}, {{}, {{}, {
         {RGBColor[0.798413061722744, 0.824719615472648, 0.968322270542458], 
-         EdgeForm[{Opacity[0.616], Thickness[Small]}], 
+         EdgeForm[{Opacity[0.616], Thickness[0.003]}], 
          TagBox[
           TooltipBox[
            TagBox[
@@ -9366,8 +9400,8 @@ Cell[BoxData[
                RectangleBox[{5.25, 0.}, {6.25, 0.7799999999999998}, 
                 "RoundingRadius" -> 0]},
               
-              ImageSizeCache->{{325.84153846153845`, 
-               380.169592760181}, {-98.43917785234893, 56.125}}],
+              ImageSizeCache->{{288.4831923076923, 
+               336.9642285067873}, {-88.32859395973148, 46.839500000000015`}}],
              "DelayedMouseEffectStyle"],
             StatusArea[#, 0.7799999999999998]& ,
             TagBoxNote->"0.7799999999999998"],
@@ -9377,7 +9411,7 @@ Cell[BoxData[
           Annotation[#, 
            Style[0.7799999999999998, {FontFamily -> "Times"}], "Tooltip"]& ]}, 
         {RGBColor[0.7333333333333333, 1., 0.8337224383916991], EdgeForm[{
-         Opacity[0.616], Thickness[Small]}], 
+         Opacity[0.616], Thickness[0.003]}], 
          TagBox[
           TooltipBox[
            TagBox[
@@ -9391,8 +9425,9 @@ Cell[BoxData[
                   Opacity[0.66]}], {}, {}], 
                RectangleBox[{6.25, 0.}, {7.25, 0.371}, "RoundingRadius" -> 0]},
               
-              ImageSizeCache->{{379.669592760181, 
-               433.99764705882353`}, {-17.65424356823266, 56.125}}],
+              ImageSizeCache->{{335.0352285067873, 
+               383.51626470588235`}, {-18.463479306487677`, 
+               46.83950000000001}}],
              "DelayedMouseEffectStyle"],
             StatusArea[#, 0.371]& ,
             TagBoxNote->"0.371"],
@@ -9400,7 +9435,7 @@ Cell[BoxData[
           Annotation[#, 
            Style[0.371, {FontFamily -> "Times"}], "Tooltip"]& ]}, 
         {RGBColor[1, 0.860624, 0.662562], EdgeForm[{Opacity[0.616], Thickness[
-         Small]}], 
+         0.003]}], 
          TagBox[
           TooltipBox[
            TagBox[
@@ -9416,8 +9451,8 @@ Cell[BoxData[
                RectangleBox[{7.25, 0.}, {8.25, 0.09899999999999975}, 
                 "RoundingRadius" -> 0]},
               
-              ImageSizeCache->{{433.49764705882353`, 487.825701357466}, {
-               36.07070050335575, 56.125}}],
+              ImageSizeCache->{{381.5872647058823, 430.0683009049774}, {
+               27.99938422818797, 46.83950000000001}}],
              "DelayedMouseEffectStyle"],
             StatusArea[#, 0.09899999999999975]& ,
             TagBoxNote->"0.09899999999999975"],
@@ -9428,7 +9463,7 @@ Cell[BoxData[
            Style[0.09899999999999975, {FontFamily -> "Times"}], 
            "Tooltip"]& ]}, 
         {RGBColor[1, 0.696086, 0.721935], EdgeForm[{Opacity[0.616], Thickness[
-         Small]}], 
+         0.003]}], 
          TagBox[
           TooltipBox[
            TagBox[
@@ -9444,8 +9479,8 @@ Cell[BoxData[
                RectangleBox[{8.25, 0.}, {9.25, 0.017999999999999794`}, 
                 "RoundingRadius" -> 0]},
               
-              ImageSizeCache->{{487.325701357466, 541.6537556561085}, {
-               52.069672818791986`, 56.125}}],
+              ImageSizeCache->{{428.13930090497735`, 476.6203371040724}, {
+               41.83575167785239, 46.83950000000001}}],
              "DelayedMouseEffectStyle"],
             StatusArea[#, 0.017999999999999794`]& ,
             TagBoxNote->"0.017999999999999794"],
@@ -9456,7 +9491,7 @@ Cell[BoxData[
            Style[0.017999999999999794`, {FontFamily -> "Times"}], 
            "Tooltip"]& ]}}}, {}, {}}, {{}, {{}, {
         {RGBColor[0.798413061722744, 0.824719615472648, 0.968322270542458], 
-         EdgeForm[{Opacity[0.616], Thickness[Small]}], 
+         EdgeForm[{Opacity[0.616], Thickness[0.003]}], 
          TagBox[
           TooltipBox[
            TagBox[
@@ -9472,8 +9507,9 @@ Cell[BoxData[
                RectangleBox[{9.75, 0.}, {10.75, 0.8499999999999996}, 
                 "RoundingRadius" -> 0]},
               
-              ImageSizeCache->{{568.0677828054298, 
-               622.3958371040724}, {-112.26545022371354`, 56.125}}],
+              ImageSizeCache->{{497.96735520361983`, 
+               546.448391402715}, {-100.28594854586125`, 46.83950000000006}}],
+             
              "DelayedMouseEffectStyle"],
             StatusArea[#, 0.8499999999999996]& ,
             TagBoxNote->"0.8499999999999996"],
@@ -9483,7 +9519,7 @@ Cell[BoxData[
           Annotation[#, 
            Style[0.8499999999999996, {FontFamily -> "Times"}], "Tooltip"]& ]}, 
         {RGBColor[0.7333333333333333, 1., 0.8337224383916991], EdgeForm[{
-         Opacity[0.616], Thickness[Small]}], 
+         Opacity[0.616], Thickness[0.003]}], 
          TagBox[
           TooltipBox[
            TagBox[
@@ -9495,12 +9531,11 @@ Cell[BoxData[
                   GrayLevel[0.5], 
                   AbsoluteThickness[1.5], 
                   Opacity[0.66]}], {}, {}], 
-               
                RectangleBox[{10.75, 0.}, {11.75, 0.359}, "RoundingRadius" -> 
                 0]},
               
-              ImageSizeCache->{{621.8958371040724, 
-               676.2238914027149}, {-15.284025447427283`, 56.125}}],
+              ImageSizeCache->{{544.5193914027149, 
+               593.0004276018099}, {-16.413647091722623`, 46.83950000000005}}],
              "DelayedMouseEffectStyle"],
             StatusArea[#, 0.359]& ,
             TagBoxNote->"0.359"],
@@ -9508,7 +9543,7 @@ Cell[BoxData[
           Annotation[#, 
            Style[0.359, {FontFamily -> "Times"}], "Tooltip"]& ]}, 
         {RGBColor[1, 0.860624, 0.662562], EdgeForm[{Opacity[0.616], Thickness[
-         Small]}], 
+         0.003]}], 
          TagBox[
           TooltipBox[
            TagBox[
@@ -9524,8 +9559,8 @@ Cell[BoxData[
                RectangleBox[{11.75, 0.}, {12.75, 0.056999999999999496`}, 
                 "RoundingRadius" -> 0]},
               
-              ImageSizeCache->{{675.7238914027149, 730.0519457013575}, {
-               44.366463926174596`, 56.125}}],
+              ImageSizeCache->{{591.0714276018099, 639.5524638009049}, {
+               35.17379697986582, 46.83950000000005}}],
              "DelayedMouseEffectStyle"],
             StatusArea[#, 0.056999999999999496`]& ,
             TagBoxNote->"0.056999999999999496"],
@@ -9536,7 +9571,7 @@ Cell[BoxData[
            Style[0.056999999999999496`, {FontFamily -> "Times"}], 
            "Tooltip"]& ]}, 
         {RGBColor[1, 0.696086, 0.721935], EdgeForm[{Opacity[0.616], Thickness[
-         Small]}], 
+         0.003]}], 
          TagBox[
           TooltipBox[
            TagBox[
@@ -9548,11 +9583,11 @@ Cell[BoxData[
                   GrayLevel[0.5], 
                   AbsoluteThickness[1.5], 
                   Opacity[0.66]}], {}, {}], 
-               
                RectangleBox[{12.75, 0.}, {13.75, 0.027000000000000135`}, 
                 "RoundingRadius" -> 0]},
-              ImageSizeCache->{{729.5519457013575, 783.88}, {
-               50.292009228187894`, 56.125}}],
+              
+              ImageSizeCache->{{637.6234638009049, 686.1044999999999}, {
+               40.298377516778466`, 46.83950000000005}}],
              "DelayedMouseEffectStyle"],
             StatusArea[#, 0.027000000000000135`]& ,
             TagBoxNote->"0.027000000000000135"],
@@ -9640,7 +9675,6 @@ YjaiPzwf52+XUvIq3pnY+bmmggVEf1eZ+fxQDZbM7rmuHjLzb/IEZNpPk4DM
 u2sWP7kis3trsxaZ+axBpn0/CEHmevB8k8g5MAYAsb/lvAxa4ke+EuvT/LZx
 yLMKzDuaBB9kfp/y//P7m9f79z7/AyDKlpk=
            "]], 
-          
           FilledCurveBox[{{{0, 2, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 
            0}, {0, 1, 0}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {0, 1, 0}, {1, 3, 
            3}, {0, 1, 0}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {0, 1, 0}, {1, 3, 
@@ -9984,8 +10018,8 @@ PA7o8QMAJqC0ZQ==
         ImageSize -> {181., 22.}, PlotRange -> {{0., 180.78}, {0., 21.12}}, 
         AspectRatio -> Automatic}], TraditionalForm], None}, {None, None}},
   FrameStyle->Directive[
-    GrayLevel[0], 
-    AbsoluteThickness[0.2]],
+    Thickness[Large], 20, 
+    GrayLevel[0]],
   FrameTicks->{{Automatic, Automatic}, {{{1.25, 
        FormBox[
         TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {1.25, 
@@ -10396,6 +10430,7 @@ DOeD/X3GEM4HW1tl4CA+9QpnxiJDh4z8D60nr+hBwpEZyjfRdkhNA4Jn+hD9
 PpoOR3ft6GWboAPnN/P6r5/iqgHnu685upwhQ9HB/xYwwIL0HHYGW0X8b5eE
 hx+M38hytN/Q3ATOBxmTmmEKMWeNFCQ8Gs3g8YeePgCkff/U
               "]], 
+             
              FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {1, 3, 3}, {1, 3, 3}, {1, 
               3, 3}, {1, 3, 3}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 3}, {
               1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 
@@ -11133,7 +11168,7 @@ v14V6HFfDTifPzbgvlG4okMqyJ9hPnD/lYPijxvhX/T0CgC/LiL7
         TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}}}},
   GridLines->{None, Automatic},
   GridLinesStyle->Automatic,
-  ImageSize->800,
+  ImageSize->700,
   LabelStyle->{FontFamily -> "Times"},
   PlotRange->{{All, All}, {All, All}},
   PlotRangePadding->{{
@@ -11158,9 +11193,18 @@ v14V6HFfDTifPzbgvlG4okMqyJ9hPnD/lYPijxvhX/T0CgC/LiL7
    3.8291847643375463`*^9, 3.829184823025937*^9, 3.829184894793501*^9, {
    3.82918493311796*^9, 3.829185169634289*^9}, {3.829185221064384*^9, 
    3.829185344212358*^9}, {3.8291866909385242`*^9, 3.829186725905919*^9}, 
-   3.829186759752303*^9, {3.829195606782792*^9, 3.8291956197748413`*^9}},
- CellLabel->"Out[17]=",ExpressionUUID->"2cb2757d-23ce-4036-9879-99b6754a49eb"]
+   3.829186759752303*^9, {3.829195606782792*^9, 3.8291956197748413`*^9}, {
+   3.829203009551612*^9, 3.8292030296935577`*^9}, 3.829203061836968*^9, {
+   3.829203103930133*^9, 3.8292031144149723`*^9}, {3.829203339545841*^9, 
+   3.8292033547969723`*^9}, 3.829203398769144*^9},
+ CellLabel->
+  "Out[105]=",ExpressionUUID->"e1f1234f-5831-41d7-b47c-5f4052086f64"]
 }, Open  ]],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{
+  3.829203000275168*^9},ExpressionUUID->"2f96415c-2572-47df-89b3-\
+8fd601088974"],
 
 Cell[BoxData["\[IndentingNewLine]"], "Input",
  CellChangeTimes->{
@@ -11584,56 +11628,57 @@ Cell[CellGroupData[{
 Cell[2896, 78, 147, 3, 72, "Title",ExpressionUUID->"7bca69e7-ea88-42f1-8cb1-a301789d5f95"],
 Cell[CellGroupData[{
 Cell[3068, 85, 157, 3, 54, "Subsection",ExpressionUUID->"e6da07d3-5b65-4f62-9b4d-6c86f16ef879"],
-Cell[3228, 90, 783, 15, 46, "Input",ExpressionUUID->"f25eee47-370e-49b9-a86f-65f7c20177dd",
+Cell[3228, 90, 784, 15, 46, "Input",ExpressionUUID->"f25eee47-370e-49b9-a86f-65f7c20177dd",
  InitializationCell->True]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[4048, 110, 257, 4, 38, "Subsection",ExpressionUUID->"90587d94-a434-4bcd-8cd8-ef32f7080964"],
+Cell[4049, 110, 257, 4, 38, "Subsection",ExpressionUUID->"90587d94-a434-4bcd-8cd8-ef32f7080964"],
 Cell[CellGroupData[{
-Cell[4330, 118, 2764, 77, 115, "Input",ExpressionUUID->"4c30a075-df91-47ec-a27d-c76dac76a44c"],
-Cell[7097, 197, 782, 14, 37, "Output",ExpressionUUID->"d416604e-fc60-44d4-9149-c3f75dd99080"],
-Cell[7882, 213, 766, 14, 34, "Output",ExpressionUUID->"ec102ebf-cff8-4365-a53d-f9650138aab1"],
-Cell[8651, 229, 765, 14, 34, "Output",ExpressionUUID->"b7c9e6be-d740-4c92-8a83-a08dee337ade"]
+Cell[4331, 118, 2764, 77, 115, "Input",ExpressionUUID->"4c30a075-df91-47ec-a27d-c76dac76a44c"],
+Cell[7098, 197, 804, 14, 70, "Output",ExpressionUUID->"9e505f7d-aa30-4bb1-919a-eb482ea371dd"],
+Cell[7905, 213, 788, 14, 70, "Output",ExpressionUUID->"e2d5c3d6-1e6a-4631-b47a-ef3cd2de1079"],
+Cell[8696, 229, 787, 14, 70, "Output",ExpressionUUID->"495a6edc-c51e-4d9d-9a3d-340c77788e80"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[9453, 248, 10697, 245, 535, "Input",ExpressionUUID->"c6d0c375-b280-4ab2-823e-e9f3d9626111"],
-Cell[20153, 495, 208619, 4131, 375, "Output",ExpressionUUID->"8253e494-6559-4d23-be7a-6de754397330"]
+Cell[9520, 248, 10697, 245, 535, "Input",ExpressionUUID->"c6d0c375-b280-4ab2-823e-e9f3d9626111"],
+Cell[20220, 495, 208643, 4131, 70, "Output",ExpressionUUID->"c5fb5e8f-c854-489d-8555-964a508bb236"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[228821, 4632, 306, 5, 38, "Subsection",ExpressionUUID->"8a540b11-e78a-44a9-92ea-ed0ab12c5ef1"],
+Cell[228912, 4632, 306, 5, 38, "Subsection",ExpressionUUID->"8a540b11-e78a-44a9-92ea-ed0ab12c5ef1"],
 Cell[CellGroupData[{
-Cell[229152, 4641, 11037, 250, 535, "Input",ExpressionUUID->"cf3632c1-378c-45f7-a37c-dc4e7dbf002a"],
-Cell[240192, 4893, 207425, 4114, 375, "Output",ExpressionUUID->"1cb8ccd6-93f4-4ad9-a15c-0395d6a4fe4b"]
+Cell[229243, 4641, 11403, 257, 556, "Input",ExpressionUUID->"cf3632c1-378c-45f7-a37c-dc4e7dbf002a"],
+Cell[240649, 4900, 207973, 4127, 535, "Output",ExpressionUUID->"9a5546cd-406e-47cd-9bb3-b87aa97e4227"]
 }, Open  ]],
-Cell[447632, 9010, 147, 3, 52, "Input",ExpressionUUID->"733845b8-2e68-4934-9781-f3a45c12d560"],
-Cell[447782, 9015, 147, 3, 52, "Input",ExpressionUUID->"0b3bdf90-462d-4736-b71e-5d0dc0580357"],
-Cell[447932, 9020, 149, 3, 52, "Input",ExpressionUUID->"ef8922a5-5cd0-4bd8-90b7-46dc738bba2e"],
-Cell[448084, 9025, 147, 3, 52, "Input",ExpressionUUID->"d817ca35-5290-462e-b844-30511c1254c0"],
-Cell[448234, 9030, 147, 3, 52, "Input",ExpressionUUID->"2abaf464-a749-4433-b0e4-cd0319289ae5"]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[448418, 9038, 155, 3, 38, "Subsection",ExpressionUUID->"6284f984-f085-4417-9710-44c6712e75d8"],
-Cell[448576, 9043, 1306, 33, 136, "Input",ExpressionUUID->"bbd61509-e3a1-4101-9807-9566d6c0689b"],
-Cell[CellGroupData[{
-Cell[449907, 9080, 7609, 156, 546, "Input",ExpressionUUID->"7b231729-00c6-46ac-83fd-5ede27f3f2cd"],
-Cell[457519, 9238, 100646, 1923, 281, "Output",ExpressionUUID->"2cb2757d-23ce-4036-9879-99b6754a49eb"]
+Cell[448637, 9030, 147, 3, 52, "Input",ExpressionUUID->"733845b8-2e68-4934-9781-f3a45c12d560"],
+Cell[448787, 9035, 147, 3, 52, "Input",ExpressionUUID->"0b3bdf90-462d-4736-b71e-5d0dc0580357"],
+Cell[448937, 9040, 149, 3, 52, "Input",ExpressionUUID->"ef8922a5-5cd0-4bd8-90b7-46dc738bba2e"],
+Cell[449089, 9045, 147, 3, 52, "Input",ExpressionUUID->"d817ca35-5290-462e-b844-30511c1254c0"],
+Cell[449239, 9050, 147, 3, 52, "Input",ExpressionUUID->"2abaf464-a749-4433-b0e4-cd0319289ae5"]
 }, Open  ]],
-Cell[558180, 11164, 147, 3, 52, "Input",ExpressionUUID->"01f9d5cd-2bf8-4687-a51e-6426aa83f818"],
-Cell[558330, 11169, 147, 3, 52, "Input",ExpressionUUID->"451b12e9-7873-46e9-8eda-f18e722f2684"],
-Cell[558480, 11174, 149, 3, 52, "Input",ExpressionUUID->"6dd47319-e1c0-4b8c-b819-4f2ce499f544"]
+Cell[CellGroupData[{
+Cell[449423, 9058, 155, 3, 54, "Subsection",ExpressionUUID->"6284f984-f085-4417-9710-44c6712e75d8"],
+Cell[449581, 9063, 1306, 33, 136, "Input",ExpressionUUID->"bbd61509-e3a1-4101-9807-9566d6c0689b"],
+Cell[CellGroupData[{
+Cell[450912, 9100, 8149, 168, 588, "Input",ExpressionUUID->"7b231729-00c6-46ac-83fd-5ede27f3f2cd"],
+Cell[459064, 9270, 101039, 1930, 262, "Output",ExpressionUUID->"e1f1234f-5831-41d7-b47c-5f4052086f64"]
+}, Open  ]],
+Cell[560118, 11203, 147, 3, 52, "Input",ExpressionUUID->"2f96415c-2572-47df-89b3-8fd601088974"],
+Cell[560268, 11208, 147, 3, 52, "Input",ExpressionUUID->"01f9d5cd-2bf8-4687-a51e-6426aa83f818"],
+Cell[560418, 11213, 147, 3, 52, "Input",ExpressionUUID->"451b12e9-7873-46e9-8eda-f18e722f2684"],
+Cell[560568, 11218, 149, 3, 52, "Input",ExpressionUUID->"6dd47319-e1c0-4b8c-b819-4f2ce499f544"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[558678, 11183, 157, 3, 98, "Title",ExpressionUUID->"4b6a0994-afdf-462e-81d5-c63720a78299"],
-Cell[558838, 11188, 1836, 46, 94, "Input",ExpressionUUID->"b1907bbe-2c8f-4714-a461-b0a26f8db654"],
+Cell[560766, 11227, 157, 3, 98, "Title",ExpressionUUID->"4b6a0994-afdf-462e-81d5-c63720a78299"],
+Cell[560926, 11232, 1836, 46, 94, "Input",ExpressionUUID->"b1907bbe-2c8f-4714-a461-b0a26f8db654"],
 Cell[CellGroupData[{
-Cell[560699, 11238, 1074, 28, 58, "Input",ExpressionUUID->"1b9000ea-381d-40b1-b886-099025bfa199"],
-Cell[561776, 11268, 946, 24, 144, "Output",ExpressionUUID->"52f1ea12-edf1-4f8a-8deb-d2b3eea74c67"]
+Cell[562787, 11282, 1074, 28, 58, "Input",ExpressionUUID->"1b9000ea-381d-40b1-b886-099025bfa199"],
+Cell[563864, 11312, 946, 24, 144, "Output",ExpressionUUID->"52f1ea12-edf1-4f8a-8deb-d2b3eea74c67"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[562759, 11297, 1680, 43, 59, "Input",ExpressionUUID->"e926d1a7-f777-432e-aebb-63327f57840c"],
-Cell[564442, 11342, 8373, 208, 254, "Output",ExpressionUUID->"941dbd35-e57e-4d43-a9d5-209e9159af8f"]
+Cell[564847, 11341, 1680, 43, 59, "Input",ExpressionUUID->"e926d1a7-f777-432e-aebb-63327f57840c"],
+Cell[566530, 11386, 8373, 208, 254, "Output",ExpressionUUID->"941dbd35-e57e-4d43-a9d5-209e9159af8f"]
 }, Open  ]]
 }, Closed]]
 }
