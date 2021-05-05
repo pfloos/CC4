@@ -7,7 +7,7 @@
 \cal{cal}
 \DeclareSIUnit\kcal{\kilo\cal}
 
-\newcommand{\alert}[1]{\textcolor{black}{#1}}
+\newcommand{\alert}[1]{\textcolor{red}{#1}}
 \usepackage[normalem]{ulem}
 \newcommand{\titou}[1]{\textcolor{red}{#1}}
 \newcommand{\trashPFL}[1]{\textcolor{red}{\sout{#1}}}
@@ -67,8 +67,8 @@
 \begin{abstract}
 We report the first investigation of the performance of EOM-CC4 --- an approximate equation-of-motion coupled-cluster model which includes iterative quadruple excitations --- for vertical excitation energies in molecular systems.
 By considering a set of 28 excited states in 10 small molecules for which we have computed CCSDTQP and FCI reference energies, we show that, in the case of excited states with a dominant contribution from the single excitations, CC4 yields excitation energies with sub-kJ~mol$^{-1}$ accuracy, in very close agreement with its more expensive CCSDTQ parent.
-\titou{doubles?}
 Therefore, if one aims at high accuracy, CC4 stands as a highly competitive approximate method to model molecular excited states, with a significant improvement over both CC3 and CCSDT.
+In present results also evidence that, although the same qualitative conclusions still hold, one cannot reach the same type of accuracy for transitions with a strong double excitation character.
 \end{abstract}
 
 % Title
@@ -168,7 +168,7 @@ Note that CCSDTQP energies could only be computed for the smaller basis (aug-cc-
 	\caption{Vertical excitation energies (in eV) of a selection of singly-excited states obtained at various levels of theory with the aug-cc-pVDZ and aug-cc-pVTZ basis sets. 
 	$\%T_1$ is the percentage of single excitations involved in the transition (computed at the CC3/aug-cc-pVTZ level).
 	For the aug-cc-pVDZ basis, the mean absolute error (MAE), mean signed error (MSE), and maximum error (Max) with respect to CCSDTQP is reported.
-	\label{tab:BigTab}}
+	\label{tab:singles}}
 	\begin{ruledtabular}
 	\begin{tabular}{llrrrrrrrrrrrrrrrr}
 				&		&	\mc{8}{c}{aug-cc-pVDZ}		&		\mc{7}{c}{aug-cc-pVTZ}		\\	
@@ -212,20 +212,20 @@ Note that CCSDTQP energies could only be computed for the smaller basis (aug-cc-
 %%% %%% %%% %%%
 
 %%% FIG 1 %%%
-\begin{figure}
-	\includegraphics[width=\linewidth]{histograms_MAE_AVDZ}
+\begin{figure*}
+	\includegraphics[width=0.7\linewidth]{histograms_MAE_AVDZ}
 	\caption{
-	Distribution of the error (in eV) in excitation energies (with respect to the CCSDTQP values) for CC2, CC3, and CC4 (top) and CCSD, CCSDT, and CCSDTQ (bottom) obtained with the aug-cc-pVDZ basis.
-	See Table \ref{tab:BigTab} for the raw data.
+	Distribution of the error (in eV) in excitation energies (with respect to CCSDTQP) for CC2, CC3, and CC4 (top) and CCSD, CCSDT, and CCSDTQ (bottom) obtained with the aug-cc-pVDZ basis.
+	See Table \ref{tab:singles} for the raw data.
 	\label{fig:error}}
-\end{figure}
+\end{figure*}
 %%% %%% %%% %%%
 
-Table \ref{tab:BigTab} gathers, for the two considered basis sets, 25 vertical excitation energies with a dominant contribution for the single excitations computed for a set of 8 molecules with various CC models as well as the FCI estimates computed with CIPSI.
+Table \ref{tab:singles} gathers, for the two considered basis sets, 25 vertical excitation energies with a dominant contribution for the single excitations computed for a set of 8 molecules with various CC models as well as the FCI estimates computed with CIPSI.
 First, we underline that the FCI estimates show how accurate the CCSDTQP reference data are, with a maximum deviation of \SI{0.002}{\eV} when one considers the aug-cc-pVDZ basis. 
 For the larger aug-cc-pVTZ basis, the CCSDTQ and FCI remain in excellent agreement although the error bars associated with the extrapolated FCI values prevent us from any quantitative comparisons.
 
-The mean absolute errors (MAEs) and mean signed errors (MSEs) with respect to CCSDTQP (and computed in the aug-cc-pVDZ basis) are reported in the bottom of Table \ref{tab:BigTab} for the CC2-to-CCSDTQ models.
+The mean absolute errors (MAEs) and mean signed errors (MSEs) with respect to CCSDTQP (and computed in the aug-cc-pVDZ basis) are reported in the bottom of Table \ref{tab:singles} for the CC2-to-CCSDTQ models.
 The distribution of the errors are reported in Fig.~\ref{fig:error} for each level of theory.
 These statistical quantities nicely illustrate the systematic improvement of the transition energies when one ramps up the computational effort following the series CC2, CCSD, CC3, CCSDT, CC4, and CCSDTQ.
 We note that the errors decrease by roughly one order of magnitude when switching from CCSD to CC3 and from CCSDT to CC4, whilst improvements of approximately 50\% ``only'' are noted when going from the ``approximate'' model to the ``complete'' method (\ie, from CC2 to CCSD, from CC3 to CCSDT, and from CC4 to CCSDTQ).
@@ -233,10 +233,6 @@ In other words, CC4 brings significant improvement in terms of MAE and MSE as co
 Besides, for the two basis sets, there is an outstanding similarity between the CC4 and CCSDTQ excitation energies with mean absolute and signed deviations below (equal to) \SI{0.001}{\eV} and a maximum deviation of \SI{0.011}{\eV} (\SI{0.007}{\eV}) between to the two sets of data obtained with 
 the aug-cc-pVDZ (aug-cc-pVTZ) basis set. 
 Therefore, including quadruples allows to reach sub-\si{\kJ\per\mol} accuracy (\ie, average error below \SI{0.01}{\eV}) for singly-excited states with only a rather minor improvement going from CC4 to CCSDTQ.
-
-Table \ref{tab:doubles} reports vertical excitation energies for double excitations (\ie, transition with a dominant contribution from the doubly-excited determinants) in the carbon dimer, \ce{C2}, and nitroxyl, \ce{HNO}, computed with the aug-cc-pVDZ basis.
-These transitions can be labeled as ``pure'' double excitations as they involve an insignificant amount of single excitations.
-In this case, the differences between methods is magnified.
 
 %%% TABLE II %%%
 \begin{squeezetable}
@@ -248,20 +244,42 @@ In this case, the differences between methods is magnified.
 	\begin{tabular}{llrrrrrrr}
 	Mol.		&	State			& $\%T_1$	&CC3	&CCSDT	&CC4	&CCSDTQ	&CCSDTQP	&FCI	\\
 	\hline
-	\ce{C2}		&	$^1\Delta_g$ 	&	1		&3.107	&2.632	&2.341	&2.241	&2.214	&2.21(0)	\\	
-				&	$^1\Sigma_g^+$ 	&	1		&3.283	&2.874	&2.602	&2.521	&2.505	&2.50(0)	\\	
-	\ce{HNO}	&	$^1A'$ 			&	0		&5.247	&4.756	&4.454	&4.424	&		&4.40(1)	\\
+	\ce{C2}		&	$^1\Delta_g$ 	&	1		&3.107	&2.632	&2.341	&2.241	&2.214	&2.213(0)	\\	
+				&	$^1\Sigma_g^+$ 	&	1		&3.283	&2.874	&2.602	&2.521	&\titou{2.505}	&2.503(1)	\\	
+	\ce{HNO}	&	$^1A'$ 			&	0		&5.247	&4.756	&4.454	&4.424	&\titou{4.XXX}	&\titou{4.40(1)}	\\
 	\end{tabular}
 	\end{ruledtabular}
 \end{table}
 \end{squeezetable}
 %%% %%% %%% %%%
 
+%%% FIG 2 %%%
+\begin{figure*}
+	\includegraphics[width=0.7\linewidth]{doubles}
+	\caption{
+	Error in excitation energies (with respect to CCSDTQP) of CC3, CCSDT, CC4, and CCSDTQ obtained with the aug-cc-pVDZ basis
+	for the double excitations gathered in Table \ref{tab:doubles}.
+	\label{fig:doubles}}
+\end{figure*}
+%%% %%% %%% %%%
+
+A closer inspection at Table \ref{tab:singles} shows that the largest deviations appear for the transitions with the smallest $\%T_1$ values (where $\%T_1$ is the percentage of single excitations involved in the transition which is computed at the CC3/aug-cc-pVTZ level in the present case). 
+This is particularly noticeable for the two $^1\Pi_u$ transitions of \ce{N2}.
+This suggests that the performance of the various CC models discussed above might be highly dependent on the nature of the transitions, as discussed in Ref.~\onlinecite{Loos_2019}.
+To investigate further this point, we report in Table \ref{tab:doubles} vertical excitation energies for double excitations (\ie, transition with a dominant contribution from the doubly-excited determinants) in the carbon dimer, \ce{C2}, and nitroxyl, \ce{HNO}, computed with the aug-cc-pVDZ basis for the methods including at least triple excitations. (The second-order methods, CC2 and CCSD, are unable to faithfully locate double excitations.)
+These transitions can be labeled as ``pure'' double excitations as they involve an insignificant amount of single excitations ($\%T_1 \approx 0$), hence providing a very stringent test for the EOM-CC formalism.
+In this case, as shown in Fig.~\ref{fig:doubles}, the differences between methods are magnified, but the conclusions drawn in the previous paragraph hold: CC4 is an excellent approximation to CCSDTQ (with a maximum deviation of \SI{0.1}{\eV} in the $^1\Delta_g$ transition of \ce{C2}) and a massive improvement over CC3 (where the error can be as large as \SI{0.9}{\eV}) and, to a lesser extent, over CCSDT.
+However, for these transitions with a dominant double excitation character, CC4 does not permit to reach chemical accuracy with errors of the order of \SI{0.1}{\eV} compared to CCSDTQP and FCI.
+The outcome might differ for transitions of mixed characters ($\%T_1 \approx 70$) such as the well-known $^1 A_g$ excited state of butadiene.\cite{Maitra_2004,Saha_2006,Watson_2012,Shu_2017,Barca_2018a,Loos_2019} 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-For this set of small molecules at least, CC4 is a rather competitive approximation to its more expensive CCSDTQ parent as well as a very significant improvement over its third-order version, CC3, and the ``complete'' CCSDT method.
+Thanks to the results gathered in the present study, we can conclude, for this set of small molecules at least, that CC4 is a rather competitive approximation to its more expensive CCSDTQ parent as well as a very significant improvement over its third-order version, CC3, and the ``complete'' CCSDT method.
+This is particularly true in the case of single excitations (Table \ref{tab:singles}) when one reaches sub-kJ~mol$^{-1}$ accuracy.
+For double excitations, we have seen (Table \ref{tab:doubles}) that the same qualitative conclusions hold but one cannot reach chemical accuracy for the set of ``pure'' double excitations that we have considered.
+
 These findings are promising, though we are well aware that the conclusions obtained for small and larger molecules might differ significantly.
 For example, CCSD outperforms CC2 for compact molecules (as here), but the opposite trend is often found for larger compounds.\cite{Loos_2018a,Loos_2020a,Veril_2021} 
 Therefore, although further investigations on larger compounds are definitely required, the present results are very encouraging as CC4, with its $\order*{N^9}$ scaling, can be applied to significantly larger molecules than CCSDTQ [which scales as $\order*{N^{10}}$]. 
