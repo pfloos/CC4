@@ -66,9 +66,9 @@
 % Abstract
 \begin{abstract}
 We report the first investigation of the performance of EOM-CC4 --- an approximate equation-of-motion coupled-cluster model which includes iterative quadruple excitations --- for vertical excitation energies in molecular systems.
-By considering a set of 28 excited states in 10 small molecules for which we have computed CCSDTQP and FCI reference energies, we show that, in the case of excited states with a dominant contribution from the single excitations, CC4 yields excitation energies with sub-kJ~mol$^{-1}$ accuracy, in very close agreement with its more expensive CCSDTQ parent.
+By considering a set of 28 excited states in 10 small molecules for which we have computed CCSDTQP and FCI reference energies, we show that, in the case of excited states with a dominant contribution from the single excitations, CC4 yields excitation energies with sub-kJ~mol$^{-1}$ accuracy \alert{(\textit{i.e.}, error below $0.01$ eV)}, in very close agreement with its more expensive CCSDTQ parent.
 Therefore, if one aims at high accuracy, CC4 stands as a highly competitive approximate method to model molecular excited states, with a significant improvement over both CC3 and CCSDT.
-Our results also evidence that, although the same qualitative conclusions hold, one cannot reach the same level of accuracy for transitions of double excitation nature.
+Our results also evidence that, although the same qualitative conclusions hold, one cannot reach the same level of accuracy for transitions \alert{with a dominant contribution from the double excitations}.
 \end{abstract}
 
 % Title
@@ -111,7 +111,7 @@ Of course, it would be highly valuable to have access to more accurate methods (
 In this context, the main purpose of the present study is to assess the relative accuracy of the approximate iterative CC4 model against the more expensive CCSDTQ and CCSDTQP methods in the case of vertical excitation energies, as well as their absolute accuracy with respect to FCI.
 To do so, we consider a set of 10 small molecules (\ce{NH3}, \ce{C2}, \ce{BH}, \ce{BF}, \ce{CO}, \ce{N2}, \ce{HCl}, \ce{H2S}, \ce{HNO} and \ce{H2O}) and we compare the excitation energies associated with 28 singlet excited states of various natures ($\npis$, $\pipis$, Rydberg, valence, charge-transfer, and double excitations) and spatial symmetries obtained with various high-level CC methods.
 Although a small number of studies have been published on the performance of CC4 for ground-state energies and properties, \cite{Kallay_2005,Matthews_2021} this work stands, to the best of our knowledge, as the first to consider CC4 for the computation of excited-states energies.
-As we shall see below, CC4 is an excellent approximation to its CCSDTQ parent, and produces, in the case of excited states with a dominant contribution from the single excitations, excitation energies with sub-\si{\kJ\per\mol} accuracy for this set of small molecules, well below the chemical accuracy threshold.
+As we shall see below, CC4 is an excellent approximation to its CCSDTQ parent, and produces, in the case of excited states with a dominant contribution from the single excitations, excitation energies with sub-\si{\kJ\per\mol} accuracy \alert{(\textit{i.e.}, error below $0.01$ eV)} for this set of small molecules, well below the chemical accuracy threshold.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Computational details}
@@ -153,7 +153,7 @@ Coupled cluster is a non-hermitian theory and thus the right- and left-hand eige
 For the left-hand solution, we have reused the already-verified code for the ground-state $\Lambda$	equations which describe the amplitude relaxation contribution in the analytic gradient theory. \cite{Matthews_2021} 
 The structure of the left-hand EOM-CC and $\Lambda$ equations are identical, and so simply interfacing this existing code with a Davidson solver \cite{Davidson_1975} provides left-hand EOM-CC solutions; this procedure has been checked for other known-good methods such as CCSDT and CC3.
 
-All calculations have been performed in the frozen-core approximation and the CC3/aug-cc-pVTZ geometries of the system considered here have been extracted from previous studies. \cite{Loos_2018a,Chrayteh_2021}
+All calculations have been performed in the frozen-core approximation and the CC3/aug-cc-pVTZ geometries of the \alert{systems considered} here have been extracted from previous studies. \cite{Loos_2018a,Chrayteh_2021}
 In the following, we consider diffuse-containing Dunning's double- and triple-$\zeta$ basis sets (aug-cc-pVDZ and aug-cc-pVTZ).
 Note that CCSDTQP energies could only be computed for the smaller basis (aug-cc-pVDZ).
 
@@ -168,6 +168,7 @@ Note that CCSDTQP energies could only be computed for the smaller basis (aug-cc-
 	\caption{Vertical excitation energies (in eV) of a selection of singly-excited states obtained at various levels of theory with the aug-cc-pVDZ and aug-cc-pVTZ basis sets. 
 	$\%T_1$ is the percentage of single excitations involved in the transition computed at the CC3/aug-cc-pVTZ level.
 	For the aug-cc-pVDZ basis, the mean absolute error (MAE), mean signed error (MSE), and maximum error (Max) with respect to CCSDTQP is reported.
+	\alert{The error bars reported in parenthesis correspond to one standard deviation.}
 	\label{tab:singles}}
 	\begin{ruledtabular}
 	\begin{tabular}{llrrrrrrrrrrrrrrrr}
@@ -237,7 +238,7 @@ Therefore, including quadruples allows to reach sub-\si{\kJ\per\mol} accuracy (\
 %%% TABLE II %%%
 \begin{squeezetable}
 \begin{table}
-	\caption{Vertical excitation energies (in eV) of a selection of doubly-excited states obtained at various levels of theory with the aug-cc-pVDZ basis set. 
+	\caption{Vertical excitation energies (in eV) for a selection of \alert{transitions with a dominant contribution from the double excitations} obtained at various levels of theory with the aug-cc-pVDZ basis set. 
 	$\%T_1$ is the percentage of single excitations involved in the transition (computed at the CC3/aug-cc-pVTZ level).
 	\label{tab:doubles}}
 	\begin{ruledtabular}
@@ -258,7 +259,7 @@ Therefore, including quadruples allows to reach sub-\si{\kJ\per\mol} accuracy (\
 	\includegraphics[width=0.7\linewidth]{fig2}
 	\caption{
 	Error in excitation energies (with respect to FCI) computed with CC3, CCSDT, CC4, and CCSDTQ in the aug-cc-pVDZ basis
-	for the double excitations gathered in Table \ref{tab:doubles}.
+	for \alert{transitions with a dominant contribution from the double excitations} gathered in Table \ref{tab:doubles}.
 	\label{fig:doubles}}
 \end{figure*}
 %%% %%% %%% %%%
@@ -266,7 +267,7 @@ Therefore, including quadruples allows to reach sub-\si{\kJ\per\mol} accuracy (\
 A closer inspection at Table \ref{tab:singles} shows that the largest deviations appear for the transitions with the smallest $\%T_1$ values (where $\%T_1$ is the percentage of single excitations involved in the transition which is computed at the CC3/aug-cc-pVTZ level in the present case). 
 This is particularly noticeable for the two $^1\Pi_u$ transitions of \ce{N2}.
 This suggests that the performance of the various CC models discussed above might be highly dependent on the nature of the transitions, as discussed in Ref.~\onlinecite{Loos_2019}.
-To investigate further this point, we report in Table \ref{tab:doubles} vertical excitation energies for double excitations (\ie, transition with a dominant contribution from the doubly-excited determinants) in the carbon dimer, \ce{C2}, and nitroxyl, \ce{HNO}, computed with the aug-cc-pVDZ basis for the methods including at least triple excitations; the second-order methods, CC2 and CCSD, being unable to faithfully locate double excitations.
+To investigate further this point, we report in Table \ref{tab:doubles} vertical excitation energies for \titou{transitions with a dominant contribution from the doubly-excited determinants} in the carbon dimer, \ce{C2}, and nitroxyl, \ce{HNO}, computed with the aug-cc-pVDZ basis for the methods including at least triple excitations; the second-order methods, CC2 and CCSD, being unable to faithfully locate these \titou{states with a large contribution of double excitations.}
 These transitions can be labeled as ``pure'' double excitations as they involve an insignificant amount of single excitations ($\%T_1 \approx 0$), hence providing a very stringent test for the EOM-CC formalism.
 In this case, as shown in Fig.~\ref{fig:doubles}, the differences between methods are magnified, but the conclusions drawn in the previous paragraph hold: CC4 is an excellent approximation to CCSDTQ (with a maximum deviation of \SI{0.1}{\eV} for the $^1\Delta_g$ transition of \ce{C2}) and a massive improvement over CC3 (where the error can be as large as \SI{0.9}{\eV}) and, to a lesser extent, over CCSDT.
 However, for these transitions with a dominant double excitation character, CC4 does not permit to reach chemical accuracy with errors of the order of \SI{0.1}{\eV} compared to CCSDTQP and FCI.
@@ -277,8 +278,8 @@ The outcome might differ for transitions of mixed characters ($\%T_1 \approx 70$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Thanks to the results gathered in the present study, we can conclude, for this set of small molecules at least, that CC4 is a rather competitive approximation to its more expensive CCSDTQ parent as well as a very significant improvement over both its third-order version, CC3, and the ``complete'' CCSDT method.
-This is particularly true in the case of single excitations (Table \ref{tab:singles}) when one reaches sub-kJ~mol$^{-1}$ accuracy.
-For double excitations, we have seen (Table \ref{tab:doubles}) that the same qualitative conclusions hold but one cannot reach chemical accuracy for the set of ``pure'' double excitations that we have considered.
+This is particularly true in the case of \alert{transitions with a dominant contribution from the single excitations} (Table \ref{tab:singles}) when one reaches sub-kJ~mol$^{-1}$ accuracy.
+\titou{For states with a dominant contribution from the double excitations}, we have seen (Table \ref{tab:doubles}) that the same qualitative conclusions hold but one cannot reach chemical accuracy for the set of ``pure'' double excitations that we have considered.
 
 These findings are promising, though we are well aware that the conclusions obtained for small and larger molecules might differ significantly.
 For example, CCSD outperforms CC2 for compact molecules (as here), but the opposite trend is often found for larger compounds.\cite{Loos_2018a,Loos_2020a,Veril_2021} 
